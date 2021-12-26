@@ -153,8 +153,16 @@ p {
 
 .about-head {
   font-size: 1.4em;
+  color: white;
+}
+
+.about-contact {
   margin-bottom: 2em;
   color: white;
+}
+
+.email {
+  color: #37f79b;
 }
 
 #nav-area {
