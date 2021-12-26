@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@font-face {
+  font-family: "SpaceTypeSans-wide";
+  src: url("fonts/SpaceTypeSans-wide.otf") format("otf");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.full-vw {
+  width: 100%;
+}
+
+.full-vh {
+  height: 100%;
+}
+
+.full-w {
+  width: 100%;
+}
+
+.full-h {
+  height: 100%;
+}
+
+.position-rel {
+  position: relative;
+  text-align: center;
+}
+
+.position-abs {
+  position: absolute;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.fade-in {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.fade-out {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.link {
+  display: inline-block;
+  align-self: flex-start;
+  color: #ffffff55;
+}
+
+.link:hover {
+  color: white;
+}
+
+#about {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.markdown-body {
+  color: #ffffffaa;
+  max-width: 900px;
+  padding-top: 10em;
+  padding-bottom: 7em;
+  padding-left: 5em;
+  padding-right: 5em;
+  margin: 0 auto;
+  text-align: left;
+}
+
+p {
+  text-transform: none;
+  font-weight: 300;
+  line-height: 1.8em;
+  font-size: 1.2em;
+}
+
+.about-title {
+  font-size: 2em;
+  color: white;
+}
+
+.about-head {
+  font-size: 1.4em;
+  margin-bottom: 2em;
+  color: white;
+}
+
+#nav-area {
+  margin: 2em 3em;
+  font-size: 1.2rem;
+}
+
+#progress {
+  width: 1%;
+  background-color: #ffffff55;
+  height: 1px;
+  margin-bottom: 0.5em;
+}
+#nav-box {
+  display: flex;
+}
+
+#play-box {
+  margin-right: 1.5em;
+  display: flex;
+}
+
+#play {
+  margin-right: 1.5em;
+  font-size: 0.8rem;
+  display: inline-block;
+  align-self: center;
+  color: #ffffff55;
+  cursor: pointer;
+}
+
+@media (max-width: 1048px) {
+  p {
+    font-size: 1em;
+  }
+
+  .about-head {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .markdown-body {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
