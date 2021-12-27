@@ -1,8 +1,14 @@
+/**
+ * @file Defines the wrapping layout for all other pages.
+ *
+ * We add a shared stylesheet and set the charset here.
+ */
+
 import "../styles/app.css";
 
 import Head from "next/head";
 
-function MyApp({ Component, pageProps }) {
+function App({ Component, pageProps }) {
   return (
     <>
       <Head>
@@ -14,4 +20,4 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default MyApp;
+export default App;

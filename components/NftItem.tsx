@@ -5,6 +5,9 @@ interface NftItemProps {
   itemId: string;
 }
 
+/**
+ * Represents an individual NFT item within a collection page.
+ */
 function NftItem(props: NftItemProps) {
   return (
     <a href={routes.nftItem(props.itemId)}>
