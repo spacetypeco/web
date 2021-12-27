@@ -130,14 +130,17 @@ a {
   justify-content: flex-end;
 }
 
-.markdown-body {
-  color: #ffffffaa;
-  max-width: 900px;
+.content {
   padding-top: 10em;
   padding-bottom: 7em;
   padding-left: 5em;
   padding-right: 5em;
   margin: 0 auto;
+}
+
+.markdown-body {
+  max-width: 900px;
+  color: #ffffffaa;
   text-align: left;
 }
 

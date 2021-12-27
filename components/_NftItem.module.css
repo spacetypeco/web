@@ -1,0 +1,32 @@
+.item {
+  outline: 1px solid #fff;
+  cursor: pointer;
+  margin: 0.5em;
+  height: calc((80vw - 2em) / var(--num-items));
+  width: calc((80vw - 2em) / var(--num-items));
+}
+
+.item:hover {
+  outline: 5px solid #fff;
+}
+
+.itemTitle {
+  position: absolute;
+  padding: 1px 2px 0px 2px;
+  font-size: 24px;
+  color: #000;
+  background-color: #fff;
+}
+
+.itemImage {
+  width: 100%;
+  height: 100%;
+}
+
+.itemInfo {
+  position: absolute;
+  inset: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
