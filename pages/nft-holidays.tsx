@@ -1,5 +1,4 @@
 import BackNav from "../components/BackNav";
-import Head from "next/head";
 import NftItem from "../components/NftItem";
 
 const NUM_NFTS = 30;
