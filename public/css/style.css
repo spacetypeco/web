@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap");
-
 html,
 body {
   margin: 0;
@@ -15,6 +13,45 @@ body {
   src: url("fonts/SpaceTypeSans-wide.otf") format("otf");
 }
 
+@font-face {
+  font-family: "AdelleMonoFlex-Regular";
+  src: url("https://fonts-priv.vercel.app/w19j2r90121t9021t90t099eru20u1902u10/AdelleMonoFlex-Regular.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "AdelleMonoFlex-Bold";
+  src: url("https://fonts-priv.vercel.app/w19j2r90121t9021t90t099eru20u1902u10/AdelleMonoFlex-Bold.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Ampersandist Light";
+  src: url("https://fonts-priv.vercel.app/29ru1092uf910fgj290jg90/Ampersandist_v0.2-Light.ttf");
+}
+
+@font-face {
+  font-family: "Ampersandist Medium";
+  src: url("https://fonts-priv.vercel.app/29ru1092uf910fgj290jg90/Ampersandist_v0.2-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Ampersandist Black";
+  src: url("https://fonts-priv.vercel.app/29ru1092uf910fgj290jg90/Ampersandist_v0.2-Black.ttf");
+}
+
+.ampersandist-light {
+  font-family: "Ampersandist Light";
+}
+
+.ampersandist-medium {
+  font-family: "Ampersandist Medium";
+}
+
+.ampersandist-black {
+  font-family: "Ampersandist Black";
+}
+
 h1,
 h2,
 h3,
@@ -24,7 +61,50 @@ h6,
 p,
 a,
 span {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: "AdelleMonoFlex-Regular", monospace;
+  color: white;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+p {
+  text-transform: none;
+  font-weight: 300;
+  line-height: 1.5em;
+  font-size: 1.1em;
+}
+
+hr {
+  color: white;
+  width: 100%;
+}
+
+.flex-h {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-v {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-end-j {
+  justify-content: flex-end;
+}
+
+.flex-end-a {
+  align-content: flex-end;
+}
+
+.flex-between {
+  justify-content: space-between;
 }
 
 .full-vw {
@@ -45,14 +125,18 @@ span {
 
 .position-rel {
   position: relative;
-  text-align: center;
 }
 
 .position-abs {
   position: absolute;
 }
 
-canvas {
+.list-basic {
+  list-style: none;
+  padding-left: 0;
+}
+
+#canvas {
   position: absolute;
   top: 0;
   left: 0;
@@ -105,22 +189,28 @@ a {
   text-decoration: none;
 }
 
-#nav {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: flex-end;
+.content a {
+  color: #37f79b;
+}
+
+.nav {
+  display: block;
+  width: 100%;
 }
 
 .link {
   display: inline-block;
   align-self: flex-start;
-  color: #ffffff55;
+  color: white;
+  font-size: 1em;
+}
+
+.controls {
+  float: right;
 }
 
 .link:hover {
-  color: white;
+  color: #ffffff99;
 }
 
 #about {
@@ -131,7 +221,7 @@ a {
 }
 
 .content {
-  padding-top: 10em;
+  padding-top: 5em;
   padding-bottom: 7em;
   padding-left: 5em;
   padding-right: 5em;
@@ -139,16 +229,14 @@ a {
 }
 
 .markdown-body {
-  max-width: 900px;
+  max-width: 750px;
   color: #ffffffaa;
   text-align: left;
 }
 
-p {
-  text-transform: none;
-  font-weight: 300;
-  line-height: 1.8em;
-  font-size: 1.2em;
+.markdown-body hr {
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .about-title {
@@ -183,6 +271,7 @@ p {
 }
 #nav-box {
   display: flex;
+  gap: 1.5em;
 }
 
 #play-box {
@@ -199,6 +288,41 @@ p {
   cursor: pointer;
 }
 
+.sketch-controls {
+  margin: 2em;
+}
+
+.typetester-content-container {
+  gap: 1.5em;
+  max-width: min(90vw, 900px);
+}
+
+.typetester-container {
+  gap: 4em;
+  max-width: min(85vw, 900px);
+}
+
+.typetester-info-container {
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.typetester-label {
+  font-size: 1.2em;
+  color: white;
+  flex: 0 10 20%;
+}
+
+.typetester {
+  font-size: 4em;
+  color: white;
+  outline: currentcolor none 0px;
+  white-space: normal;
+  overflow-wrap: break-word;
+  flex: 10 0 80%;
+  max-width: 75%;
+}
+
 @media (max-width: 1048px) {
   p {
     font-size: 1em;
@@ -209,9 +333,33 @@ p {
   }
 }
 
+@media (min-width: 769px) {
+  .flex-h-md {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
 @media (max-width: 768px) {
-  .markdown-body {
+  .content {
+    padding-top: 3em;
     padding-left: 2em;
     padding-right: 2em;
+  }
+  .flex-v-sm {
+    display: flex;
+    flex-direction: column;
+  }
+  .typetester {
+    max-width: 100%;
+  }
+  .typetester-container {
+    gap: 2em;
+  }
+  .typetester {
+    font-size: 3.5em;
+  }
+  #nav-box .link {
+    font-size: 0.85em;
   }
 }

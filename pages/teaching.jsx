@@ -1,0 +1,60 @@
+import Link from "next/link";
+import Navigation from "../components/Navigation";
+
+const TypeDesignSchool = <Link href="https://typedesignschool.com">typedesignschool.com</Link>
+const LetterformDesign = <Link href="https://letterformdesign.com">letterformdesign.com</Link>
+const GenerativeType = <Link href="https://generativetype.com">generativetype.com</Link>
+
+export default function About() {
+  return (
+    <main>
+      <div id="container" className="full-w full-h position-rel">
+        <Navigation/>
+        <div id="about">
+          <div className="content markdown-body">
+            <h1>Teaching</h1>
+            <p>
+            We love to spread our appreciation for the craft through providing education. 
+            We teach workshops, classes, and also offer donation based educational resources.
+            </p>
+            <p>
+            If you would like to stay in the loop for future classes, sign up for our 
+            newsletter:
+            </p>
+            <hr/>
+            <h2>Educational Resources</h2>
+            <p>
+              Foundations of Type Design @ { TypeDesignSchool }
+            </p>
+            <hr/>
+            <h2>Past Student Projects</h2>
+            <p>
+            <ul class="list-basic">
+              <li>Type Design & Lettering @ { LetterformDesign }</li>
+              <li>Generative Typography @ { GenerativeType }</li>
+            </ul>
+            </p>
+            <hr/>
+            <h2>Workshops</h2>
+            <p>
+              We are planning on offering new workshops in fall 2022.
+            </p>              
+            <p>
+Previously offered courses:<ul class="list-basic">
+<li><Link href="">Letterform Archive</Link> - Type West:  Type Design, Jun–Aug 2022</li>
+<li><Link href="">Type@Cooper</Link> - Generative Typography, Feb–Apr 2022</li>
+<li><Link href="">Parsons School of Design</Link> - Type Design, Jan–May 2022</li>
+<li><Link href="">Typographics</Link> – Code x Typography Series, Jun 2021</li>
+<li><Link href="">Letterform Archive</Link> - Type West:  Type Design, Jun–Aug 2021</li>
+<li><Link href="">Parsons School of Design</Link> - Type Design, Jan–May 2021</li>
+<li><Link href="">Type@Cooper</Link> - Generative Typography, Oct–Dec 2020</li>
+<li><Link href="">Type@Cooper</Link> - Generative Typography, Jun–Jul 2020</li>
+<li><Link href="">Type@Cooper</Link> - Hand Lettering, Feb–Apr 2020</li>
+</ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  );
+}

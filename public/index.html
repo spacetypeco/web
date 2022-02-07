@@ -18,14 +18,22 @@
   <body>
     <div id="container" class="full-w full-h position-rel">
       <div id="canvas" class="full-w full-h"></div>
-      <div id="nav" class="full-w full-h">
-        <div id="nav-area">
-          <div id="progress" class="fade-in"></div>
-          <div id="nav-box">
-            <div id="play-box">
-              <img id="play" href="" class="fade-in" src="img/pause.svg" style="position:absolute;width:19.5px"></a>
+      <div class="flex-h flex-end nav full-w full-h">
+        <div class="flex-v flex-between full-h controls">
+          <div id="nav-area">
+            <div id="nav-box">
+              <a href="/type" class="fade-in link">Type Foundry</a>
+              <a href="/teaching" class="fade-in link">Teaching</a>
+              <a href="/about" class="fade-in link">About</a>
             </div>
-            <a id="about" href="/about" class="fade-in link">about</a>
+          </div>
+          <div class="sketch-controls flex-v flex-end-a">
+            <div id="progress" class="fade-in"></div>
+            <div id="flex-h">
+              <div id="play-box">
+                <img id="play" href="" class="fade-in" src="img/pause.svg" style="position:absolute;width:19.5px"></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
