@@ -95,7 +95,7 @@ function setProgress() {
 
 function setPlayWidth() {
   let playElem = document.getElementById("play");
-  let width = (document.getElementById("about").clientHeight * 3) / 4;
+  let width = 0; //(document.getElementById("about").clientHeight * 3) / 4;
 
   // Hack hack hack sorry onlookers
   if (width < 1) {

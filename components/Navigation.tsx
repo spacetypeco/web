@@ -8,7 +8,7 @@ export default function Navigation({ active }) {
       <div className="">
         <div className="logo">
           <Link href="/">
-            <Image src="/img/logo_white.png" width="50px" height="50px" />
+            <Image src="/img/logo_white.png" width="70px" height="70px" />
           </Link>
         </div>
       </div>

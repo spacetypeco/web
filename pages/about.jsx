@@ -21,21 +21,15 @@ export default function About() {
             <h1>Space Type</h1>
             <p>
             Space Type is an NYC-based studio practice operating at the 
-            intersection of type, design, and technology. Led by { LynneYun } and { KevinYeh }, 
-            the studio specializes in experiental letterforms of all kinds.
+            intersection of type and technology. Led by { LynneYun } and { KevinYeh }, 
+            the studio specializes in experiental letterforms and web experiences.
             </p>
             <p>
-            We work with individuals and organizations to discover unique stories 
-            at the seams of type design and digital interaction. We offer licensed 
-            typefaces, partner with institutions, and engage with communities through 
+            We work with individuals and organizations to express unique narratives 
+            and connect the seams between type design and digital interaction. We offer retail typefaces, partner with institutions, and engage with communities through 
             workshops, classes, and donation-based resources.
             </p>
-            <p>
-            We are dedicated to inclusive education, accessible technology, and open creative
-            tools that empower all members of our community. We welcome fresh eyes, 
-            diverse backgrounds, and personalized awdawd that reflect the many ways
-            we interact with language in physical and online spaces.
-            </p>
+            
             <p className="about-contact">
               Contact us at { HelloSpaceType }. this should probably be in a smaller separated
               section with other stuff like instagram. Also there should be a newsletter.

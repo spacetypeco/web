@@ -14,8 +14,14 @@ export default function About() {
           <div className="fade-in content markdown-body">
             <h1>Teaching</h1>
             <p>
-            We love to spread our appreciation for the craft through education. 
-            We teach workshops, classes, and also offer donation-based educational resources.
+            Community and education is at the heart of our practice. 
+            We teach workshops, run classes, and offer donation-based educational resources.
+            </p>
+            <p>
+            We are dedicated to inclusive education, accessible technology, and open creative
+            tools that empower all members of our community. We welcome fresh eyes, 
+            diverse backgrounds, and personal stories that reflect the many ways
+            we interact with language in physical and online spaces.
             </p>
             <p>
             If you would like to stay in the loop for future classes, sign up for our 
