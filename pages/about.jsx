@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Navigation from "../components/Navigation";
 
 const LynneYun = <Link href="https://lynneyun.com">Lynne Yun</Link>;
-const KevinYeh = <Link href="https://kevbk.com">Kevin Yeh</Link>;
+const KevinYeh = <Link href="http://kevbk.com">Kevin Yeh</Link>;
 const HelloSpaceType = <span className="email">hello@spacetypecontinuum.com</span>;
 
 export default function About() {
