@@ -6,9 +6,9 @@ export default function Type() {
   <main>
     <div id="container" className="full-w full-h position-rel">
 
-      <Navigation/>
+      <Navigation active="/type" />
       <div id="about">
-      <div className="content">
+      <div className="fade-in content">
         <div class="flex-v full-w typetester-content-container">
           <FontRow label="Ampersandist Light"/>
           <hr/>

@@ -9,13 +9,13 @@ export default function About() {
   return (
     <main>
       <div id="container" className="full-w full-h position-rel">
-        <Navigation/>
+        <Navigation active="/teaching" />
         <div id="about">
-          <div className="content markdown-body">
+          <div className="fade-in content markdown-body">
             <h1>Teaching</h1>
             <p>
-            We love to spread our appreciation for the craft through providing education. 
-            We teach workshops, classes, and also offer donation based educational resources.
+            We love to spread our appreciation for the craft through education. 
+            We teach workshops, classes, and also offer donation-based educational resources.
             </p>
             <p>
             If you would like to stay in the loop for future classes, sign up for our 

@@ -151,8 +151,8 @@ hr {
 .fade-in {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -184,6 +184,15 @@ hr {
   }
 }
 
+@keyframes widthIn {
+  0% {
+    background-size: 0% 1px;
+  }
+  100% {
+    background-size: 100% 1px;
+  }
+}
+
 a {
   color: white;
   text-decoration: none;
@@ -203,6 +212,25 @@ a {
   align-self: flex-start;
   color: white;
   font-size: 1em;
+}
+
+.link.active {
+  padding-bottom: 6px;
+  background: linear-gradient(#f7f7f7 0 0);
+  background-size: 0% 1px; /* we make the top one 0% width */
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  animation-name: widthIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.link.active:hover {
+  background: linear-gradient(#ffffff99 0 0);
+  background-position: bottom left;
+  background-repeat: no-repeat;
 }
 
 .controls {
@@ -333,6 +361,19 @@ a {
   }
 }
 
+.logo {
+  margin: 2em;
+  float: left;
+  opacity: 100%;
+  border-radius: 25px;
+  transition: opacity 0.1s;
+  cursor: pointer;
+}
+
+.logo:hover {
+  opacity: 50%;
+}
+
 @media (min-width: 769px) {
   .flex-h-md {
     display: flex;
@@ -359,7 +400,25 @@ a {
   .typetester {
     font-size: 3.5em;
   }
+}
+
+/*#nav-menu {
+  display: none;
+  float: right;
+}
+
+@media (max-width: 600px) {
+  .flex-v-xs {
+    display: flex;
+    flex-direction: column;
+  }
   #nav-box .link {
     font-size: 0.85em;
   }
-}
+  #nav-box {
+    display: none;
+  }
+  #nav-menu {
+    display: flex;
+  }
+}*/
