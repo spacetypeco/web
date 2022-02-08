@@ -1,12 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 
 export default function Navigation({ active }) {
   return (
     <div className="flex-h flex-end nav full-w full-h">
       <div className="">
-        <div className="logo">
+        <div className="logo fade-in">
           <Link href="/">
             <Image src="/img/logo_white.png" width="70px" height="70px" />
           </Link>
