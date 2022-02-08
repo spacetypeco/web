@@ -243,7 +243,7 @@ a {
 }
 
 .link.active:hover {
-  background: linear-gradient(#ffffff99 0 0);
+  background: linear-gradient(#ffffffbb 0 0);
   background-position: bottom left;
   background-repeat: no-repeat;
 }
@@ -251,8 +251,11 @@ a {
 .controls {
   float: right;
 }
-
-.link:hover {
+.link a {
+  transition: color 0.2s;
+}
+.link:hover,
+.link a:hover {
   color: #ffffff99;
 }
 
