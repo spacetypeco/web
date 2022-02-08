@@ -7,8 +7,10 @@
 import "../styles/app.css";
 
 import Head from "next/head";
+import { useRouter } from "next/router";
 
 function App({ Component, pageProps }) {
+  const router = useRouter();
   return (
     <>
       <Head>

@@ -5,7 +5,7 @@ export default function Navigation({ active }) {
   return (
     <div className="flex-h flex-end nav full-w full-h">
       <div className="">
-        <div className="logo fade-in">
+        <div className="logo">
           <Link href="/">
             <Image src="/img/logo_white.png" width="70px" height="70px" />
           </Link>
@@ -14,24 +14,15 @@ export default function Navigation({ active }) {
       <div className="controls">
         <div id="nav-area">
           <div id="nav-box" className="flex-v-xs">
-            <a
-              href="/type"
-              className={active === "/type" ? "link active" : "link"}
-            >
-              Type Foundry
-            </a>
-            <a
-              href="/teaching"
-              className={active === "/teaching" ? "link active" : "link"}
-            >
-              Teaching
-            </a>
-            <a
-              href="/about"
-              className={active === "/about" ? "link active" : "link"}
-            >
-              About
-            </a>
+            <div className={active === "/type" ? "link active" : "link"}>
+              <Link href="/type">Type Foundry</Link>
+            </div>
+            <div className={active === "/teaching" ? "link active" : "link"}>
+              <Link href="/teaching">Teaching</Link>
+            </div>
+            <div className={active === "/about" ? "link active" : "link"}>
+              <Link href="/about">About</Link>
+            </div>
           </div>
         </div>
       </div>
