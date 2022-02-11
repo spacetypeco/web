@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 
 export default function Navigation({ active }) {
@@ -6,9 +6,12 @@ export default function Navigation({ active }) {
     <div className="flex-h flex-end nav full-w full-h">
       <div className="">
         <div className="logo">
-          <Link href="/">
-            <Image src="/img/logo_white.png" width="70px" height="70px" />
-          </Link>
+          <a href="/">
+            <img
+              src="/img/logo_white.png"
+              style={{ width: "70px", height: "70px" }}
+            />
+          </a>
         </div>
       </div>
       <div className="controls">

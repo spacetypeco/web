@@ -23,10 +23,6 @@ export default function About() {
             diverse backgrounds, and personal stories that reflect the many ways
             we interact with language in physical and online spaces.
             </p>
-            <p>
-            If you would like to stay in the loop for future classes, sign up for our 
-            newsletter:
-            </p>
             <hr/>
             <h2>Educational Resources</h2>
             <p>

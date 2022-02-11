@@ -29,11 +29,6 @@ export default function About() {
             and connect the seams between type design and digital interaction. We offer retail typefaces, partner with institutions, and engage with communities through 
             workshops, classes, and donation-based resources.
             </p>
-            
-            <p className="about-contact">
-              Contact us at { HelloSpaceType }. this should probably be in a smaller separated
-              section with other stuff like instagram. Also there should be a newsletter.
-            </p>
             </div>
             </div>
           </div>
