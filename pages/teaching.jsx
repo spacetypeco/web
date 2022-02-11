@@ -43,15 +43,15 @@ export default function About() {
             </p>              
             <p>
 Previously offered courses:<ul class="list-basic">
-<li><Link href="">Letterform Archive</Link> - Type West:  Type Design, Jun–Aug 2022</li>
-<li><Link href="">Type@Cooper</Link> - Generative Typography, Feb–Apr 2022</li>
-<li><Link href="">Parsons School of Design</Link> - Type Design, Jan–May 2022</li>
-<li><Link href="">Typographics</Link> – Code x Typography Series, Jun 2021</li>
-<li><Link href="">Letterform Archive</Link> - Type West:  Type Design, Jun–Aug 2021</li>
-<li><Link href="">Parsons School of Design</Link> - Type Design, Jan–May 2021</li>
-<li><Link href="">Type@Cooper</Link> - Generative Typography, Oct–Dec 2020</li>
-<li><Link href="">Type@Cooper</Link> - Generative Typography, Jun–Jul 2020</li>
-<li><Link href="">Type@Cooper</Link> - Hand Lettering, Feb–Apr 2020</li>
+<li><Link href="https://letterformarchive.org/education/">Letterform Archive</Link> - Type West:  Type Design, Jun–Aug 2022</li>
+<li><Link href="http://coopertype.org/event/generative_type_sp2021">Type@Cooper</Link> - Generative Typography, Feb–Apr 2022</li>
+<li><Link href="https://courses.newschool.edu/courses/PSAM3010">Parsons School of Design</Link> - Type Design, Jan–May 2022</li>
+<li><Link href="https://2021.typographics.com/workshops/">Typographics</Link> – Code x Typography Series, Jun 2021</li>
+<li><Link href="https://letterformarchive.org/education/">Letterform Archive</Link> - Type West:  Type Design, Jun–Aug 2021</li>
+<li><Link href="https://courses.newschool.edu/courses/PSAM3010">Parsons School of Design</Link> - Type Design, Jan–May 2021</li>
+<li><Link href="http://coopertype.org/event/generative_type_fall2020">Type@Cooper</Link> - Generative Typography, Oct–Dec 2020</li>
+<li><Link href="http://coopertype.org/event/generative_typography">Type@Cooper</Link> - Generative Typography, Jun–Jul 2020</li>
+<li><Link href="http://coopertype.org/event/hand_lettering">Type@Cooper</Link> - Hand Lettering, Feb–Apr 2020</li>
 </ul>
             </p>
           </div>

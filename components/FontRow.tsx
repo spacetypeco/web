@@ -8,7 +8,9 @@ export default function FontRow({ label, classes }) {
     <div className={`flex-h-md flex-v-sm typetester-container ${classes}`}>
       <div className="flex-v typetester-info-container">
         <span className="typetester-label">{label}</span>
-        <Link href="https://google.com">Buy</Link>
+        <Link href="https://www.futurefonts.xyz/space-type-continuum/ampersandist">
+          Buy
+        </Link>
       </div>
       <span contentEditable className={classNames} spellCheck={false}>
         {label}
