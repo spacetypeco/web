@@ -79,7 +79,7 @@ h2 {
   font-size: 20px;
 }
 
-p, ul, li {
+p {
   text-transform: none;
   font-weight: 300;
   line-height: 1.5em;

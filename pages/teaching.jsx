@@ -25,8 +25,10 @@ export default function About() {
             </p>
             <hr/>
             <h2>Educational Resources</h2>
-            <p>
-              Foundations of Type Design @ { TypeDesignSchool }
+            <p>            
+              <ul class="list-basic">
+              <li>Foundations of Type Design @ { TypeDesignSchool }</li>
+              </ul>
             </p>
             <hr/>
             <h2>Past Student Projects</h2>
