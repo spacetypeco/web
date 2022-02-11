@@ -64,7 +64,9 @@ h5,
 h6,
 p,
 a,
-span {
+span,
+ul,
+li {
   font-family: "AdelleMonoFlex-Regular", monospace;
   color: white;
 }
