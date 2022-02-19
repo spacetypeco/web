@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Navigation from "../components/Navigation";
+import NewsletterSignup from "../components/NewsletterSignup";
 
 const TypeDesignSchool = <Link href="https://typedesignschool.com">typedesignschool.com</Link>
 const LetterformDesign = <Link href="https://letterformdesign.com">letterformdesign.com</Link>
@@ -23,17 +24,22 @@ export default function About() {
             diverse backgrounds, and personal stories that reflect the many ways
             we interact with language in physical and online spaces.
             </p>
+            <p>
+            If you would like to stay in the loop for future classes, sign up for our 
+            newsletter:
+            <NewsletterSignup/>
+            </p>
             <hr/>
             <h2>Educational Resources</h2>
             <p>            
-              <ul class="list-basic">
+              <ul className="list-basic">
               <li>Foundations of Type Design @ { TypeDesignSchool }</li>
               </ul>
             </p>
             <hr/>
             <h2>Past Student Projects</h2>
             <p>
-            <ul class="list-basic">
+            <ul className="list-basic">
               <li>Type Design & Lettering @ { LetterformDesign }</li>
               <li>Generative Typography @ { GenerativeType }</li>
             </ul>

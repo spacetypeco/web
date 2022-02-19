@@ -66,9 +66,21 @@ p,
 a,
 span,
 ul,
-li {
+li,
+input {
   font-family: "AdelleMonoFlex-Regular", monospace;
   color: white;
+}
+
+input {
+  background-color: #161616;
+  border-color: #ffffffbb;
+  outline: none;
+  border: none;
+  caret-color: white;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 0.8em;
 }
 
 h1 {
@@ -92,6 +104,10 @@ p {
 
 .subtext {
   font-size: 1em;
+}
+
+.minitext {
+  font-size: 0.7em;
 }
 
 hr {

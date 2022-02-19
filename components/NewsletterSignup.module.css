@@ -1,0 +1,42 @@
+.formContainer {
+  margin-top: 1rem;
+  margin-right: 1rem;
+  display: flex;
+  width: 100%;
+  max-width: 400px;
+}
+
+.messageContainer {
+  width: 100%;
+  max-width: 600px;
+}
+
+.emailInput {
+  width: calc(100% - 2.5rem);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border: 1px solid #ffffff99;
+}
+
+.emailInput:focus {
+  border: 1px solid white;
+}
+
+.mergeTable {
+  flex: 0 0 80%;
+}
+
+.formSubmitButton {
+  background: white;
+  color: black;
+  flex: 0 0 20%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.disabled {
+  opacity: 0.5;
+  cursor: default;
+}

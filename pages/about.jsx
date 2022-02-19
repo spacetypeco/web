@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from 'next/link'
 import Navigation from "../components/Navigation";
+import NewsletterSignup from "../components/NewsletterSignup";
 
 const LynneYun = <Link href="https://lynneyun.com">Lynne Yun</Link>;
 const KevinYeh = <Link href="http://kevbk.com">Kevin Yeh</Link>;
@@ -30,20 +31,24 @@ export default function About() {
             and connect the seams between type design and digital interaction. We offer retail typefaces, partner with institutions, and engage with communities through 
             workshops, classes, and donation-based resources.
             </p>
+            <p>
+              Stay in touch:
+            <NewsletterSignup/>
+            </p>
             <div className="flex-h flex-v-sm">
               <div className="flex-item-1-2 flex-item-sm-1">
                 <h3>Contact</h3>
-                <p class="subtext">
-                  <ul class="list-basic">
-                  <li>{ HelloSpaceType }</li>
-                  <li>{ Instagram }</li>
+                <p className="subtext">
+                  <ul className="list-basic">
+                    <li>{ HelloSpaceType }</li>
+                    <li>{ Instagram }</li>
                   </ul>
                 </p>
               </div>
               <div className="flex-item-1-2 flex-item-sm-1">
                 <h3>Services</h3>
-                <p class="subtext">
-                  <ul class="list-basic">
+                <p className="subtext">
+                  <ul className="list-basic">
                   <li>Brand Strategy</li>
                   <li>Identity Systems</li>
                   <li>Web and Digital Design</li>
