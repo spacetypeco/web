@@ -33,9 +33,9 @@ export default function About() {
             </p>
             <p>
               Stay in touch:
-            <NewsletterSignup/>
             </p>
-            <div className="flex-h flex-v-sm">
+              <NewsletterSignup/>
+            <div className="flex-h flex-v-sm" style={{ 'margin-top': '2rem '}}>
               <div className="flex-item-1-2 flex-item-sm-1">
                 <h3>Contact</h3>
                 <p className="subtext">
