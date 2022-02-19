@@ -459,15 +459,15 @@ a {
 }*/
 
 @media (max-width: 600px) {
-  /*.flex-v-xs {
-    display: flex;
-    flex-direction: column;
-  }*/
   .logo {
     margin-right: 0.5em;
   }
   .flex-item-sm-1 {
     flex: 1 1 100%;
+  }
+  .flex-v-xs {
+    display: flex;
+    flex-direction: column;
   }
   #nav-area {
     margin-left: 0.5em;

@@ -8,7 +8,7 @@ export default function Navigation({ active }) {
         <div className="logo">
           <a href="/">
             <img
-              src="/img/logo_white.png"
+              src="/img/logo_white.svg"
               style={{ width: "70px", height: "70px" }}
             />
           </a>

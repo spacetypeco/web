@@ -21,6 +21,12 @@ function NewsletterSignup({ status, message, subscribe }) {
     });
   };
 
+  const formContainerStyles = [
+    styles.formContainer,
+    "flex-h",
+    "flex-v-xs",
+  ].join(" ");
+
   const buttonStyles = disableSubmit
     ? [styles.formSubmitButton, styles.disabled].join(" ")
     : styles.formSubmitButton;
@@ -31,7 +37,7 @@ function NewsletterSignup({ status, message, subscribe }) {
   return (
     <div>
       <form onSubmit={handleSubmit} ref={formRef}>
-        <div className={styles.formContainer}>
+        <div className={formContainerStyles}>
           <div id="mergeTable" className={styles.mergeTable}>
             <div id="mergeRow-0">
               <div className="field-group">
