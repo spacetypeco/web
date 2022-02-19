@@ -25,8 +25,8 @@ function NewsletterSignup({ status, message, subscribe }) {
     ? [styles.formSubmitButton, styles.disabled].join(" ")
     : styles.formSubmitButton;
 
-  const success = status && status !== "error";
-  const messageToShow = success ? "You've been subscribed." : message;
+  const messageToShow =
+    status === "success" ? "Thank you for subscribing! 🎉" : message;
 
   return (
     <div>
