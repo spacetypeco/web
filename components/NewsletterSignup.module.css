@@ -34,7 +34,7 @@
   padding-right: 1rem;
   cursor: pointer;
   transition: opacity 0.2s;
-  max-width: 100px;
+  max-width: 110px;
 }
 
 .disabled {
