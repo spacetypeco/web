@@ -1,0 +1,41 @@
+# Build and deploy the website to GitHub Pages.
+#
+# This workflow is run on every commit to the main branch.
+#
+name: GH Pages deploy
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+env:
+  python-version: 3.9
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-python@v1
+        with:
+          python-version: ${{ env.python-version }}
+
+      - name: Install ghp-import
+        run: pip install ghp-import
+
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Build
+        run: npm run build
+
+      - name: Export
+        run: npm run export
+
+      - name: Copy admin files
+        run: cp CNAME LICENSE NOTICE out/
+
+      - name: Deploy
+        run: ghp-import -p -f -m "Update website to ${{ github.sha }}" out
