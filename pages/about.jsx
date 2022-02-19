@@ -4,7 +4,8 @@ import Navigation from "../components/Navigation";
 
 const LynneYun = <Link href="https://lynneyun.com">Lynne Yun</Link>;
 const KevinYeh = <Link href="http://kevbk.com">Kevin Yeh</Link>;
-const HelloSpaceType = <span className="email">hello@spacetypecontinuum.com</span>;
+const Instagram = <Link href="https://instagram.com/spacetypeco">Instagram</Link>;
+const HelloSpaceType = <span className="email">hello@spacetypeco.com</span>;
 
 export default function About() {
     return (
@@ -29,6 +30,30 @@ export default function About() {
             and connect the seams between type design and digital interaction. We offer retail typefaces, partner with institutions, and engage with communities through 
             workshops, classes, and donation-based resources.
             </p>
+            <div className="flex-h flex-v-sm">
+              <div className="flex-item-1-2 flex-item-sm-1">
+                <h3>Contact</h3>
+                <p class="subtext">
+                  <ul class="list-basic">
+                  <li>{ HelloSpaceType }</li>
+                  <li>{ Instagram }</li>
+                  </ul>
+                </p>
+              </div>
+              <div className="flex-item-1-2 flex-item-sm-1">
+                <h3>Services</h3>
+                <p class="subtext">
+                  <ul class="list-basic">
+                  <li>Brand Strategy</li>
+                  <li>Identity Systems</li>
+                  <li>Web and Digital Design</li>
+                  <li>Software Development</li>
+                  <li>Custom Type Design</li>
+                  <li>Retail Typeface Licensing</li>
+                  </ul>
+                  </p>
+              </div>
+            </div>
             </div>
             </div>
           </div>

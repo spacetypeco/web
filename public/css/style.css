@@ -79,11 +79,19 @@ h2 {
   font-size: 20px;
 }
 
+h3 {
+  font-size: 18px;
+}
+
 p {
   text-transform: none;
   font-weight: 300;
   line-height: 1.5em;
   font-size: 1.1em;
+}
+
+.subtext {
+  font-size: 1em;
 }
 
 hr {
@@ -375,6 +383,10 @@ a {
   max-width: 75%;
 }
 
+.flex-item-1-2 {
+  flex: 1 1 50%;
+}
+
 @media (max-width: 1048px) {
   p {
     font-size: 1em;
@@ -438,6 +450,9 @@ a {
   }*/
   .logo {
     margin-right: 0.5em;
+  }
+  .flex-item-sm-1 {
+    flex: 1 1 100%;
   }
   #nav-area {
     margin-left: 0.5em;
