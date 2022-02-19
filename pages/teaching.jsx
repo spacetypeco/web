@@ -32,14 +32,14 @@ export default function About() {
             <hr/>
             <h2>Educational Resources</h2>
             <p>            
-              <ul className="list-basic">
+              <ul className="list-basic subtext">
               <li>Foundations of Type Design @ { TypeDesignSchool }</li>
               </ul>
             </p>
             <hr/>
             <h2>Past Student Projects</h2>
             <p>
-            <ul className="list-basic">
+            <ul className="list-basic subtext">
               <li>Type Design & Lettering @ { LetterformDesign }</li>
               <li>Generative Typography @ { GenerativeType }</li>
             </ul>
@@ -50,7 +50,7 @@ export default function About() {
               We are planning on offering new workshops in fall 2022.
             </p>              
             <p>
-Previously offered courses:<ul class="list-basic">
+Previously offered courses:<ul class="list-basic subtext">
 <li><Link href="https://letterformarchive.org/education/">Letterform Archive</Link> - Type West:  Type Design, Jun–Aug 2022</li>
 <li><Link href="http://coopertype.org/event/generative_type_sp2021">Type@Cooper</Link> - Generative Typography, Feb–Apr 2022</li>
 <li><Link href="https://courses.newschool.edu/courses/PSAM3010">Parsons School of Design</Link> - Type Design, Jan–May 2022</li>
