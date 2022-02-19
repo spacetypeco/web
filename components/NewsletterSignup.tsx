@@ -15,6 +15,7 @@ function NewsletterSignup({ status, message, subscribe }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setDisableSubmit(true);
     subscribe({
       EMAIL: emailAddress,
     });
@@ -23,6 +24,9 @@ function NewsletterSignup({ status, message, subscribe }) {
   const buttonStyles = disableSubmit
     ? [styles.formSubmitButton, styles.disabled].join(" ")
     : styles.formSubmitButton;
+
+  const success = status && status !== "error";
+  const messageToShow = success ? "You've been subscribed." : message;
 
   return (
     <div>
@@ -54,11 +58,11 @@ function NewsletterSignup({ status, message, subscribe }) {
           />
         </div>
       </form>
-      {message && (
+      {messageToShow && (
         <div className={styles.messageContainer}>
           <p
             className="minitext"
-            dangerouslySetInnerHTML={{ __html: message }}
+            dangerouslySetInnerHTML={{ __html: messageToShow }}
           />
         </div>
       )}
