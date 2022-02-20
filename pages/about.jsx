@@ -6,7 +6,7 @@ import NewsletterSignup from "../components/NewsletterSignup";
 const LynneYun = <Link href="https://lynneyun.com">Lynne Yun</Link>;
 const KevinYeh = <Link href="http://kevbk.com">Kevin Yeh</Link>;
 const Instagram = <Link href="https://instagram.com/spacetypeco">Instagram</Link>;
-const HelloSpaceType = <span className="email"><Link href="mailto:hello@spacetypeco.com">hello@spacetypeco.com</Link></span>;
+const HelloSpaceType = <span><Link href="mailto:hello@spacetypeco.com">hello@spacetypeco.com</Link></span>;
 
 export default function About() {
     return (

@@ -28,16 +28,24 @@
 
 .formSubmitButton {
   background: white;
-  color: black;
+  color: var(--color-black);
   flex: 0 0 20%;
   padding-left: 1rem;
   padding-right: 1rem;
   cursor: pointer;
-  transition: opacity 0.2s;
   max-width: 110px;
+  border: none;
+  transition: background-color 0.2s, opacity 0.2s, border 0.2s, color 0.2s;
+}
+
+.formSubmitButton:hover:not(.disabled) {
+  background: var(--color-accent);
 }
 
 .disabled {
+  background: none;
+  border: 1px solid white;
+  color: white;
   opacity: 0.5;
   cursor: default;
 }

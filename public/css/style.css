@@ -1,3 +1,8 @@
+:root {
+  --color-black: #161616;
+  --color-accent: #37f79b;
+}
+
 html,
 body {
   margin: 0;
@@ -5,7 +10,7 @@ body {
   width: 100%;
   height: 100%;
   min-height: 100%;
-  background: #161616;
+  background: var(--color-black);
 }
 
 .hide-overflow {
@@ -72,7 +77,7 @@ input {
 }
 
 input {
-  background-color: #161616;
+  background-color: var(--color-black);
   border-color: #ffffffbb;
   outline: none;
   border: none;
@@ -239,7 +244,7 @@ a {
 }
 
 .content a {
-  color: #37f79b;
+  color: var(--color-accent);
 }
 
 .nav {
@@ -322,10 +327,6 @@ a {
 .about-contact {
   margin-bottom: 2em;
   color: white;
-}
-
-.email {
-  color: #37f79b;
 }
 
 #nav-area {
