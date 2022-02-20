@@ -249,7 +249,6 @@ a {
 
 .link {
   display: inline-block;
-  align-self: flex-start;
   color: white;
   font-size: 1em;
 }
@@ -344,6 +343,7 @@ a {
 #nav-box {
   display: flex;
   gap: 1.5em;
+  align-items: flex-start;
 }
 
 #play-box {
@@ -468,6 +468,9 @@ a {
   .flex-v-xs {
     display: flex;
     flex-direction: column;
+  }
+  #nav-box {
+    align-items: flex-end;
   }
   #nav-area {
     margin-left: 0.5em;
