@@ -45,5 +45,8 @@ jobs:
       - name: Copy admin files
         run: cp CNAME LICENSE NOTICE out/
 
+      - name: Prevent jekyll
+        run: touch out/.nojekyll
+
       - name: Deploy
         run: ghp-import -p -f -m "Update website to ${{ github.sha }}" out
