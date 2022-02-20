@@ -25,8 +25,7 @@ export default function About() {
             we interact with language in physical and online spaces.
             </p>
             <p>
-            If you would like to stay in the loop for future classes, sign up for our 
-            newsletter:
+            Sign up for our newsletter to stay in the loop for future announcements:
             <NewsletterSignup/>
             </p>
             <hr/>
