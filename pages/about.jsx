@@ -6,15 +6,11 @@ import NewsletterSignup from "../components/NewsletterSignup";
 const LynneYun = <Link href="https://lynneyun.com">Lynne Yun</Link>;
 const KevinYeh = <Link href="http://kevbk.com">Kevin Yeh</Link>;
 const Instagram = <Link href="https://instagram.com/spacetypeco">Instagram</Link>;
-const HelloSpaceType = <span className="email">hello@spacetypeco.com</span>;
+const HelloSpaceType = <span className="email"><Link href="mailto:hello@spacetypeco.com">hello@spacetypeco.com</Link></span>;
 
 export default function About() {
     return (
       <div>
-        <Head>
-          <link rel="stylesheet" type="text/css" href="css/style.css" />
-          <meta charset="utf-8" />
-        </Head>
         <main>
         <div id="container" className="full-w full-h position-rel">
           <Navigation active="/about" />
