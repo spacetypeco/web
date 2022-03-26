@@ -3,7 +3,7 @@ import Script from "next/script";
 
 export default function Home() {
   return (
-    <div className="thecontainer">
+    <>
       
       <Head>
         <link rel="icon" href="/favicon.ico" />
@@ -19,7 +19,7 @@ export default function Home() {
       <script  src="/js/sketches/path-tweaker/sketch-generator.js" />
       <script  src="/js/timer.js" />
       </Head>
-      <main>
+      <main className="full-w full-h">
         <div id="container" className="full-w full-h position-rel">
           <div id="canvas" className="full-w full-h"></div>
           <div id="nav" className="full-w full-h">
@@ -43,6 +43,6 @@ export default function Home() {
           </div>
         </div>
       </main>
-    </div>
+    </>
   );
 }

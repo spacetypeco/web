@@ -20,7 +20,7 @@ export default function About() {
             <p>
             Space Type is an NYC-based studio practice operating at the 
             intersection of type and technology. Led by { LynneYun } and { KevinYeh }, 
-            the studio specializes in experiental letterforms and web experiences.
+            the studio specializes in experiential letterforms and web experiences.
             </p>
             <p>
             We work with individuals and organizations to express unique narratives 
