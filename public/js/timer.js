@@ -1,4 +1,4 @@
-let sketches = [Blobs, Vortex, ParticleFill, PathTweaker];
+let sketches = [ShaderWag, Blobs, ParticleFill, PathTweaker];
 
 let lastSketchType = -1;
 let nextSketchType = 0;
