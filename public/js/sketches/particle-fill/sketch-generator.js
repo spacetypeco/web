@@ -94,15 +94,8 @@ ParticleFill = {
         points = points.map(centerPt);
         doDrawShapeOnTextLayer(textLayer);
 
-        // For mobile devices, reduce the number of points overall
-        // to improve performance.
-        const isMobile = window.matchMedia(
-          "only screen and (max-width: 760px)"
-        ).matches;
-
-        let stepScale = isMobile ? 0.5 : 1;
-        let step = initSize / (140 * stepScale);
-        pointRadius = initSize / (400 * stepScale);
+        let step = initSize / 140;
+        pointRadius = initSize / 400;
 
         let offset = 2;
 

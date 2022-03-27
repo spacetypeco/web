@@ -3,9 +3,9 @@ let sketches = [Blobs, ShaderWag, ParticleFill, PathTweaker];
 document.addEventListener("DOMContentLoaded", function (event) {
   let sketch1 = sketches[0].createSketch("canvas");
   new p5(sketch1, "canvas");
-  const isMobile = window.matchMedia(
-    "only screen and (max-width: 760px)"
-  ).matches;
+  const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(
+    navigator.userAgent
+  );
 
   if (!isMobile) {
     let sketch2 = sketches[1].createSketch("canvas2");
