@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
   let sketch1 = sketches[0].createSketch("canvas");
   new p5(sketch1, "canvas");
   const isMobile =
-    /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ||
-    /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.platform);
+    "ontouchstart" in document.documentElement &&
+    navigator.userAgent.match(/Mobi/);
 
   if (!isMobile) {
     let sketch2 = sketches[1].createSketch("canvas2");
