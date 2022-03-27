@@ -14,6 +14,7 @@ ShaderWag = {
       let fontSize;
 
       let initSize = 1600;
+      let updateLoopState;
 
       p.preload = function () {
         fonts = {
@@ -38,7 +39,6 @@ ShaderWag = {
       };
 
       function setFont() {
-        console.log("setfont");
         let aspect = p.width / p.height;
         if (aspect < 0.8) {
           font = fonts["narrow"].font;
@@ -55,7 +55,7 @@ ShaderWag = {
       p.setup = function () {
         let div = document.getElementById(divId);
         canvas = p.createCanvas(div.offsetWidth, div.clientHeight, p.WEBGL);
-        SpaceTypeUtils.manageLoopState(p, canvas);
+        updateLoopState = SpaceTypeUtils.manageLoopState(p, canvas);
         bgCanvas = p.createGraphics(p.width, p.height);
         p.noStroke();
         p.frameRate(frmRate);
@@ -117,7 +117,7 @@ ShaderWag = {
         let div = document.getElementById(divId);
         p.resizeCanvas(div.offsetWidth, div.clientHeight);
         refreshCanvas();
-        manageLoopState();
+        updateLoopState();
       };
     };
     return sketch;

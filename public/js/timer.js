@@ -9,4 +9,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
   new p5(sketch3, "canvas3");
   let sketch4 = sketches[3].createSketch("canvas4");
   new p5(sketch4, "canvas4");
+
+  document.querySelectorAll(".ct-btn-scroll").forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute("dest")).scrollIntoView({
+        behavior: "smooth",
+      });
+    });
+  });
 });

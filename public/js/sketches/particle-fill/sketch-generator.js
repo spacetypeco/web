@@ -2,8 +2,6 @@ ParticleFill = {
   targetBg: "#161616",
   createSketch: function (divId) {
     let sketch = function (p) {
-      let drawShape = false;
-
       let txt = "SPACETYPE";
       let fontSize = 0;
       let font;
@@ -14,6 +12,7 @@ ParticleFill = {
       let numBgParticles = 200;
       let bgParticles = [];
       let freeParticles = [];
+      let updateLoopState;
 
       let gridPts = [];
 
@@ -67,7 +66,7 @@ ParticleFill = {
       p.setup = function () {
         let div = document.getElementById(divId);
         let canvas = p.createCanvas(div.offsetWidth, div.clientHeight);
-        SpaceTypeUtils.manageLoopState(p, canvas);
+        updateLoopState = SpaceTypeUtils.manageLoopState(p, canvas);
 
         textLayer = p.createGraphics(p.width, p.height);
         initSize = p.min(p.width, p.height);
@@ -95,8 +94,15 @@ ParticleFill = {
         points = points.map(centerPt);
         doDrawShapeOnTextLayer(textLayer);
 
-        let step = initSize / 140;
-        pointRadius = initSize / 400;
+        // For mobile devices, reduce the number of points overall
+        // to improve performance.
+        const isMobile = window.matchMedia(
+          "only screen and (max-width: 760px)"
+        ).matches;
+
+        let stepScale = isMobile ? 0.5 : 1;
+        let step = initSize / (140 * stepScale);
+        pointRadius = initSize / (400 * stepScale);
 
         let offset = 2;
 
@@ -152,8 +158,6 @@ ParticleFill = {
             }
           }
         }
-
-        console.log(gridPts.length);
 
         let gridPtsCopy = JSON.parse(JSON.stringify(gridPts));
         while (gridPts.length > 0) {
@@ -261,8 +265,8 @@ ParticleFill = {
       p.windowResized = function () {
         let div = document.getElementById(divId);
         p.resizeCanvas(div.offsetWidth, div.clientHeight);
-
         scale = Math.min(p.width, p.height) / initSize;
+        updateLoopState();
       };
 
       class FreePoint {

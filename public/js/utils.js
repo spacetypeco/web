@@ -1,6 +1,6 @@
 function manageLoopState(p, canvas, options) {
   let looping = true;
-  function updateState() {
+  let updateState = () => {
     let bounds = canvas.elt.getBoundingClientRect();
     if (
       bounds.bottom - bounds.height / 2 > 0 &&
@@ -20,13 +20,14 @@ function manageLoopState(p, canvas, options) {
       p.noLoop();
       looping = false;
     }
-  }
+  };
 
   document
     .getElementById("sketches-container")
     .addEventListener("scroll", updateState);
 
   updateState();
+  return updateState;
 }
 
 SpaceTypeUtils = {

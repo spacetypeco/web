@@ -9,6 +9,7 @@ PathTweaker = {
       let fonts;
       let font;
       let path;
+      let updateLoopState;
 
       let historyLayer;
       let drawLayer;
@@ -132,7 +133,7 @@ PathTweaker = {
       p.setup = function () {
         let div = document.getElementById(divId);
         let canvas = p.createCanvas(div.offsetWidth, div.clientHeight);
-        SpaceTypeUtils.manageLoopState(p, canvas, {
+        updateLoopState = SpaceTypeUtils.manageLoopState(p, canvas, {
           onLoop: () => (lastMillis = p.millis()),
         });
 
@@ -294,6 +295,7 @@ PathTweaker = {
         uiLayer.resizeCanvas(p.width, p.height);
         scale = Math.min(p.width, p.height) / initSize;
         lastWindowResize = p.millis();
+        updateLoopState();
       };
 
       function refreshCanvas() {

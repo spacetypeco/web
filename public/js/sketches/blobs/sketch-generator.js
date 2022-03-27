@@ -8,6 +8,7 @@ Blobs = {
       let Constraint = Matter.Constraint;
 
       let lastWindowResize;
+      let updateLoopState;
 
       let engine;
       let world;
@@ -45,7 +46,7 @@ Blobs = {
       p.setup = function () {
         let div = document.getElementById(divId);
         let canvas = p.createCanvas(div.offsetWidth, div.clientHeight);
-        SpaceTypeUtils.manageLoopState(p, canvas);
+        updateLoopState = SpaceTypeUtils.manageLoopState(p, canvas);
 
         engine = Engine.create();
         world = engine.world;
@@ -205,9 +206,9 @@ Blobs = {
       p.windowResized = function () {
         let div = document.getElementById(divId);
         p.resizeCanvas(div.offsetWidth, div.clientHeight);
-
         scale = Math.min(p.width, p.height) / initSize;
         lastWindowResize = p.millis();
+        updateLoopState();
       };
 
       function setFont() {
