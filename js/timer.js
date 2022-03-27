@@ -19,6 +19,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
       let elem = document.getElementById(elemName);
       elem.style.display = "none";
     }
+
+    document.querySelector("#canvas > a").style.display = "none";
   }
 
   document.querySelectorAll(".ct-btn-scroll").forEach((anchor) => {
