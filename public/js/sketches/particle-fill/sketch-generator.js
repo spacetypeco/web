@@ -27,11 +27,11 @@ ParticleFill = {
         fonts = {
           wide: {
             font: p.loadFont(`fonts/SpaceTypeSans-wide.otf`),
-            scale: (initSize) => initSize,
+            scale: (initSize) => (2 * initSize) / 3,
           },
           regular: {
             font: p.loadFont(`fonts/SpaceTypeSans-Regular.otf`),
-            scale: (initSize) => initSize,
+            scale: (initSize) => (11 * initSize) / 12,
           },
           narrow: {
             font: p.loadFont(`fonts/SpaceTypeSans-narrow.otf`),
@@ -67,6 +67,7 @@ ParticleFill = {
       p.setup = function () {
         let div = document.getElementById(divId);
         let canvas = p.createCanvas(div.offsetWidth, div.clientHeight);
+        SpaceTypeUtils.manageLoopState(p, canvas);
 
         textLayer = p.createGraphics(p.width, p.height);
         initSize = p.min(p.width, p.height);
@@ -94,8 +95,8 @@ ParticleFill = {
         points = points.map(centerPt);
         doDrawShapeOnTextLayer(textLayer);
 
-        let step = initSize / 70;
-        pointRadius = initSize / 300;
+        let step = initSize / 140;
+        pointRadius = initSize / 400;
 
         let offset = 2;
 
@@ -123,7 +124,9 @@ ParticleFill = {
 
           let numPoints = lastX - firstX / step;
 
-          for (let i = 0; i < numPoints; i++) {
+          // This should just be numPoints but it's broken
+          // so hack it with 3*
+          for (let i = 0; i < 3 * numPoints; i++) {
             let x = firstX + pointRadius + i * step;
             let col = textLayer.get(x, y)[0];
             let lastColor = textLayer.get(x - step, y)[0];
@@ -149,6 +152,8 @@ ParticleFill = {
             }
           }
         }
+
+        console.log(gridPts.length);
 
         let gridPtsCopy = JSON.parse(JSON.stringify(gridPts));
         while (gridPts.length > 0) {

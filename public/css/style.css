@@ -171,9 +171,6 @@ hr {
 }
 
 #canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
   -webkit-animation-duration: 1s;
@@ -452,6 +449,18 @@ a {
   .typetester {
     font-size: 3.5em;
   }
+}
+
+#sketches-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  background-color: #161616;
+}
+
+.sketch-container {
+  scroll-snap-align: start;
+  position: relative;
+  background-color: #161616;
 }
 
 /*#nav-menu {

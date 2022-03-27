@@ -8,6 +8,7 @@
     <script src="js/p5.func.min.js"></script>
 
     <script src="js/sketches/blobs/point.js"></script>
+    <script src="js/utils.js"></script>
     <script src="js/sketches/blobs/sketch-generator.js"></script>
     <script src="js/sketches/particle-fill/sketch-generator.js"></script>
     <script src="js/sketches/vortex/sketch-generator.js"></script>
@@ -19,7 +20,12 @@
   </head>
   <body class="hide-overflow">
     <div id="container" class="full-w full-h position-rel">
-      <div id="canvas" class="full-w full-h"></div>
+      <div id="sketches-container" class="full-w full-h position-abs">
+        <div id="canvas" class="sketch-container full-w full-h"></div>
+        <div id="canvas2" class="sketch-container full-w full-h"></div>
+        <div id="canvas3" class="sketch-container full-w full-h"></div>
+        <div id="canvas4" class="sketch-container full-w full-h"></div>
+      </div>
       <div class="flex-h flex-end nav full-w full-h">
         <div class="flex-v flex-between full-h controls">
           <div id="nav-area">

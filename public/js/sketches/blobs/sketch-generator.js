@@ -44,7 +44,8 @@ Blobs = {
 
       p.setup = function () {
         let div = document.getElementById(divId);
-        p.createCanvas(div.offsetWidth, div.clientHeight);
+        let canvas = p.createCanvas(div.offsetWidth, div.clientHeight);
+        SpaceTypeUtils.manageLoopState(p, canvas);
 
         engine = Engine.create();
         world = engine.world;

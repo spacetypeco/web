@@ -12,6 +12,7 @@ uniform sampler2D tex;
 // vectors and floats coming from sketch.js
 uniform vec2 u_resolution;
 uniform float u_frame;
+uniform float blah;
 // float u_frame = 1.0;
 uniform vec2 u_mouse;
 
@@ -62,17 +63,17 @@ void main() {
     pos = rotate2d( noise(pos) ) * pos;
 
     // Draw lines
-    float pattern = lines(pos, 0.01);
-    vec4 noiseTex = vec4(vec3(pattern),1.0);
+    float pattern = lines(pos, 0.03);
+    vec4 noiseTex = vec4(vec3(pattern),1.0); 
     float avg = dot(noiseTex.rgb, vec3(.03));
     // then spread it between -1 and 1
     // avg = avg * 2.0 - 1.0;
-    avg = avg * 1.5 - 0.07;
+    avg = avg * 1.5 - 0.07; // <---
     // we will displace the image by some amt
     // float dispX = avg/20.*sin(u_frame);
     // float dispY = avg/20.*cos(u_frame);
-    float dispX = avg/10.*u_frame;
-    float dispY = avg*u_frame*4.;
+    float dispX = avg/1.*u_frame;
+    float dispY = avg*u_frame*3.;
 
     // vec4 newTex = texture2D(tex, vec2(uv.x-dispX,uv.y+dispY));
     
