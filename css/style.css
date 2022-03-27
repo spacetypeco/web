@@ -5,6 +5,7 @@
 
 html,
 body {
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -171,9 +172,6 @@ hr {
 }
 
 #canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
   -webkit-animation-duration: 1s;
@@ -452,6 +450,44 @@ a {
   .typetester {
     font-size: 3.5em;
   }
+}
+
+#sketches-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  background-color: #161616;
+  scroll-behavior: smooth;
+}
+
+.sketch-container {
+  scroll-snap-align: start;
+  position: relative;
+  background-color: #161616;
+}
+
+.ct-btn-scroll {
+  width: 49px;
+  height: 49px;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding-top: 500px;
+  z-index: 9;
+  border-radius: 50%;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out, opacity 0.1s ease-in-out;
+  mix-blend-mode: difference;
+  opacity: 50%;
+}
+
+.ct-btn-scroll:hover {
+  cursor: pointer;
+}
+
+.ct-btn-scroll:hover {
+  opacity: 100%;
 }
 
 /*#nav-menu {

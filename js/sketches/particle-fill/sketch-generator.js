@@ -2,8 +2,6 @@ ParticleFill = {
   targetBg: "#161616",
   createSketch: function (divId) {
     let sketch = function (p) {
-      let drawShape = false;
-
       let txt = "SPACETYPE";
       let fontSize = 0;
       let font;
@@ -14,6 +12,7 @@ ParticleFill = {
       let numBgParticles = 200;
       let bgParticles = [];
       let freeParticles = [];
+      let updateLoopState;
 
       let gridPts = [];
 
@@ -27,11 +26,11 @@ ParticleFill = {
         fonts = {
           wide: {
             font: p.loadFont(`fonts/SpaceTypeSans-wide.otf`),
-            scale: (initSize) => initSize,
+            scale: (initSize) => (2 * initSize) / 3,
           },
           regular: {
             font: p.loadFont(`fonts/SpaceTypeSans-Regular.otf`),
-            scale: (initSize) => initSize,
+            scale: (initSize) => (11 * initSize) / 12,
           },
           narrow: {
             font: p.loadFont(`fonts/SpaceTypeSans-narrow.otf`),
@@ -67,6 +66,7 @@ ParticleFill = {
       p.setup = function () {
         let div = document.getElementById(divId);
         let canvas = p.createCanvas(div.offsetWidth, div.clientHeight);
+        updateLoopState = SpaceTypeUtils.manageLoopState(p, canvas);
 
         textLayer = p.createGraphics(p.width, p.height);
         initSize = p.min(p.width, p.height);
@@ -94,8 +94,15 @@ ParticleFill = {
         points = points.map(centerPt);
         doDrawShapeOnTextLayer(textLayer);
 
-        let step = initSize / 70;
-        pointRadius = initSize / 300;
+        // For mobile devices, reduce the number of points overall
+        // to improve performance.
+        const isMobile = window.matchMedia(
+          "only screen and (max-width: 760px)"
+        ).matches;
+
+        let stepScale = isMobile ? 0.5 : 1;
+        let step = initSize / (140 * stepScale);
+        pointRadius = initSize / (400 * stepScale);
 
         let offset = 2;
 
@@ -123,7 +130,9 @@ ParticleFill = {
 
           let numPoints = lastX - firstX / step;
 
-          for (let i = 0; i < numPoints; i++) {
+          // This should just be numPoints but it's broken
+          // so hack it with 3*
+          for (let i = 0; i < 3 * numPoints; i++) {
             let x = firstX + pointRadius + i * step;
             let col = textLayer.get(x, y)[0];
             let lastColor = textLayer.get(x - step, y)[0];
@@ -256,8 +265,8 @@ ParticleFill = {
       p.windowResized = function () {
         let div = document.getElementById(divId);
         p.resizeCanvas(div.offsetWidth, div.clientHeight);
-
         scale = Math.min(p.width, p.height) / initSize;
+        updateLoopState();
       };
 
       class FreePoint {

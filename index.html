@@ -5,19 +5,99 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/kyeah/p5@master/utils/text-utils.js"></script>
     <script src="js/matter-0_14_2.min.js"></script>
+    <script src="js/p5.func.min.js"></script>
 
     <script src="js/sketches/blobs/point.js"></script>
+    <script src="js/utils.js"></script>
     <script src="js/sketches/blobs/sketch-generator.js"></script>
     <script src="js/sketches/particle-fill/sketch-generator.js"></script>
     <script src="js/sketches/vortex/sketch-generator.js"></script>
     <script src="js/sketches/path-tweaker/sketch-generator.js"></script>
+    <script src="js/sketches/shader-wag/sketch-generator.js"></script>
     <script src="js/timer.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <meta charset="utf-8" />
   </head>
   <body class="hide-overflow">
     <div id="container" class="full-w full-h position-rel">
-      <div id="canvas" class="full-w full-h"></div>
+      <div id="sketches-container" class="full-w full-h position-abs">
+        <div id="canvas" class="sketch-container full-w full-h">
+          <a class="ct-btn-scroll ct-js-btn-scroll" dest="#canvas2">
+            <svg
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              width="30.727px"
+              height="30.727px"
+              viewBox="0 0 30.727 30.727"
+              style="enable-background: new 0 0 30.727 30.727"
+              xml:space="preserve"
+            >
+              <g>
+                <path
+                  d="M29.994,10.183L15.363,24.812L0.733,10.184c-0.977-0.978-0.977-2.561,0-3.536c0.977-0.977,2.559-0.976,3.536,0
+		l11.095,11.093L26.461,6.647c0.977-0.976,2.559-0.976,3.535,0C30.971,7.624,30.971,9.206,29.994,10.183z"
+                  fill="#FFFFFF"
+                />
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div id="canvas2" class="sketch-container full-w full-h">
+          <a class="ct-btn-scroll ct-js-btn-scroll" dest="#canvas3">
+            <svg
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              width="30.727px"
+              height="30.727px"
+              viewBox="0 0 30.727 30.727"
+              style="enable-background: new 0 0 30.727 30.727"
+              xml:space="preserve"
+            >
+              <g>
+                <path
+                  d="M29.994,10.183L15.363,24.812L0.733,10.184c-0.977-0.978-0.977-2.561,0-3.536c0.977-0.977,2.559-0.976,3.536,0
+                l11.095,11.093L26.461,6.647c0.977-0.976,2.559-0.976,3.535,0C30.971,7.624,30.971,9.206,29.994,10.183z"
+                  fill="#FFFFFF"
+                />
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div id="canvas3" class="sketch-container full-w full-h">
+          <a class="ct-btn-scroll ct-js-btn-scroll" dest="#canvas4">
+            <svg
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              width="30.727px"
+              height="30.727px"
+              viewBox="0 0 30.727 30.727"
+              style="enable-background: new 0 0 30.727 30.727"
+              xml:space="preserve"
+            >
+              <g>
+                <path
+                  d="M29.994,10.183L15.363,24.812L0.733,10.184c-0.977-0.978-0.977-2.561,0-3.536c0.977-0.977,2.559-0.976,3.536,0
+		l11.095,11.093L26.461,6.647c0.977-0.976,2.559-0.976,3.535,0C30.971,7.624,30.971,9.206,29.994,10.183z"
+                  fill="#FFFFFF"
+                />
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div id="canvas4" class="sketch-container full-w full-h"></div>
+      </div>
       <div class="flex-h flex-end nav full-w full-h">
         <div class="flex-v flex-between full-h controls">
           <div id="nav-area">
@@ -26,14 +106,6 @@
               <a href="/teaching" class="fade-in link">Teaching</a>
               <a href="/about" class="fade-in link">About</a>
             </div>
-          </div>
-          <div class="sketch-controls flex-v flex-end-a">
-            <div id="flex-h">
-              <div id="play-box">
-                <img id="play" href="" class="fade-in" src="img/pause.svg" style="position:absolute;width:19.5px"></a>
-              </div>
-            </div>
-            <div id="progress" class="fade-in"></div>
           </div>
         </div>
       </div>

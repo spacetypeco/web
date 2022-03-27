@@ -3,10 +3,13 @@ PathTweaker = {
   createSketch: function (divId) {
     let sketch = function (p) {
       let txt = "SPACETYPE";
+      let activeSketchMillis = 0;
+      let lastMillis;
       let p5font;
       let fonts;
       let font;
       let path;
+      let updateLoopState;
 
       let historyLayer;
       let drawLayer;
@@ -48,10 +51,11 @@ PathTweaker = {
 
         if (!startedAt) {
           startedAt = p.millis();
+          activeSketchMillis = 0;
         }
 
         let max = Math.round(
-          p.map(p.millis(), startedAt, startedAt + 4000, 0, cmds.length)
+          p.map(activeSketchMillis, 0, 4000, 0, cmds.length)
         );
 
         let i = 0;
@@ -129,6 +133,10 @@ PathTweaker = {
       p.setup = function () {
         let div = document.getElementById(divId);
         let canvas = p.createCanvas(div.offsetWidth, div.clientHeight);
+        updateLoopState = SpaceTypeUtils.manageLoopState(p, canvas, {
+          onLoop: () => (lastMillis = p.millis()),
+        });
+
         drawLayer = p.createGraphics(p.width, p.height);
         historyLayer = p.createGraphics(p.width, p.height);
         uiLayer = p.createGraphics(p.width, p.height);
@@ -220,6 +228,12 @@ PathTweaker = {
       }
 
       p.draw = function () {
+        if (lastMillis) {
+          activeSketchMillis += p.millis() - lastMillis;
+        }
+
+        lastMillis = p.millis();
+
         if (lastWindowResize && p.millis() - lastWindowResize > 200) {
           refreshCanvas();
           lastWindowResize = null;
@@ -281,6 +295,7 @@ PathTweaker = {
         uiLayer.resizeCanvas(p.width, p.height);
         scale = Math.min(p.width, p.height) / initSize;
         lastWindowResize = p.millis();
+        updateLoopState();
       };
 
       function refreshCanvas() {
