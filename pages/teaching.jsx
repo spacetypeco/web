@@ -46,7 +46,11 @@ export default function About() {
             <hr/>
             <h2>Workshops</h2>
             <p>
-              We are planning on offering new workshops in fall 2022.
+              <ul className="list-basic subtext">
+              <li><Link href="https://2022.typographics.com/workshops/">Typographics</Link> - Code x Kinetic Type, Jun 13-15 2022</li>
+              <li><Link href="https://letterformarchive.org/events/view/designing-flourishes2">Letterform Archive</Link> - Flourishing, Jun 22–23 2022</li>
+              <li><Link href="https://letterformarchive.org/events/view/in-person-core-prototyping-letterforms">Letterform Archive</Link> - Prototyping Letterforms, Jun 25–26 2022</li>
+              </ul>
             </p>              
             <p>
 Previously offered courses:<ul className="list-basic subtext">
