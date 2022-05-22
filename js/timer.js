@@ -1,6 +1,8 @@
 let sketches = [Blobs, ShaderWag, ParticleFill, PathTweaker];
+console.log("load");
 
 document.addEventListener("DOMContentLoaded", function (event) {
+  console.log("test");
   let sketch1 = sketches[0].createSketch("canvas");
   new p5(sketch1, "canvas");
   const isMobile =
