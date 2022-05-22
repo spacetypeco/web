@@ -1,19 +1,9 @@
-import Head from "next/head";
 import ScrollButton from "../components/ScrollButton"
 require("../util/utils.js");
-
-const scrollButton = require('../components/ScrollButton.tsx');
-
-let loaded = 0;
 
 export default function Home() {
   return (
     <>
-      
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="stylesheet" type="text/css" href="/css/style.css" />
-      </Head>
       <script  src="https://cdn.jsdelivr.net/npm/opentype.js@latest/dist/opentype.min.js" />
       <script  src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js" />
       <script  src="https://cdn.jsdelivr.net/gh/kyeah/p5@master/utils/text-utils.js" />

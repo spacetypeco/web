@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Link from "next/link";
 import Navigation from "../components/Navigation";
 import NewsletterSignup from "../components/NewsletterSignup";
@@ -7,7 +8,11 @@ const LetterformDesign = <Link href="https://letterformdesign.com">letterformdes
 const GenerativeType = <Link href="https://generativetype.com">generativetype.com</Link>
 
 export default function About() {
-  return (
+  return (<>
+    <Head>
+      <title>Space Type - Teaching</title>
+      <meta property="og:title" content="Space Type - Teaching" />
+    </Head>
     <main>
       <div id="container" className="full-w full-h position-rel">
         <Navigation active="/teaching" />
@@ -69,5 +74,6 @@ Previously offered courses:<ul className="list-basic subtext">
         </div>
       </div>
     </main>
+    </>
   );
 }

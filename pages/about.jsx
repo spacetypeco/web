@@ -10,6 +10,11 @@ const HelloSpaceType = <span><Link href="mailto:hello@spacetypeco.com">hello@spa
 
 export default function About() {
     return (
+    <>
+      <Head>
+        <title>Space Type - About</title>
+        <meta property="og:title" content="Space Type - About" />
+      </Head>
       <div>
         <main>
         <div id="container" className="full-w full-h position-rel">
@@ -60,5 +65,6 @@ export default function About() {
           </div>
         </main>
      </div>
+     </>
   )
 }

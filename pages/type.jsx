@@ -1,8 +1,14 @@
 import FontRow from "../components/FontRow";
+import Head from "next/head";
 import Navigation from "../components/Navigation";
 
 export default function Type() {
   return (
+    <>
+      <Head>
+        <title>Space Type - Typefaces</title>
+        <meta property="og:title" content="Space Type - Typefaces" />
+      </Head>
   <main>
     <div id="container" className="full-w full-h position-rel">
 
@@ -22,6 +28,7 @@ export default function Type() {
       </div>
     </div>
   </main>
+  </>
 );
     
 }
