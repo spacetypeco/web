@@ -15,14 +15,14 @@ export default function Type() {
       <Navigation active="/type" />
       <div id="about">
       <div className="content">
-        <div class="flex-v full-w typetester-content-container">
+        <div className="flex-v full-w typetester-content-container">
           <FontRow label="Ampersandist Light" classes="fade-in"/>
           <hr/>
           <FontRow label="Ampersandist Medium" classes="fade-in delay-1"/>
           <hr className="fade-in delay-1"/>
           <FontRow label="Ampersandist Black" classes="fade-in delay-2"/>
           <hr className="fade-in delay-2"/>
-          <span class="fade-in and-more delay-3">& ... more coming soon!</span>
+          <span className="fade-in and-more delay-3">& ... more coming soon!</span>
         </div>
       </div>
       </div>
