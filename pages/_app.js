@@ -6,6 +6,7 @@
 
 import "../styles/app.css";
 
+import Footer from "../components/Footer";
 import Head from "next/head";
 import { useRouter } from "next/router";
 
@@ -42,6 +43,8 @@ function App({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <link rel="stylesheet" type="text/css" href="/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="/css/footer.css" />
+
         <meta charSet="utf-8" />
         <link
           rel="apple-touch-icon"
@@ -66,6 +69,7 @@ function App({ Component, pageProps }) {
         <meta name="theme-color" content="#FFFFFF" />
       </Head>
       <Component {...pageProps} />
+      <Footer />
     </>
   );
 }

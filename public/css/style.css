@@ -1,5 +1,6 @@
 :root {
   --color-black: #161616;
+  --color-white: white;
   --color-accent: #37f79b;
 }
 
@@ -99,6 +100,10 @@ h2 {
 
 h3 {
   font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
 }
 
 p {
