@@ -254,7 +254,7 @@ a {
 .link {
   display: inline-block;
   color: white;
-  font-size: 1em;
+  font-size: 0.9em;
 }
 
 .link.active {
