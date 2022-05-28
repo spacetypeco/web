@@ -1,3 +1,4 @@
+import Navigation from "../components/Navigation";
 import ScrollButton from "../components/ScrollButton"
 require("../util/utils.js");
 
@@ -38,17 +39,7 @@ export default function Home() {
         </div>
         <div id="canvas4" className="sketch-container full-w full-h"></div>
       </div>
-      <div className="flex-h flex-end nav full-w full-h">
-        <div className="flex-v flex-between full-h controls">
-          <div id="nav-area">
-            <div id="nav-box">
-              <a href="/type" className="fade-in link">Type Foundry</a>
-              <a href="/teaching" className="fade-in link">Teaching</a>
-              <a href="/about" className="fade-in link">About</a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Navigation positionAbsolute={true} />
     </div>
   </div>
     </>

@@ -12,7 +12,7 @@ export default function Type() {
   <main>
     <div id="container" className="full-w full-h position-rel">
 
-      <Navigation active="/type" />
+      <Navigation active="/typefaces" />
       <div id="about">
       <div className="content">
         <div className="flex-v full-w typetester-content-container">
