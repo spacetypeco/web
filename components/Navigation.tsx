@@ -21,6 +21,9 @@ export default function Navigation({ active, positionAbsolute = false }) {
       <div className="controls">
         <div id="nav-area">
           <div id="nav-box" className="flex-v-xs">
+            <div className={active === "/work" ? "link active" : "link"}>
+              <Link href="/work">Work</Link>
+            </div>
             <div className={active === "/typefaces" ? "link active" : "link"}>
               <Link href="/typefaces">Typefaces</Link>
             </div>
