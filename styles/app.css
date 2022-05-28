@@ -62,3 +62,13 @@
 .project-grid .tile-h-6 {
   grid-column-end: span 6;
 }
+
+.project-hover-overlay {
+  align-items: center;
+  justify-content: center;
+  background-color: #00000066;
+}
+
+.project-title {
+
+}
