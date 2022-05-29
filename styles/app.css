@@ -100,6 +100,7 @@
   max-width: 750px;
   color: #ffffffaa;
   text-align: left;
+  padding-bottom: 2em;
 }
 
 @media (max-width: 768px) {
@@ -107,6 +108,13 @@
     padding-top: 2em;
     padding-left: 2em;
     padding-right: 2em;
+  }
+  .tile-w-6 {
+    grid-row-end: span 12;
+  }
+  
+  .tile-h-6 {
+    grid-column-end: span 12;
   }
 }
 

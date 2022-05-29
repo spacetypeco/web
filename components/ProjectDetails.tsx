@@ -126,7 +126,7 @@ export default function ProjectDetails({
               </div>
             </section>
           </div>
-          <div className="parallax__group content">
+          <div className="parallax__group">
             <section
               className="width-1200 content parallax__layer parallax__layer--base flex-v"
               style={{
