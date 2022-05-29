@@ -536,3 +536,22 @@ a {
     display: flex;
   }*/
 }
+
+.project-details h1 {
+  font-size: 50px;
+}
+
+.project-details h2 {
+  font-size: 40px;
+}
+
+.project-details h3 {
+  font-size: 30px;
+}
+
+.project-details p {
+  text-transform: none;
+  font-weight: 300;
+  line-height: 1.5em;
+  font-size: 1.1em;
+}
