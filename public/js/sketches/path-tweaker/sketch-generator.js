@@ -289,6 +289,11 @@ PathTweaker = {
 
       p.windowResized = function () {
         let div = document.getElementById(divId);
+        if (!div) {
+          // div may have been removed as part of a next.js page transition — return silently.
+          return;
+        }
+
         p.resizeCanvas(div.offsetWidth, div.clientHeight);
         drawLayer.resizeCanvas(p.width, p.height);
         historyLayer.resizeCanvas(p.width, p.height);
