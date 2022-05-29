@@ -2,7 +2,6 @@ import { useEffect, useRef } from "react";
 
 import Head from "next/head";
 import Navigation from "./Navigation";
-import Script from "next/script";
 
 const fadeOnScroll = () => {
   const element = document.getElementsByClassName("header")[0];

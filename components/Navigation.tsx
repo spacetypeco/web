@@ -1,10 +1,17 @@
 // import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function Navigation({ active, positionAbsolute = false }) {
   const classes = `flex-h flex-end nav full-w ${
     positionAbsolute ? "position-abs-lg" : ""
   }`;
+
+  const router = useRouter();
+
+  console.log(router.pathname);
+
+  const inWork = router.pathname.match(/\/work\/.+$/);
 
   return (
     <div className={classes} style={{ zIndex: 1 }}>
@@ -15,6 +22,16 @@ export default function Navigation({ active, positionAbsolute = false }) {
             style={{ width: "70px", height: "70px" }}
           />
         </a>
+        {inWork && (
+          <a
+            className="nav-back"
+            onClick={() => {
+              router.query.fromWork ? router.back() : router.push("/work");
+            }}
+          >
+            ← work
+          </a>
+        )}
       </div>
       <div id="nav-area">
         <div id="nav-box" className="flex-v-xs">

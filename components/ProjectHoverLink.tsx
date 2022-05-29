@@ -1,12 +1,17 @@
 import Link from "next/link";
 import useHover from "../hooks/useHover.jsx";
+import { useRouter } from "next/router";
 
 export default function ProjectHoverLink({ href, title, ...props }) {
   const [hovered, eventHandlers] = useHover();
   const show = hovered ? "flex" : "none";
 
+  const router = useRouter();
+
+  const fullLink = `${href}?fromWork=true`;
+
   return (
-    <Link href={href}>
+    <Link href={fullLink} as={href}>
       <a
         className="full-w full-h position-rel"
         style={{

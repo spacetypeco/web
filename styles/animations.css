@@ -11,7 +11,7 @@
 @keyframes slideDown {
   0% {
     transform: translateY(-40px);
-    opacity: 1;
+    opacity: 0;
   }
   100% {
     transform: translateY(0);
@@ -22,8 +22,8 @@
 .project-title span {
   display: inline-block;
   position: relative;
-  overflow: hidden;
   transform: translateY(-40px);
+  opacity: 0;
 }
 
 .slide-up-on-scroll-1 {
