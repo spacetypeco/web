@@ -7,7 +7,7 @@ export default function Works() {
     <>
       <Head>
         <title>Space Type - Work</title>
-        <meta property="og:title" content="Space Type - Teaching" />
+        <meta property="og:title" content="Space Type - Work" />
       </Head>
       <main>
         <div id="container" className="full-w full-h position-rel">

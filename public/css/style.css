@@ -1,6 +1,7 @@
 :root {
   --color-black: #161616;
   --color-accent: #37f79b;
+  --color-white: #f7f7f7;
 }
 
 html,
@@ -144,12 +145,18 @@ hr {
 }
 
 .full-vw {
-  width: 100%;
+  width: 100vw;
 }
 
 .full-vh {
-  height: 100%;
+  height: 100vh;
 }
+
+.full-vh-lg {
+  height: 100vh;
+}
+
+
 
 .full-w {
   width: 100%;
@@ -164,6 +171,10 @@ hr {
 }
 
 .position-abs {
+  position: absolute;
+}
+
+.position-abs-lg {
   position: absolute;
 }
 
@@ -247,8 +258,8 @@ a {
 }
 
 .nav {
-  display: block;
   width: 100%;
+  justify-content: space-between;
 }
 
 .link {
@@ -276,9 +287,6 @@ a {
   background-repeat: no-repeat;
 }
 
-.controls {
-  float: right;
-}
 .link a {
   transition: color 0.2s;
 }
@@ -414,7 +422,6 @@ a {
 
 .logo {
   margin: 2em;
-  float: left;
   opacity: 100%;
   border-radius: 25px;
   transition: opacity 0.1s;
@@ -450,6 +457,12 @@ a {
   }
   .typetester {
     font-size: 3.5em;
+  }
+  .full-vh-lg {
+    height: unset;
+  }
+  .position-abs-lg {
+    position: relative;
   }
 }
 
