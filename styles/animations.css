@@ -1,0 +1,43 @@
+@keyframes slideUp {
+  0% {
+    transform: translateY(40px);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.project-title span {
+  opacity: 0;
+  display: inline-block;
+  position: relative;
+}
+
+.slide-up-on-scroll-1 {
+  opacity: 0;
+}
+
+.slide-up-on-scroll-1-4 {
+  opacity: 0;
+}
+
+.slide-up {
+  opacity: 0;
+  animation: slideUp ease .4s forwards;
+}
+
+.slide-down {
+  animation: slideDown ease .4s forwards;
+}

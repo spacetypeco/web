@@ -1,9 +1,10 @@
+import { useEffect, useRef } from "react";
+
 import Head from "next/head";
 import Navigation from "./Navigation";
 import Script from "next/script";
-import { useEffect } from "react";
 
-const fadeOnScroll = (event) => {
+const fadeOnScroll = () => {
   const element = document.getElementsByClassName("header")[0];
   var distanceToTop = window.pageYOffset + element.getBoundingClientRect().top;
 
@@ -29,15 +30,80 @@ export default function ProjectDetails({
   const pageTitle = `Space Type - ${title}`;
 
   useEffect(() => {
-    let s = () => console.log("scroll");
-    if (typeof window !== "undefined") {
-      console.log("attaching");
-      document.querySelectorAll(".parallax").forEach((element) => {
-        console.log(element);
-        element.addEventListener("scroll", fadeOnScroll);
-      });
-    }
-    return () => window.removeEventListener("scroll", s);
+    fadeOnScroll();
+    document.querySelectorAll(".parallax").forEach((element) => {
+      element.addEventListener("scroll", fadeOnScroll);
+    });
+
+    return () => window.removeEventListener("scroll", fadeOnScroll);
+  }, []);
+
+  const titleSplit = title.split("").map((item, index) => {
+    let ch = item.trim() ? item : "\u00A0";
+    let animationDelay = `${index * 0.1}s`;
+    return (
+      <span key={index} style={{ animationDelay }}>
+        {ch}
+      </span>
+    );
+  });
+
+  const titleAnimationDelay = 0.1 * title.length;
+  const introDelay = `${titleAnimationDelay + 0.5}s`;
+  const contentDelay = `${titleAnimationDelay + 1.0}s`;
+
+  const titleRef = useRef();
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries, observer) => {
+        const entry = entries[0];
+        if (entry.isIntersecting) {
+          document.querySelectorAll(".project-title span").forEach((el) => {
+            el.classList.add("slide-down");
+          });
+        }
+      },
+      { threshold: 1.0 }
+    );
+
+    observer.observe(titleRef.current);
+  }, [titleRef.current]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("slide-up");
+          }
+        });
+      },
+
+      { threshold: 1 }
+    );
+
+    document.querySelectorAll(".slide-up-on-scroll-1").forEach((el) => {
+      observer.observe(el);
+    });
+  }, []);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("slide-up");
+          }
+        });
+      },
+
+      { threshold: 0.25 }
+    );
+
+    document.querySelectorAll(".slide-up-on-scroll-1-4").forEach((el) => {
+      observer.observe(el);
+    });
   }, []);
 
   return (
@@ -69,11 +135,23 @@ export default function ProjectDetails({
               }}
             >
               <div className="side-text">
-                <h1>{title}</h1>
-                {intro}
+                <h1 className="project-title" ref={titleRef}>
+                  {titleSplit}
+                </h1>
+                <div
+                  className="slide-up-on-scroll-1"
+                  style={{ animationDelay: "0.5s", animationDuration: "0.8s" }}
+                >
+                  {intro}
+                </div>
               </div>
 
-              {props.children}
+              <div
+                className="slide-up-on-scroll-1-4"
+                style={{ animationDelay: "0.5s", animationDuration: "0.8s" }}
+              >
+                {props.children}
+              </div>
             </section>
           </div>
         </div>

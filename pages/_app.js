@@ -4,6 +4,7 @@
  * We add a shared stylesheet and set the charset here.
  */
 
+import "../styles/animations.css";
 import "../styles/app.css";
 
 import Head from "next/head";
