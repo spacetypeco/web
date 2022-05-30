@@ -13,11 +13,11 @@ const HelloSpaceType = (
 export default function Footer() {
   return (
     <div className="footer">
-      <h4>Stay in touch:</h4>
-      <NewsletterSignup />
       <div className="flex-h flex-v-sm" style={{ marginTop: "2rem " }}>
-        <div className="flex-item-1-2 flex-item-sm-1">
-          <h4>Contact</h4>
+        <div className="flex-item-3-5 flex-item-sm-1">
+          <h5>Stay in touch:</h5>
+          <NewsletterSignup />
+          <h5>Contact</h5>
           <p className="subtext">
             <ul className="list-basic">
               <li>{HelloSpaceType}</li>
@@ -25,8 +25,8 @@ export default function Footer() {
             </ul>
           </p>
         </div>
-        <div className="flex-item-1-2 flex-item-sm-1">
-          <h4>Services</h4>
+        <div className="flex-item-2-5 flex-item-sm-1">
+          <h5>Services</h5>
           <p className="subtext">
             <ul className="list-basic">
               <li>Brand Strategy</li>
