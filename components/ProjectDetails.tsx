@@ -37,15 +37,26 @@ export default function ProjectDetails({
     return () => window.removeEventListener("scroll", fadeOnScroll);
   }, []);
 
-  const titleSplit = title.split("").map((item, index) => {
+  const titleSplit = [];
+  let currentLine = [];
+
+  title.split("").forEach((item, index) => {
     let ch = item.trim() ? item : "\u00A0";
     let animationDelay = `${index * 0.1}s`;
-    return (
+
+    currentLine.push(
       <span key={index} style={{ animationDelay }}>
         {ch}
       </span>
     );
+
+    if (!item.trim()) {
+      titleSplit.push(<div>{currentLine}</div>);
+      currentLine = [];
+    }
   });
+
+  titleSplit.push(<div>{currentLine}</div>);
 
   const titleAnimationDelay = 0.1 * title.length;
   const introDelay = `${titleAnimationDelay + 0.5}s`;

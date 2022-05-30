@@ -87,6 +87,8 @@
   color: var(--color-white);
   font-size: 1.2em;
   overflow:hidden;  
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .flex-centered {
