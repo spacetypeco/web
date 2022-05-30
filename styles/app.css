@@ -110,10 +110,10 @@
 }
 
 .side-text {
-  max-width: 750px;
+  max-width: 1000px;
   color: #ffffffaa;
   text-align: left;
-  padding-bottom: 2em;
+  padding-bottom: 10vh;
 }
 
 @media (max-width: 768px) {
