@@ -79,6 +79,20 @@ input {
   color: white;
 }
 
+.theme-light h1,
+.theme-light h2,
+.theme-light h3,
+.theme-light h4,
+.theme-light h5,
+.theme-light h6,
+.theme-light p,
+.theme-light a,
+.theme-light span,
+.theme-light ul,
+.theme-light input {
+  color: var(--color-black);
+}
+
 input {
   background-color: var(--color-black);
   border-color: #ffffffbb;
@@ -107,7 +121,7 @@ h4 {
 }
 
 h5 {
-  font-size: 14px;
+  font-size: 12px;
   margin: 1.5em 0 0.5em 0;
 }
 
@@ -248,7 +262,7 @@ hr {
 }
 
 a {
-  color: white;
+  color: var(--color-white);
   text-decoration: none;
 }
 
@@ -263,7 +277,7 @@ a {
 
 .link {
   display: inline-block;
-  color: white;
+  color: var(--color-white);
   font-size: 1em;
 }
 

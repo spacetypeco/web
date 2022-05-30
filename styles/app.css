@@ -7,9 +7,17 @@
   align-items: center;
 }
 
+.list-col-lg-2-sm-1 {
+  columns: 2;
+}
+
 @media (max-width: 1048px) {
   .items-grid {
     --num-items: 5;
+  }
+
+  .list-col-lg-2-sm-1 {
+    columns: 1;
   }
 }
 
@@ -23,10 +31,16 @@
   .items-grid {
     --num-items: 1;
   }
+  .list-col-lg-2-sm-1 {
+    columns: 2;
+  }
 }
 
 @media (max-width: 600px) {
   .items-grid {
     --num-items: 1;
+  }
+  .list-col-lg-2-sm-1 {
+    columns: 1;
   }
 }

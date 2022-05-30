@@ -32,34 +32,6 @@ export default function About() {
             and connect the seams between type design and digital interaction. We offer retail typefaces, partner with institutions, and engage with communities through 
             workshops, classes, and donation-based resources.
             </p>
-            <p>
-              Stay in touch:
-            </p>
-              <NewsletterSignup/>
-            <div className="flex-h flex-v-sm" style={{ marginTop: '2rem '}}>
-              <div className="flex-item-1-2 flex-item-sm-1">
-                <h3>Contact</h3>
-                <p className="subtext">
-                  <ul className="list-basic">
-                    <li>{ HelloSpaceType }</li>
-                    <li>{ Instagram }</li>
-                  </ul>
-                </p>
-              </div>
-              <div className="flex-item-1-2 flex-item-sm-1">
-                <h3>Services</h3>
-                <p className="subtext">
-                  <ul className="list-basic">
-                  <li>Brand Strategy</li>
-                  <li>Identity Systems</li>
-                  <li>Web and Digital Design</li>
-                  <li>Software Development</li>
-                  <li>Custom Type Design</li>
-                  <li>Retail Typeface Licensing</li>
-                  </ul>
-                  </p>
-              </div>
-            </div>
             </div>
             </div>
           </div>
