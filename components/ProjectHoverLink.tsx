@@ -1,12 +1,9 @@
 import Link from "next/link";
 import useHover from "../hooks/useHover.jsx";
-import { useRouter } from "next/router";
 
 export default function ProjectHoverLink({ href, title, ...props }) {
   const [hovered, eventHandlers] = useHover();
-  const show = hovered ? "flex" : "none";
-
-  const router = useRouter();
+  const visibility = hovered ? 1.0 : 0.0;
 
   const fullLink = `${href}?fromWork=true`;
 
@@ -19,13 +16,15 @@ export default function ProjectHoverLink({ href, title, ...props }) {
         }}
         {...eventHandlers}
       >
-        <div
-          className="full-w full-h position-abs project-hover-overlay"
-          style={{
-            display: show,
-          }}
-        >
-          <span className="project-title">{title}</span>
+        <div className="position-abs flex-h flex-centered full-h full-w">
+          <div
+            className="project-hover-overlay"
+            style={{
+              opacity: visibility,
+            }}
+          >
+            <h3 className="project-title">{title}</h3>
+          </div>
         </div>
 
         {props.children}
