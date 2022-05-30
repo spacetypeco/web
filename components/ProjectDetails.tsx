@@ -125,13 +125,15 @@ export default function ProjectDetails({
               </div>
             </section>
           </div>
-          <div className="parallax__group">
+          <div className="parallax__group" style={{ height: "auto" }}>
             <section
-              className="width-1200 content parallax__layer parallax__layer--base flex-v"
-              style={{
-                margin: "0 auto",
-                justifyContent: "center",
-              }}
+              className="width-1200 content parallax__layer parallax__layer--base"
+              style={
+                {
+                  // margin: "0 auto",
+                  // justifyContent: "center",
+                }
+              }
             >
               <div className="side-text">
                 <h1 className="project-title" ref={titleRef}>

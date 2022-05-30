@@ -84,11 +84,9 @@
 }
 
 .project-title {
-    color: var(--color-white);
+  color: var(--color-white);
   font-size: 1.2em;
-}
-
-.project-title {
+  overflow:hidden;  
 }
 
 .flex-centered {
