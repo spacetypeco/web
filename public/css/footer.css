@@ -1,18 +1,24 @@
 .footer {
-    padding: 0em 4em;
-    /* background-color: #202226 !important; */
-    opacity: 0;
-    transition: opacity 1s;
+  padding: 0em 4em;
+  /* background-color: #202226 !important; */
+  opacity: 0;
+  transition: opacity 1s;
 }
 
 .footer p {
-    font-size: 0.8em;
+  font-size: 0.8em;
 }
 
 .footer input {
-    font-size: 0.6em;
+  font-size: 0.6em;
 }
 
 .footer a {
-    color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 0em 2em;
   }
+}

@@ -41,6 +41,13 @@ export default function Footer() {
         }}
       >
         <div className="flex-item-3-5 flex-item-sm-1">
+          <p style={{ maxWidth: "400px" }}>
+            Stay in touch: new workshops, classes, typefaces, and updates to our
+            online resources.
+          </p>
+          <NewsletterSignup />
+        </div>
+        <div className="flex-item-2-5 flex-item-sm-1">
           <h5>Space Type</h5>
           <p className="subtext">
             <ul className="list-basic">
@@ -48,10 +55,6 @@ export default function Footer() {
               <li>{Instagram}</li>
             </ul>
           </p>
-          <h5>Keep in touch:</h5>
-          <NewsletterSignup />
-        </div>
-        <div className="flex-item-2-5 flex-item-sm-1">
           <h5>Services</h5>
           <p className="subtext">
             <ul className="list-basic list-col-lg-2-sm-1">
