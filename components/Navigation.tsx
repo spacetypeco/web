@@ -1,10 +1,8 @@
 // import Image from "next/image";
 import Link from "next/link";
 
-export default function Navigation({ active, positionAbsolute = false }) {
-  const classes = `flex-h flex-end nav full-w ${
-    positionAbsolute ? "position-abs" : ""
-  }`;
+export default function Navigation({ active }) {
+  const classes = "flex-h flex-end nav full-w position-fixed";
 
   return (
     <div className={classes}>

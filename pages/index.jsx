@@ -39,7 +39,6 @@ export default function Home() {
         </div>
         <div id="canvas4" className="sketch-container full-w full-h"></div>
       </div>
-      <Navigation positionAbsolute={true} />
     </div>
   </div>
     </>

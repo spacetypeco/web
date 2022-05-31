@@ -8,6 +8,7 @@ import "../styles/app.css";
 
 import Footer from "../components/Footer";
 import Head from "next/head";
+import Navigation from "../components/Navigation";
 import { useRouter } from "next/router";
 
 function App({ Component, pageProps }) {
@@ -68,6 +69,7 @@ function App({ Component, pageProps }) {
         <meta name="msapplication-TileColor" content="#DA532C" />
         <meta name="theme-color" content="#FFFFFF" />
       </Head>
+      <Navigation positionAbsolute={true} />
       <Component {...pageProps} />
       <Footer />
     </>

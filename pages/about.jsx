@@ -1,12 +1,8 @@
 import Head from "next/head";
 import Link from 'next/link'
-import Navigation from "../components/Navigation";
-import NewsletterSignup from "../components/NewsletterSignup";
 
 const LynneYun = <Link href="https://lynneyun.com">Lynne Yun</Link>;
 const KevinYeh = <Link href="http://kevbk.com">Kevin Yeh</Link>;
-const Instagram = <Link href="https://instagram.com/spacetypeco">Instagram</Link>;
-const HelloSpaceType = <span><Link href="mailto:hello@spacetypeco.com">hello@spacetypeco.com</Link></span>;
 
 export default function About() {
     return (
@@ -18,7 +14,6 @@ export default function About() {
       <div>
         <main>
         <div id="container" className="full-w full-h position-rel">
-          <Navigation active="/about" />
           <div id="about">
             <div className="fade-in content markdown-body">
             <h1>Space Type</h1>

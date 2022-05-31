@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Link from "next/link";
-import Navigation from "../components/Navigation";
 import NewsletterSignup from "../components/NewsletterSignup";
 
 const TypeDesignSchool = <Link href="https://typedesignschool.com">typedesignschool.com</Link>
@@ -15,7 +14,6 @@ export default function About() {
     </Head>
     <main>
       <div id="container" className="full-w full-h position-rel">
-        <Navigation active="/teaching" />
         <div id="about">
           <div className="fade-in content markdown-body">
             <h1>Teaching</h1>
