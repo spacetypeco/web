@@ -132,7 +132,10 @@ export default function ProjectDetails({
           <div className="parallax__group">
             <section className="header full-vw full-vh-lg flex-centered parallax__layer parallax__layer--back">
               <div className="width-1200">
-                <img src={headerUrl} className="full-w fade-out-on-scroll" />
+                <img
+                  src={headerUrl}
+                  className="full-w slide-up fade-out-on-scroll"
+                />
               </div>
             </section>
           </div>
@@ -146,7 +149,15 @@ export default function ProjectDetails({
                 }
               }
             >
-              <div className="side-text">
+              <div
+                className="side-text theme-light"
+                style={{
+                  border: "white 2px solid",
+                  padding: "2em",
+                  paddingTop: "-2em",
+                  backgroundColor: "var(--color-white)",
+                }}
+              >
                 <h1 className="project-title" ref={titleRef}>
                   {titleSplit}
                 </h1>

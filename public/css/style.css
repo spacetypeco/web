@@ -543,7 +543,8 @@ a {
 }
 
 .project-details h1 {
-  font-size: 100px;
+  font-size: 50px;
+  margin-top: 0;
 }
 
 .project-details h2 {
