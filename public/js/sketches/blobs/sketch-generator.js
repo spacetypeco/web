@@ -44,7 +44,6 @@ Blobs = {
       };
 
       p.setup = function () {
-        console.log("setup");
         let div = document.getElementById(divId);
         let canvas = p.createCanvas(div.offsetWidth, div.clientHeight);
         updateLoopState = SpaceTypeUtils.manageLoopState(p, canvas);
@@ -206,6 +205,11 @@ Blobs = {
 
       p.windowResized = function () {
         let div = document.getElementById(divId);
+        if (!div) {
+          // div may have been removed as part of a next.js page transition — return silently.
+          return;
+        }
+
         p.resizeCanvas(div.offsetWidth, div.clientHeight);
         scale = Math.min(p.width, p.height) / initSize;
         lastWindowResize = p.millis();
@@ -213,9 +217,7 @@ Blobs = {
       };
 
       function setFont() {
-        console.log(p.height);
         let aspect = p.width / p.height;
-        console.log(aspect);
         if (aspect < 0.8) {
           font = fonts["narrow"].font;
           fontSize = fonts["narrow"].scale(initSize);
@@ -235,7 +237,6 @@ Blobs = {
         setFont();
         scale = 1;
 
-        console.log({ oldFontSize, fontSize });
         if (oldFontSize !== fontSize) {
           bounds = font.textBounds(txt, 0, 0, fontSize);
           let ptBodyOptions = {
@@ -263,8 +264,6 @@ Blobs = {
 
               return new Point(p, pt.x, pt.y, body);
             });
-
-          console.log(points.length);
 
           setupPointConstraints();
           charBoundaries = getCharacterBoundaries({
