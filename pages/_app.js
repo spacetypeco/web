@@ -69,9 +69,19 @@ function App({ Component, pageProps }) {
         <meta name="msapplication-TileColor" content="#DA532C" />
         <meta name="theme-color" content="#FFFFFF" />
       </Head>
-      <Navigation positionAbsolute={true} />
-      <Component {...pageProps} />
-      <Footer />
+      <div
+        className="full-w full-h"
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          minHeight: "100vh",
+          justifyContent: "flex-start",
+        }}
+      >
+        <Navigation activeComponentName={Component.name} />
+        <Component {...pageProps} />
+        {Component.name !== "Home" && <Footer />}
+      </div>
     </>
   );
 }

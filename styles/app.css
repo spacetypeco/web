@@ -44,3 +44,9 @@
     columns: 1;
   }
 }
+
+.text-outline {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--color-white);
+  color: black;
+}

@@ -17,6 +17,10 @@ body,
   background: var(--color-black);
 }
 
+main {
+  flex: 1;
+}
+
 .hide-overflow {
   overflow-y: hidden;
 }
@@ -106,7 +110,7 @@ input {
 }
 
 h1 {
-  font-size: 25px;
+  font-size: 2.1em;
 }
 
 h2 {
@@ -154,6 +158,10 @@ hr {
 .flex-v {
   display: flex;
   flex-direction: column;
+}
+
+.flex-centered-v-h {
+  align-items: center;
 }
 
 .flex-end-j {

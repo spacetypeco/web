@@ -1,5 +1,8 @@
-import Navigation from "../components/Navigation";
+import Footer from "../components/Footer";
+import Link from "next/link";
 import ScrollButton from "../components/ScrollButton"
+import { useEffect } from "react";
+
 require("../util/utils.js");
 
 export default function Home() {
@@ -37,7 +40,32 @@ export default function Home() {
           <ScrollButton />
           </a>
         </div>
-        <div id="canvas4" className="sketch-container full-w full-h"></div>
+        <div id="canvas4" className="sketch-container full-w full-h">
+          <a className="ct-btn-scroll ct-js-btn-scroll" dest="#space-intro">
+            <ScrollButton />
+          </a>
+        </div>
+        <div id="space-intro" className="sketch-container full-w full-h fade-in" style={{
+          display: "flex",
+          flexDirection: "column",
+          minHeight: "100vh",
+          justifyContent: "flex-start",
+        }}
+      >
+        <div className="content content-top flex-v flex-centered-v-h" style={{flex: "1", minHeight: "calc(90vh - 13em)"}}>
+          <img
+            src="/img/logo_white.svg"
+            style={{ width: "200px", height: "200px", margin: "2em" }}
+          />
+          <div className="markdown-body" style={{textAlign: "center"}}>
+          <p>We work with individuals and organizations to express unique narratives and connect the seams between type design and digital interaction.</p>
+          <Link href="/about"><a href="/about"><h1>→</h1></a></Link>
+          </div></div>
+        </div>
+        <div style={{scrollSnapAlign:"end"}}>
+        <Footer/>
+        </div>
+
       </div>
     </div>
   </div>

@@ -1,31 +1,34 @@
 // import Image from "next/image";
 import Link from "next/link";
 
-export default function Navigation({ active }) {
+export default function Navigation({ activeComponentName }) {
   const classes = "flex-h flex-end nav full-w position-fixed";
 
   return (
     <div className={classes}>
-      <div className="">
-        <div className="logo">
-          <a href="/">
-            <img
-              src="/img/logo_white.svg"
-              style={{ width: "70px", height: "70px" }}
-            />
-          </a>
-        </div>
+      <div className="logo">
+        <a href="/">
+          <img
+            src="/img/logo_white.svg"
+            style={{ width: "70px", height: "70px" }}
+          />
+        </a>
       </div>
       <div className="controls">
         <div id="nav-area">
           <div id="nav-box" className="flex-v-xs">
-            <div className={active === "/typefaces" ? "link active" : "link"}>
+            <div
+              className={
+                activeComponentName === "Type" ? "link active" : "link"
+              }
+            >
               <Link href="/typefaces">Typefaces</Link>
             </div>
-            <div className={active === "/teaching" ? "link active" : "link"}>
-              <Link href="/teaching">Teaching</Link>
-            </div>
-            <div className={active === "/about" ? "link active" : "link"}>
+            <div
+              className={
+                activeComponentName === "About" ? "link active" : "link"
+              }
+            >
               <Link href="/about">About</Link>
             </div>
           </div>
