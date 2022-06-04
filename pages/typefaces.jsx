@@ -1,13 +1,9 @@
 import FontRow from "../components/FontRow";
 import Head from "next/head";
-import { useEffect } from "react";
+import useLogo from "../hooks/useLogo";
 
 export default function Type() {
-  useEffect(() => {
-    const navElement = document.querySelector(".logo-inner");
-    navElement.style.transition = `transform 0.5s ease`;
-    navElement.style.transform = `translateY(0%)`;
-  })
+  useLogo();
   
   return (
     <>

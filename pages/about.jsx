@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Link from 'next/link'
-import { useEffect } from "react";
+import useLogo from "../hooks/useLogo";
 
 const LynneYun = <Link href="https://lynneyun.com">Lynne Yun</Link>;
 const KevinYeh = <Link href="http://kevbk.com">Kevin Yeh</Link>;
@@ -12,11 +12,7 @@ const VarType = <Link href="https://vartype.com">vartype.com</Link>
 
 
 export default function About() {
-  useEffect(() => {
-    const navElement = document.querySelector(".logo-inner");
-    navElement.style.transition = `transform 0.5s ease`;
-    navElement.style.transform = `translateY(0%)`;
-  })
+  useLogo();
   
     return (
     <>
