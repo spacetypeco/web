@@ -2,6 +2,7 @@ import Footer from "../components/Footer";
 import Link from "next/link";
 import ScrollButton from "../components/ScrollButton"
 import { useEffect } from "react";
+import useScripts from "../hooks/useScripts";
 
 require("../util/utils.js");
 
@@ -33,21 +34,38 @@ export default function Home() {
     return () => element.removeEventListener("scroll", fadeOnScroll);
   }, []);
 
-  useEffect(() => {
+  const urls = ["https://cdn.jsdelivr.net/npm/opentype.js@latest/dist/opentype.min.js",
+  "https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js",
+  "https://cdn.jsdelivr.net/gh/kyeah/p5@master/utils/text-utils.js",
+  "js/p5.func.min.js",
+  "/js/matter-0_14_2.min.js",
+  "/js/sketches/blobs/point.js",
+  "/js/sketches/blobs/sketch-generator.js",
+  "/js/sketches/particle-fill/sketch-generator.js",
+  "/js/sketches/shader-wag/sketch-generator.js",
+  "/js/sketches/vortex/sketch-generator.js",
+  "/js/sketches/path-tweaker/sketch-generator.js"
+]
+  
+  useScripts(urls, 
+    () => typeof(Blobs) !== "undefined",
+    () => {
     let sketches = [Blobs, ShaderWag, ParticleFill, PathTweaker];
     let sketch1 = sketches[0].createSketch("canvas");
-    new p5(sketch1, "canvas");
+    let createdSketches = []
+    createdSketches.push(new p5(sketch1, "canvas"));
     const isMobile =
       /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ||
       /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.platform);
+
   
     if (!isMobile) {
       let sketch2 = sketches[1].createSketch("canvas2");
-      new p5(sketch2, "canvas2");
+      createdSketches.push(new p5(sketch2, "canvas2"));
       let sketch3 = sketches[2].createSketch("canvas3");
-      new p5(sketch3, "canvas3");
+      createdSketches.push(new p5(sketch3, "canvas3"));
       let sketch4 = sketches[3].createSketch("canvas4");
-      new p5(sketch4, "canvas4");
+      createdSketches.push(new p5(sketch4, "canvas4"));
     } else {
       for (let elemName of ["canvas2", "canvas3", "canvas4"]) {
         let elem = document.getElementById(elemName);
@@ -65,23 +83,14 @@ export default function Home() {
         });
       });
     });
+
+    return () => {
+      createdSketches.forEach(sketch => sketch.remove());
+    }
   }, [])
   
   return (
     <>
-      <script  src="https://cdn.jsdelivr.net/npm/opentype.js@latest/dist/opentype.min.js" />
-      <script  src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js" />
-      <script  src="https://cdn.jsdelivr.net/gh/kyeah/p5@master/utils/text-utils.js" />
-      <script src="js/p5.func.min.js"></script>
-
-      <script  src="/js/matter-0_14_2.min.js" />
-      <script  src="/js/sketches/blobs/point.js" />
-      <script src="/js/sketches/blobs/sketch-generator.js" />
-      <script  src="/js/sketches/particle-fill/sketch-generator.js" />
-      <script  src="/js/sketches/shader-wag/sketch-generator.js" />
-
-      <script  src="/js/sketches/vortex/sketch-generator.js" />
-      <script  src="/js/sketches/path-tweaker/sketch-generator.js" />
       <div className="hide-overflow full-w full-h">
     <div id="container" className="full-w full-h position-rel">
       <div id="sketches-container" className="full-w full-h position-abs">
