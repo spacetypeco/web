@@ -466,6 +466,11 @@ a {
   cursor: pointer;
 }
 
+.logo-inner {
+  transform: translateY(150%);
+  transition: transform 0.5s ease;
+}
+
 .overflow-y-hidden {
   overflow-y: hidden;
 }

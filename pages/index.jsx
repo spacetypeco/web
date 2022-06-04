@@ -22,11 +22,13 @@ const fadeOnScroll = (event) => {
   change = Math.max(change, 0);
 
   navElement.style.transform = `translateY(${change * 150}%)`;
+  navElement.style.transition = `transform ${(1-change)*0.5}s ease`;
   introElement.style.transform = `translateY(${(1 - change) * 100}%)`;
 };
 
 export default function Home() {
   useEffect(() => {
+    fadeOnScroll();
     const element = document.querySelector("#sketches-container")
     element.addEventListener("scroll", fadeOnScroll);
     return () => element.removeEventListener("scroll", fadeOnScroll);
@@ -71,7 +73,7 @@ export default function Home() {
             <ScrollButton />
           </a>
         </div>
-        <div id="space-intro" className="sketch-container full-w full-h fade-in" style={{
+        <div id="space-intro" className="sketch-container full-w full-h" style={{
           display: "flex",
           flexDirection: "column",
           minHeight: "100vh",
