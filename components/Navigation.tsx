@@ -8,12 +8,12 @@ export default function Navigation({ activeComponentName }) {
     <div className={classes}>
       <div className="logo overflow-y-hidden">
         <div className="logo-inner">
-          <a href="/">
+          <Link href="/">
             <img
               src="/img/logo_white.svg"
               style={{ width: "70px", height: "70px" }}
             />
-          </a>
+          </Link>
         </div>
       </div>
       <div className="controls">
