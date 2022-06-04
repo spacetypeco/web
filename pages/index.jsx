@@ -1,3 +1,4 @@
+import { DiagnosticCategory } from "typescript";
 import Footer from "../components/Footer";
 import Link from "next/link";
 import ScrollButton from "../components/ScrollButton"
@@ -5,7 +6,32 @@ import { useEffect } from "react";
 
 require("../util/utils.js");
 
+const fadeOnScroll = (event) => {
+  const referenceElement = document.querySelector("#space-intro")
+  const navElement = document.querySelector(".logo-inner");
+  const introElement = document.querySelector(".space-intro-logo-inner");
+
+  if (!referenceElement) {
+    return;
+  }
+  
+  var distanceToTop = window.pageYOffset + referenceElement.getBoundingClientRect().top;
+
+  let change = (window.innerHeight - distanceToTop) / (window.innerHeight * 0.5) - 1;
+  change = Math.min(change, 1);
+  change = Math.max(change, 0);
+
+  navElement.style.transform = `translateY(${change * 150}%)`;
+  introElement.style.transform = `translateY(${(1 - change) * 100}%)`;
+};
+
 export default function Home() {
+  useEffect(() => {
+    const element = document.querySelector("#sketches-container")
+    element.addEventListener("scroll", fadeOnScroll);
+    return () => element.removeEventListener("scroll", fadeOnScroll);
+  }, []);
+  
   return (
     <>
       <script  src="https://cdn.jsdelivr.net/npm/opentype.js@latest/dist/opentype.min.js" />
@@ -53,11 +79,14 @@ export default function Home() {
         }}
       >
         <div className="content content-top flex-v flex-centered-v-h" style={{flex: "1", minHeight: "calc(90vh - 13em)"}}>
+          <div className="overflow-y-hidden">
+            <div className="space-intro-logo-inner">
           <img
             src="/img/logo_white.svg"
-            style={{ width: "200px", height: "200px", margin: "2em" }}
+            style={{ width: "200px", height: "200px", paddingTop: "2em" }}
           />
-          <div className="markdown-body" style={{textAlign: "center"}}>
+          </div></div>
+          <div className="markdown-body" style={{textAlign: "center", paddingTop: "2em"}}>
           <p>We work with individuals and organizations to express unique narratives and connect the seams between type design and digital interaction.</p>
           <Link href="/about"><a href="/about"><h1>→</h1></a></Link>
           </div></div>

@@ -462,9 +462,12 @@ a {
   margin: 2em;
   float: left;
   opacity: 100%;
-  border-radius: 25px;
   transition: opacity 0.1s;
   cursor: pointer;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
 }
 
 .logo:hover {

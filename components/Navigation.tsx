@@ -6,13 +6,15 @@ export default function Navigation({ activeComponentName }) {
 
   return (
     <div className={classes}>
-      <div className="logo">
-        <a href="/">
-          <img
-            src="/img/logo_white.svg"
-            style={{ width: "70px", height: "70px" }}
-          />
-        </a>
+      <div className="logo overflow-y-hidden">
+        <div className="logo-inner">
+          <a href="/">
+            <img
+              src="/img/logo_white.svg"
+              style={{ width: "70px", height: "70px" }}
+            />
+          </a>
+        </div>
       </div>
       <div className="controls">
         <div id="nav-area">
