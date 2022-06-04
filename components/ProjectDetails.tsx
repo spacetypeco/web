@@ -150,12 +150,10 @@ export default function ProjectDetails({
               }
             >
               <div
-                className="side-text theme-light"
+                className="side-text"
                 style={{
-                  border: "white 2px solid",
                   padding: "2em",
                   paddingTop: "-2em",
-                  backgroundColor: "var(--color-white)",
                 }}
               >
                 <h1 className="project-title" ref={titleRef}>

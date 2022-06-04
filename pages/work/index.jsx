@@ -15,7 +15,7 @@ export default function Works() {
           <div id="about">
             <div className="fade-in content">
               <div className="project-grid">
-                <div className="tile-w-12 tile-h-12">
+                <div className="tile-w-6 tile-h-6">
                   <ProjectHoverLink
                     href="work/2022-panasonic-make-new"
                     title="Panasonic: Make New"
@@ -23,7 +23,7 @@ export default function Works() {
                     <img src="/works/2022-client-brand-panasonic/make-new-wide-2.png"></img>
                   </ProjectHoverLink>
                 </div>
-                <div className="tile-w-12 tile-h-12">
+                <div className="tile-w-6 tile-h-6">
                   <ProjectHoverLink
                     href="work/2019-broadway-mural-project"
                     title="Broadway Mural Project"
