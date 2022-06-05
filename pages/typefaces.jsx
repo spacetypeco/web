@@ -2,7 +2,7 @@ import FontRow from "../components/FontRow";
 import Head from "next/head";
 import useLogo from "../hooks/useLogo";
 
-export default function Type() {
+function Type() {
   useLogo();
   
   return (
@@ -33,3 +33,6 @@ export default function Type() {
 );
     
 }
+
+Type.displayName = "Type";
+export default Type;

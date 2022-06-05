@@ -10,7 +10,7 @@ const TypeDesignSchool = (
 );
 const VarType = <Link href="https://vartype.com">vartype.com</Link>;
 
-export default function About() {
+function About() {
   useLogo();
 
   return (
@@ -103,7 +103,7 @@ export default function About() {
                 <Link href="https://generativetype.com">
                   <a className="tile-w-6 tile-h-6 grid-item">
                     <img src="/img/generativetype.png" />
-                    <div className="small-link">Generative Typography →</div>
+                      <div className="small-link">Generative Typography →</div>
                   </a>
                 </Link>
               </div>
@@ -172,3 +172,6 @@ export default function About() {
     </>
   );
 }
+
+About.displayName = "About";
+export default About;
