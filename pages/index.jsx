@@ -131,7 +131,7 @@ export default function Home() {
           </div></div>
           <div className="markdown-body" style={{textAlign: "center", paddingTop: "2em"}}>
           <p>We work with individuals and organizations to express unique narratives and connect the seams between type design and digital interaction.</p>
-          <Link href="/about"><a href="/about"><h1>→</h1></a></Link>
+          <Link href="/about"><a href="/about"><h4>Learn more →</h4></a></Link>
           </div></div>
         </div>
         <div style={{scrollSnapAlign:"end"}}>
