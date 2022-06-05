@@ -61,6 +61,14 @@
   grid-gap: 1em;
 }
 
+.grid > .grid-item {
+  transition: 0.5s ease;
+}
+
+.grid .grid-item:hover {
+  transform: scale(1.03);
+}
+
 .grid img {
   object-fit: cover;
   max-width: 100%;
