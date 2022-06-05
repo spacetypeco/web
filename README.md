@@ -1,10 +1,6 @@
 ## web
 
-Repository for spacetypecontinuum.com.
-
-Pages imported from pre-Next.js times are served directly as static pages; we use redirect rules in [next.config.js](next.config.js) to support this.
-
-New pages are built directly using Next.js.
+Repository for [spacetypeco.com](https://spacetypeco.com).
 
 ## Developing
 
@@ -21,3 +17,7 @@ npm install && npm run dev
 └── public          🔑 Raw HTML/CSS/JS and asset files
 └── styles          🔀 Globally-imported CSS files
 ```
+
+## Deployment
+
+Changes to the main branch are automatically deployed by Github Actions to Github Pages.

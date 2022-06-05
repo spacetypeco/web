@@ -7,12 +7,15 @@
 import "../styles/animations.css";
 import "../styles/app.css";
 
+import Footer from "../components/Footer";
 import Head from "next/head";
+import Navigation from "../components/Navigation";
 import Script from "next/script";
 import { useRouter } from "next/router";
 
 function App({ Component, pageProps }) {
   const router = useRouter();
+
   return (
     <>
       <Head>
@@ -44,6 +47,8 @@ function App({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <link rel="stylesheet" type="text/css" href="/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="/css/footer.css" />
+
         <meta charSet="utf-8" />
         <link
           rel="apple-touch-icon"
@@ -68,7 +73,20 @@ function App({ Component, pageProps }) {
         <meta name="theme-color" content="#FFFFFF" />
         <Script src="/js/video-perf-check.js" />
       </Head>
-      <Component {...pageProps} />
+      <div
+        className="full-w full-h"
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          minHeight: "100vh",
+          justifyContent: "flex-start",
+        }}
+      >
+        <Navigation activeComponentName={Component.name} />
+        <Component {...pageProps} />
+        {Component.displayName !== "Home" && <Footer />}
+      </div>
+      <div id="p5_loading" style={{ display: "none" }} />
     </>
   );
 }

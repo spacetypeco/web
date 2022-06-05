@@ -1,8 +1,10 @@
 import FontRow from "../components/FontRow";
 import Head from "next/head";
-import Navigation from "../components/Navigation";
+import useLogo from "../hooks/useLogo";
 
 export default function Type() {
+  useLogo();
+  
   return (
     <>
       <Head>
@@ -12,7 +14,6 @@ export default function Type() {
   <main>
     <div id="container" className="full-w full-h position-rel">
 
-      <Navigation active="/typefaces" />
       <div id="about">
       <div className="content">
         <div className="flex-v full-w typetester-content-container">
