@@ -134,9 +134,7 @@ function Home() {
           <Link href="/about"><a href="/about"><h4>Learn more →</h4></a></Link>
           </div></div>
         </div>
-        <div style={{scrollSnapAlign:"end"}}>
         <Footer/>
-        </div>
 
       </div>
     </div>
