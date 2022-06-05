@@ -3,7 +3,7 @@ import Navigation from "../../components/Navigation";
 import ProjectHoverLink from "../../components/ProjectHoverLink";
 import useLogo from "../../hooks/useLogo";
 
-export default function Works() {
+function Works() {
   useLogo();
   
   return (
@@ -95,3 +95,6 @@ export default function Works() {
     </>
   );
 }
+
+Work.displayName = "Work";
+export default Work;
