@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 
 import Head from "next/head";
-import Navigation from "./Navigation";
+import useLogo from "../hooks/useLogo";
 
 const fadeOnScroll = () => {
   const element = document.getElementsByClassName("header")[0];
@@ -26,6 +26,7 @@ export default function ProjectDetails({
   intro,
   ...props
 }) {
+  useLogo();
   const pageTitle = `Space Type - ${title}`;
 
   useEffect(() => {
@@ -122,7 +123,6 @@ export default function ProjectDetails({
         <title>{pageTitle}</title>
         <meta property="og:title" content={pageTitle} />
       </Head>
-      <Navigation active="/work" positionAbsolute={true} />
       <main
         style={{
           backgroundColor: bgColor,

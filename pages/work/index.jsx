@@ -1,8 +1,11 @@
 import Head from "next/head";
 import Navigation from "../../components/Navigation";
 import ProjectHoverLink from "../../components/ProjectHoverLink";
+import useLogo from "../../hooks/useLogo";
 
 export default function Works() {
+  useLogo();
+  
   return (
     <>
       <Head>
