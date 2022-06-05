@@ -495,7 +495,7 @@ a {
 
 @media (max-width: 768px) {
   .content {
-    padding-top: 13em;
+    padding-top: 10em;
     padding-left: 2em;
     padding-right: 2em;
   }
@@ -512,9 +512,9 @@ a {
   .typetester {
     font-size: 3.5em;
   }
-  .nav {
+  /* .nav {
     background-color: var(--color-black);
-  }
+  } */
   .logo img {
     width: 50px;
     height: 50px;
@@ -529,7 +529,7 @@ a {
 }
 
 .sketch-container {
-  scroll-snap-align: start;
+  scroll-snap-align: end;
   position: relative;
   background-color: #161616;
 }
