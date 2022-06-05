@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 
 import Link from "next/link";
-import NewsletterSignup from "../components/NewsletterSignup";
+import NewsletterSignup from "./NewsletterSignup";
 
 const Instagram = (
   <Link href="https://instagram.com/spacetypeco">Instagram</Link>
