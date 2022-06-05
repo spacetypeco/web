@@ -13,7 +13,6 @@ import { useRouter } from "next/router";
 
 function App({ Component, pageProps }) {
   const router = useRouter();
-  console.log(Component.name);
 
   return (
     <>
@@ -82,7 +81,7 @@ function App({ Component, pageProps }) {
       >
         <Navigation activeComponentName={Component.name} />
         <Component {...pageProps} />
-        {Component.name !== "Home" && <Footer />}
+        {Component.displayName !== "Home" && <Footer />}
       </div>
     </>
   );

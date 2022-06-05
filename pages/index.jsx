@@ -26,7 +26,7 @@ const fadeOnScroll = (event) => {
   introElement.style.transform = `translateY(${(1 - change) * 100}%)`;
 };
 
-export default function Home() {
+function Home() {
   useEffect(() => {
     fadeOnScroll();
     const element = document.querySelector("#sketches-container")
@@ -144,3 +144,6 @@ export default function Home() {
     </>
   );
 }
+
+Home.displayName = "Home";
+export default Home;
