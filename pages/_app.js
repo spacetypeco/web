@@ -79,7 +79,7 @@ function App({ Component, pageProps }) {
           justifyContent: "flex-start",
         }}
       >
-        <Navigation activeComponentName={Component.name} />
+        <Navigation activeComponentName={Component.displayName} />
         <Component {...pageProps} />
         {Component.displayName !== "Home" && <Footer />}
       </div>
