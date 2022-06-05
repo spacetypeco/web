@@ -83,6 +83,7 @@ function App({ Component, pageProps }) {
         <Component {...pageProps} />
         {Component.displayName !== "Home" && <Footer />}
       </div>
+      <div id="p5_loading" style={{ display: "none" }} />
     </>
   );
 }
