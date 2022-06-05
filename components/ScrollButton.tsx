@@ -1,5 +1,5 @@
 import React from "react";
-export default function GoogleLogo() {
+export default function ScrollButton() {
   return (
     <svg
       version="1.1"

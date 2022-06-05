@@ -2,7 +2,8 @@
   --color-black: #161616;
   --color-white: white;
   --color-accent: #37f79b;
-  --z-nav: 1;
+  --z-nav: 2;
+  --z-button-scroll: 1;
 }
 
 html,
@@ -541,7 +542,7 @@ a {
   left: 0;
   right: 0;
   margin: auto;
-  z-index: 9;
+  z-index: var(--z-btn-scroll);
   border-radius: 50%;
   -webkit-transition: background-color 0.25s ease-in-out;
   transition: background-color 0.25s ease-in-out, opacity 0.1s ease-in-out;
