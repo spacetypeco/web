@@ -2,7 +2,7 @@
 import Link from "next/link";
 
 export default function Navigation({ activeComponentName }) {
-  const classes = "flex-h flex-end nav full-w position-fixed";
+  const classes = "flex-h flex-between nav full-w position-fixed";
 
   return (
     <div className={classes}>
@@ -13,9 +13,9 @@ export default function Navigation({ activeComponentName }) {
           </Link>
         </div>
       </div>
-      <div className="controls">
+      <div className="controls flex-centered-h-v">
         <div id="nav-area">
-          <div id="nav-box" className="flex-v-xs">
+          <div id="nav-box" className="flex-h">
             <div
               className={
                 activeComponentName === "Type" ? "link active" : "link"

@@ -292,8 +292,8 @@ a {
 
 .nav {
   z-index: var(--z-nav);
-  display: block;
-  width: 100%;
+  width: calc(100% - 4em);
+  padding: 2em;
 }
 
 .link {
@@ -322,7 +322,7 @@ a {
 }
 
 .controls {
-  float: right;
+  display: flex;
 }
 .link a {
   transition: color 0.2s;
@@ -345,6 +345,11 @@ a {
   padding-left: 5em;
   padding-right: 5em;
   margin: 0 auto;
+}
+
+.content-no-vpad {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .markdown-body {
@@ -373,7 +378,6 @@ a {
 }
 
 #nav-area {
-  margin: 2em 3em;
   font-size: 1.2rem;
 }
 
@@ -454,6 +458,10 @@ a {
   flex: 1 1 40%;
 }
 
+.flex-between {
+  justify-content: space-between;
+}
+
 @media (max-width: 1048px) {
   p {
     font-size: 1em;
@@ -465,7 +473,6 @@ a {
 }
 
 .logo {
-  margin: 2em;
   float: left;
   opacity: 100%;
   transition: opacity 0.1s;
@@ -499,9 +506,12 @@ a {
 
 @media (max-width: 768px) {
   .content {
-    padding-top: 0;
+    padding-top: 2em;
     padding-left: 2em;
     padding-right: 2em;
+  }
+  .content-no-vpad {
+    padding-bottom: 7em;
   }
   .flex-v-sm {
     display: flex;
@@ -518,7 +528,9 @@ a {
   }
   .nav {
     background-color: var(--color-black);
-    position: relative;
+    position: sticky;
+    top: 0;
+    padding: 1em 2em;
   }
   .logo img {
     width: 50px;
@@ -578,13 +590,6 @@ a {
   .flex-v-xs {
     display: flex;
     flex-direction: column;
-  }
-  #nav-box {
-    align-items: flex-end;
-  }
-  #nav-area {
-    margin-left: 0.5em;
-    margin-right: 2em;
   }
   #nav-box .link {
     font-size: 0.85em;
