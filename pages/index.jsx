@@ -15,9 +15,9 @@ const fadeOnScroll = (event) => {
     return;
   }
   
-  var distanceToTop = window.pageYOffset + referenceElement.getBoundingClientRect().top;
+  var distanceToBottom = window.pageYOffset + referenceElement.getBoundingClientRect().top - (window.innerHeight - referenceElement.offsetHeight);
 
-  let change = (window.innerHeight - distanceToTop) / (window.innerHeight * 0.5) - 1;
+  let change = (window.innerHeight - distanceToBottom) / (window.innerHeight * 0.5) - 1;
   change = Math.min(change, 1);
   change = Math.max(change, 0);
 
@@ -121,7 +121,7 @@ function Home() {
           justifyContent: "flex-start",
         }}
       >
-        <div className="content content-top flex-v flex-centered-v-h" style={{flex: "1", minHeight: "calc(90vh - 13em)"}}>
+        <div className="content content-top flex-v flex-centered-v-h flex-centered-v-v" style={{flex: "1", minHeight: "calc(90%)"}}>
           <div className="overflow-y-hidden">
             <div className="space-intro-logo-inner">
           <img
