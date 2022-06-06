@@ -13,7 +13,7 @@ export default function Navigation({ activeComponentName }) {
           </Link>
         </div>
       </div>
-      <div className="controls flex-centered-h-v">
+      <div className="controls flex-centered-h-v-sm">
         <div id="nav-area">
           <div id="nav-box" className="flex-h">
             <div
