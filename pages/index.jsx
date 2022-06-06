@@ -117,7 +117,7 @@ function Home() {
         <div id="space-intro" className="sketch-container full-w full-h" style={{
           display: "flex",
           flexDirection: "column",
-          minHeight: "100vh",
+          minHeight: "100%",
           justifyContent: "flex-start",
         }}
       >
