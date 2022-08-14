@@ -96,5 +96,5 @@ function Works() {
   );
 }
 
-Work.displayName = "Work";
-export default Work;
+Works.displayName = "Work";
+export default Works;
