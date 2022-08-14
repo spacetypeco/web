@@ -5,6 +5,10 @@ import useLogo from "../hooks/useLogo";
 
 const fadeOnScroll = () => {
   const element = document.getElementsByClassName("header")[0];
+
+  if (!element) {
+    return;
+  }
   var distanceToTop = window.pageYOffset + element.getBoundingClientRect().top;
 
   let opacity = 1;
@@ -128,8 +132,8 @@ export default function ProjectDetails({
           backgroundColor: bgColor,
         }}
       >
-        <div className="parallax project-details">
-          <div className="parallax__group">
+        <div className="project-details">
+          {/* <div className="parallax__group">
             <section className="header full-vw full-vh-lg flex-centered parallax__layer parallax__layer--back">
               <div className="width-1200">
                 <img
@@ -138,7 +142,7 @@ export default function ProjectDetails({
                 />
               </div>
             </section>
-          </div>
+          </div> */}
           <div className="parallax__group" style={{ height: "auto" }}>
             <section
               className="width-1200 content parallax__layer parallax__layer--base"
