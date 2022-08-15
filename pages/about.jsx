@@ -51,7 +51,7 @@ function About() {
                 personal stories that reflect the many ways we interact with
                 language in physical and online spaces.
               </p>
-              <div class="grid" style={{marginTop: "2em"}}>
+              <div className="grid" style={{marginTop: "2em"}}>
                 <Link href="https://typedesignschool.com">
                   <a className="tile-w-6 tile-h-6 grid-item">
                     <img src="/img/type_a-z.gif" />

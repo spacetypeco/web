@@ -20,16 +20,16 @@ export default function MakeNew() {
       }
     >
       <div className="project-grid">
-        <div className="tile-w-6 tile-h-6">
+        <div className="tile-w-6 tile-h-3">
           <img src="/works/2022-client-brand-panasonic/make-new-wide-2.png"></img>
         </div>
-        <div className="tile-w-6 tile-h-6">
+        <div className="tile-w-6 tile-h-3">
           <img src="/works/2022-client-brand-panasonic/make-new-wide-2.png"></img>
         </div>
-        <div className="tile-w-6 tile-h-6">
+        <div className="tile-w-6 tile-h-3">
           <img src="/works/2022-client-brand-panasonic/make-new-wide-2.png"></img>
         </div>
-        <div className="tile-w-6 tile-h-6">
+        <div className="tile-w-6 tile-h-3">
           <img src="/works/2022-client-brand-panasonic/make-new-wide-2.png"></img>
         </div>
       </div>

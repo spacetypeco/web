@@ -17,16 +17,16 @@ export default function MakeNew() {
       }
     >
       <div className="project-grid">
-        <div className="tile-w-6 tile-h-6">
+        <div className="tile-w-6 tile-h-3">
           <img src="/works/2019-client-mural-broadway/wide-still.jpg"></img>
         </div>
-        <div className="tile-w-6 tile-h-6">
+        <div className="tile-w-6 tile-h-3">
           <img src="/works/2019-client-mural-broadway/wide-still.jpg"></img>
         </div>
-        <div className="tile-w-6 tile-h-6">
+        <div className="tile-w-6 tile-h-3">
           <img src="/works/2019-client-mural-broadway/wide-still.jpg"></img>
         </div>
-        <div className="tile-w-6 tile-h-6">
+        <div className="tile-w-6 tile-h-3">
           <img src="/works/2019-client-mural-broadway/wide-still.jpg"></img>
         </div>
       </div>

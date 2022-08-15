@@ -327,7 +327,7 @@ a {
 }
 .link:hover,
 .link a:hover {
-  color: #ffffff99;
+  opacity: .8;
 }
 
 #about {
@@ -633,6 +633,8 @@ a {
   cursor: pointer;
   color: var(--color-white);
   display: inline-block;
+  padding: 0.2em 0.4em;
+  background-color: var(--color-accent);
 }
 
 .small-link {
