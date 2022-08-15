@@ -102,7 +102,7 @@ export default function ProjectDetails({
       >
         <div className="project-details">
           <section
-            className="width-1200 content content-short-bottom"
+            className="width-1200 content content-top content-short-bottom"
             style={
               {
                 // margin: "0 auto",
