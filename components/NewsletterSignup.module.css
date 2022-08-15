@@ -15,12 +15,12 @@
   width: calc(100% - 2rem);
   padding-left: 1rem;
   padding-right: 1rem;
-  border: 1px solid #ffffff99;
+  border: 1px solid var(--color-white);
   color: var(--color-white);
 }
 
 .emailInput:focus {
-  border: 1px solid white;
+  border: 1px solid var(--color-white);
 }
 
 .mergeTable {
@@ -28,7 +28,7 @@
 }
 
 .formSubmitButton {
-  background: white;
+  background: var(--color-white);
   color: var(--color-black);
   flex: 0 0 20%;
   padding-left: 1rem;
@@ -45,8 +45,8 @@
 
 .disabled {
   background: none;
-  border: 1px solid white;
-  color: white;
+  border: 1px solid var(--color-white);
+  color: var(--color-white);
   opacity: 0.5;
   cursor: default;
 }

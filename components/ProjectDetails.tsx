@@ -2,26 +2,7 @@ import { useEffect, useRef } from "react";
 
 import Head from "next/head";
 import useLogo from "../hooks/useLogo";
-
-const fadeOnScroll = () => {
-  const element = document.getElementsByClassName("header")[0];
-
-  if (!element) {
-    return;
-  }
-  var distanceToTop = window.pageYOffset + element.getBoundingClientRect().top;
-
-  let opacity = 1;
-  opacity =
-    1 +
-    (distanceToTop + window.innerHeight * 0.25) / (window.innerHeight * 0.2);
-
-  if (opacity >= 0) {
-    element.style.opacity = opacity;
-  } else {
-    element.style.opacity = 0;
-  }
-};
+import { useRouter } from "next/router";
 
 export default function ProjectDetails({
   title,
@@ -32,16 +13,6 @@ export default function ProjectDetails({
 }) {
   useLogo();
   const pageTitle = `Space Type - ${title}`;
-
-  useEffect(() => {
-    fadeOnScroll();
-    document.querySelectorAll(".parallax").forEach((element) => {
-      element.addEventListener("scroll", fadeOnScroll);
-    });
-
-    return () => window.removeEventListener("scroll", fadeOnScroll);
-  }, []);
-
   const titleSplit = [];
   let currentLine = [];
 
@@ -62,11 +33,6 @@ export default function ProjectDetails({
   });
 
   titleSplit.push(<div>{currentLine}</div>);
-
-  const titleAnimationDelay = 0.1 * title.length;
-  const introDelay = `${titleAnimationDelay + 0.5}s`;
-  const contentDelay = `${titleAnimationDelay + 1.0}s`;
-
   const titleRef = useRef();
 
   useEffect(() => {
@@ -121,6 +87,8 @@ export default function ProjectDetails({
     });
   }, []);
 
+  const router = useRouter();
+
   return (
     <>
       <Head>
@@ -128,57 +96,56 @@ export default function ProjectDetails({
         <meta property="og:title" content={pageTitle} />
       </Head>
       <main
-        style={{
-          backgroundColor: bgColor,
-        }}
+      // style={{
+      //   backgroundColor: bgColor,
+      // }}
       >
         <div className="project-details">
-          {/* <div className="parallax__group">
-            <section className="header full-vw full-vh-lg flex-centered parallax__layer parallax__layer--back">
-              <div className="width-1200">
-                <img
-                  src={headerUrl}
-                  className="full-w slide-up fade-out-on-scroll"
-                />
-              </div>
-            </section>
-          </div> */}
-          <div className="parallax__group" style={{ height: "auto" }}>
-            <section
-              className="width-1200 content parallax__layer parallax__layer--base"
-              style={
-                {
-                  // margin: "0 auto",
-                  // justifyContent: "center",
-                }
+          <section
+            className="width-1200 content content-short-bottom"
+            style={
+              {
+                // margin: "0 auto",
+                // justifyContent: "center",
               }
-            >
-              <div
-                className="side-text"
-                style={{
-                  padding: "2em",
-                  paddingTop: "-2em",
+            }
+          >
+            <div className="overflow-y-hidden">
+              <a
+                className="nav-back slide-up"
+                onClick={() => {
+                  router.query.fromWork ? router.back() : router.push("/work");
                 }}
               >
-                <h1 className="project-title" ref={titleRef}>
-                  {titleSplit}
-                </h1>
-                <div
-                  className="slide-up-on-scroll-1"
-                  style={{ animationDelay: "0.5s", animationDuration: "0.8s" }}
-                >
-                  {intro}
-                </div>
-              </div>
-
+                ← work
+              </a>
+            </div>
+            <div
+              className="side-text"
+              style={{
+                padding: "2em",
+                paddingTop: "-2em",
+                borderTop: "1px solid var(--color-white)",
+                marginTop: "0.5em",
+              }}
+            >
+              <h1 className="project-title" ref={titleRef}>
+                {titleSplit}
+              </h1>
               <div
-                className="slide-up-on-scroll-1-4"
-                style={{ animationDelay: "0.5s", animationDuration: "0.8s" }}
+                className="slide-up-on-scroll-1"
+                style={{ animationDelay: "0.2s", animationDuration: "0.8s" }}
               >
-                {props.children}
+                {intro}
               </div>
-            </section>
-          </div>
+            </div>
+            <div
+              className="slide-up-on-scroll-1-4"
+              style={{ animationDelay: "1s", animationDuration: "0.8s" }}
+            >
+              {props.children}
+            </div>
+          </section>
         </div>
       </main>
     </>

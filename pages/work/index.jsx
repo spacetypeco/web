@@ -16,7 +16,7 @@ function Works() {
         <div id="container" className="full-w full-h position-rel">
           <Navigation active="/work" />
           <div id="about">
-            <div className="fade-in content">
+            <div className="fade-in content-top">
               <div className="project-grid">
                 <div className="tile-w-6 tile-h-6">
                   <ProjectHoverLink

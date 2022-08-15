@@ -36,7 +36,7 @@ export default function Footer() {
         className="flex-h flex-v-sm"
         style={{
           paddingTop: "1em",
-          borderTop: "white 1px solid",
+          // borderTop: "var(--color-white) 1px solid",
         }}
       >
         <div className="flex-item-3-5 flex-item-sm-1">

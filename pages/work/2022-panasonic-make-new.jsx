@@ -3,18 +3,19 @@ import ProjectDetails from "../../components/ProjectDetails";
 export default function MakeNew() {
   return (
     <ProjectDetails
-      title="Make New"
+      title="Panasonic —"
       headerUrl="/works/2022-client-brand-panasonic/make-new-wide-2.png"
       bgColor="black"
       intro={
         <>
-          <p>Client: Panasonic</p>
+          <h4>Make New</h4>
           <p>
-            Generative typography pieces for the Panasonic “Make New” campaign,
-            commissioned through Spoon Inc. The 30 sec advert features work from
-            many talented artists and aired on Japanese TV channels.
+            For Panasonic's new campaign, Space Type was invited alongside other artists to
+            share our own interpretations of their new slogan, "Make New." The resulting 30-second advert
+            was aired on Japanese TV channels and compiled into a website showcasing individual
+            works.
           </p>
-          <p>Hand coded with #javascript, #p5js, and #glsl shaders.</p>
+          <p>All motion graphics were built for the web using p5.js and custom shaders.</p>
         </>
       }
     >

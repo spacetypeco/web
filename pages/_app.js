@@ -16,6 +16,18 @@ import { useRouter } from "next/router";
 function App({ Component, pageProps }) {
   const router = useRouter();
 
+  const inWork = router.pathname.match(/\/work.*$/);
+
+  let theme = "";
+  if (inWork) {
+    theme = " theme-light";
+  }
+
+  let globalClassNames = `${theme}`;
+  if (Component.name == "Home") {
+    globalClassNames += " full-w full-h";
+  }
+
   return (
     <>
       <Head>
@@ -74,12 +86,14 @@ function App({ Component, pageProps }) {
         <Script src="/js/video-perf-check.js" />
       </Head>
       <div
-        className="full-w full-h"
+        className={globalClassNames}
         style={{
           display: "flex",
           flexDirection: "column",
           minHeight: "100vh",
           justifyContent: "flex-start",
+          backgroundColor: "var(--color-black)",
+          transition: "background-color 0.25s",
         }}
       >
         <Navigation activeComponentName={Component.name} />

@@ -1,15 +1,8 @@
 // import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/router";
 
 export default function Navigation({ activeComponentName }) {
-  const classes = "flex-h flex-end nav full-w position-fixed";
-
-  const router = useRouter();
-
-  console.log(router.pathname);
-
-  const inWork = router.pathname.match(/\/work\/.+$/);
+  let classes = "flex-h flex-end nav full-w position-fixed";
 
   return (
     <div className={classes}>
@@ -18,16 +11,6 @@ export default function Navigation({ activeComponentName }) {
           <Link href="/">
             <img src="/img/logo_white.svg" />
           </Link>
-          {inWork && (
-            <a
-              className="nav-back"
-              onClick={() => {
-                router.query.fromWork ? router.back() : router.push("/work");
-              }}
-            >
-              ← work
-            </a>
-          )}
         </div>
       </div>
       <div className="controls">
