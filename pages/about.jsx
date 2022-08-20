@@ -92,7 +92,7 @@ function About() {
                 </ul>
               </p>
               <h3>Previous offerings</h3>
-              <div class="grid">
+              <div className="grid">
                 <Link href="https://letterformdesign.com">
                   <a className="tile-w-6 tile-h-6 grid-item">
                     <img src="/img/letterformdesign.png" />
