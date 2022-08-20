@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 
 import Head from "next/head";
+import { emitKeypressEvents } from "readline";
 import useLogo from "../hooks/useLogo";
 import { useRouter } from "next/router";
 import useVideoManager from "../hooks/useVideoManager";
@@ -42,7 +43,7 @@ export default function ProjectDetails({
       (entries, observer) => {
         const entry = entries[0];
         if (entry.isIntersecting) {
-          document.querySelectorAll(".project-title span").forEach((el) => {
+          entry.target.querySelectorAll("span").forEach((el) => {
             el.classList.add("slide-down");
           });
         }

@@ -1,14 +1,14 @@
 import ProjectDetails from "../../components/ProjectDetails";
+import Video from "../../components/Video";
 
 export default function MakeNew() {
   return (
     <ProjectDetails
-      title="Panasonic —"
+      title="Panasonic / Make New"
       headerUrl="/works/2022-client-brand-panasonic/make-new-wide-2.png"
       bgColor="black"
       intro={
         <>
-          <h4>Make New</h4>
           <p>
             For Panasonic's new campaign, Space Type was invited alongside other artists to
             share our own interpretations of their new slogan, "Make New." The resulting 30-second advert
@@ -20,17 +20,32 @@ export default function MakeNew() {
       }
     >
       <div className="project-grid">
-        <div className="tile-w-6 tile-h-3">
-          <img src="/works/2022-client-brand-panasonic/make-new-wide-2.png"></img>
+        <div className="tile-w-12 tile-h-6">
+          <Video src="/works/2022-client-brand-panasonic/cover.mov"/>
         </div>
-        <div className="tile-w-6 tile-h-3">
-          <img src="/works/2022-client-brand-panasonic/make-new-wide-2.png"></img>
+        <div className="tile-w-12 tile-h-6">
+        <iframe src='https://www.youtube.com/embed/BHCOvooEdy8'
+        frameborder='0'
+        allow='autoplay; encrypted-media'
+        allowfullscreen
+        title='video'
+        style={{width: "100%", height:"100%"}}
+        />
         </div>
-        <div className="tile-w-6 tile-h-3">
-          <img src="/works/2022-client-brand-panasonic/make-new-wide-2.png"></img>
+        <div className="tile-w-4 tile-h-8">
+          <Video src="/works/2022-client-brand-panasonic/make-new-artists.mov"/>
         </div>
-        <div className="tile-w-6 tile-h-3">
-          <img src="/works/2022-client-brand-panasonic/make-new-wide-2.png"></img>
+        <div className="tile-w-4 tile-h-4">
+          <Video src="/works/2022-client-brand-panasonic/scene-3.mov"/>
+        </div>
+        <div className="tile-w-4 tile-h-4">
+          <Video src="/works/2022-client-brand-panasonic/scene-2.mov"/>
+        </div>
+        <div className="tile-w-4 tile-h-4">
+          <Video src="/works/2022-client-brand-panasonic/scene-1-2d.mov"/>
+        </div>
+        <div className="tile-w-4 tile-h-4">
+          <Video src="/works/2022-client-brand-panasonic/scene-1-3d.mov"/>
         </div>
       </div>
     </ProjectDetails>

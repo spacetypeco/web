@@ -26,7 +26,7 @@ function Works() {
                     href="work/2022-panasonic-make-new"
                     title="Panasonic: Make New"
                   >
-                    <img src="/works/2022-client-brand-panasonic/make-new-wide-2.png"></img>
+                    <Video src="/works/2022-client-brand-panasonic/cover.mov"/>
                   </ProjectHoverLink>
                 </div>
                 <div className="tile tile-w-4 tile-h-4">
