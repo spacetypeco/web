@@ -1,10 +1,13 @@
 import Head from "next/head";
 import Navigation from "../../components/Navigation";
 import ProjectHoverLink from "../../components/ProjectHoverLink";
+import Video from "../../components/Video";
 import useLogo from "../../hooks/useLogo";
+import useVideoManager from "../../hooks/useVideoManager";
 
 function Works() {
   useLogo();
+  useVideoManager();
   
   return (
     <>
@@ -28,12 +31,7 @@ function Works() {
                 </div>
                 <div className="tile tile-w-4 tile-h-4">
                   <ProjectHoverLink href="work/2022-vartype" title="Vartype">
-                    <video autoPlay={true} loop={true}>
-                      <source
-                        src="/works/2022-tool-vartype/vartype-insta-3.mp4"
-                        type="video/mp4"
-                      />
-                    </video>
+                    <Video src="/works/2022-tool-vartype/cover.mp4"/>
                   </ProjectHoverLink>
                 </div>
                 <div className="tile tile-w-2 tile-h-10" style={{backgroundColor: "red"}}>
@@ -42,10 +40,10 @@ function Works() {
                 
                 <div className="tile tile-w-6 tile-h-4">
                   <ProjectHoverLink
-                    href="work/2022-existential"
+                    href="work/2022-existentialco"
                     title="Existential Co."
                   >
-                    <img src="/works/2022-client-web-existential/square.png"></img>
+                    <Video src="/works/2022-client-web-existential/cover.mov"/>
                   </ProjectHoverLink>
                 </div>
                 <div className="tile tile-w-4 tile-h-6">

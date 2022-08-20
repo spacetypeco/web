@@ -68,7 +68,7 @@
 .project-grid {
   display: grid;
   grid-template-columns: repeat(12,1fr);
-  grid-auto-rows: 8vw;
+  grid-auto-rows: 1fr;
   max-width: 100%;
   grid-gap: 0.5em;
   margin: 0 0.5em;

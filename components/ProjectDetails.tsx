@@ -3,6 +3,7 @@ import { useEffect, useRef } from "react";
 import Head from "next/head";
 import useLogo from "../hooks/useLogo";
 import { useRouter } from "next/router";
+import useVideoManager from "../hooks/useVideoManager";
 
 export default function ProjectDetails({
   title,
@@ -12,6 +13,7 @@ export default function ProjectDetails({
   ...props
 }) {
   useLogo();
+  useVideoManager();
   const pageTitle = `Space Type - ${title}`;
   const titleSplit = [];
   let currentLine = [];
@@ -133,18 +135,13 @@ export default function ProjectDetails({
                 {titleSplit}
               </h1>
               <div
-                className="slide-up-on-scroll-1"
-                style={{ animationDelay: "0.2s", animationDuration: "0.8s" }}
+                className="fade-in"
+                style={{ animationDelay: "0.4s", animationDuration: "0.8s" }}
               >
                 {intro}
               </div>
             </div>
-            <div
-              className="slide-up-on-scroll-1-4"
-              style={{ animationDelay: "1s", animationDuration: "0.8s" }}
-            >
-              {props.children}
-            </div>
+            <div>{props.children}</div>
           </section>
         </div>
       </main>

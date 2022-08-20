@@ -10,7 +10,6 @@ import "../styles/app.css";
 import Footer from "../components/Footer";
 import Head from "next/head";
 import Navigation from "../components/Navigation";
-import Script from "next/script";
 import { useRouter } from "next/router";
 
 function App({ Component, pageProps }) {
@@ -83,7 +82,6 @@ function App({ Component, pageProps }) {
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5BBAD5" />
         <meta name="msapplication-TileColor" content="#DA532C" />
         <meta name="theme-color" content="#FFFFFF" />
-        <Script src="/js/video-perf-check.js" />
       </Head>
       <div
         className={globalClassNames}
