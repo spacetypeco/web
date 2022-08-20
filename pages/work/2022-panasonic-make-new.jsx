@@ -6,7 +6,6 @@ export default function MakeNew() {
     <ProjectDetails
       title="Panasonic / Make New"
       headerUrl="/works/2022-client-brand-panasonic/make-new-wide-2.png"
-      bgColor="black"
       intro={
         <>
           <p>

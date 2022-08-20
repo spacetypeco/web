@@ -1,10 +1,9 @@
 import ProjectDetails from "../../components/ProjectDetails";
 
-export default function MakeNew() {
+export default function BroadwayMural() {
   return (
     <ProjectDetails
       title="Broadway Mural"
-      headerUrl="/works/2019-client-mural-broadway/wide-still.jpg"
       intro={
         <>
           <p>Client: Silverstein Properties</p>

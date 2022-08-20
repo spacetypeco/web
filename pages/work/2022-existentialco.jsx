@@ -1,11 +1,10 @@
 import ProjectDetails from "../../components/ProjectDetails";
 import Video from "../../components/Video";
 
-export default function MakeNew() {
+export default function ExistentialCo() {
   return (
     <ProjectDetails
       title="Existential Co."
-      bgColor="black"
       intro={
         <>
           <p>
