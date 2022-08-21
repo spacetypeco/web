@@ -2,7 +2,7 @@
   --num-items: 6;
   display: grid;
   grid-template-columns: repeat(auto-fit, calc(100% / var(--num-items)));
-  grid-auto-rows: auto;
+  grid-template-rows: auto;
   grid-gap: 0px;
   align-items: center;
 }
@@ -68,7 +68,7 @@
 .project-grid {
   display: grid;
   grid-template-columns: repeat(12,1fr);
-  grid-auto-rows: 1fr;
+  grid-template-rows: 1fr;
   max-width: 100%;
   grid-gap: 0.5em;
   margin: 0 0.5em;
