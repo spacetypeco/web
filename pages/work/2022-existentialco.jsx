@@ -30,37 +30,37 @@ export default function ExistentialCo() {
       }
     >
       <div className="project-grid">
-        <div className="tile-w-12 tile-h-6">
+        <div className="tile tile-w-12 tile-h-6">
           <Video src="/works/2022-client-web-existential/cover.mov"/>
         </div>
-        <div className="tile-w-12 tile-h-6">
+        <div className="tile tile-w-12 tile-h-6">
           <Video src="/works/2022-client-web-existential/growth.mov"/>
         </div>
-        <div className="tile-w-6 tile-h-3">
+        <div className="tile tile-w-6 tile-h-3">
           <Video src="/works/2022-client-web-existential/exist-and-thrive.mov"/>
         </div>
-        <div className="tile-w-6 tile-h-3">
+        <div className="tile tile-w-6 tile-h-3">
           <Video src="/works/2022-client-web-existential/collective-action.mov"/>
         </div>
-        <div className="tile-w-6 tile-h-3">
+        <div className="tile tile-w-6 tile-h-3">
           <Video src="/works/2022-client-web-existential/care-and-connection.mov"/>
         </div>
-        <div className="tile-w-6 tile-h-3">
+        <div className="tile tile-w-6 tile-h-3">
           <Video src="/works/2022-client-web-existential/escargo.mov"/>
         </div>
-        <div className="tile-w-12 tile-h-6">
+        <div className="tile tile-w-12 tile-h-6">
           <Video src="/works/2022-client-web-existential/why.mov"/>
         </div>
-        <div className="tile-w-12 tile-h-6">
+        <div className="tile tile-w-12 tile-h-6">
           <Video src="/works/2022-client-web-existential/char-prototypes.mov"/>
         </div>
-        <div className="tile-w-12 tile-h-6">
+        <div className="tile tile-w-12 tile-h-6">
           <Video src="/works/2022-client-web-existential/transition.mov"/>
         </div>
-        <div className="tile-w-6 tile-h-3">
+        <div className="tile tile-w-6 tile-h-3">
           <img src="/works/2022-client-web-existential/ui.png"/>
         </div>
-        <div className="tile-w-6 tile-h-3">
+        <div className="tile tile-w-6 tile-h-3">
           <img src="/works/2022-client-web-existential/ty.png"/>
         </div>
       </div>

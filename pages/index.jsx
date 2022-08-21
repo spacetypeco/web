@@ -121,7 +121,7 @@ function Home() {
           justifyContent: "flex-start",
         }}
       >
-        <div className="content flex-v flex-centered-v-h" style={{flex: "1", minHeight: "calc(90vh - 13em)"}}>
+        <div className="flex-v flex-centered flex-centered-v-h" style={{flex: "1", minHeight: "calc(90vh - 13em)"}}>
           <div className="overflow-y-hidden">
             <div className="space-intro-logo-inner">
           <img

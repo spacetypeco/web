@@ -68,10 +68,18 @@
 .project-grid {
   display: grid;
   grid-template-columns: repeat(12,1fr);
-  grid-template-rows: 1fr;
+  grid-template-rows: 8.33%;
   max-width: 100%;
   grid-gap: 0.5em;
-  margin: 0 0.5em;
+  margin: 0 3em;
+}
+
+.project-grid--full-w {
+  grid-auto-rows: calc((100vw - 6em) / 12);
+}
+
+.tile.rounded video, .tile.rounded, .tile.rounded img {
+  border-radius: 25px;
 }
 
 .project-details-grid {
@@ -250,7 +258,7 @@
     padding-right: 2em;
   }
   .project-grid {
-    grid-template-rows: none;
+    grid-auto-rows: revert;
   }
   .tile {
     grid-column-end: span 12;
