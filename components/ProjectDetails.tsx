@@ -54,42 +54,6 @@ export default function ProjectDetails({
     observer.observe(titleRef.current);
   }, [titleRef.current]);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries, observer) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("slide-up");
-          }
-        });
-      },
-
-      { threshold: 1 }
-    );
-
-    document.querySelectorAll(".slide-up-on-scroll-1").forEach((el) => {
-      observer.observe(el);
-    });
-  }, []);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries, observer) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("slide-up");
-          }
-        });
-      },
-
-      { threshold: 0.25 }
-    );
-
-    document.querySelectorAll(".slide-up-on-scroll-1-4").forEach((el) => {
-      observer.observe(el);
-    });
-  }, []);
-
   const router = useRouter();
 
   return (

@@ -589,6 +589,10 @@ a {
   float: right;
 }*/
 
+.float-right {
+  float: right;
+}
+
 @media (max-width: 600px) {
   .logo {
     margin-right: 0.5em;

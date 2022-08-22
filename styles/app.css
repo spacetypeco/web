@@ -319,3 +319,15 @@
     transform: unset;
   }
 }
+
+
+.label-accent {
+  padding: 10px 20px;
+  background-color: var(--color-accent);
+}
+
+.note {
+  max-width: 600px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
