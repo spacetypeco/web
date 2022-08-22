@@ -345,6 +345,10 @@ a {
   margin: 0 auto;
 }
 
+.content-wide {
+  margin: 0 3em;
+}
+
 .content-short-bottom {
   padding-bottom: 3em;
 }
@@ -514,6 +518,9 @@ a {
     padding-left: 2em;
     padding-right: 2em;
   }
+  .content-wide {
+    margin: 0 1em;
+  }
   .flex-v-sm {
     display: flex;
     flex-direction: column;
@@ -528,8 +535,11 @@ a {
     font-size: 3.5em;
   }
   .nav {
-    background-color: var(--color-black);
     transition: background-color var(--theme-transition-time), color var(--theme-transition-time);
+  }
+  #nav-box {
+    background-color: var(--color-accent);
+    padding: 0.2em 0.5em;
   }
   .logo img {
     width: 50px;

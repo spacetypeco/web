@@ -9,9 +9,7 @@ export default function Navigation({ activeComponentName }) {
       <div className="logo overflow-y-hidden">
         <div className="logo-inner">
           <Link href="/">
-            <a>
-              <img src="/img/logo_white.svg" />
-            </a>
+            <img src="/img/logo_white.svg" />
           </Link>
         </div>
       </div>

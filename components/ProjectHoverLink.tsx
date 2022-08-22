@@ -4,7 +4,6 @@ import useHover from "../hooks/useHover.jsx";
 export default function ProjectHoverLink({ href, title, ...props }) {
   const [hovered, eventHandlers] = useHover();
   const visibility = hovered ? 1.0 : 0.0;
-
   const fullLink = `${href}?fromWork=true`;
 
   return (

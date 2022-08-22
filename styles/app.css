@@ -71,11 +71,11 @@
   grid-template-rows: 8.33%;
   max-width: 100%;
   grid-gap: 0.5em;
-  margin: 0 3em;
 }
 
 .project-grid--full-w {
   grid-auto-rows: calc((100vw - 6em) / 12);
+  grid-template-rows: revert;
 }
 
 .tile.rounded video, .tile.rounded, .tile.rounded img {
@@ -262,6 +262,9 @@
   }
   .tile {
     grid-column-end: span 12;
+  }
+  .hide-sm {
+    display: none;
   }
   .project-grid img, .project-grid video, .project-details img {
     object-fit: fill;
