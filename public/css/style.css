@@ -538,7 +538,6 @@ a {
     transition: background-color var(--theme-transition-time), color var(--theme-transition-time);
   }
   #nav-box {
-    background-color: var(--color-accent);
     padding: 0.2em 0.5em;
   }
   .logo img {

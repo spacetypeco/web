@@ -93,8 +93,10 @@ function Home() {
     <>
       <div className="hide-overflow full-w full-h">
     <div id="container" className="full-w full-h position-rel">
-      <div id="sketches-container" className="full-w full-h position-abs">
+      <div id="sketches-container" className="full-w full-h position-abs">        
         <div id="canvas" className="sketch-container full-w full-h">
+          <div id="p5_loading" style={{ display: "none" }} />
+
           <a className="ct-btn-scroll ct-js-btn-scroll" dest="#canvas2">
             <ScrollButton/>
           </a>

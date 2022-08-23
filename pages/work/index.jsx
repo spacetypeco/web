@@ -21,7 +21,7 @@ function Works() {
         <div id="container" className="full-w full-h position-rel">
           <div id="about">
             <div className="fade-in content-top content-wide">
-              <p className="label-accent note slide-up" style={{ animationDelay: "0.5s", animationDuration: "1s" }}>We work across physical and digital media to build bridges between type and technology.</p>
+              <h1 className="label-accent note slide-up text-outline" style={{ animationDelay: "0.5s", animationDuration: "1s" }}>We work across physical and digital media to build bridges between type and technology.</h1>
               <div className="project-grid project-grid--full-w slide-up" style={{ animationDelay: "1.5s", animationDuration: "1s" }}>
                 <div className="tile rounded tile-w-6 tile-h-4">
                   <ProjectHoverLink
@@ -86,7 +86,7 @@ function Works() {
   </div>
   </div>
 
-  <p className="label-accent note slide-up-on-scroll-1" style={{ animationDelay: "0.5s", animationDuration: "1s" }}>Our work has been installed in public galleries, exhibitions, and open-air sites.</p>
+  <h1 className="label-accent note text-outline slide-up-on-scroll-1" style={{ animationDelay: "0.5s", animationDuration: "1s" }}>Our work has been installed in public galleries, exhibitions, and open-air sites.</h1>
   <div className="project-grid project-grid--full-w slide-up-on-scroll-0" style={{ animationDelay: "1.5s", animationDuration: "1s" }}>
 
                 <div className="tile rounded tile-w-6 tile-h-3">
@@ -123,7 +123,7 @@ function Works() {
 
                 </div>
 
-                <p className="label-accent note slide-up-on-scroll-1" style={{ animationDelay: "0.5s", animationDuration: "1s" }}>And our custom typefaces, calligraphy, and letterin blah blah.</p>
+                <h1 className="label-accent note slide-up-on-scroll-1 text-outline" style={{ animationDelay: "0.5s", animationDuration: "1s" }}>We design custom lettering and typefaces for every occasion.</h1>
   <div className="project-grid project-grid--full-w slide-up-on-scroll-0" style={{ animationDelay: "1.5s", animationDuration: "1s" }}>
     
                 <div className="tile rounded tile-w-6 tile-h-4">

@@ -48,7 +48,7 @@
 .text-outline {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--color-white);
-  color: black;
+  color: var(--color-black);
 }
 
 .grid {
@@ -71,6 +71,7 @@
   grid-template-rows: 8.33%;
   max-width: 100%;
   grid-gap: 0.5em;
+  margin-bottom: 4em;
 }
 
 .project-grid--full-w {
@@ -79,7 +80,7 @@
 }
 
 .tile.rounded video, .tile.rounded, .tile.rounded img {
-  border-radius: 25px;
+  border-radius: 10px;
 }
 
 .project-details-grid {
@@ -322,12 +323,10 @@
 
 
 .label-accent {
-  padding: 10px 20px;
-  background-color: var(--color-accent);
+  padding: 10px 0px;
 }
 
 .note {
   max-width: 600px;
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
