@@ -647,7 +647,7 @@ a {
   font-size: 0.9em;
 }
 
-.nav-back {
+.content .nav-back {
   font-size: 0.8em;
   cursor: pointer;
   color: var(--color-white);
