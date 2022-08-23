@@ -1,15 +1,31 @@
 import Head from "next/head";
-import Navigation from "../../components/Navigation";
 import ProjectHoverLink from "../../components/ProjectHoverLink";
 import Video from "../../components/Video";
 import useLogo from "../../hooks/useLogo";
+import useScripts from "../../hooks/useScripts";
 import useScrollReveal from "../../hooks/useScrollReveal";
 import useVideoManager from "../../hooks/useVideoManager";
+require("../../util/utils.js");
 
 function Works() {
   useLogo();
   useVideoManager();
   useScrollReveal();
+
+  const urls = [
+  "https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js",
+  "https://cdn.jsdelivr.net/gh/kyeah/p5@master/utils/text-utils.js",
+  "/js/sketches/blobs/point.js",
+  "/js/sketches/blobs-bg/sketch-generator.js",
+]
+  
+  useScripts(urls, 
+    () => typeof(BlobsBg) !== "undefined",
+    () => {
+      const sketch = BlobsBg.createSketch("bg");
+      const p5s = new p5(sketch, "bg");
+      return () => p5s.remove();
+    }, []);
   
   return (
     <>
@@ -20,6 +36,7 @@ function Works() {
       <main>
         <div id="container" className="full-w full-h position-rel">
           <div id="about">
+            <div className="position-abs full-w full-h" style={{maxWidth:"100%", overflow: "hidden"}} id="bg"></div>
             <div className="fade-in content-top content-wide">
               <h1 className="label-accent note slide-up text-outline" style={{ animationDelay: "0.5s", animationDuration: "1s" }}>We work across physical and digital media to build bridges between type and technology.</h1>
               <div className="project-grid project-grid--full-w slide-up" style={{ animationDelay: "1.5s", animationDuration: "1s" }}>
@@ -65,17 +82,17 @@ function Works() {
  
                       
       
-                      <div className="tile tile-w-6 tile-h-2">
+                      <div className="tile no-squish tile-w-6 tile-h-2">
                         <Video src="/works/2022-insta-36daysoftype/s5-2.mp4"/>
                       </div>
-                      <div className="tile tile-w-6 tile-h-2">
+                      <div className="tile no-squish tile-w-6 tile-h-2">
                         <Video src="/works/2022-insta-36daysoftype/X.mp4"/>
                       </div>
                       
-                      <div className="tile tile-w-6 tile-h-2">
-                        <Video src="/works/2022-insta-36daysoftype/5.mp4"/>
+                      <div className="tile no-squish tile-w-6 tile-h-2">
+                        <Video src="/works/2022-insta-36daysoftype/5.mov"/>
                       </div>
-                      <div className="tile tile-w-6 tile-h-2">
+                      <div className="tile no-squish tile-w-6 tile-h-2">
                         <Video src="/works/2022-insta-36daysoftype/Z.mp4"/>
                       </div>
                                   </div>
@@ -123,7 +140,7 @@ function Works() {
 
                 </div>
 
-                <h1 className="label-accent note slide-up-on-scroll-1 text-outline" style={{ animationDelay: "0.5s", animationDuration: "1s" }}>We design custom lettering and typefaces for every occasion.</h1>
+                <h1 className="label-accent note slide-up-on-scroll-1 text-outline" style={{ animationDelay: "0.5s", animationDuration: "1s" }}>Our custom typefaces and lettering reflect every personality.</h1>
   <div className="project-grid project-grid--full-w slide-up-on-scroll-0" style={{ animationDelay: "1.5s", animationDuration: "1s" }}>
     
                 <div className="tile rounded tile-w-6 tile-h-4">

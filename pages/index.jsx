@@ -34,18 +34,19 @@ function Home() {
     return () => element.removeEventListener("scroll", fadeOnScroll);
   }, []);
 
-  const urls = ["https://cdn.jsdelivr.net/npm/opentype.js@latest/dist/opentype.min.js",
-  "https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js",
-  "https://cdn.jsdelivr.net/gh/kyeah/p5@master/utils/text-utils.js",
-  "js/p5.func.min.js",
-  "/js/matter-0_14_2.min.js",
-  "/js/sketches/blobs/point.js",
-  "/js/sketches/blobs/sketch-generator.js",
-  "/js/sketches/particle-fill/sketch-generator.js",
-  "/js/sketches/shader-wag/sketch-generator.js",
-  "/js/sketches/vortex/sketch-generator.js",
-  "/js/sketches/path-tweaker/sketch-generator.js"
-]
+  const urls = [
+    "https://cdn.jsdelivr.net/npm/opentype.js@latest/dist/opentype.min.js",
+    "https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js",
+    "https://cdn.jsdelivr.net/gh/kyeah/p5@master/utils/text-utils.js",
+    "/js/p5.func.min.js",
+    "/js/matter-0_14_2.min.js",
+    "/js/sketches/blobs/point.js",
+    "/js/sketches/blobs/sketch-generator.js",
+    "/js/sketches/particle-fill/sketch-generator.js",
+    "/js/sketches/shader-wag/sketch-generator.js",
+    "/js/sketches/vortex/sketch-generator.js",
+    "/js/sketches/path-tweaker/sketch-generator.js"
+  ]
   
   useScripts(urls, 
     () => typeof(Blobs) !== "undefined",
@@ -133,7 +134,10 @@ function Home() {
           </div></div>
           <div className="markdown-body" style={{textAlign: "center", paddingTop: "2em"}}>
           <p>We work with individuals and organizations to express unique narratives and connect the seams between type design and digital interaction.</p>
-          <Link href="/about"><a href="/about"><h4>Learn more →</h4></a></Link>
+          <div className="flex-h flex-centered flex-centered-v-h" style={{ gap: "2em" }}>
+          <Link href="/work"><a href="/work"><h4 className="button-lg">See our work →</h4></a></Link>
+          <Link href="/about"><a href="/about"><h4 className="button-lg">Read about us →</h4></a></Link>
+          </div>
           </div></div>
         </div>
         <Footer/>

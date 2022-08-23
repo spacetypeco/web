@@ -1,11 +1,17 @@
 // import Image from "next/image";
 import Link from "next/link";
+import useHideOnScroll from "../hooks/useHideOnScroll";
 
 export default function Navigation({ activeComponentName }) {
+  let visible = useHideOnScroll();
   let classes = "flex-h flex-end nav full-w position-fixed";
+  let style = {
+    transition: "transform 0.6s",
+    transform: visible ? "" : "translateY(-100%)",
+  };
 
   return (
-    <div className={classes}>
+    <div className={classes} style={style}>
       <div className="logo overflow-y-hidden">
         <div className="logo-inner">
           <Link href="/">

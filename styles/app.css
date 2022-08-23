@@ -261,7 +261,7 @@
   .project-grid {
     grid-auto-rows: revert;
   }
-  .tile {
+  .tile:not(.no-squish) {
     grid-column-end: span 12;
   }
   .hide-sm {
@@ -327,6 +327,7 @@
 }
 
 .note {
-  max-width: 600px;
+  max-width: 700px;
   margin-bottom: 1em;
+  color: transparent;
 }

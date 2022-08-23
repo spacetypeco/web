@@ -23,12 +23,13 @@ function About() {
         <div id="container" className="full-w full-h position-rel">
           <div id="about">
             <div className="fade-in content markdown-body">
-              <h1 className="text-outline">Space Type</h1>
+            <img src="/img/about-cover.jpeg" style={{width: "100%", borderRadius: "10px"}}></img>
+
               <p>
                 Space Type is an NYC-based studio practice operating at the
                 intersection of type and technology. Led by {LynneYun} and{" "}
                 {KevinYeh}, the studio specializes in experiential letterforms
-                and web experiences.
+                and web installations.
               </p>
               <p>
                 We work with individuals and organizations to express unique
@@ -37,6 +38,7 @@ function About() {
                 institutions, and engage with communities through workshops,
                 classes, and donation-based resources.
               </p>
+
               <hr />
               <h1 className="text-outline">Educational Resources</h1>
               <p>
@@ -71,24 +73,7 @@ function About() {
               <h3>Upcoming Workshops</h3>
               <p>
                 <ul className="list-basic subtext">
-                  <li>
-                    <Link href="https://2022.typographics.com/workshops/">
-                      Typographics
-                    </Link>{" "}
-                    - Code x Kinetic Type, Jun 13-15 2022
-                  </li>
-                  <li>
-                    <Link href="https://letterformarchive.org/events/view/designing-flourishes2">
-                      Letterform Archive
-                    </Link>{" "}
-                    - Flourishing, Jun 22–23 2022
-                  </li>
-                  <li>
-                    <Link href="https://letterformarchive.org/events/view/in-person-core-prototyping-letterforms">
-                      Letterform Archive
-                    </Link>{" "}
-                    - Prototyping Letterforms, Jun 25–26 2022
-                  </li>
+                  
                 </ul>
               </p>
               <h3>Previous offerings</h3>
@@ -114,6 +99,24 @@ function About() {
                       Letterform Archive
                     </Link>{" "}
                     - Type West: Type Design, Jun–Aug 2022
+                  </li>
+                  <li>
+                    <Link href="https://letterformarchive.org/events/view/in-person-core-prototyping-letterforms">
+                      Letterform Archive
+                    </Link>{" "}
+                    - Prototyping Letterforms, Jun 25–26 2022
+                  </li>
+                  <li>
+                    <Link href="https://letterformarchive.org/events/view/designing-flourishes2">
+                      Letterform Archive
+                    </Link>{" "}
+                    - Flourishing, Jun 22–23 2022
+                  </li>
+                  <li>
+                    <Link href="https://2022.typographics.com/workshops/">
+                      Typographics
+                    </Link>{" "}
+                    - Code x Kinetic Type, Jun 13-15 2022
                   </li>
                   <li>
                     <Link href="http://coopertype.org/event/generative_type_sp2021">

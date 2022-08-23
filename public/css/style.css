@@ -2,6 +2,7 @@
   --color-black: #161616;
   --color-accent: #37f79b;
   --color-white: #f7f7f7;
+  --color-accent-2:#fce345;
   --z-nav: 2;
   --z-button-scroll: 1;
   --theme-transition-time: 1s;
@@ -96,6 +97,11 @@ span,
 ul,
 input {
   font-family: "AdelleMonoFlex-Regular", monospace;
+}
+
+h1,
+h2 {
+  line-height: 1.4em;
 }
 
 input {
@@ -338,7 +344,7 @@ a {
 }
 
 .content {
-  padding-top: 13em;
+  padding-top: 10em;
   padding-bottom: 7em;
   padding-left: 5em;
   padding-right: 5em;
@@ -641,13 +647,23 @@ a {
   font-size: 0.9em;
 }
 
-.content .nav-back {
+.nav-back {
   font-size: 0.8em;
   cursor: pointer;
   color: var(--color-white);
   display: inline-block;
   padding: 0.2em 0.4em;
   background-color: var(--color-accent);
+  border-radius: 4px;
+}
+
+.button-lg {
+  font-size: 0.8em;
+  cursor: pointer;
+  color: var(--color-black);
+  display: inline-block;
+  padding: 1em 2em;
+  background-color: var(--color-white);
   border-radius: 4px;
 }
 
