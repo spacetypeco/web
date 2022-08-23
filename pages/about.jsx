@@ -23,7 +23,7 @@ function About() {
         <div id="container" className="full-w full-h position-rel">
           <div id="about">
             <div className="fade-in content markdown-body">
-            <img src="/img/about-cover.jpeg" style={{width: "100%", borderRadius: "10px"}}></img>
+              <img src="/img/about-cover.jpeg" style={{width: "100%", borderRadius: "10px"}}></img>
 
               <p>
                 Space Type is an NYC-based studio practice operating at the
@@ -70,12 +70,11 @@ function About() {
               </div>
               <hr />
               <h1 className="text-outline">Workshops</h1>
-              <h3>Upcoming Workshops</h3>
-              <p>
+              {/* <h3>Upcoming Workshops</h3> */}
+              {/* <p>
                 <ul className="list-basic subtext">
-                  
                 </ul>
-              </p>
+              </p> */}
               <h3>Previous offerings</h3>
               <div className="grid">
                 <Link href="https://letterformdesign.com">
