@@ -140,7 +140,9 @@ function Works() {
 
                 </div>
 
-                <h1 className="label-accent note slide-up-on-scroll-1 text-outline" style={{ animationDelay: "0.5s", animationDuration: "1s" }}>Our custom typefaces and lettering reflect every personality.</h1>
+                <h1 className="label-accent note slide-up-on-scroll-1 text-outline" style={{ animationDelay: "0.5s", animationDuration: "1s" }}>
+                  We design custom typefaces and lettering to fit any occasion.
+                </h1>
   <div className="project-grid project-grid--full-w slide-up-on-scroll-0" style={{ animationDelay: "1.5s", animationDuration: "1s" }}>
     
                 <div className="tile rounded tile-w-6 tile-h-4">
