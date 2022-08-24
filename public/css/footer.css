@@ -5,6 +5,8 @@
   opacity: 0;
   transition: opacity 1s;
   scroll-snap-align: end;
+  z-index: 1;
+  background-color: var(--color-black);
 }
 
 .footer p {

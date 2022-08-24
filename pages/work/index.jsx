@@ -36,7 +36,7 @@ function Works() {
       <main>
         <div id="container" className="full-w full-h position-rel">
           <div id="about">
-            <div className="position-abs full-w full-h" style={{maxWidth:"100%", overflow: "hidden"}} id="bg"></div>
+            <div className="full-vw full-vh" style={{position: "fixed"}} id="bg"></div>
             <div className="fade-in content-top content-wide">
               <h1 className="label-accent note slide-up text-outline" style={{ animationDelay: "0.5s", animationDuration: "1s" }}>We work across physical and digital media to build bridges between type and technology.</h1>
               <div className="project-grid project-grid--full-w slide-up" style={{ animationDelay: "1.5s", animationDuration: "1s" }}>
@@ -103,9 +103,11 @@ function Works() {
   </div>
   </div>
 
-  <h1 className="label-accent note text-outline slide-up-on-scroll-1" style={{ animationDelay: "0.5s", animationDuration: "1s" }}>Our work has been installed in public galleries, exhibitions, and open-air sites.</h1>
+  <h1 className="label-accent note text-outline slide-up-on-scroll-1" style={{ animationDelay: "0.5s", animationDuration: "1s" }}>
+    Our work has been installed in public galleries, exhibitions, and open-air sites.
+  </h1>
+  
   <div className="project-grid project-grid--full-w slide-up-on-scroll-0" style={{ animationDelay: "1.5s", animationDuration: "1s" }}>
-
                 <div className="tile rounded tile-w-6 tile-h-3">
                   <ProjectHoverLink
                     href="work/2019-broadway-mural-project"
@@ -116,24 +118,24 @@ function Works() {
                 </div>
                 
                 <div className="tile rounded tile-w-6 tile-h-3">
-                  <ProjectHoverLink href="work/zapata" title="WTC Mural">
+                  <ProjectHoverLink href="work/wtc-mural" title="World Trade Center">
                     <img src="/works/wtc/cover.jpg"></img>
                   </ProjectHoverLink>
                 </div>
                 <div className="tile rounded tile-w-6 tile-h-3">
-                  <ProjectHoverLink href="work/zapata" title="WTC Mural">
+                  <ProjectHoverLink href="work/zapata" title="Map of the United States">
                     <img src="/works/us-map-cover.jpg"></img>
                   </ProjectHoverLink>
                 </div>
                 <div className="tile rounded tile-w-6 tile-h-3">
-                  <ProjectHoverLink href="work/zapata" title="WTC Mural">
+                  <ProjectHoverLink href="work/zapata" title="London Review of Books">
                     <img src="/works/london-review.jpg"></img>
                   </ProjectHoverLink>
                 </div>
                 
               
                 <div className="tile rounded tile-w-6 tile-h-3">
-                  <ProjectHoverLink href="work/zapata" title="WTC Mural">
+                  <ProjectHoverLink href="work/zapata" title="Communication">
                     <img src="/works/2018-sfpc-comms/cover.jpg"></img>
                   </ProjectHoverLink>
                 </div>
@@ -167,7 +169,7 @@ function Works() {
                   </ProjectHoverLink>
                 </div> */}
                 <div className="tile rounded tile-w-4 tile-h-6">
-                  <ProjectHoverLink href="work/zapata" title="WTC Mural">
+                  <ProjectHoverLink href="work/zapata" title="Constants">
                     <img src="/works/constant-poster.jpeg"></img>
                   </ProjectHoverLink>
                 </div>
@@ -183,12 +185,12 @@ function Works() {
                   </ProjectHoverLink>
                 </div>
                 <div className="tile rounded tile-w-6 tile-h-4">
-                  <ProjectHoverLink href="work/zapata" title="WTC Mural">
+                  <ProjectHoverLink href="work/zapata" title="Kiplingers">
                     <img src="/works/kiplingers-cover.jpg"></img>
                   </ProjectHoverLink>
                 </div>
                 <div className="tile rounded tile-w-6 tile-h-4">
-                  <ProjectHoverLink href="work/zapata" title="Typeface: Zapata">
+                  <ProjectHoverLink href="work/zapata" title="Zapata">
                     <img src="/works/typeface-zapata/logo.png"></img>
                   </ProjectHoverLink>
                 </div>

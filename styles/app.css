@@ -79,6 +79,12 @@
   grid-template-rows: revert;
 }
 
+@media (min-width: 1500px) {
+  .project-grid--full-w {
+    grid-auto-rows: calc(1500px / 12);
+  }
+}
+
 .tile.rounded video, .tile.rounded, .tile.rounded img {
   border-radius: 10px;
 }
