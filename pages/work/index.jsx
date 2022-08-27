@@ -67,7 +67,7 @@ function Works() {
                 
                 
 
-                <Tile w={6} h={3}>
+                <Tile w={6} h={3} title="Panasonic: Make New">
                   <ProjectHoverLink
                     href="work/2022-panasonic-make-new"
                     title="Panasonic: Make New"
@@ -76,7 +76,7 @@ function Works() {
                   </ProjectHoverLink>
                 </Tile>
                 
-                <Tile w={4} h={4}>
+                <Tile w={4} h={4} title="36 Days of Type">
                   <ProjectHoverLink
                     href="work/2022-36-days-of-type"
                     title="36 Days of Type"
@@ -118,22 +118,22 @@ function Works() {
                   </ProjectHoverLink>
                 </Tile>
                 
-                <Tile w={6} h={3}>
+                <Tile w={6} h={3} title="World Trace Center">
                   <ProjectHoverLink href="work/wtc-mural" title="World Trade Center">
                     <img src="/works/wtc/cover.jpg"></img>
                   </ProjectHoverLink>
                 </Tile>
-                <Tile w={6} h={3}>
+                <Tile w={6} h={3} title="Map of the U.S.">
                   <ProjectHoverLink href="work/zapata" title="Map of the United States">
                     <img src="/works/us-map-cover.jpg"></img>
                   </ProjectHoverLink>
                 </Tile>
-                <Tile w={6} h={3}>
+                <Tile w={6} h={3} title="London Review of Books">
                   <ProjectHoverLink href="work/zapata" title="London Review of Books">
                     <img src="/works/london-review.jpg"></img>
                   </ProjectHoverLink>
                 </Tile>
-                <Tile w={6} h={3}>
+                <Tile w={6} h={3} title="Communication">
                   <ProjectHoverLink href="work/zapata" title="Communication">
                     <img src="/works/2018-sfpc-comms/cover.jpg"></img>
                   </ProjectHoverLink>
@@ -145,7 +145,7 @@ function Works() {
                 </h1>
   <div className="project-grid project-grid--full-w">
     
-                <Tile w={6} h={4}>
+                <Tile w={6} h={4} title="Hany's Harvest">
                   <ProjectHoverLink
                     href="work/2018-hanys-harvest-branding"
                     title="Hanys Harvest Branding"
@@ -166,23 +166,23 @@ function Works() {
                     <Video src="/works/2022-insta-36daysoftype/u7-2.mp4"/>
                   </ProjectHoverLink>
                 </div> */}
-                <Tile w={4} h={6}>
+                <Tile w={4} h={6} title="Constant Typeface">
                   <ProjectHoverLink href="work/zapata" title="Constant Typeface">
                     <img src="/works/constant-poster.jpeg"></img>
                   </ProjectHoverLink>
                 </Tile>
-                <Tile w={4} h={5}>
+                <Tile w={4} h={5} title="7 Years of SFPC">
                   <ProjectHoverLink href="work/zapata" title="7 Years of SFPC">
                     <img src="/works/2019-sfpc-poster/cover.jpg"></img>
                   </ProjectHoverLink>
                 </Tile>
                 
-                <Tile w={4} h={6}>
+                <Tile w={4} h={6} title="The Winter Garden">
                   <ProjectHoverLink href="work/zapata" title="The Winter Garden">
                     <img src="/works/2022-winter-garden-cover/cover.jpg"></img>
                   </ProjectHoverLink>
                 </Tile>
-                <Tile w={6} h={4}>
+                <Tile w={6} h={4} title="Kiplingers">
                   <ProjectHoverLink href="work/zapata" title="Kiplingers">
                     <img src="/works/kiplingers-cover.jpg"></img>
                   </ProjectHoverLink>
