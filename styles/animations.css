@@ -42,3 +42,21 @@
 .slide-down {
   animation: slideDown ease .4s forwards;
 }
+
+@keyframes wipe-in-right {
+  from {
+    clip-path: inset(0 0 100% 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.wipe-down {
+  animation: 1s cubic-bezier(0.65, 0, 0.35, 1) wipe-in-right both;
+  animation-delay: 0.5s;
+}
+
+.wipe-down-on-scroll-1, .wipe-down-on-scroll-1-4, .wipe-down-on-scroll-0 {
+  clip-path: inset(0 0 100% 0);
+}

@@ -15,7 +15,7 @@ export default function ProjectHoverLink({ href, title, ...props }) {
         }}
         {...eventHandlers}
       >
-        <div className="position-abs flex-h flex-centered full-h full-w">
+        {/* <div className="position-abs flex-h flex-centered full-h full-w">
           <div
             className="project-hover-overlay"
             style={{
@@ -24,7 +24,7 @@ export default function ProjectHoverLink({ href, title, ...props }) {
           >
             <h3 className="project-title">{title}</h3>
           </div>
-        </div>
+        </div> */}
 
         {props.children}
       </a>

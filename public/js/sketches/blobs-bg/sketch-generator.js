@@ -68,10 +68,10 @@ BlobsBg = {
 
         draw() {
           this.p.noStroke();
-          let transp = 255;
+          let transp = 150;
 
           if (p.millis() <= 1000) {
-            transp = this.p.map(p.millis(), 0, 1000, 0, 255, true);
+            transp = this.p.map(p.millis(), 0, 1000, 0, 150, true);
           }
 
           this.color.setAlpha(transp);

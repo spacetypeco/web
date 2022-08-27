@@ -4,7 +4,7 @@ import useHideOnScroll from "../hooks/useHideOnScroll";
 
 export default function Navigation({ activeComponentName }) {
   let visible = useHideOnScroll();
-  let classes = "flex-h flex-end nav full-w position-fixed";
+  let classes = "flex-h nav full-w position-fixed";
   let style = {
     transition: "transform 0.6s",
     transform: visible ? "" : "translateY(-100%)",
@@ -19,7 +19,7 @@ export default function Navigation({ activeComponentName }) {
           </Link>
         </div>
       </div>
-      <div className="controls">
+      <div>
         <div id="nav-area">
           <div id="nav-box" className="flex-v-xs">
             <div
@@ -41,7 +41,7 @@ export default function Navigation({ activeComponentName }) {
                 activeComponentName === "About" ? "link active" : "link"
               }
             >
-              <Link href="/about">About</Link>
+              <Link href="/about">About →</Link>
             </div>
           </div>
         </div>

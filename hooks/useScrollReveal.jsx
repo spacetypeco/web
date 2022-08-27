@@ -1,57 +1,31 @@
 import { useEffect } from "react";
 
 export default function useScrollReveal() {
-    useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries, observer) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("slide-up");
-          }
+    const createObserver = (classTrigger, classToAdd, threshold) => {
+      return () => {
+        const observer = new IntersectionObserver(
+          (entries, observer) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add(classToAdd);
+              }
+            });
+          },
+    
+          { threshold }
+        );
+    
+        document.querySelectorAll(classTrigger).forEach((el) => {
+          observer.observe(el);
         });
-      },
+      }
+    };
 
-      { threshold: 1 }
-    );
+    useEffect(createObserver(".slide-up-on-scroll-1", "slide-up", 1), []);
+    useEffect(createObserver(".slide-up-on-scroll-1-4", "slide-up", 0.25), []);
+    useEffect(createObserver(".slide-up-on-scroll-0", "slide-up", 0), []);
 
-    document.querySelectorAll(".slide-up-on-scroll-1").forEach((el) => {
-      observer.observe(el);
-    });
-  }, []);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries, observer) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("slide-up");
-          }
-        });
-      },
-
-      { threshold: 0.25 }
-    );
-
-    document.querySelectorAll(".slide-up-on-scroll-1-4").forEach((el) => {
-      observer.observe(el);
-    });
-  }, []);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries, observer) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("slide-up");
-          }
-        });
-      },
-
-      { threshold: 0 }
-    );
-
-    document.querySelectorAll(".slide-up-on-scroll-0").forEach((el) => {
-      observer.observe(el);
-    });
-  }, []);
-}
+    useEffect(createObserver(".wipe-down-on-scroll-1", "wipe-down", 1), []);
+    useEffect(createObserver(".wipe-down-on-scroll-1-4", "wipe-down", 0.25), []);
+    useEffect(createObserver(".wipe-down-on-scroll-0", "wipe-down", 0), []);
+  }

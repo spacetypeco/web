@@ -6,9 +6,11 @@
 
 import "../styles/animations.css";
 import "../styles/app.css";
+import "../styles/svg.css";
 
 import Footer from "../components/Footer";
 import Head from "next/head";
+import MouseContextProvider from "../hooks/context/MouseContext";
 import Navigation from "../components/Navigation";
 import { useRouter } from "next/router";
 
@@ -95,7 +97,9 @@ function App({ Component, pageProps }) {
         }}
       >
         <Navigation activeComponentName={Component.name} />
-        <Component {...pageProps} />
+        <MouseContextProvider>
+          <Component {...pageProps} />
+        </MouseContextProvider>
         {Component.displayName !== "Home" && <Footer />}
       </div>
       <div id="p5_loading" style={{ display: "none" }} />

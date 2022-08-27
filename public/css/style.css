@@ -11,6 +11,7 @@
 .theme-light, .theme-light > * {
   --color-black: white;
   --color-white: #161616;
+  --color-accent-2: #4ecdc4;
 }
 
 .theme-light .logo img {
@@ -333,7 +334,7 @@ a {
 }
 .link:hover,
 .link a:hover {
-  opacity: .8;
+  color: var(--color-accent-2);
 }
 
 #about {
@@ -624,7 +625,7 @@ a {
     margin-right: 2em;
   }
   #nav-box .link {
-    font-size: 0.85em;
+    font-size: 0.7em;
   } /*
   #nav-box {
     display: none;
@@ -675,8 +676,10 @@ a {
 }
 
 .button-lg:hover {
-  background-color: var(--color-white);
-  color: var(--color-black);
+  /* background-color: var(--color-white); */
+  /* color: var(--color-black); */
+  /* color: var(--color-accent-2); */
+  border-color: var(--color-accent);
 }
 
 .small-link {

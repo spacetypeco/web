@@ -46,7 +46,7 @@
 }
 
 .text-outline {
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 0.75px;
   -webkit-text-stroke-color: var(--color-white);
   color: var(--color-black);
 }
@@ -86,7 +86,7 @@
 }
 
 .tile.rounded video, .tile.rounded, .tile.rounded img {
-  border-radius: 10px;
+  border-radius: 30px;
 }
 
 .project-details-grid {
@@ -326,7 +326,6 @@
     transform: unset;
   }
 }
-
 
 .label-accent {
   padding: 10px 0px;
