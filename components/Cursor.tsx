@@ -23,7 +23,7 @@ export default function Cursor() {
           top: `${y}px`,
         }}
       >
-        {cursorState.cursorText}
+        {cursorState.cursorText ? `${cursorState.cursorText} →` : ""}
       </span>
     </>
   );

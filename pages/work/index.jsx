@@ -109,7 +109,7 @@ function Works() {
   </h1>
   
   <div className="project-grid project-grid--full-w" >
-                <Tile w={6} h={3} title="Broadway Mural Project">
+                <Tile w={6} h={3} title="120 Broadway">
                   <ProjectHoverLink
                     href="work/2019-broadway-mural-project"
                     title="Broadway Mural Project"
