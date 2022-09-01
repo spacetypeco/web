@@ -121,7 +121,7 @@ function Works() {
                 </Tile>
                 <Tile w={4} h={2} title="London Review of Books">
                   <ProjectHoverLink href="work/london-review-of-books" title="London Review of Books">
-                    <img src="/works/london-review.jpg"></img>
+                    <img src="/works/london-review-of-books/cover.jpg"></img>
                   </ProjectHoverLink>
                 </Tile>
                 <Tile w={4} h={2} title="Communication">
@@ -192,8 +192,8 @@ function Works() {
                     <img src="/works/2022-allida/cover.png"></img>
                   </ProjectHoverLink>
                 </Tile>
-                <Tile w={6} h={4} title="Kiplingers">
-                  <ProjectHoverLink href="work/kiplingers" title="Kiplingers">
+                <Tile w={6} h={4} title="Kiplingers Magazine" classNames="fit-contain">
+                  <ProjectHoverLink href="work/kiplingers" title="Kiplingers Magazine">
                     <img src="/works/kiplingers-cover.jpg"></img>
                   </ProjectHoverLink>
                 </Tile>
