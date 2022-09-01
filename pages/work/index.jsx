@@ -109,24 +109,24 @@ function Works() {
                   </ProjectHoverLink>
                 </Tile>
                 
-                <Tile w={6} h={3} title="World Trace Center">
-                  <ProjectHoverLink href="work/wtc-mural" title="World Trade Center">
+                <Tile w={6} h={3} title="World Trade Center">
+                  <ProjectHoverLink href="work/world-trade-center" title="World Trade Center">
                     <img src="/works/wtc/cover.jpg"></img>
                   </ProjectHoverLink>
                 </Tile>
                 <Tile w={6} h={3} title="Map of the U.S.">
-                  <ProjectHoverLink href="work/zapata" title="Map of the United States">
+                  <ProjectHoverLink href="work/us-map" title="Map of the United States">
                     <img src="/works/us-map-cover.jpg"></img>
                   </ProjectHoverLink>
                 </Tile>
                 <Tile w={6} h={3} title="London Review of Books">
-                  <ProjectHoverLink href="work/zapata" title="London Review of Books">
+                  <ProjectHoverLink href="work/london-review-of-books" title="London Review of Books">
                     <img src="/works/london-review.jpg"></img>
                   </ProjectHoverLink>
                 </Tile>
                 <Tile w={6} h={3} title="Communication">
                   <ProjectHoverLink href="work/zapata" title="Communication">
-                    <img src="/works/2018-sfpc-comms/cover.jpg"></img>
+                    <img src="/works/sfpc-communication/cover.jpg"></img>
                   </ProjectHoverLink>
                 </Tile>
                 </div>
@@ -138,7 +138,7 @@ function Works() {
     
                 <Tile w={4} h={2} title="Hany's Harvest">
                   <ProjectHoverLink
-                    href="work/2018-hanys-harvest-branding"
+                    href="work/hanys-harvest"
                     title="Hanys Harvest Branding"
                   >
                     <img src="/works/2018-client-brand-hanys-harvest/mockup_wide.png"></img>
@@ -146,7 +146,7 @@ function Works() {
                 </Tile>
 
                 <Tile w={4} h={2} title="Hamilton Type — Etta">
-                  <ProjectHoverLink href="work/zapata" title="Hamilton Type - Etta">
+                  <ProjectHoverLink href="work/etta" title="Hamilton Type - Etta">
                     <img src="/works/etta/Etta_Banners_01.png"></img>
                   </ProjectHoverLink>
                 </Tile>
@@ -165,30 +165,36 @@ function Works() {
                   </ProjectHoverLink>
                 </div> */}
                 <Tile w={4} h={6} title="Constant Typeface">
-                  <ProjectHoverLink href="work/zapata" title="Constant Typeface">
+                  <ProjectHoverLink href="work/constant-typeface" title="Constant Typeface">
                     <img src="/works/constant-poster.jpeg"></img>
                   </ProjectHoverLink>
                 </Tile>
                 <Tile w={4} h={5} title="7 Years of SFPC">
-                  <ProjectHoverLink href="work/zapata" title="7 Years of SFPC">
+                  <ProjectHoverLink href="work/sfpc-seven-years" title="7 Years of SFPC">
                     <img src="/works/2019-sfpc-poster/cover.jpg"></img>
                   </ProjectHoverLink>
                 </Tile>
                 <Tile w={4} h={5} title="The Winter Garden">
-                  <ProjectHoverLink href="work/zapata" title="The Winter Garden">
+                  <ProjectHoverLink href="work/the-winter-garden" title="The Winter Garden">
                     <img src="/works/2022-winter-garden-cover/mockup.png"></img>
                   </ProjectHoverLink>
                 </Tile>
                 <div className="tile rounded tile-w-4 tile-h-1 hide-sm  wipe-down" style={{backgroundColor: "var(--color-accent-2)"}}>
                 </div>
-                <Tile w={6} h={4} title="Kiplingers">
-                  <ProjectHoverLink href="work/zapata" title="Kiplingers">
-                    <img src="/works/kiplingers-cover.jpg"></img>
+                <Tile w={6} h={4} title="Quick Brown Fox">
+                  <ProjectHoverLink href="work/quick-brown-fox" title="Quick Brown Fox">
+                    <img src="/works/quick-brown-fox/cover.png"></img>
                   </ProjectHoverLink>
                 </Tile>
-                <Tile w={6} h={4}>
-                  <ProjectHoverLink href="work/allida" title="Allida Imprint">
+                
+                <Tile w={6} h={4} title="Allida Imprint">
+                  <ProjectHoverLink href="work/allida-imprint" title="Allida Imprint">
                     <img src="/works/2022-allida/cover.png"></img>
+                  </ProjectHoverLink>
+                </Tile>
+                <Tile w={6} h={4} title="Kiplingers">
+                  <ProjectHoverLink href="work/kiplingers" title="Kiplingers">
+                    <img src="/works/kiplingers-cover.jpg"></img>
                   </ProjectHoverLink>
                 </Tile>
               </div>
