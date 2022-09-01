@@ -86,7 +86,7 @@
 }
 
 .tile.rounded video, .tile.rounded, .tile.rounded img {
-  border-radius: 30px;
+  border-radius: 20px;
 }
 
 .project-details-grid {

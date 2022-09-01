@@ -51,22 +51,13 @@ function Works() {
                     <Video src="/works/2022-client-web-existential/cover.mov"/>
                     </ProjectHoverLink>
                   </Tile>
-                <div className="tile rounded tile-w-2 tile-h-7 hide-sm  wipe-down" style={{backgroundColor: "red"}}>
-                  
+                <div className="tile rounded tile-w-2 tile-h-7 hide-sm  wipe-down" style={{backgroundColor: "var(--color-accent-2)"}}>
                 </div>
-                
-                
-                
-
                 <Tile w={4} h={4} title="Vartype">
                   <ProjectHoverLink href="work/2022-vartype" title="Vartype">
                     <Video src="/works/2022-tool-vartype/cover.mp4"/>
                   </ProjectHoverLink>
                 </Tile>
-
-                
-                
-
                 <Tile w={6} h={3} title="Panasonic: Make New">
                   <ProjectHoverLink
                     href="work/2022-panasonic-make-new"
@@ -100,8 +91,8 @@ function Works() {
                   </ProjectHoverLink>
                 </Tile>
 
-<Tile w={8} h={1} style={{backgroundColor: "yellow"}}>
-  </Tile>
+                <div className="tile rounded tile-w-8 tile-h-1 hide-sm  wipe-down" style={{backgroundColor: "var(--color-accent)"}}>
+                </div>
   </div>
 
   <h1 className="label-accent note text-outline  wipe-down">
@@ -145,7 +136,7 @@ function Works() {
                 </h1>
   <div className="project-grid project-grid--full-w">
     
-                <Tile w={6} h={4} title="Hany's Harvest">
+                <Tile w={4} h={2} title="Hany's Harvest">
                   <ProjectHoverLink
                     href="work/2018-hanys-harvest-branding"
                     title="Hanys Harvest Branding"
@@ -153,6 +144,13 @@ function Works() {
                     <img src="/works/2018-client-brand-hanys-harvest/mockup_wide.png"></img>
                   </ProjectHoverLink>
                 </Tile>
+
+                <Tile w={4} h={2} title="Hamilton Type — Etta">
+                  <ProjectHoverLink href="work/zapata" title="Hamilton Type - Etta">
+                    <img src="/works/etta/Etta_Banners_01.png"></img>
+                  </ProjectHoverLink>
+                </Tile>
+                
                 {/* <div className="tile rounded tile-w-3 tile-h-3">
                   <ProjectHoverLink
                     href="work/2022-ampersandist"
@@ -176,20 +174,21 @@ function Works() {
                     <img src="/works/2019-sfpc-poster/cover.jpg"></img>
                   </ProjectHoverLink>
                 </Tile>
-                
-                <Tile w={4} h={6} title="The Winter Garden">
+                <Tile w={4} h={5} title="The Winter Garden">
                   <ProjectHoverLink href="work/zapata" title="The Winter Garden">
-                    <img src="/works/2022-winter-garden-cover/cover.jpg"></img>
+                    <img src="/works/2022-winter-garden-cover/mockup.png"></img>
                   </ProjectHoverLink>
                 </Tile>
+                <div className="tile rounded tile-w-4 tile-h-1 hide-sm  wipe-down" style={{backgroundColor: "var(--color-accent-2)"}}>
+                </div>
                 <Tile w={6} h={4} title="Kiplingers">
                   <ProjectHoverLink href="work/zapata" title="Kiplingers">
                     <img src="/works/kiplingers-cover.jpg"></img>
                   </ProjectHoverLink>
                 </Tile>
                 <Tile w={6} h={4}>
-                  <ProjectHoverLink href="work/zapata" title="Zapata">
-                    <img src="/works/typeface-zapata/logo.png"></img>
+                  <ProjectHoverLink href="work/allida" title="Allida Imprint">
+                    <img src="/works/2022-allida/cover.png"></img>
                   </ProjectHoverLink>
                 </Tile>
               </div>

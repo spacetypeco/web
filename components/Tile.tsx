@@ -7,10 +7,14 @@ export default function Tile({ w, h, title, style, ...props }) {
 
   return (
     <div
-      className={`tile rounded tile-w-${w} tile-h-${h} wipe-down`}
+      className={`tile rounded wipe-down`}
       onMouseEnter={() => cursorChangeHandler("hovered", title)}
       onMouseLeave={() => cursorChangeHandler("", "")}
-      style={style}
+      style={{
+        gridRowEnd: `span ${h}`,
+        gridColumnEnd: `span ${w}`,
+        ...style,
+      }}
     >
       {props.children}
     </div>
