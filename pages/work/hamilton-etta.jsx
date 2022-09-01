@@ -3,7 +3,7 @@ import ProjectDetails from "../../components/ProjectDetails";
 export default function BroadwayMural() {
   return (
     <ProjectDetails
-      title="Broadway Mural"
+      title="Etta Typeface"
       intro={
         <>
           <p>Client: Silverstein Properties</p>
@@ -16,17 +16,32 @@ export default function BroadwayMural() {
       }
     >
       <div className="project-grid">
-        <div className="tile-w-6 tile-h-3">
-          <img src="/works/2019-client-mural-broadway/wide-still.jpg"></img>
+        <div className="tile-w-6 tile-h-1">
+          <img src="/works/etta/HWT Etta Banners-01.png"></img>
         </div>
-        <div className="tile-w-6 tile-h-3">
-          <img src="/works/2019-client-mural-broadway/wide-still.jpg"></img>
+        <div className="tile-w-6 tile-h-1">
+          <img src="/works/etta/HWT Etta Banners-02.png"></img>
         </div>
-        <div className="tile-w-6 tile-h-3">
-          <img src="/works/2019-client-mural-broadway/wide-still.jpg"></img>
+        <div className="tile-w-4 tile-h-1">
+          <img src="/works/etta/FT_ETTA_NewYorkers.png"></img>
         </div>
-        <div className="tile-w-6 tile-h-3">
-          <img src="/works/2019-client-mural-broadway/wide-still.jpg"></img>
+        <div className="tile-w-4 tile-h-1">
+          <img src="/works/etta/FT_ETTA_Styles.png"></img>
+        </div>
+        <div className="tile-w-4 tile-h-1">
+          <img src="/works/etta/FT_ETTA_East.png"></img>
+        </div>
+        <div className="tile-w-8 tile-h-1">
+          <img src="/works/etta/Etta_banners_03.png"></img>
+        </div>
+        <div className="tile-w-4 tile-h-1">
+          <img src="/works/etta/FT_ETTA_E.png"></img>
+        </div>
+        <div className="tile-w-4 tile-h-1">
+          <img src="/works/etta/FT_ETTA_A.png"></img>
+        </div>
+        <div className="tile-w-8 tile-h-1">
+          <img src="/works/etta/Etta_banners_04.png"></img>
         </div>
       </div>
     </ProjectDetails>

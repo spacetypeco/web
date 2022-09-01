@@ -114,18 +114,18 @@ function Works() {
                     <img src="/works/wtc/cover.jpg"></img>
                   </ProjectHoverLink>
                 </Tile>
-                <Tile w={6} h={3} title="Map of the U.S.">
+                <Tile w={4} h={2} title="Map of the U.S.">
                   <ProjectHoverLink href="work/us-map" title="Map of the United States">
                     <img src="/works/us-map-cover.jpg"></img>
                   </ProjectHoverLink>
                 </Tile>
-                <Tile w={6} h={3} title="London Review of Books">
+                <Tile w={4} h={2} title="London Review of Books">
                   <ProjectHoverLink href="work/london-review-of-books" title="London Review of Books">
                     <img src="/works/london-review.jpg"></img>
                   </ProjectHoverLink>
                 </Tile>
-                <Tile w={6} h={3} title="Communication">
-                  <ProjectHoverLink href="work/zapata" title="Communication">
+                <Tile w={4} h={2} title="Communication">
+                  <ProjectHoverLink href="work/sfpc-communication" title="Communication">
                     <img src="/works/sfpc-communication/cover.jpg"></img>
                   </ProjectHoverLink>
                 </Tile>
@@ -146,7 +146,7 @@ function Works() {
                 </Tile>
 
                 <Tile w={4} h={2} title="Hamilton Type — Etta">
-                  <ProjectHoverLink href="work/etta" title="Hamilton Type - Etta">
+                  <ProjectHoverLink href="work/hamilton-etta" title="Hamilton Type - Etta">
                     <img src="/works/etta/Etta_Banners_01.png"></img>
                   </ProjectHoverLink>
                 </Tile>
@@ -166,7 +166,7 @@ function Works() {
                 </div> */}
                 <Tile w={4} h={6} title="Constant Typeface">
                   <ProjectHoverLink href="work/constant-typeface" title="Constant Typeface">
-                    <img src="/works/constant-poster.jpeg"></img>
+                    <img src="/works/constant-typeface/constant-poster.jpeg"></img>
                   </ProjectHoverLink>
                 </Tile>
                 <Tile w={4} h={5} title="7 Years of SFPC">
@@ -187,8 +187,8 @@ function Works() {
                   </ProjectHoverLink>
                 </Tile>
                 
-                <Tile w={6} h={4} title="Allida Imprint">
-                  <ProjectHoverLink href="work/allida-imprint" title="Allida Imprint">
+                <Tile w={6} h={4} title="Allida">
+                  <ProjectHoverLink href="work/allida-imprint" title="Allida">
                     <img src="/works/2022-allida/cover.png"></img>
                   </ProjectHoverLink>
                 </Tile>

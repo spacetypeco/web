@@ -111,6 +111,10 @@
   max-height: 100%;
 }
 
+.fit-contain, .fit-contain img, .fit-contain video {
+  object-fit: contain;
+}
+
 .tile-h-2 {
   grid-row-end: span 2;
 }

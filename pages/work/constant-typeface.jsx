@@ -16,17 +16,23 @@ export default function BroadwayMural() {
       }
     >
       <div className="project-grid">
-        <div className="tile-w-6 tile-h-3">
-          <img src="/works/2019-client-mural-broadway/wide-still.jpg"></img>
+        <div className="tile-w-8 tile-h-1">
+          <img src="/works/constant-typeface/Constant_3.jpg"></img>
         </div>
-        <div className="tile-w-6 tile-h-3">
-          <img src="/works/2019-client-mural-broadway/wide-still.jpg"></img>
+        <div className="tile-w-4 tile-h-1">
+          <img src="/works/constant-typeface/Constant_4.jpg"></img>
         </div>
-        <div className="tile-w-6 tile-h-3">
-          <img src="/works/2019-client-mural-broadway/wide-still.jpg"></img>
+        <div className="tile tile-w-12 tile-h-12">
+          <img src="/works/constant-typeface/Constant_2.jpg"></img>
         </div>
-        <div className="tile-w-6 tile-h-3">
-          <img src="/works/2019-client-mural-broadway/wide-still.jpg"></img>
+        <div className="tile-w-4 tile-h-1 fit-contain">
+          <img src="/works/constant-typeface/Constant_7.jpg"></img>
+        </div>
+        <div className="tile-w-4 tile-h-1 fit-contain">
+          <img src="/works/constant-typeface/Constant_6.jpg"></img>
+        </div>
+        <div className="tile-w-4 tile-h-1 fit-contain">
+          <img src="/works/constant-typeface/Constant_5.jpg"></img>
         </div>
       </div>
     </ProjectDetails>

@@ -16,10 +16,10 @@ export default function BroadwayMural() {
       }
     >
       <div className="project-grid">
-        <div className="tile-w-6 tile-h-3">
+        <div className="tile-w-12 tile-h-6">
           <img src="/works/2022-allida/cover.png"></img>
         </div>
-        <div className="tile-w-6 tile-h-3">
+        <div className="tile-w-12 tile-h-6">
           <img src="/works/2022-allida/graphics-2.png"></img>
         </div>
       </div>
