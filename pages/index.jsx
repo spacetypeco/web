@@ -1,8 +1,17 @@
 import Footer from "../components/Footer";
 import Link from "next/link";
 import ScrollButton from "../components/ScrollButton"
+import createBlobs from "../p5/sketches/blobs"
+import createParticleFill from "../p5/sketches/particleFill"
+import createPathTweaker from "../p5/sketches/pathTweaker";
+import createShaderWag from "../p5/sketches/shaderWag";
+import dynamic from 'next/dynamic'
 import { useEffect } from "react";
-import useScripts from "../hooks/useScripts";
+
+const ReactP5Wrapper = dynamic(() => import('react-p5-wrapper')
+    .then(mod => mod.ReactP5Wrapper), {
+    ssr: false
+});
 
 require("../util/utils.js");
 
@@ -34,48 +43,12 @@ function Home() {
     return () => element.removeEventListener("scroll", fadeOnScroll);
   }, []);
 
-  const urls = [
-    "https://cdn.jsdelivr.net/npm/opentype.js@latest/dist/opentype.min.js",
-    "https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js",
-    "https://cdn.jsdelivr.net/gh/kyeah/p5@master/utils/text-utils.js",
-    "/js/p5.func.min.js",
-    "/js/matter-0_14_2.min.js",
-    "/js/sketches/blobs/point.js",
-    "/js/sketches/blobs/sketch-generator.js",
-    "/js/sketches/particle-fill/sketch-generator.js",
-    "/js/sketches/shader-wag/sketch-generator.js",
-    "/js/sketches/vortex/sketch-generator.js",
-    "/js/sketches/path-tweaker/sketch-generator.js"
-  ]
+  const blobsSketch = createBlobs("canvas");
+  const shaderWagSketch = createShaderWag("canvas2");
+  const particleFillSketch = createParticleFill("canvas3");
+  const pathTweakerSketch = createPathTweaker("canvas4");
   
-  useScripts(urls, 
-    () => typeof(Blobs) !== "undefined",
-    () => {
-    let sketches = [Blobs, ShaderWag, ParticleFill, PathTweaker];
-    let sketch1 = sketches[0].createSketch("canvas");
-    let createdSketches = []
-    createdSketches.push(new p5(sketch1, "canvas"));
-    const isMobile =
-      /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ||
-      /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.platform);
-
-  
-    if (!isMobile) {
-      let sketch2 = sketches[1].createSketch("canvas2");
-      createdSketches.push(new p5(sketch2, "canvas2"));
-      let sketch3 = sketches[2].createSketch("canvas3");
-      createdSketches.push(new p5(sketch3, "canvas3"));
-      let sketch4 = sketches[3].createSketch("canvas4");
-      createdSketches.push(new p5(sketch4, "canvas4"));
-    } else {
-      for (let elemName of ["canvas2", "canvas3", "canvas4"]) {
-        let elem = document.getElementById(elemName);
-        elem.style.display = "none";
-      }
-  
-      document.querySelector("#canvas > a").style.display = "none";
-    }
-
+  useEffect(() => {
     document.querySelectorAll(".ct-btn-scroll").forEach((anchor) => {
       anchor.addEventListener("click", function (e) {
         e.preventDefault();
@@ -84,10 +57,6 @@ function Home() {
         });
       });
     });
-
-    return () => {
-      createdSketches.forEach(sketch => sketch.remove());
-    }
   }, [])
   
   return (
@@ -97,22 +66,26 @@ function Home() {
       <div id="sketches-container" className="full-w full-h position-abs">        
         <div id="canvas" className="sketch-container full-w full-h">
           <div id="p5_loading" style={{ display: "none" }} />
+          <ReactP5Wrapper sketch={blobsSketch}/>
 
           <a className="ct-btn-scroll ct-js-btn-scroll" dest="#canvas2">
             <ScrollButton/>
           </a>
         </div>
         <div id="canvas2" className="sketch-container full-w full-h">
+          <ReactP5Wrapper sketch={shaderWagSketch}/>
           <a className="ct-btn-scroll ct-js-btn-scroll" dest="#canvas3">
             <ScrollButton />
           </a>
         </div>
         <div id="canvas3" className="sketch-container full-w full-h">
+          <ReactP5Wrapper sketch={particleFillSketch}/>
           <a className="ct-btn-scroll ct-js-btn-scroll" dest="#canvas4">
           <ScrollButton />
           </a>
         </div>
         <div id="canvas4" className="sketch-container full-w full-h">
+          <ReactP5Wrapper sketch={pathTweakerSketch}/>
           <a className="ct-btn-scroll ct-js-btn-scroll" dest="#space-intro">
             <ScrollButton />
           </a>

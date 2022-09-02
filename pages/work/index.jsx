@@ -3,31 +3,26 @@ import Head from "next/head";
 import ProjectHoverLink from "../../components/ProjectHoverLink";
 import Tile from "../../components/Tile"
 import Video from "../../components/Video";
+import createSketch from "../../p5/sketches/blobsBG";
+import dynamic from 'next/dynamic'
 import useLogo from "../../hooks/useLogo";
-import useScripts from "../../hooks/useScripts";
 import useScrollReveal from "../../hooks/useScrollReveal";
 import useVideoManager from "../../hooks/useVideoManager";
+
+const ReactP5Wrapper = dynamic(() => import('react-p5-wrapper')
+    .then(mod => mod.ReactP5Wrapper), {
+    ssr: false
+});
+
 require("../../util/utils.js");
+
 
 function Works() {
   useLogo();
   useVideoManager();
   useScrollReveal();
 
-  const urls = [
-  "https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js",
-  "https://cdn.jsdelivr.net/gh/kyeah/p5@master/utils/text-utils.js",
-  "/js/sketches/blobs/point.js",
-  "/js/sketches/blobs-bg/sketch-generator.js",
-]
-  
-  useScripts(urls, 
-    () => typeof(BlobsBg) !== "undefined",
-    () => {
-      const sketch = BlobsBg.createSketch("bg");
-      const p5s = new p5(sketch, "bg");
-      return () => p5s.remove();
-    }, []);
+  const sketch = createSketch("bg");
 
   return (
     <>
@@ -39,7 +34,7 @@ function Works() {
         <Cursor/>
         <div id="container" className="full-w full-h position-rel">
           <div id="about">
-            <div className="full-vw full-vh" style={{position: "fixed"}} id="bg"></div>
+            <div className="full-vw full-vh" style={{position: "fixed"}} id="bg"><ReactP5Wrapper sketch={sketch} /></div>
             <div className="fade-in content-top content-wide">
               <h1 className="label-accent note text-outline wipe-down">We work across physical and digital media to build bridges between type and technology.</h1>
               <div className="project-grid project-grid--full-w">
