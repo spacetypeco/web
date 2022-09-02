@@ -15,7 +15,7 @@ export default function BroadwayMural() {
         </>
       }
     >
-      <div className="project-grid">
+      <div className="project-grid project-grid--unsized">
         <div className="tile-w-8 tile-h-1">
           <img src="/works/constant-typeface/Constant_3.jpg"></img>
         </div>

@@ -11,7 +11,7 @@ export default function Kiplingers() {
         </>
       }
     >
-      <div className="project-grid">
+      <div className="project-grid project-grid--unsized">
         <div className="tile-w-12 tile-h-3">
           <img src="/works/kiplingers-cover.jpg"></img>
         </div>

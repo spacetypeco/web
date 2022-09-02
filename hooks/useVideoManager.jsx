@@ -6,7 +6,11 @@ export default function useVideoManager() {
         entries.forEach(function (entry) {
           // Pause/Play the animation
           if (entry.isIntersecting) {
-            entry.target.play();
+            try {
+              entry.target.play();
+            } catch (e) {
+              
+            }
           } else {
             entry.target.pause();
           }

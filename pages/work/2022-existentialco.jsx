@@ -29,23 +29,23 @@ export default function ExistentialCo() {
         </>
       }
     >
-      <div className="project-grid">
+      <div className="project-grid project-grid--unsized">
         <div className="tile tile-w-12 tile-h-6">
           <Video src="/works/2022-client-web-existential/cover.mov"/>
         </div>
         <div className="tile tile-w-12 tile-h-6">
           <Video src="/works/2022-client-web-existential/growth.mov"/>
         </div>
-        <div className="tile tile-w-6 tile-h-3">
+        <div className="tile-w-6 tile-h-3">
           <Video src="/works/2022-client-web-existential/exist-and-thrive.mov"/>
         </div>
-        <div className="tile tile-w-6 tile-h-3">
+        <div className="tile-w-6 tile-h-3">
           <Video src="/works/2022-client-web-existential/collective-action.mov"/>
         </div>
-        <div className="tile tile-w-6 tile-h-3">
+        <div className="tile-w-6 tile-h-3">
           <Video src="/works/2022-client-web-existential/care-and-connection.mov"/>
         </div>
-        <div className="tile tile-w-6 tile-h-3">
+        <div className="tile-w-6 tile-h-3">
           <Video src="/works/2022-client-web-existential/escargo.mov"/>
         </div>
         <div className="tile tile-w-12 tile-h-6">

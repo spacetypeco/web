@@ -19,10 +19,10 @@ export default function MakeNew() {
       }
     >
       <div className="project-grid">
-        <div className="tile tile-w-12 tile-h-4">
+        <div className="tile tile-w-12 tile-h-6">
           <Video src="/works/2022-client-brand-panasonic/cover.mov"/>
         </div>
-        <div className="tile tile-w-12 tile-h-4" style={{height: "100%"}}>
+        <div className="tile tile-w-12 tile-h-6" style={{height: "100%"}}>
         <iframe src='https://www.youtube.com/embed/BHCOvooEdy8'
         frameborder='0'
         allow='autoplay; encrypted-media'
@@ -34,16 +34,16 @@ export default function MakeNew() {
         <div className="tile tile-w-4 tile-h-8">
           <Video src="/works/2022-client-brand-panasonic/make-new-artists.mov"/>
         </div>
-        <div className="tile tile-w-4 tile-h-4">
+        <div className="tile-w-4 tile-h-4 tile-lg-w-6 tile-lg-h-6">
           <Video src="/works/2022-client-brand-panasonic/scene-3.mov"/>
         </div>
-        <div className="tile tile-w-4 tile-h-4">
+        <div className="tile-w-4 tile-h-4 tile-lg-w-6 tile-lg-h-6">
           <Video src="/works/2022-client-brand-panasonic/scene-2.mov"/>
         </div>
-        <div className="tile tile-w-4 tile-h-4">
+        <div className="tile-w-4 tile-h-4 tile-lg-w-6 tile-lg-h-6">
           <Video src="/works/2022-client-brand-panasonic/scene-1-2d.mov"/>
         </div>
-        <div className="tile tile-w-4 tile-h-4">
+        <div className="tile-w-4 tile-h-4 tile-lg-w-6 tile-lg-h-6">
           <Video src="/works/2022-client-brand-panasonic/scene-1-3d.mov"/>
         </div>
       </div>

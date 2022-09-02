@@ -116,7 +116,7 @@ function Works() {
                 </Tile>
                 <Tile w={4} h={2} title="Map of the U.S.">
                   <ProjectHoverLink href="work/us-map" title="Map of the United States">
-                    <img src="/works/us-map-cover.jpg"></img>
+                    <img src="/works/us-map/us-map-cover.jpg"></img>
                   </ProjectHoverLink>
                 </Tile>
                 <Tile w={4} h={2} title="London Review of Books">
@@ -135,7 +135,17 @@ function Works() {
                   We design custom typefaces and lettering to fit any occasion.
                 </h1>
   <div className="project-grid project-grid--full-w">
-    
+  <Tile w={6} h={4} title="Quick Brown Fox">
+                  <ProjectHoverLink href="work/quick-brown-fox" title="Quick Brown Fox">
+                    <img src="/works/quick-brown-fox/cover.png"></img>
+                  </ProjectHoverLink>
+                </Tile>
+                
+                <Tile w={6} h={4} title="Allida">
+                  <ProjectHoverLink href="work/allida-imprint" title="Allida">
+                    <img src="/works/2022-allida/cover.png"></img>
+                  </ProjectHoverLink>
+                </Tile>
                 <Tile w={4} h={2} title="Hany's Harvest">
                   <ProjectHoverLink
                     href="work/hanys-harvest"
@@ -181,17 +191,6 @@ function Works() {
                 </Tile>
                 <div className="tile rounded tile-w-4 tile-h-1 hide-sm  wipe-down" style={{backgroundColor: "var(--color-accent-2)"}}>
                 </div>
-                <Tile w={6} h={4} title="Quick Brown Fox">
-                  <ProjectHoverLink href="work/quick-brown-fox" title="Quick Brown Fox">
-                    <img src="/works/quick-brown-fox/cover.png"></img>
-                  </ProjectHoverLink>
-                </Tile>
-                
-                <Tile w={6} h={4} title="Allida">
-                  <ProjectHoverLink href="work/allida-imprint" title="Allida">
-                    <img src="/works/2022-allida/cover.png"></img>
-                  </ProjectHoverLink>
-                </Tile>
                 <Tile w={6} h={4} title="Kiplingers Magazine" classNames="fit-contain">
                   <ProjectHoverLink href="work/kiplingers" title="Kiplingers Magazine">
                     <img src="/works/kiplingers-cover.jpg"></img>

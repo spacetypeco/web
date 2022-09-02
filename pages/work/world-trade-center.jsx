@@ -16,17 +16,17 @@ export default function BroadwayMural() {
       }
     >
       <div className="project-grid">
-        <div className="tile-w-6 tile-h-3">
-          <img src="/works/2019-client-mural-broadway/wide-still.jpg"></img>
+        <div className="tile-w-12 tile-h-6">
+          <img src="/works/wtc/cover.jpg"></img>
         </div>
-        <div className="tile-w-6 tile-h-3">
-          <img src="/works/2019-client-mural-broadway/wide-still.jpg"></img>
+        <div className="tile-w-12 tile-h-6">
+        <img src="/works/wtc/WTC_2.jpg"></img>
         </div>
-        <div className="tile-w-6 tile-h-3">
-          <img src="/works/2019-client-mural-broadway/wide-still.jpg"></img>
+        <div className="tile-w-6 tile-h-6">
+        <img src="/works/wtc/WTC_3.jpg"></img>
         </div>
-        <div className="tile-w-6 tile-h-3">
-          <img src="/works/2019-client-mural-broadway/wide-still.jpg"></img>
+        <div className="tile-w-6 tile-h-6">
+        <img src="/works/wtc/WTC_4.jpg"></img>
         </div>
       </div>
     </ProjectDetails>

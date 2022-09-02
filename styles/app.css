@@ -68,15 +68,32 @@
 .project-grid {
   display: grid;
   grid-template-columns: repeat(12,1fr);
-  grid-template-rows: 8.33%;
+  grid-auto-rows: calc((100vw - 10em - 11*0.5em) / 12);
+  grid-template-rows: revert;
   max-width: 100%;
   grid-gap: 0.5em;
   margin-bottom: 4em;
 }
 
 .project-grid--full-w {
-  grid-auto-rows: calc((100vw - 6em) / 12);
+  grid-auto-rows: calc((100vw - 6em - 11*0.5em) / 12); /* based on content-wide margin of 3em on both sides */
   grid-template-rows: revert;
+}
+
+.project-grid--unsized {
+  grid-auto-rows: revert !important;
+}
+
+@media (max-width: 768px) {
+  .project-grid {
+    grid-auto-rows: calc((100vw - 4em - 11*0.5em) / 12);
+  }
+}
+
+@media (min-width: calc(1000px + 10em)) {
+  .project-grid {
+    grid-auto-rows: calc(1000px / 12);
+  }
 }
 
 @media (min-width: 1500px) {
@@ -245,7 +262,7 @@
 }
 
 .width-1200 {
-  max-width: 1200px;
+  max-width: 1000px;
 }
 
 .project-details-section {
@@ -272,13 +289,19 @@
     grid-auto-rows: revert;
   }
   .tile:not(.no-squish) {
-    grid-column-end: span 12;
+    grid-column-end: span 12 !important;
   }
   .hide-sm {
     display: none;
   }
   .project-grid img, .project-grid video, .project-details img {
     object-fit: fill;
+  }
+  .tile-lg-h-6 {
+    grid-row-end: span 6 !important;
+  }
+  .tile-lg-w-6 {
+    grid-column-end: span 6 !important;
   }
 }
 

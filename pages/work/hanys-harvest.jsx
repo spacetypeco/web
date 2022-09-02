@@ -15,7 +15,7 @@ export default function BroadwayMural() {
         </>
       }
     >
-      <div className="project-grid">
+      <div className="project-grid project-grid--unsized">
         <div className="tile-w-12 tile-h-3">
           <img src="/works/2018-client-brand-hanys-harvest/Allflavors_lr.jpg"></img>
         </div>
