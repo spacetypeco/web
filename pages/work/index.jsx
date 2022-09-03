@@ -43,14 +43,14 @@ function Works() {
                     href="work/2022-existentialco"
                     title="Existential Co."
                   >
-                    <Video src="/works/2022-client-web-existential/cover.mov"/>
+                    <Video src="/works/2022-client-web-existential/cover-vlc-1600.m4v"/>
                     </ProjectHoverLink>
                   </Tile>
                 <div className="tile rounded tile-w-2 tile-h-7 hide-sm  wipe-down" style={{backgroundColor: "var(--color-accent-2)"}}>
                 </div>
                 <Tile w={4} h={4} title="Vartype">
                   <ProjectHoverLink href="work/2022-vartype" title="Vartype">
-                    <Video src="/works/2022-tool-vartype/cover.mp4"/>
+                    <Video src="/works/2022-tool-vartype/cover-sm.mp4"/>
                   </ProjectHoverLink>
                 </Tile>
                 <Tile w={6} h={3} title="Panasonic: Make New">

@@ -1,4 +1,5 @@
 import ProjectDetails from "../../components/ProjectDetails";
+import ResponsiveImg from "../../components/ResponsiveImg";
 import Video from "../../components/Video";
 
 export default function ExistentialCo() {
@@ -31,39 +32,39 @@ export default function ExistentialCo() {
     >
       <div className="project-grid project-grid--unsized">
         <div className="tile tile-w-12 tile-h-6">
-          <Video src="/works/2022-client-web-existential/cover.mov"/>
+          <Video datasrc="/works/2022-client-web-existential/cover"/>
         </div>
         <div className="tile tile-w-12 tile-h-6">
-          <Video src="/works/2022-client-web-existential/growth.mov"/>
+          <Video datasrc="/works/2022-client-web-existential/growth"/>
         </div>
         <div className="tile-w-6 tile-h-3">
-          <Video src="/works/2022-client-web-existential/exist-and-thrive.mov"/>
+          <Video datasrc="/works/2022-client-web-existential/exist-and-thrive"/>
         </div>
         <div className="tile-w-6 tile-h-3">
-          <Video src="/works/2022-client-web-existential/collective-action.mov"/>
+          <Video datasrc="/works/2022-client-web-existential/collective-action"/>
         </div>
         <div className="tile-w-6 tile-h-3">
-          <Video src="/works/2022-client-web-existential/care-and-connection.mov"/>
+          <Video datasrc="/works/2022-client-web-existential/care-and-connection"/>
         </div>
         <div className="tile-w-6 tile-h-3">
-          <Video src="/works/2022-client-web-existential/escargo.mov"/>
+          <Video datasrc="/works/2022-client-web-existential/escargo"/>
         </div>
         <div className="tile tile-w-12 tile-h-6">
-          <Video src="/works/2022-client-web-existential/why.mov"/>
+          <Video datasrc="/works/2022-client-web-existential/why"/>
         </div>
         <div className="tile tile-w-12 tile-h-6">
-          <Video src="/works/2022-client-web-existential/char-prototypes.mov"/>
+          <Video datasrc="/works/2022-client-web-existential/char-prototypes"/>
         </div>
         <div className="tile tile-w-12 tile-h-6">
-          <Video src="/works/2022-client-web-existential/transition.mov"/>
+          <Video datasrc="/works/2022-client-web-existential/transition"/>
         </div>
         <div className="tile tile-w-6 tile-h-3">
-          <img src="/works/2022-client-web-existential/ui.png"/>
+          <ResponsiveImg src="/works/2022-client-web-existential/ui" format="png"/>
         </div>
         <div className="tile tile-w-6 tile-h-3">
-          <img src="/works/2022-client-web-existential/ty.png"/>
+          <ResponsiveImg src="/works/2022-client-web-existential/ty" format="png"/>
         </div>
       </div>
     </ProjectDetails>
   );
-}
+    }

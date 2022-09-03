@@ -4,7 +4,7 @@ import Head from "next/head";
 import { emitKeypressEvents } from "readline";
 import useLogo from "../hooks/useLogo";
 import { useRouter } from "next/router";
-import useVideoManager from "../hooks/useVideoManager";
+import useVideoSizer from "../hooks/useVideoSizer";
 
 export default function ProjectDetails({
   title,
@@ -14,7 +14,8 @@ export default function ProjectDetails({
   ...props
 }) {
   useLogo();
-  useVideoManager();
+  useVideoSizer();
+
   const pageTitle = `Space Type - ${title}`;
   const titleSplit = [];
   let currentLine = [];

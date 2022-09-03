@@ -13,7 +13,7 @@ export default function Vartype() {
         </>
       }
     >
-      <div className="project-grid">
+      <div className="project-grid project-grid--unsized">
         <div className="tile tile-w-12 tile-h-6">
           <Video src="/works/2022-tool-vartype/fitv2.mov"/>
         </div>
@@ -34,6 +34,15 @@ export default function Vartype() {
         </div>
         <div className="tile tile-w-4 tile-h-4">
           <Video src="/works/2022-tool-vartype/sq-6.mov"/>
+        </div>
+        <div className="tile tile-w-4 tile-h-4">
+          <Video src="/works/2022-tool-vartype/sq-7.mov"/>
+        </div>
+        <div className="tile tile-w-4 tile-h-4">
+          <Video src="/works/2022-tool-vartype/sq-10.mov"/>
+        </div>
+        <div className="tile tile-w-4 tile-h-4">
+          <Video src="/works/2022-tool-vartype/sq-9.mov"/>
         </div>
         </div>
     </ProjectDetails>
