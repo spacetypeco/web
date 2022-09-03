@@ -11,9 +11,9 @@ const config = {
       },
     ];
   },
-  // experimental: {
-  // scrollRestoration: true,
-  // },
+  experimental: {
+    scrollRestoration: true,
+  },
 };
 
 module.exports = config;
