@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 
 import Head from "next/head";
 import { emitKeypressEvents } from "readline";
+import useImageSizer from "../hooks/useImageSizer";
 import useLogo from "../hooks/useLogo";
 import { useRouter } from "next/router";
 import useVideoSizer from "../hooks/useVideoSizer";
@@ -15,6 +16,7 @@ export default function ProjectDetails({
 }) {
   useLogo();
   useVideoSizer();
+  useImageSizer();
 
   const pageTitle = `Space Type - ${title}`;
   const titleSplit = [];

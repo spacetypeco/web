@@ -59,10 +59,10 @@ export default function ExistentialCo() {
           <Video datasrc="/works/2022-client-web-existential/transition"/>
         </div>
         <div className="tile tile-w-6 tile-h-3">
-          <ResponsiveImg src="/works/2022-client-web-existential/ui" format="png"/>
+          <img data-src="/works/2022-client-web-existential/ui" data-fmt="png"/>
         </div>
         <div className="tile tile-w-6 tile-h-3">
-          <ResponsiveImg src="/works/2022-client-web-existential/ty" format="png"/>
+          <img data-src="/works/2022-client-web-existential/ty" data-fmt="png"/>
         </div>
       </div>
     </ProjectDetails>
