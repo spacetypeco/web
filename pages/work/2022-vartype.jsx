@@ -15,31 +15,31 @@ export default function Vartype() {
     >
       <div className="project-grid project-grid--unsized">
         <div className="tile tile-w-12 tile-h-6">
-          <Video src="/works/2022-tool-vartype/fitv2.mov"/>
+          <Video datasrc="/works/2022-tool-vartype/fitv2"/>
         </div>
         <div className="tile tile-w-4 tile-h-4">
           <Video src="/works/2022-tool-vartype/sq-1.mov"/>
         </div>
         <div className="tile tile-w-4 tile-h-4">
-          <Video src="/works/2022-tool-vartype/sq-2.mov"/>
+          <Video datasrc="/works/2022-tool-vartype/sq-2"/>
         </div>
         <div className="tile tile-w-4 tile-h-4">
-          <Video src="/works/2022-tool-vartype/sq-3.mov"/>
+          <Video datasrc="/works/2022-tool-vartype/sq-3"/>
         </div>
         <div className="tile tile-w-4 tile-h-4">
-          <Video src="/works/2022-tool-vartype/sq-4.mov"/>
+          <Video datasrc="/works/2022-tool-vartype/sq-4"/>
         </div>
         <div className="tile tile-w-4 tile-h-4">
-          <Video src="/works/2022-tool-vartype/sq-5.mov"/>
+          <Video datasrc="/works/2022-tool-vartype/sq-5"/>
         </div>
         <div className="tile tile-w-4 tile-h-4">
-          <Video src="/works/2022-tool-vartype/sq-6.mov"/>
+          <Video datasrc="/works/2022-tool-vartype/sq-6"/>
         </div>
         <div className="tile tile-w-4 tile-h-4">
-          <Video src="/works/2022-tool-vartype/sq-7.mov"/>
+          <Video datasrc="/works/2022-tool-vartype/sq-7"/>
         </div>
         <div className="tile tile-w-4 tile-h-4">
-          <Video src="/works/2022-tool-vartype/sq-10.mov"/>
+          <Video datasrc="/works/2022-tool-vartype/sq-10"/>
         </div>
         <div className="tile tile-w-4 tile-h-4">
           <Video src="/works/2022-tool-vartype/sq-9.mov"/>

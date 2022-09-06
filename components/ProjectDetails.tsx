@@ -1,19 +1,12 @@
 import { useEffect, useRef } from "react";
 
 import Head from "next/head";
-import { emitKeypressEvents } from "readline";
 import useImageSizer from "../hooks/useImageSizer";
 import useLogo from "../hooks/useLogo";
 import { useRouter } from "next/router";
 import useVideoSizer from "../hooks/useVideoSizer";
 
-export default function ProjectDetails({
-  title,
-  headerUrl,
-  bgColor,
-  intro,
-  ...props
-}) {
+export default function ProjectDetails({ title, bgColor, intro, ...props }) {
   useLogo();
   useVideoSizer();
   useImageSizer();

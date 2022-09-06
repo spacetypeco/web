@@ -8,6 +8,7 @@ import dynamic from 'next/dynamic'
 import useLogo from "../../hooks/useLogo";
 import useScrollReveal from "../../hooks/useScrollReveal";
 import useVideoManager from "../../hooks/useVideoManager";
+import useVideoSizer from "../../hooks/useVideoSizer";
 
 const ReactP5Wrapper = dynamic(() => import('react-p5-wrapper')
     .then(mod => mod.ReactP5Wrapper), {
@@ -20,6 +21,7 @@ require("../../util/utils.js");
 function Works() {
   useLogo();
   useVideoManager();
+  useVideoSizer();
   useScrollReveal();
 
   const sketch = createSketch("bg");
@@ -50,7 +52,7 @@ function Works() {
                 </div>
                 <Tile w={4} h={4} title="Vartype">
                   <ProjectHoverLink href="work/2022-vartype" title="Vartype">
-                    <Video src="/works/2022-tool-vartype/cover-sm.mp4"/>
+                    <Video datasrc="/works/2022-tool-vartype/cover-sm"/>
                   </ProjectHoverLink>
                 </Tile>
                 <Tile w={6} h={3} title="Panasonic: Make New">

@@ -5,7 +5,6 @@ export default function MakeNew() {
   return (
     <ProjectDetails
       title="Panasonic / Make New"
-      headerUrl="/works/2022-client-brand-panasonic/make-new-wide-2.png"
       intro={
         <>
           <p>
@@ -20,7 +19,7 @@ export default function MakeNew() {
     >
       <div className="project-grid">
         <div className="tile tile-w-12 tile-h-6">
-          <Video src="/works/2022-client-brand-panasonic/cover.mov"/>
+          <Video datasrc="/works/2022-client-brand-panasonic/cover"/>
         </div>
         <div className="tile tile-w-12 tile-h-6" style={{height: "100%"}}>
         <iframe src='https://www.youtube.com/embed/BHCOvooEdy8'
@@ -32,7 +31,7 @@ export default function MakeNew() {
         />
         </div>
         <div className="tile tile-w-4 tile-h-8">
-          <Video src="/works/2022-client-brand-panasonic/make-new-artists.mov"/>
+          <Video datasrc="/works/2022-client-brand-panasonic/make-new-artists"/>
         </div>
         <div className="tile-w-4 tile-h-4 tile-lg-w-6 tile-lg-h-6">
           <Video src="/works/2022-client-brand-panasonic/scene-3.mov"/>

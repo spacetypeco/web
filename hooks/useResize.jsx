@@ -3,7 +3,7 @@ import { useEffect } from "react";
 const BREAKPOINTS = [500, 1000, 1500];
 
 const crossedBreakpoint = (oldWidth, newWidth) => {
-    if (newWidth >= currentWidth) {
+    if (newWidth <= oldWidth) {
         return false;
     }
 

@@ -10,13 +10,13 @@ export default function useVideoSizer() {
 
       let postfix = "";
       if (px >= 1500) {
-        postfix = "-2kw";
+        postfix = "-2000w";
       } else if (px >= 1000) {
         postfix = "-1500w";
       } else if (px >= 500) {
-        postfix = "-1kw";
+        postfix = "-1000w";
       } else {
-        postfix = "-500kw";
+        postfix = "-500w";
       }
 
       sourceEl.src = `${baseUrl}${postfix}.m4v`;
