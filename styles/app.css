@@ -84,6 +84,10 @@
   grid-auto-rows: revert !important;
 }
 
+.project-grid--full-w-24 {
+  grid-auto-rows: calc((100vw - 6em - 11*0.5em) / 24); /* based on content-wide margin of 3em on both sides */
+}
+
 @media (max-width: 768px) {
   .project-grid {
     grid-auto-rows: calc((100vw - 4em - 11*0.5em) / 12);
@@ -93,6 +97,9 @@
 @media (min-width: calc(1000px + 10em)) {
   .project-grid {
     grid-auto-rows: calc(1000px / 12);
+  }
+  .project-grid--full-w-24 {
+    grid-auto-rows: calc(1000px / 24);
   }
 }
 
