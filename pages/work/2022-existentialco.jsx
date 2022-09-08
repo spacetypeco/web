@@ -1,5 +1,4 @@
 import ProjectDetails from "../../components/ProjectDetails";
-import ResponsiveImg from "../../components/ResponsiveImg";
 import Video from "../../components/Video";
 
 export default function ExistentialCo() {

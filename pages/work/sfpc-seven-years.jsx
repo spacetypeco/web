@@ -17,10 +17,10 @@ export default function BroadwayMural() {
     >
       <div className="project-grid">
         <div className="tile tile-w-6 tile-h-7">
-          <img src="/works/2019-sfpc-poster/cover.jpg"></img>
+          <img data-src="/works/2019-sfpc-poster/cover" data-fmt="jpg"></img>
         </div>
         <div className="tile tile-w-6 tile-h-7">
-          <img src="/works/2019-sfpc-poster/installed.jpg"></img>
+          <img data-src="/works/2019-sfpc-poster/installed" data-fmt="jpg"></img>
         </div>
       </div>
     </ProjectDetails>

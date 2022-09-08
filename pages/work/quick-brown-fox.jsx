@@ -17,7 +17,7 @@ export default function BroadwayMural() {
     >
       <div className="project-grid project-grid--unsized">
         <div className="tile-w-12 tile-h-7">
-          <img src="/works/quick-brown-fox/cover.png"></img>
+          <img data-src="/works/quick-brown-fox/cover" data-fmt="png"></img>
         </div>
       </div>
     </ProjectDetails>

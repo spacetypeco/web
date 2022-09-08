@@ -5,6 +5,7 @@ import Tile from "../../components/Tile"
 import Video from "../../components/Video";
 import createSketch from "../../p5/sketches/blobsBG";
 import dynamic from 'next/dynamic'
+import useImageSizer from "../../hooks/useImageSizer";
 import useLogo from "../../hooks/useLogo";
 import useScrollReveal from "../../hooks/useScrollReveal";
 import useVideoManager from "../../hooks/useVideoManager";
@@ -22,6 +23,7 @@ function Works() {
   useLogo();
   useVideoManager();
   useVideoSizer();
+  useImageSizer();
   useScrollReveal();
 
   const sketch = createSketch("bg");
@@ -60,7 +62,7 @@ function Works() {
                     href="work/2022-panasonic-make-new"
                     title="Panasonic: Make New"
                   >
-                    <Video src="/works/2022-client-brand-panasonic/cover.mov"/>
+                    <Video datasrc="/works/2022-client-brand-panasonic/cover"/>
                   </ProjectHoverLink>
                 </Tile>
                 
@@ -108,22 +110,22 @@ function Works() {
                 
                 <Tile w={6} h={6} title="World Trade Center">
                   <ProjectHoverLink href="work/world-trade-center" title="World Trade Center">
-                    <img src="/works/wtc/cover.jpg"></img>
+                    <img data-src="/works/wtc/cover" data-fmt="jpg"></img>
                   </ProjectHoverLink>
                 </Tile>
                 <Tile w={4} h={5} title="Map of the U.S.">
                   <ProjectHoverLink href="work/us-map" title="Map of the United States">
-                    <img src="/works/us-map/us-map-cover.jpg"></img>
+                    <img data-src="/works/us-map/us-map-cover" data-fmt="jpg"></img>
                   </ProjectHoverLink>
                 </Tile>
                 <Tile w={4} h={5} title="London Review of Books">
                   <ProjectHoverLink href="work/london-review-of-books" title="London Review of Books">
-                    <img src="/works/london-review-of-books/cover.jpg"></img>
+                    <img data-src="/works/london-review-of-books/cover" data-fmt="jpg"></img>
                   </ProjectHoverLink>
                 </Tile>
-                <Tile w={4} h={5} title="Communication">
+                <Tile w={4} h={5} title="SFPC - Comms">
                   <ProjectHoverLink href="work/sfpc-communication" title="Communication">
-                    <img src="/works/sfpc-communication/cover.jpg"></img>
+                    <img data-src="/works/sfpc-communication/cover" data-fmt="jpg"></img>
                   </ProjectHoverLink>
                 </Tile>
                 </div>
@@ -134,13 +136,13 @@ function Works() {
   <div className="project-grid project-grid--full-w project-grid--full-w-24">
   <Tile w={6} h={8} title="Quick Brown Fox">
                   <ProjectHoverLink href="work/quick-brown-fox" title="Quick Brown Fox">
-                    <img src="/works/quick-brown-fox/cover.png"></img>
+                    <img data-src="/works/quick-brown-fox/cover" data-fmt="png"></img>
                   </ProjectHoverLink>
                 </Tile>
                 
                 <Tile w={6} h={8} title="Allida">
                   <ProjectHoverLink href="work/allida-imprint" title="Allida">
-                    <img src="/works/2022-allida/cover.png"></img>
+                    <img data-src="/works/2022-allida/cover" data-fmt="png"></img>
                   </ProjectHoverLink>
                 </Tile>
                 <Tile w={4} h={4} title="Hany's Harvest">
@@ -148,13 +150,13 @@ function Works() {
                     href="work/hanys-harvest"
                     title="Hanys Harvest Branding"
                   >
-                    <img src="/works/2018-client-brand-hanys-harvest/mockup_wide.png"></img>
+                    <img data-src="/works/2018-client-brand-hanys-harvest/mockup_wide" data-fmt="png"></img>
                   </ProjectHoverLink>
                 </Tile>
 
                 <Tile w={4} h={4} title="Hamilton Type — Etta">
                   <ProjectHoverLink href="work/hamilton-etta" title="Hamilton Type - Etta">
-                    <img src="/works/etta/Etta_Banners_01.png"></img>
+                    <img data-src="/works/etta/Etta_Banners_01" data-fmt="png"></img>
                   </ProjectHoverLink>
                 </Tile>
                 
@@ -173,24 +175,24 @@ function Works() {
                 </div> */}
                 <Tile w={4} h={12} title="Constant Typeface">
                   <ProjectHoverLink href="work/constant-typeface" title="Constant Typeface">
-                    <img src="/works/constant-typeface/constant-poster.jpeg"></img>
+                    <img data-src="/works/constant-typeface/constant-poster" data-fmt="jpeg"></img>
                   </ProjectHoverLink>
                 </Tile>
                 <Tile w={4} h={10} title="7 Years of SFPC">
                   <ProjectHoverLink href="work/sfpc-seven-years" title="7 Years of SFPC">
-                    <img src="/works/2019-sfpc-poster/cover.jpg"></img>
+                    <img data-src="/works/2019-sfpc-poster/cover" data-fmt="jpg"></img>
                   </ProjectHoverLink>
                 </Tile>
                 <Tile w={4} h={10} title="The Winter Garden">
                   <ProjectHoverLink href="work/the-winter-garden" title="The Winter Garden">
-                    <img src="/works/2022-winter-garden-cover/mockup.png"></img>
+                    <img data-src="/works/2022-winter-garden-cover/mockup" data-fmt="png"></img>
                   </ProjectHoverLink>
                 </Tile>
                 <div className="tile rounded tile-w-4 tile-h-2 hide-sm  wipe-down" style={{backgroundColor: "var(--color-accent-2)"}}>
                 </div>
                 <Tile w={6} h={10} title="Kiplingers Magazine" classNames="fit-contain">
                   <ProjectHoverLink href="work/kiplingers" title="Kiplingers Magazine">
-                    <img src="/works/kiplingers-cover.jpg"></img>
+                    <img data-src="/works/kiplingers-cover" data-fmt="jpg"></img>
                   </ProjectHoverLink>
                 </Tile>
               </div>

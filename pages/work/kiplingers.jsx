@@ -13,7 +13,7 @@ export default function Kiplingers() {
     >
       <div className="project-grid project-grid--unsized">
         <div className="tile-w-12 tile-h-3">
-          <img src="/works/kiplingers-cover.jpg"></img>
+          <img data-src="/works/kiplingers-cover" data-fmt="jpg"></img>
         </div>
       </div>
     </ProjectDetails>

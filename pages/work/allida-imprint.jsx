@@ -1,9 +1,9 @@
 import ProjectDetails from "../../components/ProjectDetails";
 
-export default function BroadwayMural() {
+export default function AllidaImprint() {
   return (
     <ProjectDetails
-      title="Broadway Mural"
+      title="Allida Imprint"
       intro={
         <>
           <p>Client: Silverstein Properties</p>
@@ -17,10 +17,10 @@ export default function BroadwayMural() {
     >
       <div className="project-grid project-grid--unsized">
         <div className="tile-w-12 tile-h-6">
-          <img src="/works/2022-allida/graphics-2.png"></img>
+          <img data-src="/works/2022-allida/graphics-2" data-fmt="png"></img>
         </div>
         <div className="tile-w-12 tile-h-6">
-          <img src="/works/2022-allida/cover.png"></img>
+          <img data-src="/works/2022-allida/cover" data-fmt="png"></img>
         </div>
       </div>
     </ProjectDetails>

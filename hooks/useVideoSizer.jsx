@@ -20,7 +20,12 @@ export default function useVideoSizer() {
       }
 
       sourceEl.src = `${baseUrl}${postfix}.m4v`;
-      videoEl.load();
+      
+      try {
+        videoEl.load();
+      } catch (e) {
+        console.error(e);
+      }
     }
 
     if (observer) {
@@ -41,10 +46,14 @@ export default function useVideoSizer() {
             try {
               entry.target.play();
             } catch (e) {
-              
+              console.error(e);
             }
           } else {
-            entry.target.pause();
+            try {
+              entry.target.pause();
+            } catch (e) {
+              console.error(e);
+            }
           }
         });
       });

@@ -17,31 +17,31 @@ export default function BroadwayMural() {
     >
       <div className="project-grid project-grid--unsized">
         <div className="tile tile-w-6 tile-h-3">
-          <img src="/works/etta/HWT Etta Banners-01.png"></img>
+          <img data-src="/works/etta/HWT Etta Banners-01" data-fmt="png"></img>
         </div>
         <div className="tile tile-w-6 tile-h-3">
-          <img src="/works/etta/HWT Etta Banners-02.png"></img>
+          <img data-src="/works/etta/HWT Etta Banners-02" data-fmt="png"></img>
         </div>
         <div className="tile tile-w-4 tile-h-4">
-          <img src="/works/etta/FT_ETTA_NewYorkers.png"></img>
+          <img data-src="/works/etta/FT_ETTA_NewYorkers" data-fmt="png"></img>
         </div>
         <div className="tile tile-w-4 tile-h-4">
-          <img src="/works/etta/FT_ETTA_Styles.png"></img>
+          <img data-src="/works/etta/FT_ETTA_Styles" data-fmt="png"></img>
         </div>
         <div className="tile tile-w-4 tile-h-4">
-          <img src="/works/etta/FT_ETTA_East.png"></img>
+          <img data-src="/works/etta/FT_ETTA_East" data-fmt="png"></img>
         </div>
         <div className="tile-w-8 tile-h-4">
-          <img src="/works/etta/Etta_banners_03.png"></img>
+          <img data-src="/works/etta/Etta_banners_03" data-fmt="png"></img>
         </div>
         <div className="tile-w-4 tile-h-4">
-          <img src="/works/etta/FT_ETTA_E.png"></img>
+          <img data-src="/works/etta/FT_ETTA_E" data-fmt="png"></img>
         </div>
         <div className="tile-w-4 tile-h-4">
-          <img src="/works/etta/FT_ETTA_A.png"></img>
+          <img data-src="/works/etta/FT_ETTA_A" data-fmt="png"></img>
         </div>
         <div className="tile-w-8 tile-h-4">
-          <img src="/works/etta/Etta_banners_04.png"></img>
+          <img data-src="/works/etta/Etta_banners_04" data-fmt="png"></img>
         </div>
       </div>
     </ProjectDetails>

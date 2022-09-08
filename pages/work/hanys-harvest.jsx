@@ -1,6 +1,6 @@
 import ProjectDetails from "../../components/ProjectDetails";
 
-export default function BroadwayMural() {
+export default function HanysHarvest() {
   return (
     <ProjectDetails
       title="Hany's Harvest"
@@ -17,16 +17,16 @@ export default function BroadwayMural() {
     >
       <div className="project-grid project-grid--unsized">
         <div className="tile-w-12 tile-h-3">
-          <img src="/works/2018-client-brand-hanys-harvest/Allflavors_lr.jpg"></img>
+          <img data-src="/works/2018-client-brand-hanys-harvest/Allflavors_lr" data-fmt="jpg"></img>
         </div>
         <div className="tile-w-12 tile-h-3">
-          <img src="/works/2018-client-brand-hanys-harvest/business_card_lr.jpg"></img>
+          <img data-src="/works/2018-client-brand-hanys-harvest/business_card_lr" data-fmt="jpg"></img>
         </div>
         <div className="tile-w-6 tile-h-2">
-        <img src="/works/2018-client-brand-hanys-harvest/sketch.jpg"></img>
+        <img data-src="/works/2018-client-brand-hanys-harvest/sketch" data-fmt="jpg"></img>
         </div>
         <div className="tile-w-6 tile-h-2">
-          <img src="/works/2018-client-brand-hanys-harvest/Hanys_label_8oz_Original.jpg"></img>
+          <img data-src="/works/2018-client-brand-hanys-harvest/Hanys_label_8oz_Original" data-fmt="jpg"></img>
         </div>
       </div>
     </ProjectDetails>
