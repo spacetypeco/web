@@ -1,17 +1,29 @@
 import ProjectDetails from "../../components/ProjectDetails";
 
-export default function BroadwayMural() {
+export default function EttaTypeface() {
   return (
     <ProjectDetails
       title="Etta Typeface"
       intro={
         <>
-          <p>Client: Silverstein Properties</p>
           <p>
-            Mural painted on the 2nd floor of 120 Broadway in New York City.
-            Each letter contains an iconic scene or building that can be seen
-            from the iconic Broadway street.
+            In collaboration with the Hamilton Wood Type & Printing Museum and
+            Faire Type, we designed the Etta typeface for the production of new
+            wood types through the museum's unique blend of antique and
+            contemporary technologies.
           </p>
+          <p>
+            The Etta typeface, named for Hamilton Manufacturing's first
+            bookkeeper, Etta Shove Hamilton, is a display typeface in two
+            styles: East and West. Its two variations can be combined or used as
+            a chromatic font.
+          </p>
+          <p>
+            The typeface takes cues from the design experimentation happening
+            in the heyday of mid 19th Century wood type, but filters it through
+            1960s photo-type sensibilities.
+          </p>
+          <p>Featured on: <a href="https://woodtype.org/pages/copy-of-wood-type-legacy-project">Hamilton Wood Type Legacy Project</a></p>
         </>
       }
     >

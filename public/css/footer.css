@@ -21,6 +21,10 @@
   color: var(--color-accent);
 }
 
+.theme-light .footer a {
+  color: var(--color-accent-2);
+}
+
 @media (max-width: 768px) {
   .footer {
     padding: 0em 2em;

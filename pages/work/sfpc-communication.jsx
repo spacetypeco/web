@@ -4,15 +4,19 @@ import Video from "../../components/Video";
 export default function BroadwayMural() {
   return (
     <ProjectDetails
-      title="Broadway Mural"
+      title="SFPC - Communication"
       intro={
         <>
-          <p>Client: Silverstein Properties</p>
+          
           <p>
-            Mural painted on the 2nd floor of 120 Broadway in New York City.
-            Each letter contains an iconic scene or building that can be seen
-            from the iconic Broadway street.
-          </p>
+            Created during residency with the School for Poetic Computation, this device brings the power of communication into collaboration with physical machinations
+            to reflect the seismic power of language to inspire and create cultural movements.
+            </p>
+              <p>Motors and cams form physical waves under a bed of mounted rods, creating the seismic thrust for individual strips to join together into a single collective voice.</p>
+
+              <p>Materials: wooden cams, acrylic rods, plywood, 2812b LED strips, and openFrameworks</p>
+            
+<p>Advisor: CW&T, Zach Lieberman from the School for Poetic Computation</p>
         </>
       }
     >

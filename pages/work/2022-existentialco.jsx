@@ -8,17 +8,17 @@ export default function ExistentialCo() {
       intro={
         <>
           <p>
-            For the launch of L.A. based production company Existential, we collaborated 
+            For the launch of L.A. based production company Existential, we teamed up 
             with graphic design studio <b>Pact</b> to bring their online presence
             to life.
           </p>
           <p>
-            Aiming for a simple and dynamic hub for community engagement, we built
+            Tasked with creating a simple and dynamic hub for community engagement, we built
             a custom website with a kinetic typographic landing page.
           </p>
           <p>
-            Their first campaign ponders the question — Why are we here? Visitors can
-            provide their perspectives and download a shareable animation.
+            <i>'Why are we here?'</i> is their launch campaign, allowing visitors to
+            provide their perspectives and share them through kinetic type on social media.
           </p>
           <p>
             tktk main website pages; prototypes of different animations; instagram download; planning in notion

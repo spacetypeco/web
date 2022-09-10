@@ -14,7 +14,7 @@
   --color-white: #161616;
   --color-black-transparent: #FFFFFFaa;
   --color-accent: #4ecdc4;
-  --color-accent-2: #4ecdc4;
+  --color-accent-2: #fe2179;
 }
 
 .theme-light .logo img {
@@ -658,7 +658,12 @@ a {
   font-size: 0.9em;
 }
 
-.content .nav-back {
+.flex-gap {
+  display: flex;
+  gap: 0.5em;
+}
+
+.content .badge {
   font-size: 0.8em;
   cursor: pointer;
   color: var(--color-white);
@@ -666,6 +671,11 @@ a {
   padding: 0.2em 0.4em;
   background-color: var(--color-accent);
   border-radius: 4px;
+}
+
+.content .nav-back {
+  background-color: var(--color-accent-2);
+  color: var(--color-black)
 }
 
 .button-lg {

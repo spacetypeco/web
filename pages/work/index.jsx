@@ -50,7 +50,7 @@ function Works() {
                     <Video src="/works/2022-client-web-existential/cover-vlc-1600.m4v"/>
                     </ProjectHoverLink>
                   </Tile>
-                <div className="tile rounded tile-w-2 tile-h-7 hide-sm  wipe-down" style={{backgroundColor: "var(--color-accent-2)"}}>
+                <div className="tile rounded tile-w-2 tile-h-7 hide-sm  wipe-down" style={{backgroundImage: "repeating-linear-gradient(45deg,var(--color-accent),var(--color-accent) 10px,transparent 10px,transparent 20px);"}}>
                 </div>
                 <Tile w={4} h={4} title="Vartype">
                   <ProjectHoverLink href="work/2022-vartype" title="Vartype">
@@ -90,7 +90,7 @@ function Works() {
                   </ProjectHoverLink>
                 </Tile>
 
-                <div className="tile rounded tile-w-8 tile-h-1 hide-sm  wipe-down" style={{backgroundColor: "var(--color-accent)"}}>
+                <div className="tile rounded tile-w-8 tile-h-1 hide-sm  wipe-down" style={{backgroundImage: "repeating-linear-gradient(45deg,var(--color-accent-2),var(--color-accent-2) 10px,transparent 10px,transparent 20px);"}}>
                 </div>
   </div>
 
@@ -145,10 +145,10 @@ function Works() {
                     <img data-src="/works/2022-allida/cover" data-fmt="png"></img>
                   </ProjectHoverLink>
                 </Tile>
-                <Tile w={4} h={4} title="Hany's Harvest">
+                <Tile w={4} h={4} title="Hany's Fire Tonic">
                   <ProjectHoverLink
-                    href="work/hanys-harvest"
-                    title="Hanys Harvest Branding"
+                    href="work/hanys-fire-tonic"
+                    title="Hanys Fire Tonic"
                   >
                     <img data-src="/works/2018-client-brand-hanys-harvest/mockup_wide" data-fmt="png"></img>
                   </ProjectHoverLink>
@@ -188,11 +188,16 @@ function Works() {
                     <img data-src="/works/2022-winter-garden-cover/mockup" data-fmt="png"></img>
                   </ProjectHoverLink>
                 </Tile>
-                <div className="tile rounded tile-w-4 tile-h-2 hide-sm  wipe-down" style={{backgroundColor: "var(--color-accent-2)"}}>
+                <div className="tile rounded tile-w-4 tile-h-2 hide-sm wipe-down" style={{backgroundImage: "repeating-linear-gradient(45deg,var(--color-accent-2),var(--color-accent-2) 10px,transparent 10px,transparent 20px);"}}>
                 </div>
-                <Tile w={6} h={10} title="Kiplingers Magazine" classNames="fit-contain">
+                <Tile w={6} h={6} title="Kiplingers Magazine" classNames="">
                   <ProjectHoverLink href="work/kiplingers" title="Kiplingers Magazine">
                     <img data-src="/works/kiplingers-cover" data-fmt="jpg"></img>
+                  </ProjectHoverLink>
+                </Tile>
+                <Tile w={6} h={6} title="Chance and Destiny" classNames="">
+                  <ProjectHoverLink href="work/chance-and-destiny" title="Chance and Destiny">
+                  <img data-src="/works/chance-and-destiny/Textura_process" data-fmt="jpg"></img>
                   </ProjectHoverLink>
                 </Tile>
               </div>

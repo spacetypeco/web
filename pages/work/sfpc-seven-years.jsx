@@ -1,17 +1,12 @@
 import ProjectDetails from "../../components/ProjectDetails";
 
-export default function BroadwayMural() {
+export default function SFPCSevenYears() {
   return (
     <ProjectDetails
-      title="Broadway Mural"
+      title="Seven Years of SFPC"
       intro={
         <>
-          <p>Client: Silverstein Properties</p>
-          <p>
-            Mural painted on the 2nd floor of 120 Broadway in New York City.
-            Each letter contains an iconic scene or building that can be seen
-            from the iconic Broadway street.
-          </p>
+          <p>We were commissioned to draw for the ‘Poetic Computation: 7 Years of SFPC’ exhibition. The resulting lettering work was displayed in the West Village, NYC.</p>
         </>
       }
     >

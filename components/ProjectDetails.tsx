@@ -17,7 +17,7 @@ export default function ProjectDetails({ title, bgColor, intro, ...props }) {
 
   title.split("").forEach((item, index) => {
     let ch = item.trim() ? item : "\u00A0";
-    let animationDelay = `${index * 0.1}s`;
+    let animationDelay = `${Math.random()}s`;
 
     currentLine.push(
       <span key={index} style={{ animationDelay }}>
@@ -75,7 +75,7 @@ export default function ProjectDetails({ title, bgColor, intro, ...props }) {
           >
             <div className="overflow-y-hidden">
               <a
-                className="nav-back slide-up"
+                className="badge nav-back slide-up"
                 onClick={() => {
                   router.query.fromWork ? router.back() : router.push("/work");
                 }}

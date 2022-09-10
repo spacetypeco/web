@@ -6,8 +6,8 @@ export default function Kiplingers() {
       title="Kiplingers Magazine"
       intro={
         <>
-        <p>For Kiplinger’s feature article in Personal Finance Magazine, we created a custom lettering illustration spread.</p>
-        <p>Art Director: Stacie Harrison</p>
+        <p>We created a custom lettering illustration spread for Kiplinger’s feature article in Personal Finance Magazine.</p>
+        <p className="badge">Art Director: Stacie Harrison</p>
         </>
       }
     >

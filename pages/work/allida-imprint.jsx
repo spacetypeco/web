@@ -3,14 +3,17 @@ import ProjectDetails from "../../components/ProjectDetails";
 export default function AllidaImprint() {
   return (
     <ProjectDetails
-      title="Allida Imprint"
+      title="Allida"
       intro={
         <>
-          <p>Client: Silverstein Properties</p>
           <p>
-            Mural painted on the 2nd floor of 120 Broadway in New York City.
-            Each letter contains an iconic scene or building that can be seen
-            from the iconic Broadway street.
+            We were commissioned to design a new logo for HarperCollins' new
+            imprint, Allida.
+          </p>
+          <p>
+            Led by author & activist Linda Sue Park and director Anne Hoppe,
+            Allida publishes the stories of marginalized writers and artists to
+            inspire and represent a new generation of children.
           </p>
         </>
       }
