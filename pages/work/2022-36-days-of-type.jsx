@@ -15,7 +15,7 @@ export default function DaysOfType2022() {
     >
       <div className="project-grid project-grid--unsized">
         <div className="tile-w-4">
-          <Video src={`${assetFolder}/A.mov`} />
+          <Video src={`${assetFolder}/A-500w.m4v`} />
         </div>
         <div className="tile-w-4">
           <Video src={`${assetFolder}/B.mp4`} />
@@ -27,10 +27,10 @@ export default function DaysOfType2022() {
           <Video src={`${assetFolder}/D.mp4`} />
         </div>
         <div className="tile-w-4">
-          <Video src={`${assetFolder}/E.mov`} />
+          <Video src={`${assetFolder}/E-500w.m4v`} />
         </div>
         <div className="tile-w-4">
-          <Video src={`${assetFolder}/F.mov`} />
+          <Video src={`${assetFolder}/F-500w.m4v`} />
         </div>
         <div className="tile-w-4">
           <Video src={`${assetFolder}/G.mp4`} />
@@ -75,7 +75,7 @@ export default function DaysOfType2022() {
           <Video src={`${assetFolder}/T.mp4`} />
         </div>
         <div className="tile-w-4">
-          <Video src={`${assetFolder}/U.mp4`} style={{objectFit: "contain"}} />
+          <Video src={`${assetFolder}/U-500w.m4v`} style={{objectFit: "contain"}} />
         </div>
         <div className="tile-w-4">
           <Video src={`${assetFolder}/V.mp4`} />
@@ -114,7 +114,7 @@ export default function DaysOfType2022() {
           <Video src={`${assetFolder}/7.mp4`} />
         </div>
         <div className="tile-w-4">
-          <Video src={`${assetFolder}/8.mov`} />
+          <Video src={`${assetFolder}/8-500w.m4v`} />
         </div>
         <div className="tile-w-4">
           <Video src={`${assetFolder}/9.mp4`} />
