@@ -86,6 +86,7 @@
 
 .project-grid--full-w-24 {
   grid-auto-rows: calc((100vw - 6em - 11*0.5em) / 24); /* based on content-wide margin of 3em on both sides */
+  grid-template-rows: revert;
 }
 
 @media (max-width: 768px) {
@@ -111,6 +112,10 @@
 
 .tile.rounded video, .tile.rounded, .tile.rounded img {
   border-radius: 20px;
+}
+
+.tile.rounded {
+  overflow: hidden;
 }
 
 .project-details-grid {

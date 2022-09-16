@@ -2,7 +2,14 @@ import { MouseContext } from "../hooks/context/MouseContext";
 import React from "react";
 import { useContext } from "react";
 
-export default function Tile({ w, h, title, classNames, style, ...props }) {
+export default function Tile({
+  w,
+  h,
+  title,
+  classNames = "",
+  style,
+  ...props
+}) {
   const { cursorChangeHandler } = useContext(MouseContext);
 
   return (

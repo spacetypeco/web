@@ -16,17 +16,18 @@ export default function BroadwayMural() {
       }
     >
       <div className="project-grid">
-        <div className="tile-w-6 tile-h-3">
+        <div className="tile-w-12 tile-h-6">
           <img src="/works/2019-client-mural-broadway/wide-still.jpg"></img>
         </div>
-        <div className="tile-w-6 tile-h-3">
-          <img src="/works/2019-client-mural-broadway/wide-still.jpg"></img>
-        </div>
-        <div className="tile-w-6 tile-h-3">
-          <img src="/works/2019-client-mural-broadway/wide-still.jpg"></img>
-        </div>
-        <div className="tile-w-6 tile-h-3">
-          <img src="/works/2019-client-mural-broadway/wide-still.jpg"></img>
+        <div className="tile tile-w-12 tile-h-6" style={{ height: "100%" }}>
+          <iframe
+            src="https://www.youtube.com/embed/B4edA9fuaxU"
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen
+            title="video"
+            style={{ width: "100%", height: "100%", display: "inline-block" }}
+          />
         </div>
       </div>
     </ProjectDetails>

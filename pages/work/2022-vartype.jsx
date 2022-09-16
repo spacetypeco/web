@@ -7,44 +7,46 @@ export default function Vartype() {
       title="Vartype"
       intro={
         <>
-          <p>
-            tktktk
+            <p>
+            We created a new generative tool, Vartype, to allow variable fonts to be plugged intro
+            kinetic, interactive, and fully-adjustable sketches with the click of a button.
           </p>
+          <p><a href="https://vartype.com" className="badge">Visit Website</a></p>
         </>
       }
     >
       <div className="project-grid project-grid--unsized">
         <div className="tile tile-w-12 tile-h-6">
-          <Video datasrc="/works/2022-tool-vartype/fitv2"/>
+          <Video datasrc="/works/2022-tool-vartype/fitv2" />
         </div>
         <div className="tile tile-w-4 tile-h-4">
-          <Video src="/works/2022-tool-vartype/sq-1.mov"/>
+          <Video src="/works/2022-tool-vartype/sq-1.mov" />
         </div>
         <div className="tile tile-w-4 tile-h-4">
-          <Video datasrc="/works/2022-tool-vartype/sq-2"/>
+          <Video datasrc="/works/2022-tool-vartype/sq-2" />
         </div>
         <div className="tile tile-w-4 tile-h-4">
-          <Video datasrc="/works/2022-tool-vartype/sq-3"/>
+          <Video datasrc="/works/2022-tool-vartype/sq-3" />
         </div>
         <div className="tile tile-w-4 tile-h-4">
-          <Video datasrc="/works/2022-tool-vartype/sq-4"/>
+          <Video datasrc="/works/2022-tool-vartype/sq-4" />
         </div>
         <div className="tile tile-w-4 tile-h-4">
-          <Video datasrc="/works/2022-tool-vartype/sq-5"/>
+          <Video datasrc="/works/2022-tool-vartype/sq-5" />
         </div>
         <div className="tile tile-w-4 tile-h-4">
-          <Video datasrc="/works/2022-tool-vartype/sq-6"/>
+          <Video datasrc="/works/2022-tool-vartype/sq-6" />
         </div>
         <div className="tile tile-w-4 tile-h-4">
-          <Video datasrc="/works/2022-tool-vartype/sq-7"/>
+          <Video datasrc="/works/2022-tool-vartype/sq-7" />
         </div>
         <div className="tile tile-w-4 tile-h-4">
-          <Video datasrc="/works/2022-tool-vartype/sq-10"/>
+          <Video datasrc="/works/2022-tool-vartype/sq-10" />
         </div>
         <div className="tile tile-w-4 tile-h-4">
-          <Video src="/works/2022-tool-vartype/sq-9.mov"/>
+          <Video src="/works/2022-tool-vartype/sq-9.mov" />
         </div>
-        </div>
+      </div>
     </ProjectDetails>
   );
 }
