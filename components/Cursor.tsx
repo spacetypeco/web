@@ -7,7 +7,11 @@ export default function Cursor() {
   const { cursorState } = useContext(MouseContext);
   const { x, y } = useMousePosition();
 
-  const classNames = `circle ${cursorState.cursorType}`;
+  const classNames = `circle hide-sm ${cursorState.cursorType}`;
+
+  if (!x || !y) {
+    return <></>;
+  }
 
   return (
     <>
