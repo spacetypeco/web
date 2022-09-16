@@ -15,13 +15,17 @@ export default function Video({
 }: VideoProps) {
   const [isLoading, setLoading] = useState(true);
 
+  // TODO: Replace debug color with loader
+  const backgroundColor = isLoading ? "red" : "none";
+
   return (
     <video
       autoPlay={autoPlay}
+      preload="none"
       loop={true}
       muted={true}
       playsInline={true}
-      style={style}
+      style={{ backgroundColor, ...style }}
       onLoadedData={() => setLoading(false)}
     >
       <source data-src={datasrc} src={src} type="video/mp4" />
