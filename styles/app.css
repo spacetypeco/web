@@ -375,3 +375,11 @@
   margin-bottom: 1em;
   color: transparent;
 }
+
+.bg-diag-1 {
+  background-image: repeating-linear-gradient(45deg,var(--color-accent),var(--color-accent) 10px,transparent 10px,transparent 20px);
+}
+
+.bg-diag-2 {
+  background-image: repeating-linear-gradient(45deg,var(--color-accent-2),var(--color-accent-2) 10px,transparent 10px,transparent 20px);
+}

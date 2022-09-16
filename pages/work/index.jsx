@@ -50,7 +50,7 @@ function Works() {
                     <Video src="/works/2022-client-web-existential/cover-vlc-1600.m4v"/>
                     </ProjectHoverLink>
                   </Tile>
-                <div className="tile rounded tile-w-2 tile-h-7 hide-sm  wipe-down" style={{backgroundImage: "repeating-linear-gradient(45deg,var(--color-accent),var(--color-accent) 10px,transparent 10px,transparent 20px);"}}>
+                <div className="tile rounded tile-w-2 tile-h-7 hide-sm  wipe-down bg-diag-1">
                 </div>
                 <Tile w={4} h={4} title="Vartype">
                   <ProjectHoverLink href="work/2022-vartype" title="Vartype">
@@ -90,7 +90,7 @@ function Works() {
                   </ProjectHoverLink>
                 </Tile>
 
-                <div className="tile rounded tile-w-8 tile-h-1 hide-sm  wipe-down" style={{backgroundImage: "repeating-linear-gradient(45deg,var(--color-accent-2),var(--color-accent-2) 10px,transparent 10px,transparent 20px);"}}>
+                <div className="tile rounded tile-w-8 tile-h-1 hide-sm  wipe-down bg-diag-2">
                 </div>
   </div>
 
@@ -195,7 +195,7 @@ function Works() {
                     <img data-src="/works/2022-winter-garden-cover/mockup" data-fmt="png"></img>
                   </ProjectHoverLink>
                 </Tile>
-                <div className="tile rounded tile-w-4 tile-h-9 hide-sm wipe-down" style={{backgroundImage: "repeating-linear-gradient(45deg,var(--color-accent-2),var(--color-accent-2) 10px,transparent 10px,transparent 20px);"}}>
+                <div className="tile rounded tile-w-4 tile-h-9 hide-sm wipe-down bg-diag-1">
                 </div>
 
                 <Tile w={4} h={7} title="Kiplingers Magazine">
