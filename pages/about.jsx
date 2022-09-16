@@ -23,20 +23,24 @@ function About() {
         <div id="container" className="full-w full-h position-rel">
           <div id="about">
             <div className="fade-in content markdown-body">
-              <img src="/img/about-cover.jpeg" style={{width: "100%", borderRadius: "10px"}}></img>
+              <img
+                src="/img/about-cover.jpeg"
+                style={{ width: "100%", borderRadius: "10px" }}
+              ></img>
 
               <p>
                 Space Type is an NYC-based studio practice operating at the
                 intersection of type and technology. Led by {LynneYun} and{" "}
-                {KevinYeh}, the studio specializes in experiential letterforms
-                and web installations.
+                {KevinYeh}, the studio specializes in letterforms,
+                installations, and web experiences.
               </p>
               <p>
                 We work with individuals and organizations to express unique
                 narratives and connect the seams between type design and digital
-                interaction. We offer retail typefaces, partner with
-                institutions, and engage with communities through workshops,
-                classes, and donation-based resources.
+                interaction. We offer retail typefaces, design custom type and lettering,
+                build digital platforms, and engage with communities
+                and institutions through workshops, classes, and donation-based
+                resources.
               </p>
 
               <hr />
@@ -53,11 +57,13 @@ function About() {
                 personal stories that reflect the many ways we interact with
                 language in physical and online spaces.
               </p>
-              <div className="grid" style={{marginTop: "2em"}}>
+              <div className="grid" style={{ marginTop: "2em" }}>
                 <Link href="https://typedesignschool.com">
                   <a className="tile-w-6 tile-h-6 grid-item">
                     <img src="/img/type_a-z.gif" />
-                    <div className="small-link">Foundations of Type Design →</div>
+                    <div className="small-link">
+                      Foundations of Type Design →
+                    </div>
                   </a>
                 </Link>
 
@@ -87,7 +93,7 @@ function About() {
                 <Link href="https://generativetype.com">
                   <a className="tile-w-6 tile-h-6 grid-item">
                     <img src="/img/generativetype.png" />
-                      <div className="small-link">Generative Typography →</div>
+                    <div className="small-link">Generative Typography →</div>
                   </a>
                 </Link>
               </div>

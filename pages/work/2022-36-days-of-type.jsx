@@ -24,7 +24,7 @@ export default function DaysOfType2022() {
           <Video src={`${assetFolder}/C.mov`} />
         </div>
         <div className="tile-w-4">
-          <Video src={`${assetFolder}/D.mp4`} />
+          <Video src={`${assetFolder}/D-500w.m4v`} />
         </div>
         <div className="tile-w-4">
           <Video src={`${assetFolder}/E-500w.m4v`} />
@@ -33,91 +33,91 @@ export default function DaysOfType2022() {
           <Video src={`${assetFolder}/F-500w.m4v`} />
         </div>
         <div className="tile-w-4">
-          <Video src={`${assetFolder}/G.mp4`} />
+          <Video src={`${assetFolder}/G-500w.m4v`} />
         </div>
         <div className="tile-w-4">
-          <Video src={`${assetFolder}/H.mp4`} />
+          <Video src={`${assetFolder}/H-500w.m4v`} />
         </div>
         <div className="tile-w-4">
-          <Video src={`${assetFolder}/I.mp4`} />
+          <Video src={`${assetFolder}/I-500w.m4v`} />
         </div>
         <div className="tile-w-4">
-          <Video src={`${assetFolder}/J.mp4`} />
+          <Video src={`${assetFolder}/J-500w.m4v`} />
         </div>
         <div className="tile-w-4">
-          <Video src={`${assetFolder}/K.mp4`} />
+          <Video src={`${assetFolder}/K-500w.m4v`} />
         </div>
         <div className="tile-w-4">
-          <Video src={`${assetFolder}/L.mp4`} />
+          <Video src={`${assetFolder}/L-500w.m4v`} />
         </div>
         <div className="tile-w-4">
-          <Video src={`${assetFolder}/M.mp4`} />
+          <Video src={`${assetFolder}/M-500w.m4v`} />
         </div>
         <div className="tile-w-4">
-          <Video src={`${assetFolder}/N.mp4`} />
+          <Video src={`${assetFolder}/N-500w.m4v`} />
         </div>
         <div className="tile-w-4">
-          <Video src={`${assetFolder}/O.mp4`} />
+          <Video src={`${assetFolder}/O-500w.m4v`} />
         </div>
         <div className="tile-w-4">
-          <Video src={`${assetFolder}/P.mp4`} />
+          <Video src={`${assetFolder}/P-500w.m4v`} />
         </div>
         <div className="tile-w-4">
-          <Video src={`${assetFolder}/Q.mp4`} />
+          <Video src={`${assetFolder}/Q-500w.m4v`} />
         </div>
         <div className="tile-w-4">
-          <Video src={`${assetFolder}/R.mp4`} />
+          <Video src={`${assetFolder}/R-500w.m4v`} />
         </div>
         <div className="tile-w-4">
-          <Video src={`${assetFolder}/S.mp4`} />
+          <Video src={`${assetFolder}/S-500w.m4v`} />
         </div>
         <div className="tile-w-4">
-          <Video src={`${assetFolder}/T.mp4`} />
+          <Video src={`${assetFolder}/T-500w.m4v`} />
         </div>
         <div className="tile-w-4">
           <Video src={`${assetFolder}/U-500w.m4v`} style={{objectFit: "contain"}} />
         </div>
         <div className="tile-w-4">
-          <Video src={`${assetFolder}/V.mp4`} />
+          <Video src={`${assetFolder}/V-500w.m4v`} />
         </div>
         <div className="tile-w-4">
-          <Video src={`${assetFolder}/W.mp4`} />
+          <Video src={`${assetFolder}/W-500w.m4v`} />
         </div>
         <div className="tile-w-4">
-          <Video src={`${assetFolder}/X.mp4`} />
+          <Video src={`${assetFolder}/X-500w.m4v`} />
         </div>
         <div className="tile-w-4">
-          <Video src={`${assetFolder}/Y.mp4`} />
+          <Video src={`${assetFolder}/Y-500w.m4v`} />
         </div>
         <div className="tile-w-4">
-          <Video src={`${assetFolder}/Z.mp4`} />
+          <Video src={`${assetFolder}/Z-500w.m4v`} />
         </div>
         <div className="tile-w-4">
-          <Video src={`${assetFolder}/1.mp4`} />
+          <Video src={`${assetFolder}/1-500w.m4v`} />
         </div>
         <div className="tile-w-4">
-          <Video src={`${assetFolder}/2.mp4`} />
+          <Video src={`${assetFolder}/2-500w.m4v`} />
         </div>
         <div className="tile-w-4">
           <Video src={`${assetFolder}/3.mp4`} />
         </div>
         <div className="tile-w-4">
-          <Video src={`${assetFolder}/4.mp4`} />
+          <Video src={`${assetFolder}/4-500w.m4v`} />
         </div>
         <div className="tile-w-4">
           <Video src={`${assetFolder}/5.mov`} />
         </div>
         <div className="tile-w-4">
-          <Video src={`${assetFolder}/6.mp4`} />
+          <Video src={`${assetFolder}/6-500w.m4v`} />
         </div>
         <div className="tile-w-4">
-          <Video src={`${assetFolder}/7.mp4`} />
+          <Video src={`${assetFolder}/7-500w.m4v`} />
         </div>
         <div className="tile-w-4">
           <Video src={`${assetFolder}/8-500w.m4v`} />
         </div>
         <div className="tile-w-4">
-          <Video src={`${assetFolder}/9.mp4`} />
+          <Video src={`${assetFolder}/9-500w.m4v`} />
         </div>
       </div>
     </ProjectDetails>

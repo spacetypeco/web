@@ -74,17 +74,17 @@ function Works() {
                     <div className="project-grid project-grid--full-w" style={{padding:"revert", margin:"revert"}}>
       
                       <div className="tile no-squish tile-w-6 tile-h-2 wipe-down">
-                        <Video src="/works/2022-insta-36daysoftype/S.mp4"/>
+                        <Video src="/works/2022-insta-36daysoftype/S-500w.m4v"/>
                       </div>
                       <div className="tile no-squish tile-w-6 tile-h-2 wipe-down">
-                        <Video src="/works/2022-insta-36daysoftype/X.mp4"/>
+                        <Video src="/works/2022-insta-36daysoftype/X-500w.m4v"/>
                       </div>
                       
                       <div className="tile no-squish tile-w-6 tile-h-2 wipe-down">
                         <Video src="/works/2022-insta-36daysoftype/5.mov"/>
                       </div>
                       <div className="tile no-squish tile-w-6 tile-h-2 wipe-down">
-                        <Video src="/works/2022-insta-36daysoftype/Z.mp4"/>
+                        <Video src="/works/2022-insta-36daysoftype/Z-500w.m4v"/>
                       </div>
                                   </div>
                   </ProjectHoverLink>
