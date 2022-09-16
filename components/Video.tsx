@@ -19,6 +19,8 @@ export default function Video({
     <video
       autoPlay={false}
       loop={true}
+      muted={true}
+      playsInline={true}
       style={style}
       onLoadedData={() => setLoading(true)}
     >
