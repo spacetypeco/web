@@ -59,7 +59,7 @@ function About() {
               </p>
               <div className="grid" style={{ marginTop: "2em" }}>
                 <Link href="https://typedesignschool.com">
-                  <a className="tile-w-6 tile-h-6 grid-item">
+                  <a className="tile tile-w-6 tile-h-6 grid-item">
                     <img src="/img/type_a-z.gif" />
                     <div className="small-link">
                       Foundations of Type Design →
@@ -68,7 +68,7 @@ function About() {
                 </Link>
 
                 <Link href="https://vartype.com">
-                  <a className="tile-w-6 tile-h-6 grid-item">
+                  <a className="tile tile-w-6 tile-h-6 grid-item">
                     <img src="/img/vartype.gif" />
                     <div className="small-link">Vartype →</div>
                   </a>
@@ -84,14 +84,14 @@ function About() {
               <h3>Previous offerings</h3>
               <div className="grid">
                 <Link href="https://letterformdesign.com">
-                  <a className="tile-w-6 tile-h-6 grid-item">
+                  <a className="tile tile-w-6 tile-h-6 grid-item">
                     <img src="/img/letterformdesign.png" />
                     <div className="small-link">Type Design & Lettering →</div>
                   </a>
                 </Link>
 
                 <Link href="https://generativetype.com">
-                  <a className="tile-w-6 tile-h-6 grid-item">
+                  <a className="tile tile-w-6 tile-h-6 grid-item">
                     <img src="/img/generativetype.png" />
                     <div className="small-link">Generative Typography →</div>
                   </a>
