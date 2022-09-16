@@ -74,7 +74,7 @@ function Works() {
                     <div className="project-grid project-grid--full-w" style={{padding:"revert", margin:"revert"}}>
       
                       <div className="tile no-squish tile-w-6 tile-h-2 wipe-down">
-                        <Video src="/works/2022-insta-36daysoftype/s5-2.mp4"/>
+                        <Video src="/works/2022-insta-36daysoftype/S.mp4"/>
                       </div>
                       <div className="tile no-squish tile-w-6 tile-h-2 wipe-down">
                         <Video src="/works/2022-insta-36daysoftype/X.mp4"/>

@@ -9,7 +9,7 @@ export default function DaysOfType2022() {
       title="36 Days of Type"
       intro={
         <>
-          <p>We designed a series of generative letters for 2022.</p>
+          <p>Generative typographic experiments 👩‍🔬</p>
         </>
       }
     >
@@ -69,7 +69,10 @@ export default function DaysOfType2022() {
           <Video src={`${assetFolder}/R.mp4`} />
         </div>
         <div className="tile-w-4">
-          <Video src={`${assetFolder}/s5.mp4`} />
+          <Video src={`${assetFolder}/S.mp4`} />
+        </div>
+        <div className="tile-w-4">
+          <Video src={`${assetFolder}/T.mp4`} />
         </div>
         <div className="tile-w-4">
           <Video src={`${assetFolder}/U.mp4`} style={{objectFit: "contain"}} />
@@ -102,7 +105,7 @@ export default function DaysOfType2022() {
           <Video src={`${assetFolder}/4.mp4`} />
         </div>
         <div className="tile-w-4">
-          <Video src={`${assetFolder}/5.mp4`} />
+          <Video src={`${assetFolder}/5.mov`} />
         </div>
         <div className="tile-w-4">
           <Video src={`${assetFolder}/6.mp4`} />
