@@ -104,7 +104,7 @@ function Works() {
                     href="work/2019-broadway-mural-project"
                     title="Broadway Mural Project"
                   >
-                    <img src="/works/2019-client-mural-broadway/wide-still.jpg"></img>
+                    <img data-src="/works/2019-client-mural-broadway/wide-still" data-fmt="jpg"></img>
                   </ProjectHoverLink>
                 </Tile>
                 
