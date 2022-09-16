@@ -4,7 +4,7 @@ export default function useVideoSizer() {
   const sizeVideo = (videoEl, observer) => {
     const sourceEl = videoEl.children[0];
     const baseUrl = sourceEl.getAttribute("data-src");
-    
+
     if (baseUrl) {
       const px = videoEl.clientWidth * window.devicePixelRatio;
 
@@ -20,12 +20,6 @@ export default function useVideoSizer() {
       }
 
       sourceEl.src = `${baseUrl}${postfix}.m4v`;
-      
-      try {
-        videoEl.load();
-      } catch (e) {
-        console.error(e);
-      }
     }
 
     if (observer) {
@@ -36,7 +30,7 @@ export default function useVideoSizer() {
   let firstTime = true;
   const updateVideos = () => {
     let observer;
-    
+
     if (firstTime) {
       firstTime = true;
       observer = new IntersectionObserver(function (entries, observer) {
@@ -44,6 +38,7 @@ export default function useVideoSizer() {
           // Pause/Play the animation
           if (entry.isIntersecting) {
             try {
+              entry.target.load();
               entry.target.play();
             } catch (e) {
               console.error(e);
@@ -64,7 +59,7 @@ export default function useVideoSizer() {
     videos.forEach(function (el) {
       sizeVideo(el, observer);
     });
-  }
+  };
 
   useResize(500, updateVideos);
 }

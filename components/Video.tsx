@@ -11,18 +11,18 @@ export default function Video({
   datasrc,
   src,
   style,
-  autoPlay = true,
+  autoPlay = false,
 }: VideoProps) {
   const [isLoading, setLoading] = useState(true);
 
   return (
     <video
-      autoPlay={false}
+      autoPlay={autoPlay}
       loop={true}
       muted={true}
       playsInline={true}
       style={style}
-      onLoadedData={() => setLoading(true)}
+      onLoadedData={() => setLoading(false)}
     >
       <source data-src={datasrc} src={src} type="video/mp4" />
     </video>
