@@ -41,7 +41,7 @@ const sizedSrc = (dataSrc, width) => {
  * - Playing and pausing videos based on visibility on the screen
  */
 export default function Video({ datasrc, src, style }: VideoProps) {
-  const ref = useRef();
+  const ref = useRef<HTMLVideoElement>();
 
   // Listen for size changes
   const [dimensions, setDimensions] = useState({
@@ -50,8 +50,9 @@ export default function Video({ datasrc, src, style }: VideoProps) {
   });
 
   useLayoutEffect(() => {
+    const node = ref.current;
     // only use new width if it's larger. never try to load a new video if we're downsizing.
-    const newWidth = ref.current.getBoundingClientRect().width;
+    const newWidth = node?.getBoundingClientRect().width;
     if (!dimensions.width || dimensions.width < newWidth) {
       setDimensions({ width: newWidth, pixelRatio: window.devicePixelRatio });
     }
@@ -73,10 +74,12 @@ export default function Video({ datasrc, src, style }: VideoProps) {
   );
 
   useEffect(() => {
+    const node = ref.current;
+
     if (inView) {
-      ref.current.play();
+      node?.play();
     } else {
-      ref.current.pause();
+      node?.pause();
     }
   }, [inView]);
 
