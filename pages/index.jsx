@@ -108,8 +108,8 @@ function Home() {
           <div className="markdown-body" style={{textAlign: "center", paddingTop: "2em"}}>
           <p>We work with individuals and organizations to express unique narratives and connect the seams between type design and digital interaction.</p>
           <div className="flex-h flex-centered flex-centered-v-h" style={{ gap: "2em" }}>
-          <Link href="/work"><a href="/work"><h4 className="button-lg">See our work →</h4></a></Link>
-          <Link href="/about"><a href="/about"><h4 className="button-lg">Read about us →</h4></a></Link>
+          <Link href="/work"><a href="/work"><p className="button-lg">See our work →</p></a></Link>
+          <Link href="/about"><a href="/about"><p className="button-lg">Read about us →</p></a></Link>
           </div>
           </div></div>
         </div>

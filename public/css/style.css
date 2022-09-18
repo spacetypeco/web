@@ -94,7 +94,10 @@ h2,
 h3,
 h4,
 h5,
-h6,
+h6 {
+  font-family: "AdelleMonoFlex-Bold", monospace;
+}
+
 p,
 a,
 span,
@@ -369,6 +372,7 @@ a {
 
 .markdown-body {
   max-width: 750px;
+  padding-inline: 2em;
   text-align: left;
 }
 
