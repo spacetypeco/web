@@ -1,37 +1,99 @@
-import React, { useState } from "react";
+import React, {
+  useCallback,
+  useEffect,
+  useLayoutEffect,
+  useRef,
+  useState,
+} from "react";
+
+import { useInView } from "react-intersection-observer";
 
 interface VideoProps {
   datasrc?: string;
   src?: string;
-  autoPlay: boolean;
   style: any;
 }
 
-export default function Video({
-  datasrc,
-  src,
-  style,
-  autoPlay = false,
-}: VideoProps) {
-  const [isLoading, setLoading] = useState(true);
+const sizedSrc = (dataSrc, width) => {
+  if (dataSrc && width) {
+    const px = width * window.devicePixelRatio;
 
-  // TODO: Replace debug color with loader
-  const backgroundColor = isLoading ? "red" : "none";
+    let postfix = "";
+    if (px >= 1500) {
+      postfix = "-2000w";
+    } else if (px >= 1000) {
+      postfix = "-1500w";
+    } else if (px >= 500) {
+      postfix = "-1000w";
+    } else {
+      postfix = "-500w";
+    }
+
+    return `${dataSrc}${postfix}.m4v`;
+  }
+
+  return null;
+};
+
+/**
+ * The Video component manages state for an individual video. It's designed for two main things:
+ * - Sizing videos properly for the container based on data-src
+ * - Playing and pausing videos based on visibility on the screen
+ */
+export default function Video({ datasrc, src, style }: VideoProps) {
+  const ref = useRef();
+
+  // Listen for size changes
+  const [dimensions, setDimensions] = useState({
+    width: null,
+    pixelRatio: null,
+  });
+
+  useLayoutEffect(() => {
+    // only use new width if it's larger. never try to load a new video if we're downsizing.
+    const newWidth = ref.current.getBoundingClientRect().width;
+    if (!dimensions.width || dimensions.width < newWidth) {
+      setDimensions({ width: newWidth, pixelRatio: window.devicePixelRatio });
+    }
+  }, [ref.current]);
+
+  // Listen for inView changes
+  const { ref: inViewRef, inView } = useInView({
+    threshold: 0,
+  });
+
+  const allRefs = useCallback(
+    (node) => {
+      // Ref's from useRef needs to have the node assigned to `current`
+      ref.current = node;
+      // Callback refs, like the one from `useInView`, is a function that takes the node as an argument
+      inViewRef(node);
+    },
+    [inViewRef]
+  );
+
+  useEffect(() => {
+    if (inView) {
+      ref.current.play();
+    } else {
+      ref.current.pause();
+    }
+  }, [inView]);
+
+  const displaySrc = src || sizedSrc(datasrc, dimensions.width);
 
   return (
     <video
-      autoPlay={autoPlay}
+      autoPlay={false}
       preload="none"
       loop={true}
       muted={true}
       playsInline={true}
-      style={{ backgroundColor, ...style }}
-      onLoadedData={() => {
-        console.log("loaded video: " + datasrc + src);
-        setLoading(false);
-      }}
+      style={style}
+      ref={allRefs}
+      key={displaySrc}
     >
-      <source data-src={datasrc} src={src} type="video/mp4" />
+      <source data-src={datasrc} src={displaySrc} type="video/mp4" />
     </video>
   );
 }

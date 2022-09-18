@@ -8,8 +8,6 @@ import dynamic from "next/dynamic";
 import useImageSizer from "../../hooks/useImageSizer";
 import useLogo from "../../hooks/useLogo";
 import useScrollReveal from "../../hooks/useScrollReveal";
-import useVideoManager from "../../hooks/useVideoManager";
-import useVideoSizer from "../../hooks/useVideoSizer";
 
 const ReactP5Wrapper = dynamic(
   () => import("react-p5-wrapper").then((mod) => mod.ReactP5Wrapper),
@@ -22,8 +20,6 @@ require("../../util/utils.js");
 
 function Works() {
   useLogo();
-  useVideoManager();
-  useVideoSizer();
   useImageSizer();
   useScrollReveal();
 
@@ -47,10 +43,20 @@ function Works() {
               <ReactP5Wrapper sketch={sketch} />
             </div>
             <div className="fade-in content-top content-wide">
-              <h1 className="label-accent note text-outline wipe-down">
+              <div style={{display: "grid"}}>
+              <h1 className="label-accent note text-outline wipe-down" style={{gridArea: '1 / 1', transform: 'translate(-0px)', color: 'var(--color-accent-2)', WebkitTextStrokeColor: 'white', animationDelay: '0.4s'}}>
                 We work across physical and digital media to build bridges
                 between type and technology.
               </h1>
+              <h1 className="label-accent note text-outline wipe-down" style={{gridArea: '1 / 1', transform: 'translate(1px, 2px)', color: 'var(--color-accent-1)', WebkitTextStrokeColor: 'white', animationDelay: '0.7s'}}>
+                We work across physical and digital media to build bridges
+                between type and technology.
+              </h1>
+              <h1 className="label-accent note text-outline wipe-down" style={{gridArea: '1 / 1'}}>
+                We work across physical and digital media to build bridges
+                between type and technology.
+              </h1>
+              </div>
               <div className="project-grid project-grid--full-w">
                 <Tile w={6} h={4} title="Existential Co.">
                   <ProjectHoverLink

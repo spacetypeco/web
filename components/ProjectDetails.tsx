@@ -4,11 +4,9 @@ import Head from "next/head";
 import useImageSizer from "../hooks/useImageSizer";
 import useLogo from "../hooks/useLogo";
 import { useRouter } from "next/router";
-import useVideoSizer from "../hooks/useVideoSizer";
 
 export default function ProjectDetails({ title, bgColor, intro, ...props }) {
   useLogo();
-  useVideoSizer();
   useImageSizer();
 
   const pageTitle = `Space Type - ${title}`;
