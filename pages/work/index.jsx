@@ -42,18 +42,18 @@ function Works() {
             </div>
             <div className="fade-in content-top content-wide">
               <div style={{display: "grid"}}>
-              <h1 className="label-accent note text-outline wipe-down" style={{gridArea: '1 / 1', transform: 'translate(-0px)', color: 'var(--color-accent-2)', WebkitTextStrokeColor: 'white', animationDelay: '0.4s'}}>
+              {/* <p className="h1 label-accent note wipe-down gothic-base" style={{gridArea: '1 / 1', color: 'var(--color-accent-2)', animationDelay: '0.7s'}}>
                 We work across physical and digital media to build bridges
                 between type and technology.
-              </h1>
-              <h1 className="label-accent note text-outline wipe-down" style={{gridArea: '1 / 1', transform: 'translate(1px, 2px)', color: 'var(--color-accent-1)', WebkitTextStrokeColor: 'white', animationDelay: '0.7s'}}>
+              </p> */}
+              <p className="h1 label-accent note wipe-down gothic-layer-1" style={{gridArea: '1 / 1', color: 'var(--color-accent)', animationDelay: '0.4s'}}>
                 We work across physical and digital media to build bridges
                 between type and technology.
-              </h1>
-              <h1 className="label-accent note wipe-down" style={{gridArea: '1 / 1'}}>
+              </p>
+              <p className="h1 label-accent note wipe-down gothic-layer-2" style={{gridArea: '1 / 1', color: "black"}}>
                 We work across physical and digital media to build bridges
                 between type and technology.
-              </h1>
+              </p>
               </div>
               <div className="project-grid project-grid--full-w">
                 <Tile w={6} h={4} title="Existential Co.">
