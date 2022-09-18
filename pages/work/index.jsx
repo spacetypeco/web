@@ -50,7 +50,7 @@ function Works() {
                 We work across physical and digital media to build bridges
                 between type and technology.
               </h1>
-              <h1 className="label-accent note text-outline wipe-down" style={{gridArea: '1 / 1'}}>
+              <h1 className="label-accent note wipe-down" style={{gridArea: '1 / 1'}}>
                 We work across physical and digital media to build bridges
                 between type and technology.
               </h1>

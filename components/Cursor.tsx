@@ -7,7 +7,7 @@ export default function Cursor() {
   const { cursorState } = useContext(MouseContext);
   const { x, y } = useMousePosition();
 
-  const classNames = `circle hide-touch ${cursorState.cursorType}`;
+  const classNames = `circle hide-sm ${cursorState.cursorType}`;
 
   if (!x || !y) {
     return <></>;
@@ -21,7 +21,7 @@ export default function Cursor() {
         style={{ left: `${x}px`, top: `${y}px` }}
       ></span>
       <span
-        className={"circletext hide-touch"}
+        className={"circletext hide-sm"}
         style={{
           left: `${x}px`,
           top: `${y}px`,
