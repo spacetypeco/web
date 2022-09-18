@@ -35,22 +35,22 @@ export default function EttaTypeface() {
           <img data-src="/works/etta/HWT Etta Banners-02" data-fmt="png"></img>
         </div>
         <div className="tile tile-w-4 tile-h-4">
-          <img data-src="/works/etta/FT_ETTA_NewYorkers" data-fmt="png"></img>
+          <img data-src="/works/etta/FT_ETTA_NewYorkers" data-fmt="PNG"></img>
         </div>
         <div className="tile tile-w-4 tile-h-4">
-          <img data-src="/works/etta/FT_ETTA_Styles" data-fmt="png"></img>
+          <img data-src="/works/etta/FT_ETTA_Styles" data-fmt="PNG"></img>
         </div>
         <div className="tile tile-w-4 tile-h-4">
-          <img data-src="/works/etta/FT_ETTA_East" data-fmt="png"></img>
+          <img data-src="/works/etta/FT_ETTA_East" data-fmt="PNG"></img>
         </div>
         <div className="tile-w-8 tile-h-4">
-          <img data-src="/works/etta/Etta_banners_03" data-fmt="png"></img>
+          <img data-src="/works/etta/Etta_banners_03" data-fmt="PNG"></img>
         </div>
         <div className="tile-w-4 tile-h-4">
-          <img data-src="/works/etta/FT_ETTA_E" data-fmt="png"></img>
+          <img data-src="/works/etta/FT_ETTA_E" data-fmt="PNG"></img>
         </div>
         <div className="tile-w-4 tile-h-4">
-          <img data-src="/works/etta/FT_ETTA_A" data-fmt="png"></img>
+          <img data-src="/works/etta/FT_ETTA_A" data-fmt="PNG"></img>
         </div>
         <div className="tile-w-8 tile-h-4">
           <img data-src="/works/etta/Etta_banners_04" data-fmt="png"></img>

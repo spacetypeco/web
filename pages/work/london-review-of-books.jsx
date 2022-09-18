@@ -18,7 +18,7 @@ export default function LondonReviewOfBooks() {
     >
       <div className="project-grid project-grid--unsized">
         <div className="tile-w-12 tile-h-3">
-          <img data-src="/works/london-review-of-books/Wall-Close-Up" data-fmt="jpg"></img>
+          <img data-src="/works/london-review-of-books/Wall-Close-up" data-fmt="jpg"></img>
         </div>
         <div className="tile-w-12 tile-h-3">
         <img data-src="/works/london-review-of-books/LRB_5" data-fmt="jpg"></img>

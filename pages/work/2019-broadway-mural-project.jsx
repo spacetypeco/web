@@ -17,7 +17,7 @@ export default function BroadwayMural() {
     >
       <div className="project-grid">
         <div className="tile-w-12 tile-h-6">
-          <img src="/works/2019-client-mural-broadway/wide-still.jpg"></img>
+          <img data-src="/works/2019-client-mural-broadway/wide-still" data-fmt="jpg"></img>
         </div>
         <div className="tile tile-w-12 tile-h-6" style={{ height: "100%" }}>
           <iframe
