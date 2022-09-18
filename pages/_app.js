@@ -5,7 +5,7 @@
  */
 
 import "../styles/animations.css";
-import "../styles/app.css";
+import "../styles/app.scss";
 import "../styles/svg.css";
 
 import Footer from "../components/Footer";
