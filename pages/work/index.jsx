@@ -42,15 +42,15 @@ function Works() {
             </div>
             <div className="fade-in content-top content-wide">
               <div style={{display: "grid"}}>
-              <h1 className="label-accent note text-outline wipe-down" style={{gridArea: '1 / 1', transform: 'translate(-0px)', color: 'var(--color-accent-2)', WebkitTextStrokeColor: 'white', animationDelay: '0.4s'}}>
+              <h1 className="label-accent note wipe-down" style={{gridArea: '1 / 1', transform: 'translate(-0px)', color: 'var(--color-accent)', WebkitTextStrokeColor: 'white', animationDelay: '0.4s'}}>
                 We work across physical and digital media to build bridges
                 between type and technology.
               </h1>
-              <h1 className="label-accent note text-outline wipe-down" style={{gridArea: '1 / 1', transform: 'translate(1px, 2px)', color: 'var(--color-accent-1)', WebkitTextStrokeColor: 'white', animationDelay: '0.7s'}}>
+              <h1 className="label-accent note wipe-down" style={{gridArea: '1 / 1', transform: 'translate(1px, 2px)', color: 'var(--color-white)', WebkitTextStrokeColor: 'white', animationDelay: '0.7s'}}>
                 We work across physical and digital media to build bridges
                 between type and technology.
               </h1>
-              <h1 className="label-accent note wipe-down" style={{gridArea: '1 / 1'}}>
+              <h1 className="label-accent note text-outline wipe-down" style={{gridArea: '1 / 1', color: "var(--color-accent)"}}>
                 We work across physical and digital media to build bridges
                 between type and technology.
               </h1>
