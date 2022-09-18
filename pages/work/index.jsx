@@ -7,7 +7,6 @@ import createSketch from "../../p5/sketches/blobsBG";
 import dynamic from "next/dynamic";
 import useImageSizer from "../../hooks/useImageSizer";
 import useLogo from "../../hooks/useLogo";
-import useScrollReveal from "../../hooks/useScrollReveal";
 
 const ReactP5Wrapper = dynamic(
   () => import("react-p5-wrapper").then((mod) => mod.ReactP5Wrapper),
@@ -21,7 +20,6 @@ require("../../util/utils.js");
 function Works() {
   useLogo();
   useImageSizer();
-  useScrollReveal();
 
   const sketch = createSketch("bg");
 

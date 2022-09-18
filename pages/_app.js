@@ -25,7 +25,8 @@ function App({ Component, pageProps }) {
   }
 
   let globalClassNames = `${theme}`;
-  if (Component.name == "Home") {
+
+  if (Component.displayName == "Home") {
     globalClassNames += " full-w full-h";
   }
 
