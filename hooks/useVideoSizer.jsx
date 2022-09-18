@@ -92,16 +92,16 @@ export default function useVideoSizer() {
       videos.forEach(function (el) {
         observer.observe(el);
 
+
         if (isElementInViewport(el)) {
-          setTimeout(() => {
+          sizeVideo(el);
           tryLoad(el, el.children[0].src);
-          }, 100);
         }
       });
     
     } else {
       videos.forEach(function (el) {
-        sizeVideo(el, observer);
+        sizeVideo(el);
       });
     }
   };
