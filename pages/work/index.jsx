@@ -85,10 +85,10 @@ function Works() {
                       style={{ padding: "revert", margin: "revert" }}
                     >
                       <div className="tile no-squish tile-w-6 tile-h-2 wipe-down">
-                        <Video src="/works/2022-insta-36daysoftype/S-500w.m4v" />
+                        <Video src="/works/2022-insta-36daysoftype/S.mp4" />
                       </div>
                       <div className="tile no-squish tile-w-6 tile-h-2 wipe-down">
-                        <Video src="/works/2022-insta-36daysoftype/X-500w.m4v" />
+                        <Video src="/works/2022-insta-36daysoftype/X.mp4" />
                       </div>
 
                       <div className="tile no-squish tile-w-6 tile-h-2 wipe-down">

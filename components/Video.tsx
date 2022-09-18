@@ -26,7 +26,10 @@ export default function Video({
       muted={true}
       playsInline={true}
       style={{ backgroundColor, ...style }}
-      onLoadedData={() => setLoading(false)}
+      onLoadedData={() => {
+        console.log("loaded video: " + datasrc + src);
+        setLoading(false);
+      }}
     >
       <source data-src={datasrc} src={src} type="video/mp4" />
     </video>

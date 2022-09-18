@@ -3,33 +3,52 @@ import useResize from "./useResize";
 
 export default function useVideoSizer() {
   const loaded = {};
+  console.log("create new load obj"); 
+  console.log(loaded);
 
   const tryLoad = (el, src) => {
     try {
       if (!loaded[src]) {
+        console.log("attempting load: " + src);
         loaded[src] = 1;
         el.load();
+
+        console.log("loaded: "+ src);
+      } else {
+        console.log("tried to load, but already loaded: " + src);
       }
+
+      console.log("playing: " + src);
       el.play();
+      console.log("finished play: " + src);
     } catch (e) {
       console.error(e);
     }
   };
 
-  const observe = function (entries, observer) {
+  const observe = function (entries) {
+    console.log("observing now");
+    console.log(loaded);
     entries.forEach(function (entry) {
       // Pause/Play the animation
       const src = entry.target.children[0].src;
       if (!src) {
-        return;
+        console.log("missing src");
+        sizeVideo(entry.target)
+      } else {
+        console.log("observing: " + src);
       }
 
       if (entry.isIntersecting) {
-        tryLoad(entry.target);
+        console.log("isIntersecting: " + src);
+        tryLoad(entry.target, src);
       } else {
         try {
+          console.log("is not intersecting: " + src);
           if (loaded[src]) {
             entry.target.pause();
+          } else {
+            console.log("not loaded: "+ src);
           }
         } catch (e) {
           console.error(e);
@@ -38,7 +57,7 @@ export default function useVideoSizer() {
     });
   };
 
-  const sizeVideo = (videoEl, observer) => {
+  const sizeVideo = (videoEl) => {
     const sourceEl = videoEl.children[0];
     const baseUrl = sourceEl.getAttribute("data-src");
 
@@ -58,10 +77,6 @@ export default function useVideoSizer() {
 
       sourceEl.src = `${baseUrl}${postfix}.m4v`;
     }
-
-    if (observer) {
-      observer.observe(videoEl);
-    }
   };
 
   let firstTime = true;
@@ -75,10 +90,12 @@ export default function useVideoSizer() {
       observer = new IntersectionObserver(observe);
 
       videos.forEach(function (el) {
-        sizeVideo(el, observer);
+        observer.observe(el);
 
         if (isElementInViewport(el)) {
-          tryLoad(el);
+          setTimeout(() => {
+          tryLoad(el, el.children[0].src);
+          }, 100);
         }
       });
     
