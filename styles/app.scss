@@ -357,7 +357,7 @@
 }
 
 .note {
-  max-width: 900px;
+  max-width: calc(max(900px, 100%));
   margin-inline: auto;
   text-align: center;
   color: transparent;

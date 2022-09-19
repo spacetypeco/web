@@ -183,6 +183,7 @@ h5, .h5 {
 }
 
 .title--tall {
+  font-size: 7.0em;
   margin-block: 1em;
 }
 
@@ -568,6 +569,12 @@ a {
   opacity: 50%;
 }
 
+@media (max-width: 1200px) {
+  .title--tall {
+    font-size: 5.0em;
+  }
+}
+
 @media (min-width: 769px) {
   .flex-h-md {
     display: flex;
@@ -593,7 +600,9 @@ a {
   }
   .title {
     font-size: 3em;
-    text-align: center !important; 
+  }
+  .title--tall {
+    font-size: 3.5em;
   }
   .typetester-container {
     gap: 2em;
