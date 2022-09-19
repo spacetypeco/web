@@ -7,6 +7,8 @@ import createSketch from "../../p5/sketches/blobsBG";
 import dynamic from "next/dynamic";
 import useImageSizer from "../../hooks/useImageSizer";
 import useLogo from "../../hooks/useLogo";
+import useScrollReveal from "../../hooks/useScrollReveal";
+import useSectionThemes from "../../hooks/useSectionThemes";
 
 const ReactP5Wrapper = dynamic(
   () => import("react-p5-wrapper").then((mod) => mod.ReactP5Wrapper),
@@ -17,9 +19,45 @@ const ReactP5Wrapper = dynamic(
 
 require("../../util/utils.js");
 
+const GothicTitle = (txt, classes = "") => {
+  return (
+    <div className={classes} style={{ display: "grid" }}>
+      <p
+        className="h1 label-accent note wipe-down-on-scroll-0 no-delay gothic-base title title--tall"
+        style={{
+          gridArea: "1 / 1",
+          color: "var(--color-black)",
+          animationDelay: "-0.1s",
+        }}
+      >
+        {txt}
+      </p>
+      <p
+        className="h1 label-accent note wipe-down-on-scroll-0 no-delay gothic-layer-1 title title--tall"
+        style={{
+          gridArea: "1 / 1",
+          color: "var(--color-title)",
+          animationDelay: "-0.1s",
+        }}
+      >
+        {txt}
+      </p>
+      <p
+        className="h1 label-accent note wipe-down-on-scroll-0 no-delay gothic-layer-2 title title--tall"
+        style={{ gridArea: "1 / 1", color: "var(--color-white" }}
+      >
+        {txt}
+      </p>
+    </div>
+  );
+};
+
 function Works() {
   useLogo();
   useImageSizer();
+  useScrollReveal();
+  useSectionThemes();
+
 
   const sketch = createSketch("bg");
 
@@ -41,77 +79,70 @@ function Works() {
               <ReactP5Wrapper sketch={sketch} />
             </div>
             <div className="fade-in content-top content-wide">
-              <div style={{display: "grid"}}>
-              {/* <p className="h1 label-accent note wipe-down gothic-base" style={{gridArea: '1 / 1', color: 'var(--color-accent-2)', animationDelay: '0.7s'}}>
-                We work across physical and digital media to build bridges
-                between type and technology.
-              </p> */}
-              <p className="h1 label-accent note wipe-down gothic-layer-1" style={{gridArea: '1 / 1', color: 'var(--color-accent)', animationDelay: '0.4s'}}>
-                We work across physical and digital media to build bridges
-                between type and technology.
-              </p>
-              <p className="h1 label-accent note wipe-down gothic-layer-2" style={{gridArea: '1 / 1', color: "black"}}>
-                We work across physical and digital media to build bridges
-                between type and technology.
-              </p>
-              </div>
-              <div className="project-grid project-grid--full-w">
-                <Tile w={6} h={4} title="Existential Co.">
-                  <ProjectHoverLink
-                    href="work/2022-existentialco"
-                    title="Existential Co."
-                  >
-                    <Video datasrc="/works/2022-client-web-existential/cover" />
-                  </ProjectHoverLink>
-                </Tile>
-                <div className="tile rounded tile-w-2 tile-h-7 hide-sm  wipe-down bg-diag-1"></div>
-                <Tile w={4} h={4} title="Vartype">
-                  <ProjectHoverLink href="work/2022-vartype" title="Vartype">
-                    <Video datasrc="/works/2022-tool-vartype/cover-sm" />
-                  </ProjectHoverLink>
-                </Tile>
-                <Tile w={6} h={3} title="Panasonic: Make New">
-                  <ProjectHoverLink
-                    href="work/2022-panasonic-make-new"
-                    title="Panasonic: Make New"
-                  >
-                    <Video datasrc="/works/2022-client-brand-panasonic/cover" />
-                  </ProjectHoverLink>
-                </Tile>
-
-                <Tile w={4} h={4} title="36 Days of Type">
-                  <ProjectHoverLink
-                    href="work/2022-36-days-of-type"
-                    title="36 Days of Type"
-                  >
-                    <div
-                      className="project-grid project-grid--full-w"
-                      style={{ padding: "revert", margin: "revert" }}
+              <section data-theme="theme-light">
+                {GothicTitle(
+                  "We work across physical and digital media to build bridges between type and technology."
+                )}
+                <div className="project-grid project-grid--full-w">
+                  <Tile w={6} h={4} title="Existential Co.">
+                    <ProjectHoverLink
+                      href="work/2022-existentialco"
+                      title="Existential Co."
                     >
-                      <div className="tile no-squish tile-w-6 tile-h-2 wipe-down">
-                        <Video src="/works/2022-insta-36daysoftype/S.mp4" />
-                      </div>
-                      <div className="tile no-squish tile-w-6 tile-h-2 wipe-down">
-                        <Video src="/works/2022-insta-36daysoftype/X.mp4" />
-                      </div>
+                      <Video datasrc="/works/2022-client-web-existential/cover" />
+                    </ProjectHoverLink>
+                  </Tile>
+                  <div className="tile rounded tile-w-2 tile-h-7 hide-sm  wipe-down bg-diag-1"></div>
+                  <Tile w={4} h={4} title="Vartype">
+                    <ProjectHoverLink href="work/2022-vartype" title="Vartype">
+                      <Video datasrc="/works/2022-tool-vartype/cover-sm" />
+                    </ProjectHoverLink>
+                  </Tile>
+                  <Tile w={6} h={3} title="Panasonic: Make New">
+                    <ProjectHoverLink
+                      href="work/2022-panasonic-make-new"
+                      title="Panasonic: Make New"
+                    >
+                      <Video datasrc="/works/2022-client-brand-panasonic/cover" />
+                    </ProjectHoverLink>
+                  </Tile>
 
-                      <div className="tile no-squish tile-w-6 tile-h-2 wipe-down">
-                        <Video src="/works/2022-insta-36daysoftype/5.mov" />
-                      </div>
-                      <div className="tile no-squish tile-w-6 tile-h-2 wipe-down">
-                        <Video src="/works/2022-insta-36daysoftype/Z-500w.m4v" />
-                      </div>
-                    </div>
-                  </ProjectHoverLink>
-                </Tile>
+                  <Tile w={4} h={4} title="36 Days of Type">
+                    <ProjectHoverLink
+                      href="work/2022-36-days-of-type"
+                      title="36 Days of Type"
+                    >
+                      <div
+                        className="project-grid project-grid--full-w"
+                        style={{ padding: "revert", margin: "revert" }}
+                      >
+                        <div className="tile no-squish tile-w-6 tile-h-2 wipe-down">
+                          <Video src="/works/2022-insta-36daysoftype/S.mp4" />
+                        </div>
+                        <div className="tile no-squish tile-w-6 tile-h-2 wipe-down">
+                          <Video src="/works/2022-insta-36daysoftype/X.mp4" />
+                        </div>
 
-                <div className="tile rounded tile-w-8 tile-h-1 hide-sm  wipe-down bg-diag-2"></div>
-              </div>
+                        <div className="tile no-squish tile-w-6 tile-h-2 wipe-down">
+                          <Video src="/works/2022-insta-36daysoftype/5.mov" />
+                        </div>
+                        <div className="tile no-squish tile-w-6 tile-h-2 wipe-down">
+                          <Video src="/works/2022-insta-36daysoftype/Z-500w.m4v" />
+                        </div>
+                      </div>
+                    </ProjectHoverLink>
+                  </Tile>
 
-              <h1 className="label-accent note text-outline  wipe-down">
-                Our work has been installed in public galleries, exhibitions,
-                and open-air sites.
-              </h1>
+                  <div className="tile rounded tile-w-8 tile-h-1 hide-sm  wipe-down bg-diag-2"></div>
+                </div>
+              </section>
+
+              <section data-theme="dark-mode">
+
+              {GothicTitle(
+                "Our work has been installed in public galleries, exhibitions, and open-air sites.",
+                "dark-mode"
+              )}
 
               <div className="project-grid project-grid--full-w-24">
                 <Tile w={6} h={6} title="120 Broadway">
@@ -168,10 +199,13 @@ function Works() {
                   </ProjectHoverLink>
                 </Tile>
               </div>
+              </section>
+              <section data-theme="theme-light">
 
-              <h1 className="label-accent note wipe-down text-outline">
-                We design custom typefaces and lettering to fit any occasion.
-              </h1>
+              {GothicTitle(
+                "We design custom typefaces and lettering to fit any occasion."
+              )}
+
               <div className="project-grid project-grid--full-w-24">
                 <Tile w={6} h={8} title="Quick Brown Fox">
                   <ProjectHoverLink
@@ -290,6 +324,7 @@ function Works() {
                   </ProjectHoverLink>
                 </Tile>
               </div>
+              </section>
             </div>
           </div>
         </div>

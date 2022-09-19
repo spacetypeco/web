@@ -44,7 +44,7 @@ export default function (divId) {
         if (rand < 0.1) {
           this.color = p.color("#fe2179");
         } else if (rand < 0.2) {
-          this.color = p.color("white");
+          this.color = p.color("black");
         } else if (rand < 0.3) {
           this.color = p.color("#fce345");
         } else {

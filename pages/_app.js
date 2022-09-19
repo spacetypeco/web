@@ -13,17 +13,14 @@ import Head from "next/head";
 import MouseContextProvider from "../hooks/context/MouseContext";
 import Navigation from "../components/Navigation";
 import { useRouter } from "next/router";
+import { useState } from "react";
 
 function App({ Component, pageProps }) {
   const router = useRouter();
 
   const inWork = router.pathname.match(/\/work.*$/);
 
-  let theme = "";
-  if (inWork) {
-    theme = " theme-light";
-  }
-
+  let theme = inWork ? "theme-light" : "";
   let globalClassNames = `${theme}`;
 
   if (Component.displayName == "Home") {
@@ -87,6 +84,7 @@ function App({ Component, pageProps }) {
         <meta name="theme-color" content="#FFFFFF" />
       </Head>
       <div
+        id="component-container"
         className={globalClassNames}
         style={{
           display: "flex",

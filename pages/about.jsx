@@ -10,6 +10,20 @@ const TypeDesignSchool = (
 );
 const VarType = <Link href="https://vartype.com">vartype.com</Link>;
 
+const GothicTitle = (txt) => {
+  return <div style={{display: "grid"}}>
+    <p className="h1 label-accent note wipe-down no-delay gothic-base title" style={{gridArea: '1 / 1', color: 'var(--color-black)'}}>
+    {txt}
+  </p>
+  <p className="h1 label-accent note wipe-down no-delay gothic-layer-1 title" style={{gridArea: '1 / 1', color: 'var(--color-title)', animationDelay: '0.4s'}}>
+    {txt}
+  </p>
+  <p className="h1 label-accent note wipe-down no-delay gothic-layer-2 title" style={{gridArea: '1 / 1', color: "var(--color-white"}}>
+    {txt}
+  </p>
+  </div>;
+}
+
 function About() {
   useLogo();
 
@@ -44,7 +58,7 @@ function About() {
               </p>
 
               <hr />
-              <h1 className="text-outline">Educational Resources</h1>
+              {GothicTitle("Educational Resources")}
               <p>
                 Community and education is at the heart of our practice. We
                 teach workshops, run classes, and offer donation-based
@@ -75,7 +89,7 @@ function About() {
                 </Link>
               </div>
               <hr />
-              <h1 className="text-outline">Workshops</h1>
+              {GothicTitle("Workshops")}
               {/* <h3>Upcoming Workshops</h3> */}
               {/* <p>
                 <ul className="list-basic subtext">

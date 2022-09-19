@@ -4,6 +4,7 @@
   --color-white: white;
   --color-black-transparent: #161616aa;
   --color-accent-2:#fce345;
+  --color-title: #4ecdc4;
   --z-nav: 2;
   --z-button-scroll: 1;
   --theme-transition-time: 1s;
@@ -15,6 +16,7 @@
   --color-black-transparent: #FFFFFFaa;
   --color-accent: #4ecdc4;
   --color-accent-2: #fe2179;
+  --color-title: #4ecdc4;
 }
 
 .theme-light .logo img {
@@ -123,6 +125,7 @@ h4,
 h5,
 h6 {
   font-family: "AdelleMonoFlex-Bold", monospace;
+  transition: color var(--theme-transition-time);
 }
 
 p,
@@ -131,6 +134,7 @@ span,
 ul,
 input {
   font-family: "AdelleMonoFlex-Regular", monospace;
+  transition: color var(--theme-transition-time);
 }
 
 h1,
@@ -150,7 +154,7 @@ input {
 }
 
 h1, .h1 {
-  font-size: 2.4em;
+  font-size: 1.8em;
 }
 
 h2, .h2 {
@@ -169,6 +173,17 @@ h4, .h4 {
 h5, .h5 {
   font-size: 12px;
   margin: 1.5em 0 0.5em 0;
+}
+
+.title {
+  font-size: 4.0em;
+  line-height: 1.1em;
+  text-align: center;
+  margin-block: 0.5em;
+}
+
+.title--tall {
+  margin-block: 1em;
 }
 
 p {
@@ -575,6 +590,10 @@ a {
   }
   .typetester {
     max-width: 100%;
+  }
+  .title {
+    font-size: 3.5em;
+    text-align: center !important; 
   }
   .typetester-container {
     gap: 2em;

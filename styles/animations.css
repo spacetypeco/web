@@ -57,6 +57,10 @@
   animation-delay: 0.5s;
 }
 
+.no-delay {
+  animation-delay: 0s;
+}
+
 .wipe-down-on-scroll-1, .wipe-down-on-scroll-1-4, .wipe-down-on-scroll-0 {
   clip-path: inset(0 0 100% 0);
 }

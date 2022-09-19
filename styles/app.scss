@@ -72,7 +72,7 @@
   grid-template-rows: revert;
   max-width: 100%;
   grid-gap: 0.5em;
-  margin-bottom: 4em;
+  margin-bottom: 7em;
 }
 
 .project-grid--full-w {
@@ -386,8 +386,9 @@
 }
 
 .note {
-  max-width: 700px;
-  margin-bottom: 1em;
+  max-width: 900px;
+  margin-inline: auto;
+  text-align: center;
   color: transparent;
 }
 
@@ -396,8 +397,8 @@
     45deg,
     var(--color-accent),
     var(--color-accent) 10px,
-    transparent 10px,
-    transparent 20px
+    var(--color-black) 10px,
+    var(--color-black) 20px
   );
 }
 
@@ -406,7 +407,7 @@
     45deg,
     var(--color-accent-2),
     var(--color-accent-2) 10px,
-    transparent 10px,
-    transparent 20px
+    var(--color-black) 10px,
+    var(--color-black) 20px
   );
 }
