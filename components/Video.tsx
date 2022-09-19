@@ -88,7 +88,7 @@ export default function Video({ datasrc, src, style }: VideoProps) {
   return (
     <video
       autoPlay={false}
-      preload="none"
+      preload="metadata"
       loop={true}
       muted={true}
       playsInline={true}
