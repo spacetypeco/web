@@ -21,7 +21,7 @@
   height: 90px;
   font-size: 0.8em;
   text-align: center;
-  color: var(--color-black);
+  color: #FFFFFF;
   mix-blend-mode: difference;
   z-index: 2000;
   pointer-events: none;
@@ -31,7 +31,7 @@
 
 .circle.hovered {
     backdrop-filter: invert(100%);
-    background-color: var(--color-black-transparent);
+    background-color: #FFFFFFaa;
     border: none;
   width: 100px;
   height: 100px;
