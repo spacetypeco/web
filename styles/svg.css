@@ -40,3 +40,9 @@
 .project-grid a {
     cursor: none;
 }
+
+@media (max-width: 768px) {
+  .project-grid a {
+    cursor: pointer;
+  }
+}

@@ -21,7 +21,7 @@ export default function Cursor() {
         style={{ left: `${x}px`, top: `${y}px` }}
       ></span>
       <span
-        className={"circletext hide-sm"}
+        className="circletext hide-sm"
         style={{
           left: `${x}px`,
           top: `${y}px`,
