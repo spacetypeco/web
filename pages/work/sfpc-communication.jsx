@@ -35,10 +35,10 @@ export default function BroadwayMural() {
 ></iframe>
 </div> */}
         <div className="tile-w-12 tile-h-6">
-          <Video src="/works/sfpc-communication/IMG_1985.MOV"/>
+          <Video datasrc="/works/sfpc-communication/IMG_1985-trimmed"/>
         </div>
         <div className="tile-w-12 tile-h-6">
-          <Video src="/works/sfpc-communication/IMG_2022.mp4"/>
+          <Video src="/works/sfpc-communication/IMG_2022-trimmed.mp4"/>
         </div>
       </div>
     </ProjectDetails>

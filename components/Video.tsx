@@ -1,10 +1,4 @@
-import React, {
-  useCallback,
-  useEffect,
-  useLayoutEffect,
-  useRef,
-  useState,
-} from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 
 import { useInView } from "react-intersection-observer";
 
@@ -49,7 +43,7 @@ export default function Video({ datasrc, src, style }: VideoProps) {
     pixelRatio: null,
   });
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const node = ref.current;
     // only use new width if it's larger. never try to load a new video if we're downsizing.
     const newWidth = node?.getBoundingClientRect().width;
@@ -83,7 +77,11 @@ export default function Video({ datasrc, src, style }: VideoProps) {
     }
   }, [inView]);
 
-  const displaySrc = (src || sizedSrc(datasrc, dimensions.width)) + "#t=0.1";
+  let displaySrc = src || sizedSrc(datasrc, dimensions.width);
+
+  if (displaySrc) {
+    displaySrc += "#t=0.1";
+  }
 
   return (
     <video
@@ -94,7 +92,8 @@ export default function Video({ datasrc, src, style }: VideoProps) {
       playsInline={true}
       style={style}
       ref={allRefs}
-      key={displaySrc}
+      key={displaySrc || datasrc || src}
+      poster={`${datasrc || src}.png`}
     >
       <source data-src={datasrc} src={displaySrc} type="video/mp4" />
     </video>
