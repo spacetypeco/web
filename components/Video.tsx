@@ -83,7 +83,7 @@ export default function Video({ datasrc, src, style }: VideoProps) {
     }
   }, [inView]);
 
-  const displaySrc = src || sizedSrc(datasrc, dimensions.width);
+  const displaySrc = (src || sizedSrc(datasrc, dimensions.width)) + "#t=0.1";
 
   return (
     <video
