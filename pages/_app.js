@@ -95,7 +95,7 @@ function App({ Component, pageProps }) {
           transition: "background-color 0.25s",
         }}
       >
-        <Navigation activeComponentName={Component.name} />
+        <Navigation activeComponentName={Component.displayName} />
         <MouseContextProvider>
           <Component {...pageProps} />
         </MouseContextProvider>

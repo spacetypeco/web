@@ -11,18 +11,33 @@ const TypeDesignSchool = (
 const VarType = <Link href="https://vartype.com">vartype.com</Link>;
 
 const GothicTitle = (txt) => {
-  return <div style={{display: "grid"}}>
-    <p className="h1 label-accent note wipe-down no-delay gothic-base title" style={{gridArea: '1 / 1', color: 'var(--color-black)'}}>
-    {txt}
-  </p>
-  <p className="h1 label-accent note wipe-down no-delay gothic-layer-1 title" style={{gridArea: '1 / 1', color: 'var(--color-title)', animationDelay: '0.4s'}}>
-    {txt}
-  </p>
-  <p className="h1 label-accent note wipe-down no-delay gothic-layer-2 title" style={{gridArea: '1 / 1', color: "var(--color-white"}}>
-    {txt}
-  </p>
-  </div>;
-}
+  return (
+    <div style={{ display: "grid" }}>
+      <p
+        className="h1 label-accent note wipe-down no-delay gothic-base title"
+        style={{ gridArea: "1 / 1", color: "var(--color-black)" }}
+      >
+        {txt}
+      </p>
+      <p
+        className="h1 label-accent note wipe-down no-delay gothic-layer-1 title"
+        style={{
+          gridArea: "1 / 1",
+          color: "var(--color-title)",
+          animationDelay: "0.4s",
+        }}
+      >
+        {txt}
+      </p>
+      <p
+        className="h1 label-accent note wipe-down no-delay gothic-layer-2 title"
+        style={{ gridArea: "1 / 1", color: "var(--color-white" }}
+      >
+        {txt}
+      </p>
+    </div>
+  );
+};
 
 function About() {
   useLogo();
@@ -37,156 +52,165 @@ function About() {
         <div id="container" className="full-w full-h position-rel">
           <div id="about">
             <div className="fade-in content markdown-body">
-              <img
-                src="/img/about-cover.jpeg"
-                style={{ width: "100%", borderRadius: "10px" }}
-              ></img>
+              <section>
+                <img
+                  src="/img/about-cover.jpeg"
+                  style={{ width: "100%", borderRadius: "10px" }}
+                ></img>
 
-              <p>
-                Space Type is an NYC-based studio practice operating at the
-                intersection of type and technology. Led by {LynneYun} and{" "}
-                {KevinYeh}, the studio specializes in letterforms,
-                installations, and web experiences.
-              </p>
-              <p>
-                We work with individuals and organizations to express unique
-                narratives and connect the seams between type design and digital
-                interaction. We offer retail typefaces, design custom type and lettering,
-                build digital platforms, and engage with communities
-                and institutions through workshops, classes, and donation-based
-                resources.
-              </p>
+                <p>
+                  Space Type is an NYC-based studio practice operating at the
+                  intersection of type and technology. Led by {LynneYun} and{" "}
+                  {KevinYeh}, the studio specializes in letterforms,
+                  installations, and web experiences.
+                </p>
+                <p>
+                  We work with individuals and organizations to express unique
+                  narratives and connect the seams between type design and
+                  digital interaction. We offer retail typefaces, design custom
+                  type and lettering, build digital platforms, and engage with
+                  communities and institutions through workshops, classes, and
+                  donation-based resources.
+                </p>
+              </section>
 
               <hr />
-              {GothicTitle("Educational Resources")}
-              <p>
-                Community and education is at the heart of our practice. We
-                teach workshops, run classes, and offer donation-based
-                educational resources.
-              </p>
-              <p>
-                We are dedicated to inclusive education, accessible technology,
-                and open creative tools that empower all members of our
-                community. We welcome fresh eyes, diverse backgrounds, and
-                personal stories that reflect the many ways we interact with
-                language in physical and online spaces.
-              </p>
-              <div className="grid" style={{ marginTop: "2em" }}>
-                <Link href="https://typedesignschool.com">
-                  <a className="tile tile-w-6 tile-h-6 grid-item rounded">
-                    <img src="/img/type_a-z.gif" />
-                    <div className="small-link">
-                      Foundations of Type Design →
-                    </div>
-                  </a>
-                </Link>
 
-                <Link href="https://vartype.com">
-                  <a className="tile tile-w-6 tile-h-6 grid-item rounded">
-                    <img src="/img/vartype.gif" />
-                    <div className="small-link">Vartype →</div>
-                  </a>
-                </Link>
-              </div>
+              <section>
+                {GothicTitle("Educational Resources")}
+                <p>
+                  Community and education is at the heart of our practice. We
+                  teach workshops, run classes, and offer donation-based
+                  educational resources.
+                </p>
+                <p>
+                  We are dedicated to inclusive education, accessible
+                  technology, and open creative tools that empower all members
+                  of our community. We welcome fresh eyes, diverse backgrounds,
+                  and personal stories that reflect the many ways we interact
+                  with language in physical and online spaces.
+                </p>
+                <div className="grid" style={{ marginTop: "2em" }}>
+                  <Link href="https://typedesignschool.com">
+                    <a className="tile tile-w-6 tile-h-6 grid-item rounded">
+                      <img src="/img/type_a-z.gif" />
+                      <div className="small-link">
+                        Foundations of Type Design →
+                      </div>
+                    </a>
+                  </Link>
+
+                  <Link href="https://vartype.com">
+                    <a className="tile tile-w-6 tile-h-6 grid-item rounded">
+                      <img src="/img/vartype.gif" />
+                      <div className="small-link">Vartype →</div>
+                    </a>
+                  </Link>
+                </div>
+              </section>
               <hr />
-              {GothicTitle("Workshops")}
-              {/* <h3>Upcoming Workshops</h3> */}
-              {/* <p>
+              <section>
+                {GothicTitle("Workshops")}
+                {/* <h3>Upcoming Workshops</h3> */}
+                {/* <p>
                 <ul className="list-basic subtext">
                 </ul>
               </p> */}
-              <h3>Previous offerings</h3>
-              <div className="grid">
-                <Link href="https://letterformdesign.com">
-                  <a className="tile tile-w-6 tile-h-6 grid-item rounded">
-                    <img src="/img/letterformdesign.png" />
-                    <div className="small-link">Type Design & Lettering →</div>
-                  </a>
-                </Link>
+                <h3>Previous offerings</h3>
+                <div className="grid">
+                  <Link href="https://letterformdesign.com">
+                    <a className="tile tile-w-6 tile-h-6 grid-item rounded">
+                      <img src="/img/letterformdesign.png" />
+                      <div className="small-link">
+                        Type Design & Lettering →
+                      </div>
+                    </a>
+                  </Link>
 
-                <Link href="https://generativetype.com">
-                  <a className="tile tile-w-6 tile-h-6 grid-item rounded">
-                    <img src="/img/generativetype.png" />
-                    <div className="small-link">Generative Typography →</div>
-                  </a>
-                </Link>
-              </div>
-              <p>
-                <ul className="list-basic subtext">
-                  <li>
-                    <Link href="https://letterformarchive.org/education/">
-                      Letterform Archive
-                    </Link>{" "}
-                    - Type West: Type Design, Jun–Aug 2022
-                  </li>
-                  <li>
-                    <Link href="https://letterformarchive.org/events/view/in-person-core-prototyping-letterforms">
-                      Letterform Archive
-                    </Link>{" "}
-                    - Prototyping Letterforms, Jun 25–26 2022
-                  </li>
-                  <li>
-                    <Link href="https://letterformarchive.org/events/view/designing-flourishes2">
-                      Letterform Archive
-                    </Link>{" "}
-                    - Flourishing, Jun 22–23 2022
-                  </li>
-                  <li>
-                    <Link href="https://2022.typographics.com/workshops/">
-                      Typographics
-                    </Link>{" "}
-                    - Code x Kinetic Type, Jun 13-15 2022
-                  </li>
-                  <li>
-                    <Link href="http://coopertype.org/event/generative_type_sp2021">
-                      Type@Cooper
-                    </Link>{" "}
-                    - Generative Typography, Feb–Apr 2022
-                  </li>
-                  <li>
-                    <Link href="https://courses.newschool.edu/courses/PSAM3010">
-                      Parsons School of Design
-                    </Link>{" "}
-                    - Type Design, Jan–May 2022
-                  </li>
-                  <li>
-                    <Link href="https://2021.typographics.com/workshops/">
-                      Typographics
-                    </Link>{" "}
-                    – Code x Typography Series, Jun 2021
-                  </li>
-                  <li>
-                    <Link href="https://letterformarchive.org/education/">
-                      Letterform Archive
-                    </Link>{" "}
-                    - Type West: Type Design, Jun–Aug 2021
-                  </li>
-                  <li>
-                    <Link href="https://courses.newschool.edu/courses/PSAM3010">
-                      Parsons School of Design
-                    </Link>{" "}
-                    - Type Design, Jan–May 2021
-                  </li>
-                  <li>
-                    <Link href="http://coopertype.org/event/generative_type_fall2020">
-                      Type@Cooper
-                    </Link>{" "}
-                    - Generative Typography, Oct–Dec 2020
-                  </li>
-                  <li>
-                    <Link href="http://coopertype.org/event/generative_typography">
-                      Type@Cooper
-                    </Link>{" "}
-                    - Generative Typography, Jun–Jul 2020
-                  </li>
-                  <li>
-                    <Link href="http://coopertype.org/event/hand_lettering">
-                      Type@Cooper
-                    </Link>{" "}
-                    - Hand Lettering, Feb–Apr 2020
-                  </li>
-                </ul>
-              </p>
+                  <Link href="https://generativetype.com">
+                    <a className="tile tile-w-6 tile-h-6 grid-item rounded">
+                      <img src="/img/generativetype.png" />
+                      <div className="small-link">Generative Typography →</div>
+                    </a>
+                  </Link>
+                </div>
+                <p>
+                  <ul className="list-basic subtext">
+                    <li>
+                      <Link href="https://letterformarchive.org/education/">
+                        Letterform Archive
+                      </Link>{" "}
+                      - Type West: Type Design, Jun–Aug 2022
+                    </li>
+                    <li>
+                      <Link href="https://letterformarchive.org/events/view/in-person-core-prototyping-letterforms">
+                        Letterform Archive
+                      </Link>{" "}
+                      - Prototyping Letterforms, Jun 25–26 2022
+                    </li>
+                    <li>
+                      <Link href="https://letterformarchive.org/events/view/designing-flourishes2">
+                        Letterform Archive
+                      </Link>{" "}
+                      - Flourishing, Jun 22–23 2022
+                    </li>
+                    <li>
+                      <Link href="https://2022.typographics.com/workshops/">
+                        Typographics
+                      </Link>{" "}
+                      - Code x Kinetic Type, Jun 13-15 2022
+                    </li>
+                    <li>
+                      <Link href="http://coopertype.org/event/generative_type_sp2021">
+                        Type@Cooper
+                      </Link>{" "}
+                      - Generative Typography, Feb–Apr 2022
+                    </li>
+                    <li>
+                      <Link href="https://courses.newschool.edu/courses/PSAM3010">
+                        Parsons School of Design
+                      </Link>{" "}
+                      - Type Design, Jan–May 2022
+                    </li>
+                    <li>
+                      <Link href="https://2021.typographics.com/workshops/">
+                        Typographics
+                      </Link>{" "}
+                      – Code x Typography Series, Jun 2021
+                    </li>
+                    <li>
+                      <Link href="https://letterformarchive.org/education/">
+                        Letterform Archive
+                      </Link>{" "}
+                      - Type West: Type Design, Jun–Aug 2021
+                    </li>
+                    <li>
+                      <Link href="https://courses.newschool.edu/courses/PSAM3010">
+                        Parsons School of Design
+                      </Link>{" "}
+                      - Type Design, Jan–May 2021
+                    </li>
+                    <li>
+                      <Link href="http://coopertype.org/event/generative_type_fall2020">
+                        Type@Cooper
+                      </Link>{" "}
+                      - Generative Typography, Oct–Dec 2020
+                    </li>
+                    <li>
+                      <Link href="http://coopertype.org/event/generative_typography">
+                        Type@Cooper
+                      </Link>{" "}
+                      - Generative Typography, Jun–Jul 2020
+                    </li>
+                    <li>
+                      <Link href="http://coopertype.org/event/hand_lettering">
+                        Type@Cooper
+                      </Link>{" "}
+                      - Hand Lettering, Feb–Apr 2020
+                    </li>
+                  </ul>
+                </p>
+              </section>
             </div>
           </div>
         </div>
