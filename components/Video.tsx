@@ -93,7 +93,6 @@ export default function Video({ datasrc, src, style }: VideoProps) {
       style={style}
       ref={allRefs}
       key={displaySrc || datasrc || src}
-      poster={`${datasrc || src}.png`}
     >
       <source data-src={datasrc} src={displaySrc} type="video/mp4" />
     </video>
