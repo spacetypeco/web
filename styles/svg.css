@@ -1,6 +1,5 @@
 .circle {
   position: absolute;
-  border: solid 1px #ccc;
   width: 60px; 
   height: 60px; 
   background-color: transparent;
@@ -9,6 +8,7 @@
   pointer-events: none;
   transition: width 0.5s, height 0.5s, background-color 0.5s, border 0.5s;
   transform: translate(-50%, -50%);
+  backdrop-filter: invert(100%);
 }
 
 .circletext {
@@ -30,9 +30,7 @@
 }
 
 .circle.hovered {
-    backdrop-filter: invert(100%);
     background-color: #FFFFFFaa;
-    border: none;
   width: 100px;
   height: 100px;
 }

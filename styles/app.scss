@@ -115,6 +115,26 @@
   .project-grid--full-w {
     grid-auto-rows: calc(1500px / 12);
   }
+  .content .project-grid {
+    grid-auto-rows: calc(1500px / 12);
+
+  }
+}
+
+@media (min-width: 1600px) {
+  .content-wide .project-grid {
+    grid-auto-rows: calc((1500px - 6em) / 12);
+  }
+  .content-wide .project-grid--full-w-24 {
+    grid-auto-rows: calc((1500px - 6em) / 24);
+  }
+  .width-1200 .project-grid {
+    grid-auto-rows: calc(1000px / 12)
+  }
+
+  .width-1200 .project-grid--full-w-24 {
+    grid-auto-rows: calc(1000px / 24)
+  }
 }
 
 .tile.rounded video,
