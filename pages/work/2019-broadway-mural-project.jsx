@@ -6,12 +6,12 @@ export default function BroadwayMural() {
       title="Broadway Mural"
       intro={
         <>
-          <p>Client: Silverstein Properties</p>
           <p>
             Mural painted on the 2nd floor of 120 Broadway in New York City.
             Each letter contains an iconic scene or building that can be seen
             from the iconic Broadway street.
           </p>
+          <p class="badge">Client: Silverstein Properties</p>
         </>
       }
     >

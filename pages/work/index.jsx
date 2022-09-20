@@ -203,7 +203,7 @@ function Works() {
               <section data-theme="theme-light">
 
               {GothicTitle(
-                "We design custom typefaces and lettering to fit any occasion."
+                "We design custom typefaces and lettering to fit every occasion."
               )}
 
               <div className="project-grid project-grid--full-w-24">
