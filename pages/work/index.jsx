@@ -20,7 +20,7 @@ const ReactP5Wrapper = dynamic(
 require("../../util/utils.js");
 
 const GothicTitle = (txt, classes = "") => {
-  return (
+  return <>
     <div className={classes} style={{ display: "grid" }}>
       <p
         className="h1 label-accent note wipe-down-on-scroll-0 no-delay gothic-base title title--tall"
@@ -49,7 +49,7 @@ const GothicTitle = (txt, classes = "") => {
         {txt}
       </p>
     </div>
-  );
+  </>;
 };
 
 function Works() {
