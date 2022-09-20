@@ -250,20 +250,6 @@ function Works() {
                     ></img>
                   </ProjectHoverLink>
                 </Tile>
-
-                {/* <div className="tile rounded tile-w-3 tile-h-3">
-                  <ProjectHoverLink
-                    href="work/2022-ampersandist"
-                    title="Typeface: Ampersandist"
-                  >
-                    <img src="/works/2022-typeface-Ampersandist/large_Futurefonts_Samples-06.png"></img>
-                  </ProjectHoverLink>
-                </div>
-                <div className="tile rounded tile-w-3 tile-h-3">
-                  <ProjectHoverLink href="work/zapata" title="WTC Mural">
-                    <Video src="/works/2022-insta-36daysoftype/u7-2.mp4"/>
-                  </ProjectHoverLink>
-                </div> */}
                 <Tile w={4} h={11} title="Constant Typeface">
                   <ProjectHoverLink
                     href="work/constant-typeface"
