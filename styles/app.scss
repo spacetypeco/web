@@ -100,6 +100,10 @@
   .project-grid {
     grid-auto-rows: revert;
   }
+  .project-grid iframe {
+    min-height: calc((100vw - 4em) * 9/16);
+    height: 300px; 
+  }
 }
 
 /* @media (min-width: calc(1000px + 6em)) {
@@ -116,8 +120,7 @@
     grid-auto-rows: calc(1500px / 12);
   }
   .content .project-grid {
-    grid-auto-rows: calc(1500px / 12);
-
+    // grid-auto-rows: calc(1500px / 12);
   }
 }
 
@@ -128,6 +131,9 @@
   .content-wide .project-grid--full-w-24 {
     grid-auto-rows: calc((1500px - 6em) / 24);
   }
+}
+
+@media (min-width: 1100px) {
   .width-1200 .project-grid {
     grid-auto-rows: calc(1000px / 12)
   }

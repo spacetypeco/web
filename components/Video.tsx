@@ -80,10 +80,6 @@ export default function Video({ datasrc, src, style, poster }: VideoProps) {
 
   let displaySrc = src || sizedSrc(datasrc, dimensions.width);
 
-  if (displaySrc) {
-    displaySrc += "#t=0.1";
-  }
-
   const displayPoster =
     poster ||
     (datasrc

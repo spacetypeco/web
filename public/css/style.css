@@ -728,12 +728,20 @@ a {
 
 .content .badge {
   font-size: 0.8em;
-  cursor: pointer;
   color: var(--color-white);
   display: inline-block;
   padding: 0.2em 0.4em;
   background-color: var(--color-accent-3);
   border-radius: 4px;
+}
+
+.content a {
+  cursor: pointer;
+
+}
+
+.content a.badge:hover {
+  background-color: var(--color-white);
 }
 
 .content .nav-back {
