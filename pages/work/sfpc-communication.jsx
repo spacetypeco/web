@@ -38,7 +38,7 @@ export default function BroadwayMural() {
           <Video datasrc="/works/sfpc-communication/IMG_1985-trimmed"/>
         </div>
         <div className="tile-w-12 tile-h-6">
-          <Video src="/works/sfpc-communication/IMG_2022-trimmed.mp4"/>
+          <Video datasrc="/works/sfpc-communication/IMG_2022-trimmed"/>
         </div>
       </div>
     </ProjectDetails>
