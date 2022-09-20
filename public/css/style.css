@@ -569,7 +569,7 @@ a {
   opacity: 50%;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .title--tall {
     font-size: 5.0em;
   }
@@ -598,6 +598,7 @@ a {
   .typetester {
     max-width: 100%;
   }
+  
   .title {
     font-size: 3em;
   }

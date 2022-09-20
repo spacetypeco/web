@@ -120,11 +120,11 @@ function Works() {
                           <Video src="/works/2022-insta-36daysoftype/S.mp4" />
                         </div>
                         <div className="tile no-squish tile-w-6 tile-h-2 wipe-down">
-                          <Video src="/works/2022-insta-36daysoftype/X.mp4" />
+                          <Video src="/works/2022-insta-36daysoftype/X-480p.mov" />
                         </div>
 
                         <div className="tile no-squish tile-w-6 tile-h-2 wipe-down">
-                          <Video src="/works/2022-insta-36daysoftype/5.mov" />
+                          <Video src="/works/2022-insta-36daysoftype/5-480p.mov" />
                         </div>
                         <div className="tile no-squish tile-w-6 tile-h-2 wipe-down">
                           <Video src="/works/2022-insta-36daysoftype/Z-500w.m4v" />

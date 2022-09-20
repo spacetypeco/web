@@ -6,6 +6,7 @@ interface VideoProps {
   datasrc?: string;
   src?: string;
   style: any;
+  poster?: string;
 }
 
 const sizedSrc = (dataSrc, width) => {
@@ -34,7 +35,7 @@ const sizedSrc = (dataSrc, width) => {
  * - Sizing videos properly for the container based on data-src
  * - Playing and pausing videos based on visibility on the screen
  */
-export default function Video({ datasrc, src, style }: VideoProps) {
+export default function Video({ datasrc, src, style, poster }: VideoProps) {
   const ref = useRef<HTMLVideoElement>();
 
   // Listen for size changes
@@ -83,6 +84,12 @@ export default function Video({ datasrc, src, style }: VideoProps) {
     displaySrc += "#t=0.1";
   }
 
+  const displayPoster =
+    poster ||
+    (datasrc
+      ? `${datasrc}-poster.png`
+      : `${src.replace(/\..*/, "-poster.png")}`);
+
   return (
     <video
       autoPlay={false}
@@ -93,6 +100,7 @@ export default function Video({ datasrc, src, style }: VideoProps) {
       style={style}
       ref={allRefs}
       key={displaySrc || datasrc || src}
+      poster={displayPoster}
     >
       <source data-src={datasrc} src={displaySrc} type="video/mp4" />
     </video>

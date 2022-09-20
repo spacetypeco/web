@@ -37,7 +37,7 @@ export default function ExistentialCo() {
           <Video datasrc="/works/2022-client-web-existential/growth"/>
         </div>
         <div className="tile-w-6 tile-h-3">
-          <Video src="/works/2022-client-web-existential/exist-and-thrive-500w.m4v"/>
+          <Video datasrc="/works/2022-client-web-existential/exist-and-thrive"/>
         </div>
         <div className="tile-w-6 tile-h-3">
           <Video datasrc="/works/2022-client-web-existential/collective-action"/>
