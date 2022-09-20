@@ -15,7 +15,7 @@ export default function ProjectDetails({ title, bgColor, intro, ...props }) {
 
   title.split("").forEach((item, index) => {
     let ch = item.trim() ? item : "\u00A0";
-    let animationDelay = `${Math.random()}s`;
+    let animationDelay = `${Math.random() / 2}s`;
 
     currentLine.push(
       <span key={index} style={{ animationDelay }}>
