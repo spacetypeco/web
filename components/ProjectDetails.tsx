@@ -81,15 +81,7 @@ export default function ProjectDetails({ title, bgColor, intro, ...props }) {
                 ← work
               </a>
             </div>
-            <div
-              className="side-text"
-              style={{
-                padding: "2em",
-                paddingTop: "-2em",
-                borderTop: "1px solid var(--color-white)",
-                marginTop: "0.5em",
-              }}
-            >
+            <div className="side-text">
               <h1 className="project-title" ref={titleRef}>
                 {titleSplit}
               </h1>

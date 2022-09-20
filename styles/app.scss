@@ -301,6 +301,10 @@
   max-width: 700px;
   text-align: left;
   padding-bottom: 10vh;
+  padding-block: 2em;
+  padding-top: -2em;
+  border-top: 1px solid var(--color-white);
+  margin-top: 0.5em;
 }
 
 .project-details-section a {
