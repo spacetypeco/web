@@ -1,6 +1,7 @@
 import { Rotate as Hamburger } from "hamburger-react";
 // import Image from "next/image";
 import Link from "next/link";
+import LogoWhite from "../public/img/logo_white.svg";
 import useHideOnScroll from "../hooks/useHideOnScroll";
 import { useState } from "react";
 
@@ -29,7 +30,7 @@ export default function Navigation({ activeComponentName }) {
         <div className="logo overflow-y-hidden">
           <div className="logo-inner">
             <Link href="/">
-              <img src="/img/logo_white.svg" />
+              <LogoWhite />
             </Link>
           </div>
         </div>

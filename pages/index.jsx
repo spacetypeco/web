@@ -1,5 +1,6 @@
 import Footer from "../components/Footer";
 import Link from "next/link";
+import LogoWhite from "../public/img/logo_white.svg"
 import ScrollButton from "../components/ScrollButton"
 import createBlobs from "../p5/sketches/blobs"
 import createParticleFill from "../p5/sketches/particleFill"
@@ -100,8 +101,7 @@ function Home() {
         <div className="flex-v flex-centered flex-centered-v-h" style={{flex: "1", minHeight: "calc(90vh - 13em)"}}>
           <div className="overflow-y-hidden">
             <div className="space-intro-logo-inner">
-          <img
-            src="/img/logo_white.svg"
+          <LogoWhite
             style={{ width: "200px", height: "200px", paddingTop: "2em" }}
           />
           </div></div>
