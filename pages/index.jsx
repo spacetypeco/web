@@ -17,7 +17,7 @@ require("../util/utils.js");
 
 const fadeOnScroll = (event) => {
   const referenceElement = document.querySelector("#space-intro")
-  const navElement = document.querySelector(".logo-inner");
+  const navElement = document.querySelector(".hide-sm .logo-inner");
   const introElement = document.querySelector(".space-intro-logo-inner");
 
   if (!referenceElement) {

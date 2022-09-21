@@ -413,6 +413,12 @@
   );
 }
 
+@media (min-width: 769px) {
+  .show-sm {
+    display: none !important;
+  }
+}
+
 @media (max-width: 768px) {
   .project-details-section {
     padding-top: 2em;

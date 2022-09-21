@@ -1,51 +1,94 @@
+import { Rotate as Hamburger } from "hamburger-react";
 // import Image from "next/image";
 import Link from "next/link";
 import useHideOnScroll from "../hooks/useHideOnScroll";
+import { useState } from "react";
 
 export default function Navigation({ activeComponentName }) {
   let visible = useHideOnScroll();
-  let classes = "flex-h nav full-w position-fixed";
-  let style = {
+
+  const [isOpen, setOpen] = useState(false);
+
+  let mobileStyle = {
+    position: "fixed",
+    transition: "transform 0.6s",
+    transform: isOpen ? "" : "translateX(100%)",
+  };
+
+  let desktopStyle = {
+    position: "fixed",
     transition: "transform 0.6s",
     transform: visible ? "" : "translateY(-100%)",
   };
 
-  return (
-    <div className={classes} style={style}>
-      <div className="logo overflow-y-hidden">
-        <div className="logo-inner">
-          <Link href="/">
-            <img src="/img/logo_white.svg" />
-          </Link>
+  const NavVersion = (classNames, style) => {
+    let classes = "flex-h nav full-w flex-v-xs position-fixed " + classNames;
+
+    return (
+      <div className={classes} style={style}>
+        <div className="logo overflow-y-hidden">
+          <div className="logo-inner">
+            <Link href="/">
+              <img src="/img/logo_white.svg" />
+            </Link>
+          </div>
         </div>
-      </div>
-      <div>
-        <div id="nav-area">
-          <div id="nav-box" className="flex-v-xs">
-            <div
-              className={
-                activeComponentName === "Work" ? "link active" : "link"
-              }
-            >
-              <Link href="/work">Work</Link>
-            </div>
-            <div
-              className={
-                activeComponentName === "Type" ? "link active" : "link"
-              }
-            >
-              <Link href="/typefaces">Typefaces</Link>
-            </div>
-            <div
-              className={
-                activeComponentName === "About" ? "link active" : "link"
-              }
-            >
-              <Link href="/about">About →</Link>
+        <div>
+          <div id="nav-area">
+            <div id="nav-box" className="flex-v-xs flex-centered">
+              <div
+                className={
+                  activeComponentName === "Work" ? "link active" : "link"
+                }
+              >
+                <Link href="/work">
+                  <a onClick={() => setOpen(false)}>Work</a>
+                </Link>
+              </div>
+              <div
+                className={
+                  activeComponentName === "Type" ? "link active" : "link"
+                }
+              >
+                <Link href="/typefaces">
+                  <a onClick={() => setOpen(false)}>Typefaces</a>
+                </Link>
+              </div>
+              <div
+                className={
+                  activeComponentName === "About" ? "link active" : "link"
+                }
+              >
+                <Link href="/about">
+                  <a onClick={() => setOpen(false)}>About →</a>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    );
+  };
+
+  return (
+    <>
+      <div
+        className="show-sm flex-h flex-end-j"
+        style={{
+          zIndex: 3,
+          padding: "2em",
+          position: "fixed",
+          width: "calc(100% - 4em)",
+        }}
+      >
+        <Hamburger
+          color={isOpen ? "var(--color-black)" : "var(--color-white)"}
+          toggled={isOpen}
+          toggle={setOpen}
+        />
+      </div>
+      {NavVersion("show-sm", mobileStyle)}
+      {NavVersion("hide-sm", desktopStyle)}
+    </>
   );
 }

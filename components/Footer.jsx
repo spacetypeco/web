@@ -47,14 +47,14 @@ export default function Footer() {
           <NewsletterSignup />
         </div>
         <div className="flex-item-2-5 flex-item-sm-1">
-          <p>Space Type</p>
+          <p className="gothic-base">Space Type</p>
           <p className="subtext">
             <ul className="list-basic">
               <li>{HelloSpaceType}</li>
               <li>{Instagram}</li>
             </ul>
           </p>
-          <p>Services</p>
+          <p className="gothic-base">Services</p>
           <p className="subtext">
             <ul className="list-basic list-col-lg-2-sm-1">
               <li>Brand Strategy</li>
