@@ -310,7 +310,6 @@ export default function (divId) {
       const parsedFont = opentype.parse(font.fontData.bytes.buffer);
       path = parsedFont.getPath(txt, -bounds.w / 2, bounds.h / 2, fontSize);
 
-      console.log(path);
       for (let seg of path.commands) {
         seg.offset = p.random(2 * Math.PI);
         seg.speed = p.random(0.005, 0.05);
