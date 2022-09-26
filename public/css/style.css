@@ -626,6 +626,9 @@ a {
   .title--tall {
     font-size: 3em;
   }
+  .title--tall-no-top-sm {
+    margin-top: 0;
+  }
   .typetester-container {
     gap: 2em;
   }

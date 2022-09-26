@@ -19,35 +19,33 @@ const ReactP5Wrapper = dynamic(
 
 require("../../util/utils.js");
 
-const GothicTitle = (txt, classes = "", style={}) => {
+const GothicTitle = (txt, classes = "", pClasses="") => {
   return (
     <>
       <div className={classes} style={{ display: "grid" }}>
         <p
-          className="h1 label-accent note wipe-down-on-scroll-0 no-delay gothic-base title title--tall"
+          className={`h1 label-accent note wipe-down-on-scroll-0 no-delay gothic-base title title--tall ${pClasses}`}
           style={{
             gridArea: "1 / 1",
             color: "var(--color-black)",
             animationDelay: "-0.1s",
-            ...style
           }}
         >
           {txt}
         </p>
         <p
-          className="h1 label-accent note wipe-down-on-scroll-0 no-delay gothic-layer-1 title title--tall"
+          className={`h1 label-accent note wipe-down-on-scroll-0 no-delay gothic-layer-1 title title--tall ${pClasses}`}
           style={{
             gridArea: "1 / 1",
             color: "var(--color-title)",
             animationDelay: "-0.1s",
-            ...style
           }}
         >
           {txt}
         </p>
         <p
-          className="h1 label-accent note wipe-down-on-scroll-0 no-delay gothic-layer-2 title title--tall"
-          style={{ gridArea: "1 / 1", color: "var(--color-white)", ...style }}
+          className={`h1 label-accent note wipe-down-on-scroll-0 no-delay gothic-layer-2 title title--tall ${pClasses}`}
+          style={{ gridArea: "1 / 1", color: "var(--color-white)", }}
         >
           {txt}
         </p>
@@ -84,9 +82,7 @@ function Works() {
             <div className="fade-in content-top content-wide">
               <section data-theme="theme-light">
                 {GothicTitle(
-                  "We work across physical and digital media to build bridges between type and technology.", "", {
-                    marginTop: 0
-                  }
+                  "We work across physical and digital media to build bridges between type and technology.", "", "title--tall-no-top-sm"
                 )}
                 <div className="project-grid project-grid--full-w">
                   <Tile w={6} h={4} title="Existential Co.">
