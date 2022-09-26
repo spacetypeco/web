@@ -9,7 +9,7 @@
   background-color: var(--color-black);
 }
 
-.footer p {
+.footer p, .footer ul {
   font-size: 0.8em;
 }
 

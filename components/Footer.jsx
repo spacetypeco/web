@@ -48,23 +48,22 @@ export default function Footer() {
         </div>
         <div className="flex-item-2-5 flex-item-sm-1">
           <p className="gothic-base">Space Type</p>
-          <p className="subtext">
-            <ul className="list-basic">
-              <li>{HelloSpaceType}</li>
-              <li>{Instagram}</li>
-            </ul>
-          </p>
+
+          <ul className="list-basic">
+            <li>{HelloSpaceType}</li>
+            <li>{Instagram}</li>
+          </ul>
+
           <p className="gothic-base">Services</p>
-          <p className="subtext">
-            <ul className="list-basic list-col-lg-2-sm-1">
-              <li>Brand Strategy</li>
-              <li>Identity Systems</li>
-              <li>Web and Digital Design</li>
-              <li>Software Development</li>
-              <li>Custom Type Design</li>
-              <li>Retail Typeface Licensing</li>
-            </ul>
-          </p>
+
+          <ul className="list-basic list-col-lg-2-sm-1">
+            <li>Brand Strategy</li>
+            <li>Identity Systems</li>
+            <li>Web and Digital Design</li>
+            <li>Software Development</li>
+            <li>Custom Type Design</li>
+            <li>Retail Typeface Licensing</li>
+          </ul>
         </div>
       </div>
     </div>
