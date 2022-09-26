@@ -28,11 +28,13 @@ export default function Navigation({ activeComponentName }) {
     return (
       <div className={classes} style={style}>
         <div className="logo overflow-y-hidden">
-          <div className="logo-inner">
-            <Link href="/">
-              <LogoWhite />
-            </Link>
-          </div>
+          <Link href="/">
+            <div className="logo-inner">
+              <a onClick={() => setOpen(false)}>
+                <LogoWhite />
+              </a>
+            </div>
+          </Link>
         </div>
         <div>
           <div id="nav-area">

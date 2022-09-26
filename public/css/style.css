@@ -598,9 +598,16 @@ a {
 
 @media (max-width: 768px) {
   .content {
-    padding-top: 13em;
+    padding-top: 7em;
+    padding-bottom: 7em;
     padding-left: 2em;
     padding-right: 2em;
+  }
+  .content-top {
+    padding-top: 6em;
+  }
+  .content-short-bottom {
+    padding-bottom: 0em;
   }
   .content-wide {
     margin: 0 1em;
@@ -684,13 +691,10 @@ a {
 }
 
 @media (max-width: 768px) {
-  .logo {
-    margin-right: 0.5em;
-  }
   .logo svg {
     filter: invert(100%) !important;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
   }
   .flex-item-sm-1 {
     flex: 1 1 100%;
@@ -722,6 +726,7 @@ a {
   #nav-box .link a {
     color: var(--color-black);
     font-family: "Trade Gothic Display 2 Base";
+    transition: color var(--theme-transition-time);
   }
   #nav-box .link a:hover {
     color: var(--color-link);

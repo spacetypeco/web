@@ -19,7 +19,7 @@ const ReactP5Wrapper = dynamic(
 
 require("../../util/utils.js");
 
-const GothicTitle = (txt, classes = "") => {
+const GothicTitle = (txt, classes = "", style={}) => {
   return (
     <>
       <div className={classes} style={{ display: "grid" }}>
@@ -29,6 +29,7 @@ const GothicTitle = (txt, classes = "") => {
             gridArea: "1 / 1",
             color: "var(--color-black)",
             animationDelay: "-0.1s",
+            ...style
           }}
         >
           {txt}
@@ -39,13 +40,14 @@ const GothicTitle = (txt, classes = "") => {
             gridArea: "1 / 1",
             color: "var(--color-title)",
             animationDelay: "-0.1s",
+            ...style
           }}
         >
           {txt}
         </p>
         <p
           className="h1 label-accent note wipe-down-on-scroll-0 no-delay gothic-layer-2 title title--tall"
-          style={{ gridArea: "1 / 1", color: "var(--color-white" }}
+          style={{ gridArea: "1 / 1", color: "var(--color-white)", ...style }}
         >
           {txt}
         </p>
@@ -82,7 +84,9 @@ function Works() {
             <div className="fade-in content-top content-wide">
               <section data-theme="theme-light">
                 {GothicTitle(
-                  "We work across physical and digital media to build bridges between type and technology."
+                  "We work across physical and digital media to build bridges between type and technology.", "", {
+                    marginTop: 0
+                  }
                 )}
                 <div className="project-grid project-grid--full-w">
                   <Tile w={6} h={4} title="Existential Co.">
