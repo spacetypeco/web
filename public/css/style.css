@@ -131,7 +131,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Trade Gothic Display 2 Base";
+  font-family: "AdelleMonoFlex-Bold", monospace;
   transition: color var(--theme-transition-time);
 }
 
@@ -142,6 +142,10 @@ ul,
 input {
   font-family: "AdelleMonoFlex-Regular", monospace;
   transition: color var(--theme-transition-time);
+}
+
+.bold {
+  font-family: "AdelleMonoFlex-Bold";
 }
 
 h1,
@@ -385,7 +389,6 @@ a {
 
 .link a {
   transition: color 0.2s;
-  font-family: 'Trade Gothic Display 2 Base';
 }
 .link:hover,
 .link a:hover {
@@ -728,7 +731,7 @@ a {
   }
   #nav-box .link a {
     color: var(--color-black);
-    font-family: "Trade Gothic Display 2 Base";
+    font-family: "AdelleMonoFlex-Bold", monospace;
     transition: color var(--theme-transition-time);
   }
   #nav-box .link a:hover {
