@@ -8,7 +8,7 @@ export default function HanysHarvest() {
         <>
           <p>
             For Hany's new line of Fire Tonic — a raw apple cider vinegar
-            infusion tonic — we were commissioned to hand-letter and design
+            infusion tonic — Space Type was commissioned to hand-letter and design
             their identity and packaging.
           </p>
           <p>

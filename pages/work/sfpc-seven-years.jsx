@@ -6,7 +6,7 @@ export default function SFPCSevenYears() {
       title="Seven Years of SFPC"
       intro={
         <>
-          <p>We were commissioned to draw for the ‘Poetic Computation: 7 Years of SFPC’ exhibition. The resulting lettering work was displayed in the West Village, NYC.</p>
+          <p>Space Type was commissioned to draw for the ‘Poetic Computation: 7 Years of SFPC’ exhibition. The resulting lettering work was displayed in the West Village, NYC.</p>
         </>
       }
     >

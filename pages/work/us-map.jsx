@@ -7,7 +7,7 @@ export default function BroadwayMural() {
       intro={
         <>
           <p>
-          A hand painted map of the United States, with lettering inspired by various American wood types from the 19th century.
+            A hand painted map of the United States, with lettering inspired by various American wood types from the 19th century.
           </p>
 
           <p>

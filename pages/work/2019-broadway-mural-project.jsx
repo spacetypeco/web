@@ -7,9 +7,9 @@ export default function BroadwayMural() {
       intro={
         <>
           <p>
-            Mural painted on the 2nd floor of 120 Broadway in New York City.
-            Each letter contains an iconic scene or building that can be seen
-            from the iconic Broadway street.
+            Space Type was commissioned to paint a mural on the 2nd floor of 120 Broadway 
+            in New York City. Each letter contains an iconic scene or building that can 
+            be seen from the iconic Broadway street.
           </p>
           <p class="badge">Client: Silverstein Properties</p>
         </>

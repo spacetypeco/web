@@ -7,7 +7,7 @@ export default function AllidaImprint() {
       intro={
         <>
           <p>
-            We were commissioned to design a new logo for HarperCollins' new
+            Space Type was commissioned to design a new logo for HarperCollins' new
             imprint, Allida.
           </p>
           <p>

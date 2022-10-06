@@ -9,7 +9,7 @@ export default function DaysOfType2022() {
       title="36 Days of Type"
       intro={
         <>
-          <p>Generative typographic experiments 👩‍🔬</p>
+          <p>Generative typographic experiments built for 36 Days of Type. 👩‍🔬</p>
         </>
       }
     >
