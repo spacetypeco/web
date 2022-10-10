@@ -54,7 +54,7 @@ function About() {
             <div className="fade-in content markdown-body">
               <section>
                 <img
-                  src="/img/about-cover.jpeg"
+                  src="/img/about-cover.png"
                   style={{ width: "100%", borderRadius: "10px" }}
                 ></img>
 
