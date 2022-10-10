@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import useImageSizer from "../hooks/useImageSizer";
 import useLogo from "../hooks/useLogo";
 
 const LynneYun = <Link href="https://lynneyun.com">Lynne Yun</Link>;
@@ -41,6 +42,7 @@ const GothicTitle = (txt) => {
 
 function About() {
   useLogo();
+  useImageSizer();
 
   return (
     <>
@@ -54,7 +56,7 @@ function About() {
             <div className="fade-in content markdown-body">
               <section>
                 <img
-                  src="/img/about-cover.png"
+                  src="/img/about-cover.jpeg"
                   style={{ width: "100%", borderRadius: "10px" }}
                 ></img>
 
@@ -120,7 +122,7 @@ function About() {
                 <div className="grid">
                   <Link href="https://letterformdesign.com">
                     <a className="tile tile-w-6 tile-h-6 grid-item rounded">
-                      <img src="/img/letterformdesign.png" />
+                      <img data-src="/img/letterformdesign" data-fmt="png" />
                       <div className="small-link">
                         Type Design & Lettering →
                       </div>
@@ -129,7 +131,7 @@ function About() {
 
                   <Link href="https://generativetype.com">
                     <a className="tile tile-w-6 tile-h-6 grid-item rounded">
-                      <img src="/img/generativetype.png" />
+                      <img data-src="/img/generativetype" data-fmt="png" />
                       <div className="small-link">Generative Typography →</div>
                     </a>
                   </Link>
