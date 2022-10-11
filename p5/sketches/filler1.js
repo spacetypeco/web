@@ -116,7 +116,7 @@ export default function (divId) {
 
       Matter.World.add(world, prev.body);
 
-      for (let ch of "TYPER".split("")) {
+      for (let ch of "PARTY".split("")) {
         const letter = new Letter(world, ch, p.width / 2, yOffset);
         letters.push(letter);
         yOffset += 100;
