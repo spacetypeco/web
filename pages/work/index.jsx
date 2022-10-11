@@ -65,9 +65,9 @@ function Works() {
   useSectionThemes();
 
   const sketch = createSketch("bg");
-  const fillerSketch1 = createFillerSketch("filler-1");
+  const fillerSketch1 = createFillerSketch("filler-3");
   const fillerSketch2 = createFiller2Sketch("filler-2");
-  const fillerSketch3 = createFiller3Sketch("filler-3");
+  const fillerSketch3 = createFiller3Sketch("filler-1");
 
   return (
     <>
@@ -101,7 +101,7 @@ function Works() {
                     </ProjectHoverLink>
                   </Tile>
                   <div id="filler-1" className="tile rounded tile-w-2 tile-h-7 hide-sm wipe-down" style={{border: "3px solid var(--color-accent)"}}>
-                    <ReactP5Wrapper sketch={fillerSketch1} />
+                    <ReactP5Wrapper sketch={fillerSketch3} />
                   </div>
                   <Tile w={4} h={4} title="Vartype">
                     <ProjectHoverLink href="work/2022-vartype" title="Vartype">
@@ -321,8 +321,8 @@ function Works() {
                       ></img>
                     </ProjectHoverLink>
                   </Tile>
-                  <div id="filler-3" className="tile rounded tile-w-4 tile-h-4 hide-sm wipe-down bg-diag-1" style={{opacity: 0.9, border: "3px solid var(--color-accent-2)"}}>
-                   <ReactP5Wrapper sketch={fillerSketch3} />
+                  <div id="filler-3" className="tile rounded tile-w-4 tile-h-4 hide-sm wipe-down" style={{opacity: 0.9, border: "3px solid var(--color-accent-2)"}}>
+                   <ReactP5Wrapper sketch={fillerSketch1} />
 
                   </div>
                 </div>

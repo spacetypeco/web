@@ -40,16 +40,18 @@ export default function (divId) {
 
       const margin = 50;
       let i = 0;
-      for (let x = -p.width / 2 + margin; x < p.width / 2 - margin; x += 50) {
+      for (let y = -p.height / 2 + margin; y < p.height / 2 - margin; y += 50) {
         for (let angle = 0; angle < 360; angle += 20) {
           p.push();
-          p.translate(x, 0, 0);
-          p.rotateY(angle + p.frameCount);
+          p.translate(0, y, 0);
           p.rotateZ(angle);
+          p.rotateY(angle + p.frameCount);
           p.text(
             "SPACE".split("")[i % "SPACE".length],
             0,
-            30 + 10 * Math.sin(10 * x + 0.01 * p.frameCount)
+            100 +
+              25 * Math.sin(0.01 * p.frameCount) +
+              10 * Math.sin(10 * y + 0.05 * p.frameCount)
           );
           p.pop();
         }

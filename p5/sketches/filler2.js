@@ -42,9 +42,9 @@ export default function (divId) {
       layer.pixelDensity(1);
       layer.background("white");
       layer.fill("black");
-      layer.textSize(100);
+      layer.textSize(150);
       layer.textAlign(p.CENTER, p.CENTER);
-      layer.text("SPACE", layer.width / 2, layer.height / 2);
+      layer.text("SPACE", layer.width / 2, layer.height / 2 - 20);
     };
 
     p.draw = function () {
