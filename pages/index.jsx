@@ -101,6 +101,9 @@ function Home() {
         <div className="flex-v flex-centered flex-centered-v-h" style={{flex: "1", minHeight: "calc(90vh - 13em)"}}>
           <div className="overflow-y-hidden">
             <div className="space-intro-logo-inner">
+            <div style={{width: '100%', height: '100%', display: 'flex', alignItems: 'end', position: 'absolute', transform: 'translateX(5px) translateY(-5px)', zIndex: '-1'}}>
+              <div className="bg"></div>
+            </div>
           <LogoWhite
             style={{ width: "200px", height: "200px", paddingTop: "2em" }}
           />

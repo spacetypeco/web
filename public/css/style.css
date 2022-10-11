@@ -571,6 +571,40 @@ a {
   /* fill: var(--color-accent); */
 }
 
+.space-intro-logo-inner .bg {
+  background:linear-gradient(233deg, #e56420, #c22525, #3d9c31, #37bbde);
+  background-size:cover;
+  background-blend-mode: hard-light;
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  animation: hue-rotate 5s linear infinite;
+  position: absolute;
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .space-intro-logo-inner .bg {
+  width: 190px;
+  height: 190px;
+  }
+}
+
+@keyframes hue-rotate {
+from {
+  -webkit-filter: hue-rotate(0);
+  -moz-filter: hue-rotate(0);
+  -ms-filter: hue-rotate(0);
+  filter: hue-rotate(0);
+}
+to {
+  -webkit-filter: hue-rotate(360deg);
+  -moz-filter: hue-rotate(360deg);
+  -ms-filter: hue-rotate(360deg);
+  filter: hue-rotate(360deg);
+}
+}
+
 .hide-sm .logo-inner {
   transform: translateY(150%);
   transition: transform 0.5s ease;
@@ -811,14 +845,14 @@ a {
   display: inline-block;
   padding: 1em 2em;
   border-radius: 4px;
-  border: 1px solid var(--color-white);
+  border-image:linear-gradient(233deg, #e56420, #c22525, #3d9c31, #37bbde) 2 / 2px;
+  animation: hue-rotate 5s linear infinite;
 }
 
 .button-lg:hover {
   /* background-color: var(--color-white); */
   /* color: var(--color-black); */
-  /* color: var(--color-accent-2); */
-  border-color: var(--color-accent);
+  color: var(--color-accent-2);
 }
 
 .small-link {
