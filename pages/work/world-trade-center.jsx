@@ -19,7 +19,7 @@ export default function BroadwayMural() {
           </p>
 
           <p>
-            <div className="flex-gap">
+            <div className="flex-gap-2">
               <span className="badge">Client: World Trade Center, Core12</span>
               <span className="badge">Art Direction: Anthony Elder</span>
             </div>

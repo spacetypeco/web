@@ -33,7 +33,7 @@ export default function Footer() {
   return (
     <div className="footer" ref={ref}>
       <div
-        className="flex-h flex-v-sm"
+        className="flex-h flex-v-sm flex-gap-2"
         style={{
           paddingTop: "1em",
           borderTop: "var(--color-white) 1px solid",
