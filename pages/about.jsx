@@ -78,7 +78,7 @@ function About() {
 
               <hr />
 
-              <section>
+              <section style={{marginBottom: "4em"}}>
                 {GothicTitle("Educational Resources")}
                 <p>
                   Community and education is at the heart of our practice. We
@@ -113,11 +113,12 @@ function About() {
               <hr />
               <section>
                 {GothicTitle("Workshops")}
-                {/* <h3>Upcoming Workshops</h3> */}
-                {/* <p>
+                <h3>Upcoming Workshops</h3>
+                <p>
                 <ul className="list-basic subtext">
+                  <li><Link href="https://www.letrastica.com/en/eventos/introduccion-tipografia-generativa-p5js">Letrastica</Link> - Generative Typography, Oct 2022</li>
                 </ul>
-              </p> */}
+              </p>
                 <h3>Previous offerings</h3>
                 <div className="grid">
                   <Link href="https://letterformdesign.com">

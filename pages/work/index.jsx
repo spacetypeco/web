@@ -1,8 +1,12 @@
 import Cursor from "../../components/Cursor";
 import Head from "next/head";
 import ProjectHoverLink from "../../components/ProjectHoverLink";
+import React from "react";
 import Tile from "../../components/Tile";
 import Video from "../../components/Video";
+import createFiller2Sketch from "../../p5/sketches/filler2";
+import createFiller3Sketch from "../../p5/sketches/filler3";
+import createFillerSketch from "../../p5/sketches/filler1";
 import createSketch from "../../p5/sketches/blobsBG";
 import dynamic from "next/dynamic";
 import useImageSizer from "../../hooks/useImageSizer";
@@ -61,6 +65,9 @@ function Works() {
   useSectionThemes();
 
   const sketch = createSketch("bg");
+  const fillerSketch1 = createFillerSketch("filler-1");
+  const fillerSketch2 = createFiller2Sketch("filler-2");
+  const fillerSketch3 = createFiller3Sketch("filler-3");
 
   return (
     <>
@@ -93,7 +100,9 @@ function Works() {
                       <Video datasrc="/works/2022-client-web-existential/cover" />
                     </ProjectHoverLink>
                   </Tile>
-                  <div className="tile rounded tile-w-2 tile-h-7 hide-sm  wipe-down bg-diag-1"></div>
+                  <div id="filler-1" className="tile rounded tile-w-2 tile-h-7 hide-sm wipe-down" style={{border: "3px solid var(--color-accent)"}}>
+                    <ReactP5Wrapper sketch={fillerSketch1} />
+                  </div>
                   <Tile w={4} h={4} title="Vartype">
                     <ProjectHoverLink href="work/2022-vartype" title="Vartype">
                       <Video datasrc="/works/2022-tool-vartype/cover-sm" />
@@ -134,7 +143,9 @@ function Works() {
                     </ProjectHoverLink>
                   </Tile>
 
-                  <div className="tile rounded tile-w-8 tile-h-1 hide-sm  wipe-down bg-diag-2"></div>
+                  <div id="filler-2" className="tile rounded tile-w-8 tile-h-1 hide-sm  wipe-down" style={{opacity: 0.9, border: "3px solid var(--color-accent)"}}>
+                    <ReactP5Wrapper sketch={fillerSketch2} />
+                  </div>
                 </div>
               </section>
 
@@ -310,7 +321,10 @@ function Works() {
                       ></img>
                     </ProjectHoverLink>
                   </Tile>
-                  <div className="tile rounded tile-w-4 tile-h-4 hide-sm wipe-down bg-diag-1"></div>
+                  <div id="filler-3" className="tile rounded tile-w-4 tile-h-4 hide-sm wipe-down bg-diag-1" style={{opacity: 0.9, border: "3px solid var(--color-accent-2)"}}>
+                   <ReactP5Wrapper sketch={fillerSketch3} />
+
+                  </div>
                 </div>
               </section>
             </div>

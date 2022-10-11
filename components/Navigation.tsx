@@ -48,7 +48,7 @@ export default function Navigation({ activeComponentName }) {
                   <a onClick={() => setOpen(false)}>Work</a>
                 </Link>
               </div>
-              <div
+              {/* <div
                 className={
                   activeComponentName === "Type" ? "link active" : "link"
                 }
@@ -56,7 +56,7 @@ export default function Navigation({ activeComponentName }) {
                 <Link href="/typefaces">
                   <a onClick={() => setOpen(false)}>Typefaces</a>
                 </Link>
-              </div>
+              </div> */}
               <div
                 className={
                   activeComponentName === "About" ? "link active" : "link"

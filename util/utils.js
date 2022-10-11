@@ -22,9 +22,13 @@ function manageLoopState(p, canvas, options) {
     }
   };
 
-  document
-    .getElementById("sketches-container")
-    .addEventListener("scroll", updateState);
+  if (options && options.scrollContainer) {
+    options.scrollContainer.addEventListener("scroll", updateState);
+  } else {
+    document
+      .getElementById("sketches-container")
+      .addEventListener("scroll", updateState);
+  }
 
   updateState();
   return updateState;
