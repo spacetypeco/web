@@ -23,17 +23,17 @@ export default function EttaTypeface() {
             the heyday of mid 19th Century wood type, but filters it through
             1960s photo-type sensibilities.
           </p>
+          <p>
+              Featured on:{" "}
+              <a href="https://woodtype.org/pages/copy-of-wood-type-legacy-project">
+                Hamilton Wood Type Legacy Project →
+              </a>
+            </p>
           <div className="credits">
             <span>Client: Hamilton Wood Type & Printing Museum</span>
             <span>
               Typeface & Visual Design Collaboration:{" "}
               <a href="https://fairetype.com/">Faire Type</a>
-            </span>
-            <span>
-              Featured on:{" "}
-              <a href="https://woodtype.org/pages/copy-of-wood-type-legacy-project">
-                Hamilton Wood Type Legacy Project →
-              </a>
             </span>
           </div>
         </>
