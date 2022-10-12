@@ -100,7 +100,7 @@ function Works() {
                       <Video datasrc="/works/2022-client-web-existential/cover" />
                     </ProjectHoverLink>
                   </Tile>
-                  <div id="filler-1" className="tile rounded tile-w-2 tile-h-7 hide-sm wipe-down" style={{border: "3px solid var(--color-accent)"}}>
+                  <div id="filler-1" className="tile rounded tile-w-2 tile-h-7 hide-sm wipe-down" style={{border: "3px solid var(--color-accent)", opacity: "90%"}}>
                     <ReactP5Wrapper sketch={fillerSketch3} />
                   </div>
                   <Tile w={4} h={4} title="Vartype">
