@@ -623,6 +623,10 @@ to {
   transition: filter var(--theme-transition-time);
 }
 
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
 .overflow-y-hidden {
   overflow-y: hidden;
 }
@@ -858,6 +862,7 @@ to {
   color: var(--color-white);
   display: inline-block;
   padding: 1em 2em;
+  border: 1px solid var(--color-white); /* not required, but this forces certain browsers to show the border image below */
   border-radius: 4px;
   border-image:linear-gradient(233deg, #e56420, #c22525, #3d9c31, #37bbde) 2 / 2px;
   animation: hue-rotate 5s linear infinite;
