@@ -23,7 +23,7 @@ export default function AllidaImprint() {
           </p>
           <div className="credits">
             <span>Client: Harper Collins Publishers</span>
-<span>Art Direction: Jessie Gang</span>
+            <span>Art Direction: Jessie Gang</span>
           </div>
         </>
       }

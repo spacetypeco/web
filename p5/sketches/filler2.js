@@ -63,7 +63,7 @@ export default function (divId) {
       for (let x = left; x <= right; x = x + step) {
         let z = 10 * Math.sin(0.1 * x + 0.01 * p.frameCount);
 
-        let val = x + 150 + p.frameCount;
+        let val = x + 150 + 0.5 * p.frameCount;
         // let u = p.map(val, 0, 256, 0, p.map(p.mouseX, 0, p.width, 1, 2, true));
 
         let u;
