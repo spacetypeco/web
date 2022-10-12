@@ -56,7 +56,7 @@ function App({ Component, pageProps }) {
         <meta property="twitter:creator" content="@spacetypeco" />
         <meta
           property="twitter:image"
-          content="https:/www.spacetypeco.com/img/social_image.png"
+          content="https://www.spacetypeco.com/img/social_image.png"
         />
         <meta property="twitter:image:alt" content="Space Type logo" />
 
