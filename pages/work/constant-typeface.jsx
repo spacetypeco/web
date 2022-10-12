@@ -21,6 +21,9 @@ export default function ConstantTypeface() {
             mastheads and large-scale environmental design, where it can catch
             the eye for its assertive but playful nature.
           </p>
+          <div className="credits">
+            <span>Advisor: Sumner Stone</span>
+          </div>
         </>
       }
     >

@@ -22,6 +22,10 @@ export default function ExistentialCo() {
             Their launch campaign, <i>'Why are we here?'</i> invites visitors to examine, explore, and celebrate our individual and shared existence.
             Visitors' answers are featured on social media and can be downloaded and shared directly from the website.
           </p>
+          <div className="credits">
+          <span>Client: Existential Co.</span>
+          <span>Branding & Art Direction: <a href="https://www.pact.studio/">Studio Pact</a></span>
+          </div>
         </>
       }
     >

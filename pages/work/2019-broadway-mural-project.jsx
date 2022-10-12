@@ -7,17 +7,22 @@ export default function BroadwayMural() {
       intro={
         <>
           <p>
-            Space Type was commissioned to paint a mural on the 2nd floor of 120 Broadway 
-            in New York City. Each letter contains an iconic scene or building that can 
-            be seen from the iconic Broadway street.
+            Space Type was commissioned to paint a mural on the 2nd floor of 120
+            Broadway in New York City. Each letter contains an iconic scene or
+            building that can be seen from the iconic Broadway street.
           </p>
-          <p class="badge">Client: Silverstein Properties</p>
+          <div class="credits">
+            <span>Client: Silverstein Properties</span>
+          </div>
         </>
       }
     >
       <div className="project-grid">
         <div className="tile-w-12 tile-h-6">
-          <img data-src="/works/2019-client-mural-broadway/wide-still" data-fmt="jpg"></img>
+          <img
+            data-src="/works/2019-client-mural-broadway/wide-still"
+            data-fmt="jpg"
+          ></img>
         </div>
         <div className="tile tile-w-12 tile-h-6" style={{ height: "100%" }}>
           <iframe

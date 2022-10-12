@@ -13,6 +13,10 @@ export default function MakeNew() {
             compiled into a website showcasing individual works.
           </p>
           <p>All motion graphics were built for the web using p5.js and custom shaders.</p>
+          <div className="credits">
+            <span>Client: Panasonic</span>
+            <span>Art Direction: Spoon Inc.</span>
+          </div>
         </>
       }
     >

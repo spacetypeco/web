@@ -7,9 +7,14 @@ export default function BroadwayMural() {
       intro={
         <>
           <p>
-          This classic English pangram was commissioned for <i>‘Found In Translation’</i>, an exhibit in New York featuring Latin and Korean typographic posters.</p>
+            This classic English pangram was commissioned for{" "}
+            <i>‘Found In Translation’</i>, an exhibit in New York featuring
+            Latin and Korean typographic posters.
+          </p>
 
-<p className="badge">Client: Stigma & Cognition</p>
+          <div className="credits">
+            <span>Client: Stigma & Cognition</span>
+          </div>
         </>
       }
     >

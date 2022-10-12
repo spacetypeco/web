@@ -303,7 +303,7 @@ function Works() {
                       title="The Winter Garden"
                     >
                       <img
-                        data-src="/works/2022-winter-garden-cover/mockup"
+                        data-src="/works/2022-winter-garden-cover/mockup-new"
                         data-fmt="png"
                       ></img>
                     </ProjectHoverLink>

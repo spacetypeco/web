@@ -7,16 +7,27 @@ export default function BroadwayMural() {
       title="SFPC - Communication"
       intro={
         <>
-          
           <p>
-            Created during residency with the School for Poetic Computation, this device brings the power of communication into collaboration with physical machinations
-            to reflect the seismic power of language to inspire and create cultural movements.
-            </p>
-              <p>Motors and cams form physical waves under a bed of mounted rods, creating the seismic thrust for individual strips to join together into a single collective voice.</p>
+            Created during residency with the School for Poetic Computation,
+            this device brings the power of communication into collaboration
+            with physical machinations to reflect the seismic power of language
+            to inspire and create cultural movements.
+          </p>
+          <p>
+            Motors and cams form physical waves under a bed of mounted rods,
+            creating the seismic thrust for individual strips to join together
+            into a single collective voice.
+          </p>
 
-              <p>Materials: wooden cams, acrylic rods, plywood, 2812b LED strips, and openFrameworks</p>
-            
-<p>Advisor: CW&T, Zach Lieberman from the School for Poetic Computation</p>
+          <p>
+            Materials: wooden cams, acrylic rods, plywood, 2812b LED strips, and
+            openFrameworks
+          </p>
+          <div className="credits">
+          <span>
+            Advisor: CW&T, Zach Lieberman from <a href="https://sfpc.study/">SFPC</a>
+          </span>
+          </div>
         </>
       }
     >
@@ -35,10 +46,10 @@ export default function BroadwayMural() {
 ></iframe>
 </div> */}
         <div className="tile-w-12 tile-h-6">
-          <Video datasrc="/works/sfpc-communication/IMG_1985-trimmed"/>
+          <Video datasrc="/works/sfpc-communication/IMG_1985-trimmed" />
         </div>
         <div className="tile-w-12 tile-h-6">
-          <Video datasrc="/works/sfpc-communication/IMG_2022-trimmed"/>
+          <Video datasrc="/works/sfpc-communication/IMG_2022-trimmed" />
         </div>
       </div>
     </ProjectDetails>
