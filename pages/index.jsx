@@ -100,7 +100,7 @@ function Home() {
       >
         <div className="flex-v flex-centered-v-h flex-centered-v-v" style={{flex: "1", minHeight: "calc(90%)"}}>
         {/* <div className="flex-v flex-centered flex-centered-v-h" style={{flex: "1", minHeight: "calc(90vh - 13em)"}}> */}
-          <div className="overflow-y-hidden">
+          <div className="overflow-x-hidden overflow-y-hidden">
             <div className="space-intro-logo-inner">
             <div style={{width: '100%', height: '100%', display: 'flex', alignItems: 'end', position: 'absolute', transform: 'translateX(5px) translateY(-5px)', zIndex: '-1'}}>
               <div className="bg"></div>
