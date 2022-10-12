@@ -43,17 +43,22 @@ function App({ Component, pageProps }) {
         />
         <meta property="og:url" content="https://www.spacetypeco.com" />
         <meta property="og:type" content="website" />
-        {/* <meta
+        <meta
           property="og:image"
-          content="https://spacetypeco.com/social_image.png"
+          content="https://www.spacetypeco.com/social_image.png"
+        />
+        <meta property="twitter:title" content="Space Type" />
+        <meta
+          property="twitter:description"
+          content="Space Type is an NYC-based studio practice operating at the intersection of type and technology."
         />
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:creator" content="@spacetypeco" />
         <meta
           property="twitter:image"
-          content="https://spacetypeco.com/social_image.png"
+          content="https:/www.spacetypeco.com/social_image.png"
         />
-        <meta property="twitter:image:alt" content="Space Type logo" /> */}
+        <meta property="twitter:image:alt" content="Space Type logo" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
