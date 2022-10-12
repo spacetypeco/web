@@ -1,0 +1,46 @@
+.circle {
+  position: absolute;
+  width: 60px; 
+  height: 60px; 
+  background-color: transparent;
+  border-radius: 50%;  
+  z-index: 1000;
+  pointer-events: none;
+  transition: width 0.5s, height 0.5s, background-color 0.5s, border 0.5s;
+  transform: translate(-50%, -50%);
+  backdrop-filter: invert(100%);
+}
+
+.circletext {
+  position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  width: 90px;
+  height: 90px;
+  font-size: 0.8em;
+  text-align: center;
+  color: #FFFFFF;
+  mix-blend-mode: difference;
+  z-index: 2000;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+
+}
+
+.circle.hovered {
+    background-color: #FFFFFFaa;
+  width: 100px;
+  height: 100px;
+}
+
+.project-grid a {
+    cursor: none;
+}
+
+@media (max-width: 768px) {
+  .project-grid a {
+    cursor: pointer;
+  }
+}

@@ -1,8 +1,10 @@
 .light {
     background-color: var(--color-white);
     color: var(--color-black);
+    transition: background-color var(--theme-transition-time), color var(--theme-transition-time);
 }
 
 .light p {
     color: var(--color-black);
+    transition: background-color var(--theme-transition-time), color var(--theme-transition-time);
 }

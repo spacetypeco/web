@@ -5,9 +5,11 @@
   opacity: 0;
   transition: opacity 1s;
   scroll-snap-align: end;
+  z-index: 1;
+  background-color: var(--color-black);
 }
 
-.footer p {
+.footer p, .footer ul {
   font-size: 0.8em;
 }
 
@@ -17,6 +19,10 @@
 
 .footer a {
   color: var(--color-accent);
+}
+
+.theme-light .footer a {
+  color: var(--color-accent-2);
 }
 
 @media (max-width: 768px) {

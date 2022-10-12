@@ -4,15 +4,28 @@
  * We add a shared stylesheet and set the charset here.
  */
 
-import "../styles/app.css";
+import "../styles/animations.css";
+import "../styles/app.scss";
+import "../styles/svg.css";
 
 import Footer from "../components/Footer";
 import Head from "next/head";
+import MouseContextProvider from "../hooks/context/MouseContext";
 import Navigation from "../components/Navigation";
 import { useRouter } from "next/router";
+import { useState } from "react";
 
 function App({ Component, pageProps }) {
   const router = useRouter();
+
+  const inWork = router.pathname.match(/\/work.*$/);
+
+  let theme = inWork ? "theme-light" : "";
+  let globalClassNames = `${theme}`;
+
+  if (Component.displayName == "Home") {
+    globalClassNames += " full-w full-h";
+  }
 
   return (
     <>
@@ -30,17 +43,22 @@ function App({ Component, pageProps }) {
         />
         <meta property="og:url" content="https://www.spacetypeco.com" />
         <meta property="og:type" content="website" />
-        {/* <meta
+        <meta
           property="og:image"
-          content="https://spacetypeco.com/social_image.png"
+          content="https://www.spacetypeco.com/social_image.png"
+        />
+        <meta property="twitter:title" content="Space Type" />
+        <meta
+          property="twitter:description"
+          content="Space Type is an NYC-based studio practice operating at the intersection of type and technology."
         />
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:creator" content="@spacetypeco" />
         <meta
           property="twitter:image"
-          content="https://spacetypeco.com/social_image.png"
+          content="https:/www.spacetypeco.com/social_image.png"
         />
-        <meta property="twitter:image:alt" content="Space Type logo" /> */}
+        <meta property="twitter:image:alt" content="Space Type logo" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -71,16 +89,21 @@ function App({ Component, pageProps }) {
         <meta name="theme-color" content="#FFFFFF" />
       </Head>
       <div
-        className="full-w full-h"
+        id="component-container"
+        className={globalClassNames}
         style={{
           display: "flex",
           flexDirection: "column",
           minHeight: "100%",
           justifyContent: "flex-start",
+          backgroundColor: "var(--color-black)",
+          transition: "background-color 0.25s",
         }}
       >
         <Navigation activeComponentName={Component.displayName} />
-        <Component {...pageProps} />
+        <MouseContextProvider>
+          <Component {...pageProps} />
+        </MouseContextProvider>
         {Component.displayName !== "Home" && <Footer />}
       </div>
       <div id="p5_loading" style={{ display: "none" }} />

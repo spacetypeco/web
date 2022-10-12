@@ -33,10 +33,10 @@ export default function Footer() {
   return (
     <div className="footer" ref={ref}>
       <div
-        className="flex-h flex-v-sm"
+        className="flex-h flex-v-sm flex-gap-2"
         style={{
           paddingTop: "1em",
-          borderTop: "white 1px solid",
+          borderTop: "var(--color-white) 1px solid",
         }}
       >
         <div className="flex-item-3-5 flex-item-sm-1">
@@ -47,24 +47,23 @@ export default function Footer() {
           <NewsletterSignup />
         </div>
         <div className="flex-item-2-5 flex-item-sm-1">
-          <h5>Space Type</h5>
-          <p className="subtext">
-            <ul className="list-basic">
-              <li>{HelloSpaceType}</li>
-              <li>{Instagram}</li>
-            </ul>
-          </p>
-          <h5>Services</h5>
-          <p className="subtext">
-            <ul className="list-basic list-col-lg-2-sm-1">
-              <li>Brand Strategy</li>
-              <li>Identity Systems</li>
-              <li>Web and Digital Design</li>
-              <li>Software Development</li>
-              <li>Custom Type Design</li>
-              <li>Retail Typeface Licensing</li>
-            </ul>
-          </p>
+          <p className="bold">Space Type</p>
+
+          <ul className="list-basic">
+            <li>{HelloSpaceType}</li>
+            <li>{Instagram}</li>
+          </ul>
+
+          <p className="bold">Services</p>
+
+          <ul className="list-basic list-col-lg-2-sm-1">
+            <li>Brand Strategy</li>
+            <li>Identity Systems</li>
+            <li>Web and Digital Design</li>
+            <li>Software Development</li>
+            <li>Custom Type Design</li>
+            <li>Retail Typeface Licensing</li>
+          </ul>
         </div>
       </div>
     </div>
