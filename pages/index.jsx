@@ -106,7 +106,7 @@ function Home() {
               <div className="bg"></div>
             </div>
           <LogoWhite
-            style={{ width: "200px", height: "200px", paddingTop: "2em" }}
+            style={{ width: "200px", height: "200px", marginTop: "2em" }}
           />
           </div></div>
           <div className="markdown-body" style={{textAlign: "center", paddingTop: "2em"}}>
