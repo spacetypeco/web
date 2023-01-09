@@ -116,7 +116,7 @@ function About() {
                 <h3>Upcoming Workshops</h3>
                 <p>
                 <ul className="list-basic subtext">
-                  <li><Link href="https://www.letrastica.com/en/eventos/introduccion-tipografia-generativa-p5js">Letrastica</Link> - Generative Typography, Oct 2022</li>
+                  <li><Link href="https://www.typeelectives.com/courses/intro-to-generative-typography-with-p5js-sp-23">Type Electives</Link> - Intro to Generative Typography with p5.js, Jan-Apr 2023</li>
                 </ul>
               </p>
                 <h3>Previous offerings</h3>
@@ -139,6 +139,7 @@ function About() {
                 </div>
                 <p>
                   <ul className="list-basic subtext">
+                  <li><Link href="https://www.letrastica.com/en/eventos/introduccion-tipografia-generativa-p5js">Letrastica</Link> - Generative Typography, Oct 2022</li>
                     <li>
                       <Link href="https://letterformarchive.org/education/">
                         Letterform Archive
