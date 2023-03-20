@@ -30,10 +30,10 @@ export default function ResponsiveImage(props: ImageProps) {
         alt={props.alt}
         src={props.src}
         layout="fill"
-        style={{
-          borderRadius:
-            props.roundedBorder === undefined ? 10 : props.roundedBorder,
-        }}
+        // style={{
+        //   borderRadius:
+        //     props.roundedBorder === undefined ? 10 : props.roundedBorder,
+        // }}
       />
     </div>
   );
