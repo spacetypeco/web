@@ -19,8 +19,9 @@ function App({ Component, pageProps }) {
   const router = useRouter();
 
   const inWork = router.pathname.match(/\/work.*$/);
+  const inPrints = router.pathname.match(/prints.*$/);
 
-  let theme = inWork ? "theme-light" : "";
+  let theme = inWork || inPrints ? "theme-light" : "";
   let globalClassNames = `${theme}`;
 
   if (Component.displayName == "Home") {

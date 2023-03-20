@@ -23,7 +23,7 @@ const ReactP5Wrapper = dynamic(
 
 require("../../util/utils.js");
 
-const GothicTitle = (txt, classes = "", pClasses="") => {
+const GothicTitle = (txt, classes = "", pClasses = "") => {
   return (
     <>
       <div className={classes} style={{ display: "grid" }}>
@@ -49,7 +49,7 @@ const GothicTitle = (txt, classes = "", pClasses="") => {
         </p>
         <p
           className={`h1 label-accent note wipe-down-on-scroll-0 no-delay gothic-layer-2 title title--tall ${pClasses}`}
-          style={{ gridArea: "1 / 1", color: "var(--color-white)", }}
+          style={{ gridArea: "1 / 1", color: "var(--color-white)" }}
         >
           {txt}
         </p>
@@ -89,7 +89,9 @@ function Works() {
             <div className="fade-in content-top content-wide">
               <section data-theme="theme-light">
                 {GothicTitle(
-                  "We work across physical and digital media to build bridges between type and technology.", "", "title--tall-no-top-sm"
+                  "We work across physical and digital media to build bridges between type and technology.",
+                  "",
+                  "title--tall-no-top-sm"
                 )}
                 <div className="project-grid project-grid--full-w">
                   <Tile w={6} h={4} title="Existential Co.">
@@ -100,7 +102,14 @@ function Works() {
                       <Video datasrc="/works/2022-client-web-existential/cover" />
                     </ProjectHoverLink>
                   </Tile>
-                  <div id="filler-1" className="tile rounded tile-w-2 tile-h-7 hide-sm wipe-down" style={{border: "3px solid var(--color-accent)", opacity: "90%"}}>
+                  <div
+                    id="filler-1"
+                    className="tile rounded tile-w-2 tile-h-7 hide-sm wipe-down"
+                    style={{
+                      border: "3px solid var(--color-accent)",
+                      opacity: "90%",
+                    }}
+                  >
                     <ReactP5Wrapper sketch={fillerSketch3} />
                   </div>
                   <Tile w={4} h={4} title="Vartype">
@@ -143,7 +152,14 @@ function Works() {
                     </ProjectHoverLink>
                   </Tile>
 
-                  <div id="filler-2" className="tile rounded tile-w-8 tile-h-1 hide-sm  wipe-down" style={{opacity: 0.9, border: "3px solid var(--color-accent)"}}>
+                  <div
+                    id="filler-2"
+                    className="tile rounded tile-w-8 tile-h-1 hide-sm  wipe-down"
+                    style={{
+                      opacity: 0.9,
+                      border: "3px solid var(--color-accent)",
+                    }}
+                  >
                     <ReactP5Wrapper sketch={fillerSketch2} />
                   </div>
                 </div>
@@ -321,9 +337,15 @@ function Works() {
                       ></img>
                     </ProjectHoverLink>
                   </Tile>
-                  <div id="filler-3" className="tile rounded tile-w-4 tile-h-4 hide-sm wipe-down" style={{opacity: 0.9, border: "3px solid var(--color-accent-2)"}}>
-                   <ReactP5Wrapper sketch={fillerSketch1} />
-
+                  <div
+                    id="filler-3"
+                    className="tile rounded tile-w-4 tile-h-4 hide-sm wipe-down"
+                    style={{
+                      opacity: 0.9,
+                      border: "3px solid var(--color-accent-2)",
+                    }}
+                  >
+                    <ReactP5Wrapper sketch={fillerSketch1} />
                   </div>
                 </div>
               </section>

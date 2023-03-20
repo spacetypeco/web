@@ -60,6 +60,15 @@ export default function Navigation({ activeComponentName }) {
               </div> */}
               <div
                 className={
+                  activeComponentName === "Prints" ? "link active" : "link"
+                }
+              >
+                <Link href="/prints">
+                  <a onClick={() => setOpen(false)}>Prints</a>
+                </Link>
+              </div>
+              <div
+                className={
                   activeComponentName === "About" ? "link active" : "link"
                 }
               >

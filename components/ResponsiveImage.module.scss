@@ -1,0 +1,18 @@
+.imageContainer {
+  width: 100%;
+}
+
+.imageContainer > span {
+  position: unset !important;
+}
+
+.image {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+}
+
+.rounded > span > img {
+  border-radius: 10px;
+}
