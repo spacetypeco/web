@@ -1,0 +1,24 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "ST Felicette Regular", monospace;
+  transition: color var(--theme-transition-time);
+}
+
+p,
+a,
+span,
+ul,
+input {
+  font-family: "ST Monochromic", monospace;
+  font-weight: 70;
+  font-size: 1em;
+}
+
+#nav-area a, .footer p, .footer a, .footer span, .footer ul, .footer input {
+  font-family: "AdelleMonoFlex-Regular", monospace;
+  font-size: reset;
+}

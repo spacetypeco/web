@@ -7,6 +7,8 @@
 import "../styles/animations.css";
 import "../styles/app.scss";
 import "../styles/svg.css";
+import "../styles/style.css";
+import "../styles/footer.css";
 
 import Footer from "../components/Footer";
 import Head from "next/head";
@@ -62,9 +64,6 @@ function App({ Component, pageProps }) {
         <meta property="twitter:image:alt" content="Space Type logo" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-        <link rel="stylesheet" type="text/css" href="/css/style.css" />
-        <link rel="stylesheet" type="text/css" href="/css/footer.css" />
 
         <meta charSet="utf-8" />
         <link
