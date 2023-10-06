@@ -418,7 +418,7 @@ a {
   text-decoration: none;
 }
 
-.content a {
+.content a, .content-wide a {
   color: var(--color-link);
 }
 
@@ -898,12 +898,12 @@ to {
   border-radius: 4px;
 }
 
-.content a {
+.content a, .content-wide a{
   cursor: pointer;
 
 }
 
-.content a.badge:hover {
+.content a.badge:hover, .content-wide a.badge:hover {
   background-color: var(--color-white);
 }
 
