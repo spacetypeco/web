@@ -476,7 +476,21 @@ a {
 }
 
 .content-wide {
-  margin: 0 3em;
+  margin-inline: 3em;
+}
+
+@media (max-width: 1024px) {
+  .content-wide-mobile {
+    margin-inline: 1em;
+  }
+}
+
+.content-left-pad {
+  margin-left: 3rem;
+}
+
+.content-right-pad {
+  margin-right: 3em;
 }
 
 .content-short-bottom {
@@ -605,7 +619,6 @@ a {
 
 @media (min-width: 1600px) {
   .content-wide {
-    margin: auto;
     max-width: 1500px;
   }
 }
@@ -714,7 +727,14 @@ to {
     padding-bottom: 0em;
   }
   .content-wide {
-    margin: 0 1em;
+    margin-inline: 1em;
+  }
+  .content-left-pad {
+    margin-left: 1em;
+  }
+
+  .content-right-pad {
+    margin-right: 1em;
   }
   .flex-v-sm {
     display: flex;

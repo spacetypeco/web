@@ -73,7 +73,7 @@ blockquote, dl, dd, hr, figure, p, pre, ul {
   grid-gap: 1em;
 }
 
-.grid > .grid-item {
+.grid-item {
   transition: 0.5s ease;
 }
 
@@ -164,6 +164,13 @@ blockquote, dl, dd, hr, figure, p, pre, ul {
 .tile.rounded {
   overflow: hidden;
 }
+@media (max-width: 768px) {
+  .tile.rounded--mobile-full-bleed video,
+  .tile.rounded--mobile-full-bleed,
+  .tile.rounded--mobile-full-bleed img {
+    border-radius: 0px;
+  }
+}
 
 .project-details-grid {
   display: grid;
@@ -179,7 +186,7 @@ blockquote, dl, dd, hr, figure, p, pre, ul {
   /* border: white 2px solid; */
 }
 
-.grid .grid-item:hover {
+.grid-item:hover {
   transform: scale(1.03);
 }
 
