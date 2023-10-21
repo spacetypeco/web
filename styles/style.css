@@ -618,8 +618,12 @@ a {
 }
 
 @media (min-width: 1600px) {
-  .content-wide {
+  .content-wide:not(.lg-content-uber-wide) {
+    margin-inline: auto;
     max-width: 1500px;
+  }
+  .lg-content-uber-wide {
+    width: calc(min(1600px, 100vw - 4em));
   }
 }
 

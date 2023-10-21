@@ -1191,7 +1191,7 @@ function About() {
             </div>
 
             <div className="lg:flex justify-center">
-              <section className="content-wide">
+              <section className="content-wide lg-content-uber-wide">
                 <h1 className="text-3xl">Teaching and Workshops</h1>
                 <div className="md:grid grid-cols-12 gap-6 hidden md:block">
                   {[0, 1].map((tableNum) =>
