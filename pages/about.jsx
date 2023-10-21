@@ -841,43 +841,45 @@ function About() {
                       </a>
                     </div>
                     <div
-                      className="col-span-6 flex items-center justify-center"
+                      className="col-span-6 items-center"
                       style={{
+                        display: "grid",
                         backgroundColor: "#1E3432",
                       }}
                     >
-                      <a href="https://chalk.ai">
-                        <div className="relative">
+                      <div className="relative">
+                        <a href="https://chalk.ai">
                           <Video
                             datasrc="/works/2023-client-chalk/chalk-full-crop"
                             style={{
-                              objectFit: "fill",
+                              objectFit: "contain",
                               width: "100%",
-                              // height: "100%",
+                              height: "100%",
                             }}
                           />
-                          <div
-                            style={{
-                              backgroundColor: "#1E3432",
-                              width: "100%",
-                              height: "5px",
-                              position: "absolute",
-                              top: 0,
-                              zIndex: 10,
-                            }}
-                          ></div>
-                        </div>
-                      </a>
+                        </a>
+                        <div
+                          style={{
+                            backgroundColor: "#1E3432",
+                            width: "100%",
+                            height: "5px",
+                            position: "absolute",
+                            top: 0,
+                            zIndex: 10,
+                          }}
+                        ></div>
+                      </div>
                     </div>
                     <div
-                      className="col-span-6 flex items-center justify-center"
+                      className="col-span-6 items-center"
                       style={{
+                        display: "grid",
                         backgroundColor: "#D8E2DC",
                       }}
                     >
-                      <Link href="/work/2022-vartype">
-                        <a>
-                          <div className="relative">
+                      <div className="relative">
+                        <Link href="/work/2022-vartype">
+                          <a>
                             <Video
                               datasrc="/works/2022-tool-vartype/fitv2"
                               style={{
@@ -918,9 +920,9 @@ function About() {
                                 zIndex: 30,
                               }}
                             ></div>
-                          </div>
-                        </a>
-                      </Link>
+                          </a>
+                        </Link>
+                      </div>
                     </div>
                     <div className="col-span-6">
                       <Link href="/work/2022-existentialco">
@@ -971,10 +973,10 @@ function About() {
                       Branding, Identity & Typeface Design
                     </p>
                     <p className="mb-8">
-                      We have nearly a decade of experience in lettering,
-                      calligraphy, and typeface design. We offer retail typeface
-                      licensing as well as custom branding and typeface design
-                      to fit your unique identity.
+                      We bring nearly a decade's worth of experience in
+                      lettering, calligraphy, and typeface design. We offer
+                      retail typeface licensing as well as custom branding and
+                      typeface design to fit your unique identity.
                     </p>
                     <div className="grid" style={{ gap: "0.25rem" }}>
                       <div className="col-span-6">
