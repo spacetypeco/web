@@ -103,37 +103,37 @@ main {
 
 @font-face {
   font-family: "ST Monochromic";
-  src: url("/fonts/Monochromic/STMonochromic230724VF.ttf");
+  src: url("https://fonts-priv.vercel.app/123120592tueghuaiginbr3tr3/STMonochromic230724VF.ttf");
 }
 
 @font-face {
   font-family: "ST Felicette Bold";
-  src: url("/fonts/ST Felicette v0.2/Felicettev0.2-Bold.otf");
+  src: url("https://fonts-priv.vercel.app/rj03j0fg2gh32gh20r012rj10fg/Felicettev0.2-Bold.otf");
 }
 
 @font-face {
   font-family: "ST Felicette Extrabold";
-  src: url("/fonts/ST Felicette v0.2/Felicettev0.2-Extrabold.otf");
+  src: url("https://fonts-priv.vercel.app/rj03j0fg2gh32gh20r012rj10fg/Felicettev0.2-Extrabold.otf");
 }
 
 @font-face {
   font-family: "ST Felicette Light";
-  src: url("/fonts/ST Felicette v0.2/Felicettev0.2-Light.otf");
+  src: url("https://fonts-priv.vercel.app/rj03j0fg2gh32gh20r012rj10fg/Felicettev0.2-Light.otf");
 }
 
 @font-face {
   font-family: "ST Felicette Medium";
-  src: url("/fonts/ST Felicette v0.2/Felicettev0.2-Medium.otf");
+  src: url("https://fonts-priv.vercel.app/rj03j0fg2gh32gh20r012rj10fg/Felicettev0.2-Medium.otf");
 }
 
 @font-face {
   font-family: "ST Felicette Regular";
-  src: url("/fonts/ST Felicette v0.2/Felicettev0.2-Regular.otf");
+  src: url("https://fonts-priv.vercel.app/rj03j0fg2gh32gh20r012rj10fg/Felicettev0.2-Regular.otf");
 }
 
 @font-face {
   font-family: "ST Felicette Thin";
-  src: url("/fonts/ST Felicette v0.2/Felicettev0.2-Thin.otf");
+  src: url("https://fonts-priv.vercel.app/rj03j0fg2gh32gh20r012rj10fg/Felicettev0.2-Thin.otf");
 }
 
 .gothic-base {
