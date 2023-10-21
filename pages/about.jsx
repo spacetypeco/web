@@ -952,13 +952,13 @@ function About() {
                   </p>
                 </div>
                 <div className="flex flex-col md:flex-row items-start gap-2 md:gap-1 mt-8 mb-16">
-                  <div className="max-w-md md:max-w-full">
+                  <div className="md:max-w-full">
                     <img src="/img/about-new/web-dev-bhj-faq.png" />
                   </div>
-                  <div className="max-w-md md:max-w-full">
+                  <div className="md:max-w-full">
                     <img src="/img/about-new/web-dev-type-electives.png" />
                   </div>
-                  <div className="max-w-md md:max-w-full">
+                  <div className="md:max-w-full">
                     <img src="/img/about-new/web-dev-existential-ui.png" />
                   </div>
                 </div>
@@ -1079,7 +1079,7 @@ function About() {
               </div>
 
               <div
-                className="flex flex-col lg:grid grid-cols-12 max-w-xl lg:max-w-6xl gap-8 lg:gap-2"
+                className="flex flex-col lg:grid grid-cols-12 md:max-w-xl lg:max-w-6xl gap-8 lg:gap-2 justify-center"
                 style={{ marginTop: "2em" }}
               >
                 <Link href="https://typedesignschool.com">
@@ -1109,7 +1109,7 @@ function About() {
 
                 <Link href="https://letterformdesign.com">
                   <a className="tile tile-w-4 tile-h-4 grid-item">
-                    <img data-src="/img/letterformdesign" data-fmt="png" />
+                    <img src="/img/letterformdesign-1000w.png" />
                     <div className="mt-3 text-md">
                       Type Design & Lettering{" "}
                       <span style={{ fontWeight: 20 }}>→</span>
@@ -1123,7 +1123,7 @@ function About() {
 
                 <Link href="https://generativetype.com">
                   <a className="tile tile-w-4 tile-h-4 grid-item">
-                    <img data-src="/img/generativetype" data-fmt="png" />
+                    <img src="/img/generativetype-1000w.png" />
                     <div className="mt-3 text-md">
                       Generative Typography{" "}
                       <span style={{ fontWeight: 20 }}>→</span>

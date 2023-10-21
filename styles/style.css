@@ -476,7 +476,7 @@ a {
 }
 
 .content-wide {
-  margin-inline: auto;
+  margin-inline: 3em;
 }
 
 @media (max-width: 1024px) {
