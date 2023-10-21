@@ -86,12 +86,9 @@ export default function Navigation({ activeComponentName }) {
   return (
     <>
       <div
-        className="show-sm flex-h flex-end-j"
+        className="show-sm flex-h flex-end-j w-full fixed p-8"
         style={{
           zIndex: 3,
-          padding: "2em",
-          position: "fixed",
-          width: "calc(100% - 4em)",
         }}
       >
         <Hamburger

@@ -770,9 +770,9 @@ function About() {
                   introductory & non-traditional type and technology education
                   to the masses.
                 </p>
-                <div className="flex md:flex-row flex-col items-start gap-2 mt-12 max-w-7xl">
+                <div className="flex md:flex-row flex-col items-start gap-1 md:gap-2 mt-12 max-w-7xl">
                   <div className="flex flex-row gap-2 group">
-                    <div className="">
+                    <div>
                       <img
                         src="/img/about-new/pixel-type-ar.png"
                         className="grow object-contain builders-img"
@@ -786,7 +786,7 @@ function About() {
                       />
                     </div>
                   </div>
-                  <div className="">
+                  <div>
                     <img
                       src="/img/about-new/tapestry.png"
                       className="grow object-contain builders-img"
@@ -813,7 +813,7 @@ function About() {
                   </p>
                 </div>
                 <div
-                  className="lg:grid grid-cols-12 mt-8 mb-16"
+                  className="flex flex-col lg:grid grid-cols-12 mt-8 mb-16 gap-2 md:gap-0"
                   style={{
                     minWidth: "100%",
                     maxWidth: "100%",
@@ -932,7 +932,7 @@ function About() {
                     frameworks.
                   </p>
                 </div>
-                <div className="flex flex-col md:flex-row items-start gap-1 md:gap-1 mt-8 mb-16">
+                <div className="flex flex-col md:flex-row items-start gap-2 md:gap-1 mt-8 mb-16">
                   <div className="max-w-md md:max-w-full">
                     <img src="/img/about-new/web-dev-bhj-faq.png" />
                   </div>
@@ -979,7 +979,7 @@ function About() {
                     We print and produce small-scale publications as well as
                     large-format murals, tapestries, and other physical goods.
                   </p>
-                  <div className="flex flex-col items-start gap-2 md:gap-1">
+                  <div className="flex flex-col items-start gap-1 md:gap-1">
                     <div className="flex flex-row items-start gap-1 md:gap-1">
                       <div className="col-span-6">
                         <img src="/img/about-new/production-scarves.png" />
@@ -1137,8 +1137,11 @@ function About() {
                       <img src="/img/about-new/community-2.png" />
                       <div className="flex flex-col gap-1 mt-2 pr-1 items-end w-full">
                         <span className="text-xs">Something something</span>
-                        <span className="text-xs">
-                          Letterform Archive, San Francisco
+                        <span className="text-xs text-right">
+                          Letterform Archive
+                          <br className="md:hidden" />
+                          <span className="hidden md:inline-block">,</span> San
+                          Francisco
                         </span>
                       </div>
                     </div>
@@ -1146,8 +1149,11 @@ function About() {
                       <img src="/img/about-new/community-3.png" />
                       <div className="flex flex-col gap-1 mt-2 pr-1 items-end w-full">
                         <span className="text-xs">Pixel Type Workshop</span>
-                        <span className="text-xs">
-                          Principles G.I. Coffee Shop, Brooklyn
+                        <span className="text-xs text-right">
+                          Principles G.I. Coffee Shop
+                          <br className="md:hidden" />
+                          <span className="hidden md:inline-block">,</span>{" "}
+                          Brooklyn
                         </span>
                       </div>
                     </div>
@@ -1187,7 +1193,7 @@ function About() {
                   {Table(INTERVIEWS_AND_PRESS)}
                 </div>
               </div>
-              <div className="flex flex-row items-start justify-start gap-x-2.5 my-12 max-w-5xl">
+              <div className="flex flex-col md:flex-row items-start justify-start gap-y-2 md:gap-y-0 gap-x-2.5 my-12 max-w-5xl">
                 <div className="flex-1">
                   <img
                     src="/img/about-new/speaking.png"
@@ -1206,7 +1212,7 @@ function About() {
                 {Table(EXHIBITIONS)}
               </div>
               <div className="flex flex-row items-end justify-end min-w-full my-12">
-                <div className="flex flex-row items-end justify-end max-w-4xl gap-x-2.5">
+                <div className="flex flex-col md:flex-row items-end justify-end max-w-4xl gap-y-2 md:gap-y-0 gap-x-2.5">
                   <div style={{ flexGrow: 1 }}>
                     <img
                       src="/img/about-new/zine-table.png"
@@ -1238,7 +1244,7 @@ function About() {
                 className="object-contain h-64 my-12"
               />
               <h1 className="text-2xl lg:text-3xl">
-                Got an idea? Send us a note.
+                Have an idea? Send us a note.
               </h1>
 
               <a href="mailto:hello@spacetypeco.com">
