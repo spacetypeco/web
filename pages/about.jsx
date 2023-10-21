@@ -967,7 +967,7 @@ function About() {
                     </div>
                   </div>
                 </div>
-                <div className="lg:grid grid-cols-12 gap-24 mt-8">
+                <div className="lg:grid grid-cols-12 gap-24 mt-8 mb-16 md:mb-0">
                   <div className="col-span-6">
                     <p className="underline">
                       Branding, Identity & Typeface Design
@@ -1023,9 +1023,9 @@ function About() {
               </section>
             </div>
 
-            <section className="my-24 lg:my-64 content-wide-mobile">
+            <section className="mt-48 mb-24 lg:my-64 content-wide-mobile">
               <h1 className="text-5xl lg:hidden">Studio Partners</h1>
-              <div className="flex flex-col sm:flex-row gap-x-8 md:gap-x-16 lg:mb-24">
+              <div className="flex flex-col sm:flex-row gap-x-8 md:gap-x-16 lg:mb-24 content-right-pad">
                 <div className="flex-1 max-w-2xl">
                   <img src="/img/about-new/kevin.png" />
                 </div>
