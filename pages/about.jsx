@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import Video from "../components/Video";
 import useImageSizer from "../hooks/useImageSizer";
 import useLogo from "../hooks/useLogo";
 
@@ -638,7 +639,11 @@ function About() {
           font-size: 0.7rem;
         }
 
-        #nav-area a,
+        #nav-area a {
+          font-family: "AdelleMonoFlex-Regular", monospace;
+          font-weight: normal;
+        }
+
         .footer p,
         .footer a,
         .footer span,
@@ -709,7 +714,7 @@ function About() {
                 <div className="pt-12 grid grid-cols-12 auto-rows-auto">
                   <div className="relative float-right tile rounded rounded--mobile-full-bleed about-intro--image">
                     {/* TODO: resize image */}
-                    <img src="/img/about-cover-bao.jpg"></img>
+                    <img src="/img/about-cover-bao.png"></img>
                   </div>
                   <div
                     className="z-10 grid-cols-12 about-intro--text content-wide-mobile"
@@ -742,7 +747,7 @@ function About() {
             </section>
 
             {/* overflow-hidden hack for float-right.. */}
-            <section className="w-screen overflow-hidden mb-24 lg:mb-48 mobile:content-wide">
+            <section className="w-screen overflow-hidden mb-24 lg:mt-24 lg:mb-48 mobile:content-wide">
               <div className="md:ml-12 md:float-right content-wide-mobile">
                 <img
                   src="/img/about-new/working-hard.png"
@@ -807,6 +812,110 @@ function About() {
                     design tools to fully-interactive experiences on the web.
                   </p>
                 </div>
+                <div
+                  className="lg:grid grid-cols-12 mt-8 mb-16"
+                  style={{
+                    minWidth: "100%",
+                    maxWidth: "100%",
+                  }}
+                >
+                  <div className="col-span-6">
+                    <Video
+                      datasrc="/works/2023-client-type-electives/type-electives-web-crop"
+                      style={{
+                        objectFit: "fill",
+                        width: "100%",
+                        // height: "100%",
+                      }}
+                    />
+                  </div>
+                  <div
+                    className="col-span-6 flex items-center justify-center"
+                    style={{
+                      backgroundColor: "#1E3432",
+                    }}
+                  >
+                    <div className="relative">
+                      <Video
+                        datasrc="/works/2023-client-chalk/chalk-full-crop"
+                        style={{
+                          objectFit: "fill",
+                          width: "100%",
+                          // height: "100%",
+                        }}
+                      />
+                      <div
+                        style={{
+                          backgroundColor: "#1E3432",
+                          width: "100%",
+                          height: "5px",
+                          position: "absolute",
+                          top: 0,
+                          zIndex: 10,
+                        }}
+                      ></div>
+                    </div>
+                  </div>
+                  <div
+                    className="col-span-6 flex items-center justify-center"
+                    style={{
+                      backgroundColor: "#D8E2DC",
+                    }}
+                  >
+                    <div className="relative">
+                      <Video
+                        datasrc="/works/2022-tool-vartype/fitv2"
+                        style={{
+                          objectFit: "fill",
+                          width: "100%",
+                          // height: "100%",
+                        }}
+                      />
+                      <div
+                        style={{
+                          backgroundColor: "#D8E2DC",
+                          width: "100%",
+                          height: "5px",
+                          position: "absolute",
+                          top: 0,
+                          zIndex: 10,
+                        }}
+                      ></div>
+                      <div
+                        style={{
+                          backgroundColor: "#D8E2DC",
+                          width: "5px",
+                          height: "100%",
+                          position: "absolute",
+                          top: 0,
+                          left: 0,
+                          zIndex: 30,
+                        }}
+                      ></div>
+                      <div
+                        style={{
+                          backgroundColor: "#D8E2DC",
+                          width: "10px",
+                          height: "100%",
+                          position: "absolute",
+                          top: 0,
+                          right: 0,
+                          zIndex: 30,
+                        }}
+                      ></div>
+                    </div>
+                  </div>
+                  <div className="col-span-6">
+                    <Video
+                      datasrc="/works/2022-client-web-existential/cover"
+                      style={{
+                        objectFit: "fill",
+                        width: "100%",
+                        height: "100%",
+                      }}
+                    />
+                  </div>
+                </div>
                 <div className="max-w-2xl">
                   <p className="underline">Web Design and Development</p>
                   <p>
@@ -823,26 +932,69 @@ function About() {
                     frameworks.
                   </p>
                 </div>
+                <div className="flex flex-col md:flex-row items-start gap-1 md:gap-1 mt-8 mb-16">
+                  <div className="max-w-md md:max-w-full">
+                    <img src="/img/about-new/web-dev-bhj-faq.png" />
+                  </div>
+                  <div className="max-w-md md:max-w-full">
+                    <img src="/img/about-new/web-dev-type-electives.png" />
+                  </div>
+                  <div className="max-w-md md:max-w-full">
+                    <img src="/img/about-new/web-dev-existential-ui.png" />
+                  </div>
+                </div>
               </div>
-              <div className="grid gap-8">
+              <div className="lg:grid grid-cols-12 gap-24 mt-8">
                 <div className="col-span-6">
                   <p className="underline">
                     Branding, Identity & Typeface Design
                   </p>
-                  <p>
+                  <p className="mb-8">
                     We have nearly a decade of experience in lettering,
                     calligraphy, and typeface design. We offer retail typeface
                     licensing as well as custom branding and typeface design to
                     fit your unique identity.
                   </p>
+                  <div className="grid" style={{ gap: "0.25rem" }}>
+                    <div className="col-span-6">
+                      <img src="/img/about-new/Type-SFPC-Fundraiser.gif" />
+                    </div>
+                    <div className="col-span-6">
+                      <img src="/img/about-new/Type-Monochromic.png" />
+                    </div>
+                    <div className="col-span-6">
+                      <img src="/img/about-new/Type-HWT.png" />
+                    </div>
+                    <div
+                      className="col-span-6"
+                      style={{ backgroundColor: "#f5f5f5" }}
+                    >
+                      <img src="/img/about-new/Type-Mission-Heart.gif" />
+                    </div>
+                  </div>
                 </div>
                 <div className="col-span-6">
                   <p className="underline">Production and Publication</p>
-                  <p>
+                  <p className="mb-8">
                     We print and produce small-scale publications as well as
-                    large-format murals, tapestries, and other physical goods to
-                    express every message.
+                    large-format murals, tapestries, and other physical goods.
                   </p>
+                  <div className="flex flex-col items-start gap-2 md:gap-1">
+                    <div className="flex flex-row items-start gap-1 md:gap-1">
+                      <div className="col-span-6">
+                        <img src="/img/about-new/production-scarves.png" />
+                      </div>
+                      <div className="col-span-6">
+                        <img src="/img/about-new/production-kittypop.png" />
+                      </div>
+                    </div>
+                    <div className="col-span-12">
+                      <img src="/img/about-new/production-YANA.png" />
+                    </div>
+                    <div className="col-span-12">
+                      <img src="/img/about-new/production-wtc.png" />
+                    </div>
+                  </div>
                 </div>
               </div>
             </section>
@@ -969,7 +1121,7 @@ function About() {
             <section className="mt-24 mb-36">
               <div className="max-w-7xl">
                 <div className="flex flex-col md:flex-row items-start gap-12 md:gap-2 mt-12">
-                  <div className="max-w-md md:max-w-full">
+                  <div className="md:max-w-full">
                     <img src="/img/about-new/community-1.png" />
                     <div className="flex flex-col gap-1 mt-2 pr-1 items-end w-full">
                       <span className="text-xs">

@@ -15,7 +15,6 @@ import Head from "next/head";
 import MouseContextProvider from "../hooks/context/MouseContext";
 import Navigation from "../components/Navigation";
 import { useRouter } from "next/router";
-import { useState } from "react";
 
 function App({ Component, pageProps }) {
   const router = useRouter();

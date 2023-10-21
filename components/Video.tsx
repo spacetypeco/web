@@ -14,11 +14,11 @@ const sizedSrc = (dataSrc, width) => {
     const px = width * window.devicePixelRatio;
 
     let postfix = "";
-    if (px >= 1500) {
+    if (px > 1500) {
       postfix = "-2000w";
-    } else if (px >= 1000) {
+    } else if (px > 1000) {
       postfix = "-1500w";
-    } else if (px >= 500) {
+    } else if (px > 500) {
       postfix = "-1000w";
     } else {
       postfix = "-500w";
@@ -48,6 +48,7 @@ export default function Video({ datasrc, src, style, poster }: VideoProps) {
     const node = ref.current;
     // only use new width if it's larger. never try to load a new video if we're downsizing.
     const newWidth = node?.getBoundingClientRect().width;
+
     if (!dimensions.width || dimensions.width < newWidth) {
       setDimensions({ width: newWidth, pixelRatio: window.devicePixelRatio });
     }
@@ -79,6 +80,7 @@ export default function Video({ datasrc, src, style, poster }: VideoProps) {
   }, [inView]);
 
   let displaySrc = src || sizedSrc(datasrc, dimensions.width);
+  console.log({ dwidth: dimensions.width, displaySrc });
 
   const displayPoster =
     poster ||
