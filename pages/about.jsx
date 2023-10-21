@@ -976,7 +976,7 @@ function About() {
                     </div>
                   </div>
                 </div>
-                <div className="lg:grid grid-cols-12 gap-24 mt-8 mb-16 md:mb-0">
+                <div className="lg:grid grid-cols-12 gap-24 mb-16 md:mb-0">
                   <div className="col-span-6">
                     <p className="underline">
                       Branding, Identity & Typeface Design
