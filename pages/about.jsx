@@ -803,81 +803,53 @@ function About() {
               </div>
             </section>
 
-            <section className="content-wide content-wide-mobile max-w-7xl">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl max-w-lg lg:max-w-2xl mt-24">
-                Our Capabilities
-              </h1>
-              <div>
-                <div className="max-w-2xl">
-                  <p className="underline">
-                    Interactive Systems and Generative Tools
-                  </p>
-                  <p>
-                    We build playful, joyful, and surprising experiences that
-                    challenge familiar notions of type, motion, and interaction
-                    on the web. We create everything from internal generative
-                    design tools to fully-interactive experiences on the web.
-                  </p>
-                </div>
-                <div
-                  className="flex flex-col lg:grid grid-cols-12 mt-8 mb-16 gap-2 md:gap-0"
-                  style={{
-                    minWidth: "100%",
-                    maxWidth: "100%",
-                  }}
-                >
-                  <div className="col-span-6">
-                    <a href="https://typeelectives.com">
-                      <Video
-                        datasrc="/works/2023-client-type-electives/type-electives-web-crop"
-                        style={{
-                          objectFit: "fill",
-                          width: "100%",
-                          // height: "100%",
-                        }}
-                      />
-                    </a>
+            <div className="lg:flex justify-center">
+              <section className="content-wide content-wide-mobile max-w-7xl">
+                <h1 className="text-3xl md:text-4xl lg:text-5xl max-w-lg lg:max-w-2xl mt-24">
+                  Our Capabilities
+                </h1>
+                <div>
+                  <div className="max-w-2xl">
+                    <p className="underline">
+                      Interactive Systems and Generative Tools
+                    </p>
+                    <p>
+                      We build playful, joyful, and surprising experiences that
+                      challenge familiar notions of type, motion, and
+                      interaction on the web. We create everything from internal
+                      generative design tools to fully-interactive experiences
+                      on the web.
+                    </p>
                   </div>
                   <div
-                    className="col-span-6 flex items-center justify-center"
+                    className="flex flex-col lg:grid grid-cols-12 mt-8 mb-16 gap-2 md:gap-0"
                     style={{
-                      backgroundColor: "#1E3432",
+                      minWidth: "100%",
+                      maxWidth: "100%",
                     }}
                   >
-                    <a href="https://chalk.ai">
-                      <div className="relative">
+                    <div className="col-span-6">
+                      <a href="https://typeelectives.com">
                         <Video
-                          datasrc="/works/2023-client-chalk/chalk-full-crop"
+                          datasrc="/works/2023-client-type-electives/type-electives-web-crop"
                           style={{
                             objectFit: "fill",
                             width: "100%",
                             // height: "100%",
                           }}
                         />
-                        <div
-                          style={{
-                            backgroundColor: "#1E3432",
-                            width: "100%",
-                            height: "5px",
-                            position: "absolute",
-                            top: 0,
-                            zIndex: 10,
-                          }}
-                        ></div>
-                      </div>
-                    </a>
-                  </div>
-                  <div
-                    className="col-span-6 flex items-center justify-center"
-                    style={{
-                      backgroundColor: "#D8E2DC",
-                    }}
-                  >
-                    <Link href="/work/2022-vartype">
-                      <a>
+                      </a>
+                    </div>
+                    <div
+                      className="col-span-6 flex items-center justify-center"
+                      style={{
+                        backgroundColor: "#1E3432",
+                      }}
+                    >
+                      <a href="https://chalk.ai">
                         <div className="relative">
                           <Video
-                            datasrc="/works/2022-tool-vartype/fitv2"
+                            datasrc="/works/2023-client-chalk/chalk-full-crop"
                             style={{
                               objectFit: "fill",
                               width: "100%",
@@ -886,7 +858,7 @@ function About() {
                           />
                           <div
                             style={{
-                              backgroundColor: "#D8E2DC",
+                              backgroundColor: "#1E3432",
                               width: "100%",
                               height: "5px",
                               position: "absolute",
@@ -894,129 +866,160 @@ function About() {
                               zIndex: 10,
                             }}
                           ></div>
-                          <div
-                            style={{
-                              backgroundColor: "#D8E2DC",
-                              width: "5px",
-                              height: "100%",
-                              position: "absolute",
-                              top: 0,
-                              left: 0,
-                              zIndex: 30,
-                            }}
-                          ></div>
-                          <div
-                            style={{
-                              backgroundColor: "#D8E2DC",
-                              width: "10px",
-                              height: "100%",
-                              position: "absolute",
-                              top: 0,
-                              right: 0,
-                              zIndex: 30,
-                            }}
-                          ></div>
                         </div>
                       </a>
-                    </Link>
-                  </div>
-                  <div className="col-span-6">
-                    <Link href="/work/2022-existentialco">
-                      <a>
-                        <Video
-                          datasrc="/works/2022-client-web-existential/cover"
-                          style={{
-                            objectFit: "fill",
-                            width: "100%",
-                            height: "100%",
-                          }}
-                        />
-                      </a>
-                    </Link>
-                  </div>
-                </div>
-                <div className="max-w-2xl">
-                  <p className="underline">Web Design and Development</p>
-                  <p>
-                    We can design, build, and ship your web presence from
-                    beginning to end. We have experience through all stages of
-                    the process and can jump in at any point, from designing
-                    identity systems and layouts to building fast, functional,
-                    and responsive applications.
-                  </p>
-                  <p>
-                    We work with low-code platforms like Webflow, Squarespace,
-                    and Wix, as well as build and maintain custom web and
-                    backend applications in a variety of languages and
-                    frameworks.
-                  </p>
-                </div>
-                <div className="flex flex-col md:flex-row items-start gap-2 md:gap-1 mt-8 mb-16">
-                  <div className="md:max-w-full">
-                    <img src="/img/about-new/web-dev-bhj-faq.png" />
-                  </div>
-                  <div className="md:max-w-full">
-                    <img src="/img/about-new/web-dev-type-electives.png" />
-                  </div>
-                  <div className="md:max-w-full">
-                    <img src="/img/about-new/web-dev-existential-ui.png" />
-                  </div>
-                </div>
-              </div>
-              <div className="lg:grid grid-cols-12 gap-24 mt-8">
-                <div className="col-span-6">
-                  <p className="underline">
-                    Branding, Identity & Typeface Design
-                  </p>
-                  <p className="mb-8">
-                    We have nearly a decade of experience in lettering,
-                    calligraphy, and typeface design. We offer retail typeface
-                    licensing as well as custom branding and typeface design to
-                    fit your unique identity.
-                  </p>
-                  <div className="grid" style={{ gap: "0.25rem" }}>
-                    <div className="col-span-6">
-                      <img src="/img/about-new/Type-SFPC-Fundraiser.gif" />
-                    </div>
-                    <div className="col-span-6">
-                      <img src="/img/about-new/Type-Monochromic.png" />
-                    </div>
-                    <div className="col-span-6">
-                      <img src="/img/about-new/Type-HWT.png" />
                     </div>
                     <div
-                      className="col-span-6"
-                      style={{ backgroundColor: "#f5f5f5" }}
+                      className="col-span-6 flex items-center justify-center"
+                      style={{
+                        backgroundColor: "#D8E2DC",
+                      }}
                     >
-                      <img src="/img/about-new/Type-Mission-Heart.gif" />
+                      <Link href="/work/2022-vartype">
+                        <a>
+                          <div className="relative">
+                            <Video
+                              datasrc="/works/2022-tool-vartype/fitv2"
+                              style={{
+                                objectFit: "fill",
+                                width: "100%",
+                                // height: "100%",
+                              }}
+                            />
+                            <div
+                              style={{
+                                backgroundColor: "#D8E2DC",
+                                width: "100%",
+                                height: "5px",
+                                position: "absolute",
+                                top: 0,
+                                zIndex: 10,
+                              }}
+                            ></div>
+                            <div
+                              style={{
+                                backgroundColor: "#D8E2DC",
+                                width: "5px",
+                                height: "100%",
+                                position: "absolute",
+                                top: 0,
+                                left: 0,
+                                zIndex: 30,
+                              }}
+                            ></div>
+                            <div
+                              style={{
+                                backgroundColor: "#D8E2DC",
+                                width: "10px",
+                                height: "100%",
+                                position: "absolute",
+                                top: 0,
+                                right: 0,
+                                zIndex: 30,
+                              }}
+                            ></div>
+                          </div>
+                        </a>
+                      </Link>
+                    </div>
+                    <div className="col-span-6">
+                      <Link href="/work/2022-existentialco">
+                        <a>
+                          <Video
+                            datasrc="/works/2022-client-web-existential/cover"
+                            style={{
+                              objectFit: "fill",
+                              width: "100%",
+                              height: "100%",
+                            }}
+                          />
+                        </a>
+                      </Link>
+                    </div>
+                  </div>
+                  <div className="max-w-2xl">
+                    <p className="underline">Web Design and Development</p>
+                    <p>
+                      We can design, build, and ship your web presence from
+                      beginning to end. We have experience through all stages of
+                      the process and can jump in at any point, from designing
+                      identity systems and layouts to building fast, functional,
+                      and responsive applications.
+                    </p>
+                    <p>
+                      We work with low-code platforms like Webflow, Squarespace,
+                      and Wix, as well as build and maintain custom web and
+                      backend applications in a variety of languages and
+                      frameworks.
+                    </p>
+                  </div>
+                  <div className="flex flex-col md:flex-row items-start gap-2 md:gap-1 mt-8 mb-16">
+                    <div className="md:max-w-full">
+                      <img src="/img/about-new/web-dev-bhj-faq.png" />
+                    </div>
+                    <div className="md:max-w-full">
+                      <img src="/img/about-new/web-dev-type-electives.png" />
+                    </div>
+                    <div className="md:max-w-full">
+                      <img src="/img/about-new/web-dev-existential-ui.png" />
                     </div>
                   </div>
                 </div>
-                <div className="col-span-6">
-                  <p className="underline">Production and Publication</p>
-                  <p className="mb-8">
-                    We print and produce small-scale publications as well as
-                    large-format murals, tapestries, and other physical goods.
-                  </p>
-                  <div className="flex flex-col items-start gap-1 md:gap-1">
-                    <div className="flex flex-row items-start gap-1 md:gap-1">
+                <div className="lg:grid grid-cols-12 gap-24 mt-8">
+                  <div className="col-span-6">
+                    <p className="underline">
+                      Branding, Identity & Typeface Design
+                    </p>
+                    <p className="mb-8">
+                      We have nearly a decade of experience in lettering,
+                      calligraphy, and typeface design. We offer retail typeface
+                      licensing as well as custom branding and typeface design
+                      to fit your unique identity.
+                    </p>
+                    <div className="grid" style={{ gap: "0.25rem" }}>
                       <div className="col-span-6">
-                        <img src="/img/about-new/production-scarves.png" />
+                        <img src="/img/about-new/Type-SFPC-Fundraiser.gif" />
                       </div>
                       <div className="col-span-6">
-                        <img src="/img/about-new/production-kittypop.png" />
+                        <img src="/img/about-new/Type-Monochromic.png" />
+                      </div>
+                      <div className="col-span-6">
+                        <img src="/img/about-new/Type-HWT.png" />
+                      </div>
+                      <div
+                        className="col-span-6"
+                        style={{ backgroundColor: "#f5f5f5" }}
+                      >
+                        <img src="/img/about-new/Type-Mission-Heart.gif" />
                       </div>
                     </div>
-                    <div className="col-span-12">
-                      <img src="/img/about-new/production-YANA.png" />
-                    </div>
-                    <div className="col-span-12">
-                      <img src="/img/about-new/production-wtc.png" />
+                  </div>
+                  <div className="col-span-6">
+                    <p className="underline">Production and Publication</p>
+                    <p className="mb-8">
+                      We print and produce small-scale publications as well as
+                      large-format murals, tapestries, and other physical goods.
+                    </p>
+                    <div className="flex flex-col items-start gap-1 md:gap-1">
+                      <div className="flex flex-row items-start gap-1 md:gap-1">
+                        <div className="col-span-6">
+                          <img src="/img/about-new/production-scarves.png" />
+                        </div>
+                        <div className="col-span-6">
+                          <img src="/img/about-new/production-kittypop.png" />
+                        </div>
+                      </div>
+                      <div className="col-span-12">
+                        <img src="/img/about-new/production-YANA.png" />
+                      </div>
+                      <div className="col-span-12">
+                        <img src="/img/about-new/production-wtc.png" />
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </section>
+              </section>
+            </div>
 
             <section className="my-24 lg:my-64 content-wide-mobile">
               <h1 className="text-5xl lg:hidden">Studio Partners</h1>
@@ -1185,77 +1188,79 @@ function About() {
               <hr className="w-48 opacity-50" />
             </div>
 
-            <section className="content-wide">
-              <h1 className="text-3xl">Teaching and Workshops</h1>
-              <div className="md:grid grid-cols-12 gap-6 hidden md:block">
-                {[0, 1].map((tableNum) =>
-                  Table(
-                    TEACHING_AND_WORKSHOPS.slice(
-                      tableNum * teachingSplitIndex,
-                      (tableNum + 1) * teachingSplitIndex
+            <div className="lg:flex justify-center">
+              <section className="content-wide">
+                <h1 className="text-3xl">Teaching and Workshops</h1>
+                <div className="md:grid grid-cols-12 gap-6 hidden md:block">
+                  {[0, 1].map((tableNum) =>
+                    Table(
+                      TEACHING_AND_WORKSHOPS.slice(
+                        tableNum * teachingSplitIndex,
+                        (tableNum + 1) * teachingSplitIndex
+                      )
                     )
-                  )
-                )}
-              </div>
-              <div className="md:hidden">{Table(TEACHING_AND_WORKSHOPS)}</div>
-              {/* TODO: remove manual margin .grid override */}
-              <div
-                className="md:grid grid-cols-12 gap-6"
-                style={{ marginTop: "3rem" }}
-              >
-                <div className="col-span-6 mb-12 md:mb-0">
-                  <h1 className="text-3xl">Select Speaking Engagements</h1>
-                  {Table(SPEAKING_ENGAGEMENTS)}
-                </div>{" "}
-                <div className="col-span-6">
-                  <h1 className="text-3xl">Interviews and Press</h1>
-                  {Table(INTERVIEWS_AND_PRESS)}
+                  )}
                 </div>
-              </div>
-              <div className="flex flex-col md:flex-row items-start justify-start gap-y-2 md:gap-y-0 gap-x-2.5 my-12 max-w-5xl">
-                <div className="flex-1">
-                  <img
-                    src="/img/about-new/speaking.png"
-                    className="object-contain"
-                  />
-                </div>
-                <div className="flex-1">
-                  <img
-                    src="/img/about-new/exhibition.png"
-                    className="object-contain flex-1"
-                  />
-                </div>
-              </div>
-              <div className="max-w-lg">
-                <h1 className="text-3xl">Select Exhibitions</h1>
-                {Table(EXHIBITIONS)}
-              </div>
-              <div className="flex flex-row items-end justify-end min-w-full my-12">
-                <div className="flex flex-col md:flex-row items-end justify-end max-w-4xl gap-y-2 md:gap-y-0 gap-x-2.5">
-                  <div style={{ flexGrow: 1 }}>
-                    <img
-                      src="/img/about-new/zine-table.png"
-                      className="object-fill"
-                    />
-                  </div>
-                  <div style={{ flexShrink: 1 }}>
-                    <img
-                      src="/img/about-new/zine-hester-st-fair.png"
-                      className="object-fill"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="flex flex-row justify-end content-left-pad">
+                <div className="md:hidden">{Table(TEACHING_AND_WORKSHOPS)}</div>
+                {/* TODO: remove manual margin .grid override */}
                 <div
-                  className="max-w-lg"
-                  style={{ minWidth: "calc(min(32rem, 100vw - 2rem))" }}
+                  className="md:grid grid-cols-12 gap-6"
+                  style={{ marginTop: "3rem" }}
                 >
-                  <h1 className="text-3xl">Publication Fairs</h1>
-                  {Table(PUBLICATION_FAIRS)}
+                  <div className="col-span-6 mb-12 md:mb-0">
+                    <h1 className="text-3xl">Select Speaking Engagements</h1>
+                    {Table(SPEAKING_ENGAGEMENTS)}
+                  </div>{" "}
+                  <div className="col-span-6">
+                    <h1 className="text-3xl">Interviews and Press</h1>
+                    {Table(INTERVIEWS_AND_PRESS)}
+                  </div>
                 </div>
-              </div>
-            </section>
+                <div className="flex flex-col md:flex-row items-start justify-start gap-y-2 md:gap-y-0 gap-x-2.5 my-12 max-w-5xl">
+                  <div className="flex-1">
+                    <img
+                      src="/img/about-new/speaking.png"
+                      className="object-contain"
+                    />
+                  </div>
+                  <div className="flex-1">
+                    <img
+                      src="/img/about-new/exhibition.png"
+                      className="object-contain flex-1"
+                    />
+                  </div>
+                </div>
+                <div className="max-w-lg">
+                  <h1 className="text-3xl">Select Exhibitions</h1>
+                  {Table(EXHIBITIONS)}
+                </div>
+                <div className="flex flex-row items-end justify-end min-w-full my-12">
+                  <div className="flex flex-col md:flex-row items-end justify-end max-w-4xl gap-y-2 md:gap-y-0 gap-x-2.5">
+                    <div style={{ flexGrow: 1 }}>
+                      <img
+                        src="/img/about-new/zine-table.png"
+                        className="object-fill"
+                      />
+                    </div>
+                    <div style={{ flexShrink: 1 }}>
+                      <img
+                        src="/img/about-new/zine-hester-st-fair.png"
+                        className="object-fill"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className="flex flex-row justify-end content-left-pad">
+                  <div
+                    className="max-w-lg"
+                    style={{ minWidth: "calc(min(32rem, 100vw - 2rem))" }}
+                  >
+                    <h1 className="text-3xl">Publication Fairs</h1>
+                    {Table(PUBLICATION_FAIRS)}
+                  </div>
+                </div>
+              </section>
+            </div>
 
             <div className="flex flex-col items-center mt-24">
               <img

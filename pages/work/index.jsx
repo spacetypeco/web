@@ -86,10 +86,7 @@ function Works() {
             >
               <ReactP5Wrapper sketch={sketch} />
             </div>
-            <div
-              className="fade-in content-top content-wide"
-              style={{ margin: "auto" }}
-            >
+            <div className="fade-in content-top content-wide">
               <section data-theme="theme-light">
                 {GothicTitle(
                   "We work across physical and digital media to build bridges between type and technology.",
