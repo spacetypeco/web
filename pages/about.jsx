@@ -395,6 +395,13 @@ function About() {
 
   const INTERVIEWS_AND_PRESS = [
     {
+      host: "NEW INC x Rhizome",
+      link: "https://www.newinc.org/members",
+      title: "Year 10 - Art & Code Member",
+      dates: "2023",
+    },
+
+    {
       host: "OHno Radio",
       link: "https://ohnotype.co/blog/ohno-radio-episode-25-type-electives",
       dates: "2023",
