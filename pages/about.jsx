@@ -827,14 +827,16 @@ function About() {
                   }}
                 >
                   <div className="col-span-6">
-                    <Video
-                      datasrc="/works/2023-client-type-electives/type-electives-web-crop"
-                      style={{
-                        objectFit: "fill",
-                        width: "100%",
-                        // height: "100%",
-                      }}
-                    />
+                    <a href="https://typeelectives.com">
+                      <Video
+                        datasrc="/works/2023-client-type-electives/type-electives-web-crop"
+                        style={{
+                          objectFit: "fill",
+                          width: "100%",
+                          // height: "100%",
+                        }}
+                      />
+                    </a>
                   </div>
                   <div
                     className="col-span-6 flex items-center justify-center"
@@ -842,26 +844,28 @@ function About() {
                       backgroundColor: "#1E3432",
                     }}
                   >
-                    <div className="relative">
-                      <Video
-                        datasrc="/works/2023-client-chalk/chalk-full-crop"
-                        style={{
-                          objectFit: "fill",
-                          width: "100%",
-                          // height: "100%",
-                        }}
-                      />
-                      <div
-                        style={{
-                          backgroundColor: "#1E3432",
-                          width: "100%",
-                          height: "5px",
-                          position: "absolute",
-                          top: 0,
-                          zIndex: 10,
-                        }}
-                      ></div>
-                    </div>
+                    <a href="https://chalk.ai">
+                      <div className="relative">
+                        <Video
+                          datasrc="/works/2023-client-chalk/chalk-full-crop"
+                          style={{
+                            objectFit: "fill",
+                            width: "100%",
+                            // height: "100%",
+                          }}
+                        />
+                        <div
+                          style={{
+                            backgroundColor: "#1E3432",
+                            width: "100%",
+                            height: "5px",
+                            position: "absolute",
+                            top: 0,
+                            zIndex: 10,
+                          }}
+                        ></div>
+                      </div>
+                    </a>
                   </div>
                   <div
                     className="col-span-6 flex items-center justify-center"
@@ -869,58 +873,66 @@ function About() {
                       backgroundColor: "#D8E2DC",
                     }}
                   >
-                    <div className="relative">
-                      <Video
-                        datasrc="/works/2022-tool-vartype/fitv2"
-                        style={{
-                          objectFit: "fill",
-                          width: "100%",
-                          // height: "100%",
-                        }}
-                      />
-                      <div
-                        style={{
-                          backgroundColor: "#D8E2DC",
-                          width: "100%",
-                          height: "5px",
-                          position: "absolute",
-                          top: 0,
-                          zIndex: 10,
-                        }}
-                      ></div>
-                      <div
-                        style={{
-                          backgroundColor: "#D8E2DC",
-                          width: "5px",
-                          height: "100%",
-                          position: "absolute",
-                          top: 0,
-                          left: 0,
-                          zIndex: 30,
-                        }}
-                      ></div>
-                      <div
-                        style={{
-                          backgroundColor: "#D8E2DC",
-                          width: "10px",
-                          height: "100%",
-                          position: "absolute",
-                          top: 0,
-                          right: 0,
-                          zIndex: 30,
-                        }}
-                      ></div>
-                    </div>
+                    <Link href="/work/2022-vartype">
+                      <a>
+                        <div className="relative">
+                          <Video
+                            datasrc="/works/2022-tool-vartype/fitv2"
+                            style={{
+                              objectFit: "fill",
+                              width: "100%",
+                              // height: "100%",
+                            }}
+                          />
+                          <div
+                            style={{
+                              backgroundColor: "#D8E2DC",
+                              width: "100%",
+                              height: "5px",
+                              position: "absolute",
+                              top: 0,
+                              zIndex: 10,
+                            }}
+                          ></div>
+                          <div
+                            style={{
+                              backgroundColor: "#D8E2DC",
+                              width: "5px",
+                              height: "100%",
+                              position: "absolute",
+                              top: 0,
+                              left: 0,
+                              zIndex: 30,
+                            }}
+                          ></div>
+                          <div
+                            style={{
+                              backgroundColor: "#D8E2DC",
+                              width: "10px",
+                              height: "100%",
+                              position: "absolute",
+                              top: 0,
+                              right: 0,
+                              zIndex: 30,
+                            }}
+                          ></div>
+                        </div>
+                      </a>
+                    </Link>
                   </div>
                   <div className="col-span-6">
-                    <Video
-                      datasrc="/works/2022-client-web-existential/cover"
-                      style={{
-                        objectFit: "fill",
-                        width: "100%",
-                        height: "100%",
-                      }}
-                    />
+                    <Link href="/work/2022-existentialco">
+                      <a>
+                        <Video
+                          datasrc="/works/2022-client-web-existential/cover"
+                          style={{
+                            objectFit: "fill",
+                            width: "100%",
+                            height: "100%",
+                          }}
+                        />
+                      </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="max-w-2xl">
