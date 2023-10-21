@@ -690,6 +690,15 @@ function About() {
           .about-intro--text {
             grid-row: 2 / span 1;
           }
+
+          p,
+          a,
+          span,
+          ul,
+          input,
+          td {
+            font-size: 0.9rem;
+          }
         }
 
         @media (max-width: 768px) {
@@ -727,12 +736,12 @@ function About() {
                     className="z-10 grid-cols-12 about-intro--text content-wide-mobile"
                     style={{ display: "grid" }}
                   >
-                    <h1 className="felicette-bold text-4xl xl:text-5xl col-span-11 md:col-span-8 mb-0 mt-8 md:mt-16">
+                    <h1 className="felicette-bold text-3xl md:text-5xl col-span-11 md:col-span-10 lg:col-span-8 mb-0 mt-8 md:mt-16 ml-0 md:ml-12 lg:ml-0">
                       Space Type is an NYC-based studio practice operating at
                       the intersection of
                       <br className="hidden lg:block" /> type and technology.
                     </h1>
-                    <div className="mt-4 lg:mt-12 xl:mt-0 about-intro--text-subtext pr-8">
+                    <div className="mt-4 lg:mt-12 xl:mt-0 about-intro--text-subtext pr-8 ml-0 md:ml-12 lg:ml-0">
                       <p>
                         We work with individuals and organizations to express
                         unique narratives and connect the seams between type
@@ -996,7 +1005,7 @@ function About() {
                       </div>
                     </div>
                   </div>
-                  <div className="col-span-6">
+                  <div className="col-span-6 mt-16 lg:mt-0">
                     <p className="underline">Production and Publication</p>
                     <p className="mb-8">
                       We print and produce small-scale publications as well as
