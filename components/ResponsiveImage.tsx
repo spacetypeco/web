@@ -8,6 +8,7 @@ interface ImageProps {
   roundedBorder?: number | string;
   containerClassNames?: any;
   containerStyles?: any;
+  cover?: boolean;
 }
 
 export default function ResponsiveImage(props: ImageProps) {
@@ -16,9 +17,13 @@ export default function ResponsiveImage(props: ImageProps) {
     classNames += " " + props.className;
   }
 
+  console.log(props.cover);
+
   return (
     <div
-      className={`${styles.imageContainer} ${styles.rounded} ${props.containerClassNames}`}
+      className={`${styles.imageContainer} ${styles.rounded} ${
+        props.containerClassNames
+      } ${props.cover ? styles.cover : ""}`}
       style={{
         borderRadius:
           props.roundedBorder === undefined ? 10 : props.roundedBorder,

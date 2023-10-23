@@ -1,5 +1,6 @@
 import Head from "next/head";
 import ResponsiveImage from "../components/ResponsiveImage";
+import Video from "../components/Video";
 import createSketch from "../p5/sketches/blobsBG";
 import dynamic from "next/dynamic";
 import useLogo from "../hooks/useLogo";
@@ -44,6 +45,43 @@ function Prints() {
   useLogo();
   const sketch = createSketch("bg");
 
+  const PRINTS = [
+    "/works/riso/in-situ/DSC00807.jpg",
+    "/works/riso/in-situ/DSC00814.jpg",
+    "/works/riso/scans/prints/queer magic.png",
+    "/works/riso/queer-magic-duo.JPG",
+    "/works/riso/A-Z Calligraphy.png",
+    "/works/riso/scans/prints/computational/DuoTone.png",
+    "/works/riso/A-Z Animals.png",
+    "/works/riso/scans/prints/Pixel A-Z.png",
+  ];
+
+  const LONG_PRINTS = [
+    "/works/riso/scans/prints/computational/Laika.png",
+    "/works/riso/scans/prints/computational/breathe-1.png",
+    "/works/riso/scans/prints/computational/breathe-3.jpg",
+    "/works/riso/scans/prints/animals-a-z.png",
+    "/works/riso/scans/prints/computational/sleepless.png",
+    // "/works/riso/Pixel Workshop Flyer.png",
+  ];
+
+  const CAT = [
+    "/works/riso/scans/kittypop/Cat_1024x1024.webp",
+    "/works/riso/scans/kittypop/Cat_2_1024x1024.jpg",
+    "/works/riso/scans/kittypop/Cat_3_1024x1024.jpg",
+    "/works/riso/scans/kittypop/Cat_4_1024x1024.webp",
+    "/works/riso/scans/kittypop/Cat_5_1024x1024.jpg",
+    "/works/riso/scans/kittypop/Cat_6_1024x1024.jpg",
+  ];
+
+  const TIGER = [
+    "/works/riso/scans/tigers/1.jpg",
+    "/works/riso/scans/tigers/2.jpg",
+    "/works/riso/scans/tigers/3.jpg",
+    "/works/riso/scans/tigers/4.jpg",
+    "/works/riso/scans/tigers/5.jpg",
+  ];
+
   return (
     <>
       <Head>
@@ -51,7 +89,7 @@ function Prints() {
         <meta property="og:title" content="Space Type - Prints" />
       </Head>
       <main>
-        <div id="container" className="full-w full-h position-rel">
+        <div id="container" className="full-w full-h position-rel mb-12">
           <div id="about">
             <div
               className="full-vw full-vh"
@@ -61,97 +99,114 @@ function Prints() {
               <ReactP5Wrapper sketch={sketch} />
             </div>
             <section
-              className="fade-in content width-1200"
+              className="fade-in content-wide content-top"
               data-theme="theme-light"
             >
-              {GothicTitle("Zines & Prints")}
+              {GothicTitle("Printing Press")}
 
-              <div className="project-grid project-grid--unsized">
-                <div className="tile-w-6 tile-h-6">
-                  <ResponsiveImage
-                    alt="test"
-                    src="/works/riso/in-situ/DSC00807.jpg"
-                    layout="fill"
-                  />
+              <div
+                className="grid"
+                style={{
+                  marginBlock: "2em",
+                  padding: "1em",
+                  gap: "0.5em",
+                  border: "10px solid pink",
+                  borderRadius: "10px",
+                  background: "var(--color-black)",
+                }}
+              >
+                {CAT.map((print) => {
+                  return (
+                    <div className="col-span-6 lg:col-span-4">
+                      <ResponsiveImage alt="test" src={print} cover={true} />
+                    </div>
+                  );
+                })}
+              </div>
+
+              <div
+                className="grid"
+                style={{ marginBlock: "2em", gap: "0.5em" }}
+              >
+                <div className="col-span-4">
+                  <Video src="/works/riso/kittypop.MOV" />
                 </div>
-                <div className="tile-w-6 tile-h-6">
-                  <ResponsiveImage
-                    alt="test"
-                    src="/works/riso/in-situ/DSC00814.jpg"
-                    layout="fill"
-                  />
+                <div className="col-span-4">
+                  <Video src="/works/riso/folklore.MOV" />
                 </div>
-                <div className="tile-w-6 tile-h-4">
-                  <ResponsiveImage
-                    alt="test"
-                    src="/works/riso/queer magic.png"
-                    layout="fill"
-                  />
-                </div>
-                <div className="tile-w-6 tile-h-5">
-                  <ResponsiveImage
-                    alt="test"
-                    src="/works/riso/queer-magic-duo.JPG"
-                    layout="fill"
-                  />
-                </div>
-                <div className="tile-w-6 tile-h-3">
-                  <ResponsiveImage
-                    alt="test"
-                    src="/works/riso/A-Z Calligraphy.png"
-                    layout="fill"
-                  />
-                </div>
-                <div className="tile-w-6 tile-h-3">
-                  <ResponsiveImage
-                    alt="test"
-                    src="/works/riso/DuoTone.png"
-                    layout="fill"
-                  />
-                </div>
-                <div className="tile-w-6 tile-h-4">
-                  <ResponsiveImage
-                    alt="test"
-                    src="/works/riso/A-Z Animals.png"
-                    layout="fill"
-                  />
-                </div>
-                <div className="tile-w-6 tile-h-6">
-                  <ResponsiveImage
-                    alt="test"
-                    src="/works/riso/Pixel Workshop Flyer.png"
-                    layout="fill"
-                  />
-                </div>
-                <div className="tile-w-6 tile-h-3">
-                  <ResponsiveImage
-                    alt="test"
-                    src="/works/riso/Pixel A-Z.png"
-                    layout="fill"
-                  />
-                </div>
-                <div
-                  className="tile-w-12 tile-h-6"
-                  style={{ marginTop: "4em" }}
-                >
-                  <div className="d-flex flex-centered">
-                    <ResponsiveImage
-                      alt="test"
-                      src="/works/riso/Laika.png"
-                      layout="fill"
-                      containerStyles={{ width: "50%" }}
-                    />
-                  </div>
+                <div className="col-span-4">
+                  <Video src="/works/riso/folklore-process.MOV" />
                 </div>
               </div>
 
-              {/* <div className="tile-w-6 tile-h-6">
+              <div
+                className="grid"
+                style={{
+                  marginBlock: "2em",
+                  padding: "1em",
+                  gap: "0.5em",
+                  border: "10px solid #BCF2E7",
+                  borderRadius: "10px",
+                  background: "var(--color-black)",
+                }}
+              >
+                {TIGER.map((print) => {
+                  return (
+                    <div className="col-span-6 lg:col-span-4">
+                      <ResponsiveImage alt="test" src={print} cover={true} />
+                    </div>
+                  );
+                })}
+              </div>
+
+              <div
+                className="grid"
+                style={{ marginBlock: "2em", gap: "0.5em" }}
+              >
+                {PRINTS.map((print) => {
+                  return (
+                    <div className="col-span-12 md:col-span-6 lg:col-span-4">
+                      <ResponsiveImage alt="test" src={print} cover={true} />
+                    </div>
+                  );
+                })}
+              </div>
+
+              <div
+                className="grid"
+                style={{ marginBlock: "2em", gap: "0.5em" }}
+              >
+                <div className="col-span-4">
                   <ResponsiveImage
+                    src="/works/riso/scarves.JPG"
                     alt="test"
-                    src="/works/riso/QueerMagicDuotone.png"
-                    layout="fill"
+                    cover={true}
                   />
-                </div> */}
+                </div>
+                <div className="col-span-4">
+                  <Video src="/works/riso/kitty-bday.MOV" />
+                </div>
+                <div className="col-span-4">
+                  <ResponsiveImage
+                    src="/works/riso/folklore-kevin.JPG"
+                    alt="test"
+                    cover={true}
+                  />
+                </div>
+              </div>
+
+              <div
+                className="grid"
+                style={{ marginBlock: "2em", gap: "0.5em" }}
+              >
+                {LONG_PRINTS.map((print) => {
+                  return (
+                    <div className="col-span-12 md:col-span-6 lg:col-span-4">
+                      <ResponsiveImage alt="test" src={print} cover={true} />
+                    </div>
+                  );
+                })}
+              </div>
             </section>
           </div>
         </div>

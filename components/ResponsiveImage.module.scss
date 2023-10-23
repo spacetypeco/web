@@ -16,3 +16,11 @@
 .rounded > span > img {
   border-radius: 10px;
 }
+
+.cover, .cover span {
+  height: 100% !important;
+}
+
+.cover span img {
+  object-fit: cover !important;
+}
