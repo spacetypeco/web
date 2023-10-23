@@ -611,7 +611,7 @@ function About() {
                   {" "}
                   (
                   <Link href={info.videoLink}>
-                    <a>video available</a>
+                    <a>video</a>
                   </Link>
                   )
                 </>
