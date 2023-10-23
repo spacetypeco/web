@@ -1197,7 +1197,7 @@ function About() {
                     <div>
                       <img src="/img/about-new/community-2.png" />
                       <div className="flex flex-col gap-1 mt-2 pr-1 items-end w-full">
-                        <span className="text-xs">Something something</span>
+                        <span className="text-xs">Flourishing Workshop</span>
                         <span className="text-xs text-right">
                           Letterform Archive
                           <br className="md:hidden" />
