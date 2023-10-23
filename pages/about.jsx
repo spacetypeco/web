@@ -263,12 +263,14 @@ function About() {
       link: "https://www.media.mit.edu/posts/lunch-lectures-computational-typography/",
       title: "Future Sketches: Computational Typography Lunch Lectures",
       dates: "Sep 2023",
+      videoLink: "https://www.youtube.com/watch?v=nlKJPWGQGkc",
     },
     {
       host: "ATypI Paris",
       link: "https://atypi.org/presentation/ghost-glitch-or-muse-designing-with-fallible-machines/",
-      title: "Designing with Fallible Machines (video available)",
+      title: "Designing with Fallible Machines",
       dates: "May 2023",
+      videoLink: "https://www.youtube.com/watch?v=0r9OboZuIUg",
     },
     {
       host: "MassArt",
@@ -285,8 +287,9 @@ function About() {
     {
       host: "Typographics",
       link: "https://2022.typographics.com/",
-      title: "Main Conference (video available)",
+      title: "Main Conference",
       dates: "Jun 2022",
+      videoLink: "https://www.youtube.com/watch?v=4YcT3C6a3QA",
     },
     {
       host: "Typographics TypeLab",
@@ -297,38 +300,45 @@ function About() {
     {
       host: "GRANSHAN",
       link: "https://signs-of-the-times.net/",
-      title: "Sign of the Times (video available)",
+      title: "Sign of the Times",
       dates: "May 2022",
+      videoLink: "https://www.youtube.com/watch?v=jw4avHNFJ8w",
     },
     {
       host: "Type Network",
       link: "https://typenetwork.com/articles/our-video-series-on-variable-fonts",
-      title: "Designing Tomorrow Today (video available)",
+      title: "Designing Tomorrow Today",
       dates: "Apr 2022",
+      videoLink:
+        "https://typenetwork.com/articles/designing-with-variable-fonts-designing-tomorrow-today",
     },
     {
       host: "Society of Scribes",
       link: "https://www.societyofscribes.org/blog/2021-annual-general-meeting-flourishing-lynne-yun",
-      title: "History and Anotomy of Flourishing (video available)",
+      title: "History and Anotomy of Flourishing",
       dates: "Mar 2021",
+      videoLink: "https://www.youtube.com/watch?v=JQ9oceOyuDk",
     },
     {
       host: "ATypI",
       link: "https://atypi.org/conferences-events/past-conferences/atypi-all-over-2020/",
-      title: "Type, Technology, and Beyond (video available)",
+      title: "Type, Technology, and Beyond",
       dates: "Oct 2020",
+      videoLink: "https://www.youtube.com/watch?v=ODWYhDC_GFQ",
     },
     {
       host: "Parsons School of Design",
       link: "https://event.newschool.edu/onlineparsonscdlectureseries",
-      title: "Communication Design Lecture Series (video available)",
+      title: "Communication Design Lecture Series",
       dates: "Sep 2020",
+      videoLink: "https://www.youtube.com/watch?v=NwVhOxKtwbg",
     },
     {
       host: "Parsons School of Design",
       link: "https://newschool.edu",
       title: "'History of the Latin Alphabet' Lecture Series",
       dates: "Sep 2020",
+      videoLink: "https://typedesignschool.com/usage/curriculum/Section_6",
     },
     {
       host: "Typographics TypeLab",
@@ -339,9 +349,9 @@ function About() {
     {
       host: "Wayzgoose",
       link: "https://woodtype.org/pages/wayzgoose",
-      title:
-        "Material Creativity: Finding Inspiration in New Mediums (video available)",
+      title: "Material Creativity: Finding Inspiration in New Mediums",
       dates: "2019",
+      videoLink: "https://www.youtube.com/watch?v=5loIss8n4bY",
     },
     {
       host: "TypeCon",
@@ -358,14 +368,16 @@ function About() {
     {
       host: "Letterform Archive",
       link: "https://letterformarchive.org/events/view/letters-a-code-system/",
-      title: "Letters: A Code System (video available)",
+      title: "Letters: A Code System",
       dates: "2019",
+      videoLink: "https://www.youtube.com/watch?v=kjsR8tEj4Rg",
     },
     {
       host: "TypeCon",
       link: "https://www.typecon.com/",
-      title: "Reviving a Calligraphy Hand (video available)",
+      title: "Reviving a Calligraphy Hand",
       dates: "2018",
+      videoLink: "https://www.youtube.com/watch?v=mKyulbXhF0E",
     },
     {
       host: "Typographics TypeLab",
@@ -592,7 +604,21 @@ function About() {
             <td>
               {info.link ? <a href={info.link}>{info.host}</a> : info.host}
             </td>
-            <td className={info.title ? "" : "opacity-25"}>{info.title}</td>
+            <td className={info.title ? "" : "opacity-25"}>
+              {info.title}
+              {info.videoLink ? (
+                <>
+                  {" "}
+                  (
+                  <Link href={info.videoLink}>
+                    <a>video available</a>
+                  </Link>
+                  )
+                </>
+              ) : (
+                ""
+              )}
+            </td>
             <td style={{ width: "6rem" }}>{info.dates}</td>
           </tr>
         ))}
