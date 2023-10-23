@@ -50,9 +50,9 @@ function Prints() {
     "/works/riso/in-situ/DSC00814.jpg",
     "/works/riso/scans/prints/queer magic.png",
     "/works/riso/queer-magic-duo.JPG",
-    "/works/riso/A-Z Calligraphy.png",
+    "/works/riso/scans/prints/A-Z Calligraphy.png",
     "/works/riso/scans/prints/computational/DuoTone.png",
-    "/works/riso/A-Z Animals.png",
+    "/works/riso/scans/animals-a-z-zine.png",
     "/works/riso/scans/prints/Pixel A-Z.png",
   ];
 
@@ -62,7 +62,6 @@ function Prints() {
     "/works/riso/scans/prints/computational/breathe-3.jpg",
     "/works/riso/scans/prints/animals-a-z.png",
     "/works/riso/scans/prints/computational/sleepless.png",
-    // "/works/riso/Pixel Workshop Flyer.png",
   ];
 
   const CAT = [
