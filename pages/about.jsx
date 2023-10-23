@@ -1055,13 +1055,15 @@ function About() {
               <div className="flex flex-col-reverse sm:flex-row justify-end gap-x-8 md:gap-x-16 content-left-pad">
                 <div className="flex-1 max-w-prose self-end mb-12 text-end">
                   <p>
-                    Lynne Yun (she/her) is a typeface designer and technologist
-                    connecting the seams between calligraphy, type design, and
-                    generative typography. She is an alumna of the Type@Cooper
-                    Extended program, School for Poetic Computation, and ITP at
-                    New York University, and previously taught for institutions
-                    such as Type@Cooper, Parsons School of Design, and The
-                    Letterform Archive.
+                    Lynne Yun (she/her) is a typeface designer, technologist,
+                    and educator. From crafting woven calligraphic pieces to
+                    designing type for screens and publications, Lynne's work
+                    spans an evolving set of multimedia to bring a personal
+                    touch to everyday interactions. She is an alumna of the
+                    Type@Cooper Extended program, School for Poetic Computation,
+                    and ITP at New York University, and previously taught for
+                    institutions such as Type@Cooper, Parsons School of Design,
+                    and The Letterform Archive.
                   </p>
                 </div>
                 <div className="flex-1 max-w-2xl">
