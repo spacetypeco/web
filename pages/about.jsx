@@ -668,6 +668,8 @@ function About() {
 
         td,
         td a {
+          font-family: "ST Monochromic", monospace;
+          font-weight: 60;
           font-size: 0.7rem;
         }
 
