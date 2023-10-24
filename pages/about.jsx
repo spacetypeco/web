@@ -259,6 +259,12 @@ function About() {
 
   const SPEAKING_ENGAGEMENTS = [
     {
+      host: "Pioneer Works",
+      link: "https://pioneerworks.org/programs/software-for-artists-day-8",
+      title: "Software for Artists Day",
+      dates: "Nov 2023",
+    },
+    {
       host: "MIT Media Lab",
       link: "https://www.media.mit.edu/posts/lunch-lectures-computational-typography/",
       title: "Future Sketches: Computational Typography Lunch Lectures",
@@ -406,6 +412,12 @@ function About() {
   ];
 
   const INTERVIEWS_AND_PRESS = [
+    {
+      host: "Pioneer Works x SFPC",
+      title: "Software for Artists: In Poetic Coalition",
+      link: "https://store.pioneerworks.org/products/s4ad-poetic-coalition",
+      dates: "2023",
+    },
     {
       host: "NEW INC x Rhizome",
       link: "https://www.newinc.org/members",
