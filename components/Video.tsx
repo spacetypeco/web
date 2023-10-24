@@ -80,7 +80,6 @@ export default function Video({ datasrc, src, style, poster }: VideoProps) {
   }, [inView]);
 
   let displaySrc = src || sizedSrc(datasrc, dimensions.width);
-  console.log({ dwidth: dimensions.width, displaySrc });
 
   const displayPoster =
     poster ||

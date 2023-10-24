@@ -753,7 +753,7 @@ function About() {
           <div id="about" className="mb-24">
             <section className="fade-in content-top md:flex flex-row justify-center lg:px-12">
               <div className="" style={{ maxWidth: "92rem" }}>
-                <div className="pt-12 grid grid-cols-12 auto-rows-auto">
+                <div className="pt-4 md:pt-12 grid grid-cols-12 auto-rows-auto">
                   <div className="relative float-right tile rounded rounded--mobile-full-bleed about-intro--image">
                     {/* TODO: resize image */}
                     <img src="/img/about-cover-bao.png"></img>
@@ -765,7 +765,7 @@ function About() {
                     <h1 className="felicette-bold text-3xl md:text-5xl col-span-11 md:col-span-10 lg:col-span-8 mb-0 mt-8 md:mt-16 ml-0 md:ml-12 lg:ml-0">
                       Space Type is an NYC-based studio practice operating at
                       the intersection of
-                      <br className="hidden lg:block" /> type and technology.
+                      <br className="hidden 2xl:block" /> type and technology.
                     </h1>
                     <div className="mt-4 lg:mt-12 xl:mt-0 about-intro--text-subtext pr-8 ml-0 md:ml-12 lg:ml-0">
                       <p>
@@ -991,9 +991,11 @@ function About() {
                     </p>
                   </div>
                   <div className="flex flex-col md:flex-row items-start gap-2 md:gap-1 mt-8 mb-16">
-                    <div className="md:max-w-full">
-                      <img src="/img/about-new/web-dev-bhj-faq.png" />
-                    </div>
+                    <a href="https://blackhillsjustice.org">
+                      <div className="md:max-w-full">
+                        <img src="/img/about-new/web-dev-bhj-faq.png" />
+                      </div>
+                    </a>
                     <div className="md:max-w-full">
                       <img src="/img/about-new/web-dev-type-electives.png" />
                     </div>
@@ -1059,7 +1061,9 @@ function About() {
             </div>
 
             <section className="mt-48 mb-24 lg:my-64 content-wide-mobile">
-              <h1 className="text-5xl lg:hidden">Studio Partners</h1>
+              <h1 className="text-3xl md:text-4xl lg:hidden">
+                Studio Partners
+              </h1>
               <div className="flex flex-col sm:flex-row gap-x-8 md:gap-x-16 lg:mb-24 content-right-pad">
                 <div className="flex-1 max-w-2xl">
                   <img src="/img/about-new/kevin.png" />
@@ -1100,7 +1104,7 @@ function About() {
 
             <section className="ml-60 content-wide-mobile">
               <div className="max-w-3xl mb-12">
-                <h1 className="text-5xl">
+                <h1 className="text-3xl md:text-4xl lg:text-5xl">
                   Community and education are at the heart of our practice.
                 </h1>
                 <p>
@@ -1303,15 +1307,13 @@ function About() {
 
             <div className="flex flex-col items-center mt-24">
               <img
-                src="/img/about-new/working-hard.png"
-                className="object-contain h-64 my-12"
+                src="/img/about-new/email.png"
+                className="object-contain h-48 mt-12 mb-6"
               />
-              <h1 className="text-2xl lg:text-3xl">
-                Have an idea? Send us a note.
-              </h1>
+              <h1 className="text-2xl">Have an idea? Send us a note.</h1>
 
               <a href="mailto:hello@spacetypeco.com">
-                <h2 className="text-2xl">hello@spacetypeco.com</h2>
+                <h2 className="text-xl">hello@spacetypeco.com</h2>
               </a>
             </div>
           </div>
