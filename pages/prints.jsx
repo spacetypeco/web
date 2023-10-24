@@ -117,7 +117,7 @@ function Prints() {
                 {CAT.map((print) => {
                   return (
                     <div className="col-span-6 lg:col-span-4">
-                      <ResponsiveImage alt="test" src={print} cover={true} />
+                      <ResponsiveImage alt="" src={print} cover={true} />
                     </div>
                   );
                 })}
@@ -152,7 +152,7 @@ function Prints() {
                 {TIGER.map((print) => {
                   return (
                     <div className="col-span-6 lg:col-span-4">
-                      <ResponsiveImage alt="test" src={print} cover={true} />
+                      <ResponsiveImage alt="" src={print} cover={true} />
                     </div>
                   );
                 })}
@@ -165,7 +165,7 @@ function Prints() {
                 {PRINTS.map((print) => {
                   return (
                     <div className="col-span-12 md:col-span-6 lg:col-span-4">
-                      <ResponsiveImage alt="test" src={print} cover={true} />
+                      <ResponsiveImage alt="" src={print} cover={true} />
                     </div>
                   );
                 })}
@@ -178,7 +178,7 @@ function Prints() {
                 <div className="col-span-4">
                   <ResponsiveImage
                     src="/works/riso/scarves.JPG"
-                    alt="test"
+                    alt=""
                     cover={true}
                   />
                 </div>
@@ -188,7 +188,7 @@ function Prints() {
                 <div className="col-span-4">
                   <ResponsiveImage
                     src="/works/riso/folklore-kevin.JPG"
-                    alt="test"
+                    alt=""
                     cover={true}
                   />
                 </div>
@@ -201,7 +201,7 @@ function Prints() {
                 {LONG_PRINTS.map((print) => {
                   return (
                     <div className="col-span-12 md:col-span-6 lg:col-span-4">
-                      <ResponsiveImage alt="test" src={print} cover={true} />
+                      <ResponsiveImage alt="" src={print} cover={true} />
                     </div>
                   );
                 })}

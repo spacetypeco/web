@@ -647,8 +647,7 @@ function About() {
         a,
         span,
         ul,
-        input,
-        td {
+        input {
           font-family: "ST Monochromic", monospace;
           font-weight: 60;
           font-size: 1rem;
@@ -721,8 +720,7 @@ function About() {
           a,
           span,
           ul,
-          input,
-          td {
+          input {
             font-size: 0.9rem;
           }
         }
