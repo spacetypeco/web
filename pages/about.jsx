@@ -582,6 +582,16 @@ function About() {
 
   const PUBLICATION_FAIRS = [
     {
+      host: "Pioneer Works - Press Play",
+      link: "https://pioneerworks.org/programs/press-play-2023",
+      dates: "Dec 2023",
+    },
+    {
+      host: "Pioneer Works x SFPC - S4AD Art Fair",
+      link: "https://pioneerworks.org/programs/software-for-artists-day-8",
+      dates: "Nov 2023",
+    },
+    {
       host: "Hester Street Fair",
       link: "https://www.hesterstreetfair.com/events/zine-fair-with-commercial-type-and-dahsar",
       dates: "Sep 2023",
