@@ -1044,14 +1044,14 @@ function About() {
                       <div className="col-span-6">
                         <img src="/img/about-new/Type-Monochromic.png" />
                       </div>
-                      <div className="col-span-6">
-                        <img src="/img/about-new/Type-HWT.png" />
-                      </div>
                       <div
                         className="col-span-6"
                         style={{ backgroundColor: "#f5f5f5" }}
                       >
                         <img src="/img/about-new/Type-Mission-Heart.gif" />
+                      </div>
+                      <div className="col-span-6">
+                        <img src="/img/about-new/Type-Felicette.png" />
                       </div>
                     </div>
                   </div>
