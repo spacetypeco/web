@@ -777,12 +777,27 @@ function About() {
             height: calc(100vw * 0.6);
           }
         }
+
+        @media (min-width: 1560px) {
+          p,
+          a,
+          span,
+          ul,
+          input {
+            font-size: 1.2rem;
+          }
+
+          td,
+          td a {
+            font-size: 0.85rem;
+          }
+        }
       `}</style>
       <main>
         <div id="container" className="full-w full-h position-rel">
           <div id="about" className="mb-24">
             <section className="fade-in content-top md:flex flex-row justify-center lg:px-12">
-              <div className="" style={{ maxWidth: "92rem" }}>
+              <div className="2xl:pt-6" style={{ maxWidth: "110rem" }}>
                 <div className="pt-4 md:pt-12 grid grid-cols-12 auto-rows-auto">
                   <div className="relative float-right tile rounded rounded--mobile-full-bleed about-intro--image">
                     {/* TODO: resize image */}
@@ -792,10 +807,10 @@ function About() {
                     className="z-10 grid-cols-12 about-intro--text content-wide-mobile"
                     style={{ display: "grid" }}
                   >
-                    <h1 className="felicette-bold text-3xl md:text-5xl col-span-11 md:col-span-10 lg:col-span-8 mb-0 mt-8 md:mt-16 ml-0 md:ml-12 lg:ml-0">
+                    <h1 className="felicette-bold text-3xl md:text-5xl 2xl:text-6xl col-span-11 md:col-span-10 lg:col-span-8 mb-0 mt-8 md:mt-16 2xl:mt-20 ml-0 md:ml-12 lg:ml-0">
                       Space Type is an NYC-based studio practice operating at
                       the intersection of
-                      <br className="hidden 2xl:block" /> type and technology.
+                      <br className="hidden" /> type and technology.
                     </h1>
                     <div className="mt-4 lg:mt-12 xl:mt-0 about-intro--text-subtext pr-8 ml-0 md:ml-12 lg:ml-0">
                       <p>
@@ -842,7 +857,7 @@ function About() {
                   introductory & non-traditional type and technology education
                   to the masses.
                 </p>
-                <div className="flex md:flex-row flex-col items-start gap-1 md:gap-2 mt-12 max-w-7xl">
+                <div className="flex md:flex-row flex-col items-start gap-1 md:gap-2 mt-12">
                   <div className="flex flex-row gap-2 group">
                     <div>
                       <img
@@ -869,12 +884,12 @@ function About() {
             </section>
 
             <div className="lg:flex justify-center">
-              <section className="content-wide content-wide-mobile max-w-7xl">
+              <section className="content-wide content-wide-mobile lg-content-uber-uber-wide">
                 <h1 className="text-3xl md:text-4xl lg:text-5xl max-w-lg lg:max-w-2xl mt-24">
                   Our Capabilities
                 </h1>
                 <div>
-                  <div className="max-w-2xl">
+                  <div className="max-w-2xl 2xl:max-w-4xl">
                     <p className="underline">
                       Interactive Systems and Generative Tools
                     </p>
@@ -1214,7 +1229,7 @@ function About() {
             </section>
 
             <section className="mt-24 mb-36">
-              <div className="max-w-7xl">
+              <div style={{ maxWidth: "100rem" }}>
                 <div className="flex flex-col md:flex-row items-start gap-12 md:gap-2 mt-12">
                   <div className="md:max-w-full">
                     <img src="/img/about-new/community-1.png" />
@@ -1262,7 +1277,7 @@ function About() {
             </div>
 
             <div className="lg:flex justify-center">
-              <section className="content-wide lg-content-uber-wide">
+              <section className="content-wide lg-content-uber-uber-wide">
                 <h1 className="text-3xl">Teaching and Workshops</h1>
                 <div className="md:grid grid-cols-12 gap-6 hidden md:block">
                   {[0, 1].map((tableNum) =>
