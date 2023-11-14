@@ -265,6 +265,12 @@ function About() {
       dates: "Nov 2023",
     },
     {
+      host: "Adobe MAX",
+      link: "https://www.adobe.com/max/2023/sessions/na-generative-typography-creative-technology-as-mu-vs305.html",
+      title: "Generative Typography: Creative Technology as Muse",
+      dates: "Oct 2023",
+    },
+    {
       host: "MIT Media Lab",
       link: "https://www.media.mit.edu/posts/lunch-lectures-computational-typography/",
       title: "Future Sketches: Computational Typography Lunch Lectures",
