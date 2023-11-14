@@ -269,6 +269,8 @@ function About() {
       link: "https://www.adobe.com/max/2023/sessions/na-generative-typography-creative-technology-as-mu-vs305.html",
       title: "Generative Typography: Creative Technology as Muse",
       dates: "Oct 2023",
+      videoLink:
+        "https://www.adobe.com/max/2023/sessions/na-generative-typography-creative-technology-as-mu-vs305.html",
     },
     {
       host: "MIT Media Lab",
