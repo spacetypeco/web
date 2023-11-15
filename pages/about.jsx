@@ -843,12 +843,12 @@ function About() {
                 <h1 className="text-3xl md:text-4xl lg:text-5xl max-w-lg lg:max-w-2xl">
                   We’re mentors, builders, and organizers for every idea.
                 </h1>
-                <p className="max-w-xl">
+                <p className="max-w-xl 2xl:max-w-2xl">
                   We juggle graphic and UX design, creative coding,
                   systems-building, fabrication, printing, and education to go
                   from concept to production.
                 </p>
-                <p className="max-w-xl">
+                <p className="max-w-xl 2xl:max-w-2xl">
                   We advise non-profits and partner with businesses and creative
                   studios to ideate, prototype, and make digital visions a
                   reality; we lead the design of new typefaces with our peers
@@ -1019,7 +1019,7 @@ function About() {
                       </Link>
                     </div>
                   </div>
-                  <div className="max-w-2xl">
+                  <div className="max-w-2xl 2xl:max-w-4xl">
                     <p className="underline">Web Design and Development</p>
                     <p>
                       We can design, build, and ship your web presence from
@@ -1170,7 +1170,7 @@ function About() {
               </div>
 
               <div
-                className="flex flex-col lg:grid grid-cols-12 md:max-w-xl lg:max-w-6xl gap-8 lg:gap-2 justify-center"
+                className="flex flex-col lg:grid grid-cols-12 md:max-w-xl lg:max-w-6xl 2xl:max-w-7xl gap-8 lg:gap-2 justify-center"
                 style={{ marginTop: "2em" }}
               >
                 <Link href="https://typedesignschool.com">
@@ -1180,7 +1180,7 @@ function About() {
                       Foundations of Type Design{" "}
                       <span style={{ fontWeight: 20 }}>→</span>
                     </div>
-                    <p className="text-xs mt-1">
+                    <p className="text-xs 2xl:text-sm mt-1">
                       Over 10 hours of content covering the history and
                       foundations of type design, how to get started on
                       designing a typeface, and how to plan out a series of
@@ -1205,7 +1205,7 @@ function About() {
                       Type Design & Lettering{" "}
                       <span style={{ fontWeight: 20 }}>→</span>
                     </div>
-                    <p className="text-xs mt-1">
+                    <p className="text-xs 2xl:text-sm mt-1">
                       Showcase of student work from our lettering and type
                       design courses.
                     </p>
@@ -1219,7 +1219,7 @@ function About() {
                       Generative Typography{" "}
                       <span style={{ fontWeight: 20 }}>→</span>
                     </div>
-                    <p className="text-xs mt-1">
+                    <p className="text-xs 2xl:text-sm mt-1">
                       Showcase of student work from our generative typography
                       courses.
                     </p>
@@ -1234,10 +1234,10 @@ function About() {
                   <div className="md:max-w-full">
                     <img src="/img/about-new/community-1.png" />
                     <div className="flex flex-col gap-1 mt-2 pr-1 items-end w-full">
-                      <span className="text-xs">
+                      <span className="text-xs 2xl:text-sm">
                         Generative Typography Workshop
                       </span>
-                      <span className="text-xs">
+                      <span className="text-xs 2xl:text-sm">
                         Letràstica, Guadalajara, Mexico
                       </span>
                     </div>
@@ -1246,8 +1246,10 @@ function About() {
                     <div>
                       <img src="/img/about-new/community-2.png" />
                       <div className="flex flex-col gap-1 mt-2 pr-1 items-end w-full">
-                        <span className="text-xs">Flourishing Workshop</span>
-                        <span className="text-xs text-right">
+                        <span className="text-xs 2xl:text-sm">
+                          Flourishing Workshop
+                        </span>
+                        <span className="text-xs 2xl:text-sm text-right">
                           Letterform Archive
                           <br className="md:hidden" />
                           <span className="hidden md:inline-block">,</span> San
@@ -1258,8 +1260,10 @@ function About() {
                     <div>
                       <img src="/img/about-new/community-3.png" />
                       <div className="flex flex-col gap-1 mt-2 pr-1 items-end w-full">
-                        <span className="text-xs">Pixel Type Workshop</span>
-                        <span className="text-xs text-right">
+                        <span className="text-xs 2xl:text-sm">
+                          Pixel Type Workshop
+                        </span>
+                        <span className="text-xs 2xl:text-sm text-right">
                           Principles G.I. Coffee Shop
                           <br className="md:hidden" />
                           <span className="hidden md:inline-block">,</span>{" "}
