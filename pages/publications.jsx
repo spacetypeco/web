@@ -41,7 +41,7 @@ const GothicTitle = (txt) => {
   );
 };
 
-function Prints() {
+function Publications() {
   useLogo();
   const sketch = createSketch("bg");
 
@@ -101,7 +101,7 @@ function Prints() {
               className="fade-in content-wide content-top"
               data-theme="theme-light"
             >
-              {GothicTitle("Printing Press")}
+              {GothicTitle("Publications")}
 
               <div
                 className="grid"
@@ -214,5 +214,5 @@ function Prints() {
   );
 }
 
-Prints.displayName = "Prints";
-export default Prints;
+Publications.displayName = "Publications";
+export default Publications;

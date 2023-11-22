@@ -20,7 +20,7 @@ function App({ Component, pageProps }) {
   const router = useRouter();
 
   const inWork = router.pathname.match(/\/work.*$/);
-  const inPrints = router.pathname.match(/prints.*$/);
+  const inPrints = router.pathname.match(/publications.*$/);
 
   let theme = inWork || inPrints ? "theme-light" : "";
   let globalClassNames = `${theme}`;
