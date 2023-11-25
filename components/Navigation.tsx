@@ -66,7 +66,7 @@ export default function Navigation({ activeComponentName }) {
                 }
               >
                 <Link href="/publications">
-                  <a onClick={() => setOpen(false)}>Prints</a>
+                  <a onClick={() => setOpen(false)}>Publications</a>
                 </Link>
               </div>
               <div

@@ -595,6 +595,11 @@ function About() {
       dates: "Dec 2023",
     },
     {
+      host: "Lucky Risograph",
+      link: "https://www.instagram.com/p/CzrzA9eOHqt/",
+      dates: "Dec 2023",
+    },
+    {
       host: "Pioneer Works x SFPC - S4AD Art Fair",
       link: "https://pioneerworks.org/programs/software-for-artists-day-8",
       dates: "Nov 2023",
