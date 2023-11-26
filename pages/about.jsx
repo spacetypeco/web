@@ -595,7 +595,7 @@ function About() {
       dates: "Dec 2023",
     },
     {
-      host: "Lucky Risograph",
+      host: "Lucky Risograph - Lucky & Friends Holiday Market",
       link: "https://www.instagram.com/p/CzrzA9eOHqt/",
       dates: "Dec 2023",
     },
