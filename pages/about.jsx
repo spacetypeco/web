@@ -53,7 +53,7 @@ function About() {
       host: "Letràstrica",
       link: "https://www.letrastica.com/en/festival-4",
       title: "Generative Typography",
-      dates: "Oct 2023",
+      dates: "Oct 2022",
     },
     {
       host: "Letterform Archive",
