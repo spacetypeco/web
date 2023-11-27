@@ -783,7 +783,7 @@ function About() {
           }
         }
 
-        @media (min-width: 1560px) {
+        @media (min-width: 1900px) {
           p,
           a,
           span,
@@ -802,7 +802,7 @@ function About() {
         <div id="container" className="full-w full-h position-rel">
           <div id="about" className="mb-24">
             <section className="fade-in content-top md:flex flex-row justify-center lg:px-12">
-              <div className="2xl:pt-6" style={{ maxWidth: "110rem" }}>
+              <div className="3xl:pt-6 lg-content-uber-about-size">
                 <div className="pt-4 md:pt-12 grid grid-cols-12 auto-rows-auto">
                   <div className="relative float-right tile rounded rounded--mobile-full-bleed about-intro--image">
                     {/* TODO: resize image */}
@@ -812,10 +812,11 @@ function About() {
                     className="z-10 grid-cols-12 about-intro--text content-wide-mobile"
                     style={{ display: "grid" }}
                   >
-                    <h1 className="felicette-bold text-3xl md:text-5xl 2xl:text-6xl col-span-11 md:col-span-10 lg:col-span-8 mb-0 mt-8 md:mt-16 2xl:mt-20 ml-0 md:ml-12 lg:ml-0">
+                    <h1 className="felicette-bold text-3xl md:text-5xl 3xl:text-6xl col-span-11 md:col-span-10 lg:col-span-8 mb-0 mt-8 md:mt-16 3xl:mt-20 ml-0 md:ml-12 lg:ml-0">
                       Space Type is an NYC-based studio practice operating at
-                      the intersection of
-                      <br className="hidden" /> type and technology.
+                      the intersection
+                      <br className="hidden 3xl:block 3xl:hidden" /> of type and
+                      technology.
                     </h1>
                     <div className="mt-4 lg:mt-12 xl:mt-0 about-intro--text-subtext pr-8 ml-0 md:ml-12 lg:ml-0">
                       <p>
@@ -848,12 +849,12 @@ function About() {
                 <h1 className="text-3xl md:text-4xl lg:text-5xl max-w-lg lg:max-w-2xl">
                   We’re mentors, builders, and organizers for every idea.
                 </h1>
-                <p className="max-w-xl 2xl:max-w-2xl">
+                <p className="max-w-xl 3xl:max-w-2xl">
                   We juggle graphic and UX design, creative coding,
                   systems-building, fabrication, printing, and education to go
                   from concept to production.
                 </p>
-                <p className="max-w-xl 2xl:max-w-2xl">
+                <p className="max-w-xl 3xl:max-w-2xl">
                   We advise non-profits and partner with businesses and creative
                   studios to ideate, prototype, and make digital visions a
                   reality; we lead the design of new typefaces with our peers
@@ -894,7 +895,7 @@ function About() {
                   Our Capabilities
                 </h1>
                 <div>
-                  <div className="max-w-2xl 2xl:max-w-4xl">
+                  <div className="max-w-2xl 3xlmax-w-4xl">
                     <p className="underline">
                       Interactive Systems and Generative Tools
                     </p>
@@ -1024,7 +1025,7 @@ function About() {
                       </Link>
                     </div>
                   </div>
-                  <div className="max-w-2xl 2xl:max-w-4xl">
+                  <div className="max-w-2xl 3xl:max-w-4xl">
                     <p className="underline">Web Design and Development</p>
                     <p>
                       We can design, build, and ship your web presence from
@@ -1175,7 +1176,7 @@ function About() {
               </div>
 
               <div
-                className="flex flex-col lg:grid grid-cols-12 md:max-w-xl lg:max-w-6xl 2xl:max-w-7xl gap-8 lg:gap-2 justify-center"
+                className="flex flex-col lg:grid grid-cols-12 md:max-w-xl lg:max-w-6xl 3xl:max-w-7xl gap-8 lg:gap-2 justify-center"
                 style={{ marginTop: "2em" }}
               >
                 <Link href="https://typedesignschool.com">
@@ -1185,7 +1186,7 @@ function About() {
                       Foundations of Type Design{" "}
                       <span style={{ fontWeight: 20 }}>→</span>
                     </div>
-                    <p className="text-xs 2xl:text-sm mt-1">
+                    <p className="text-xs 3xl:text-sm mt-1">
                       Over 10 hours of content covering the history and
                       foundations of type design, how to get started on
                       designing a typeface, and how to plan out a series of
@@ -1210,7 +1211,7 @@ function About() {
                       Type Design & Lettering{" "}
                       <span style={{ fontWeight: 20 }}>→</span>
                     </div>
-                    <p className="text-xs 2xl:text-sm mt-1">
+                    <p className="text-xs 3xl:text-sm mt-1">
                       Showcase of student work from our lettering and type
                       design courses.
                     </p>
@@ -1224,7 +1225,7 @@ function About() {
                       Generative Typography{" "}
                       <span style={{ fontWeight: 20 }}>→</span>
                     </div>
-                    <p className="text-xs 2xl:text-sm mt-1">
+                    <p className="text-xs 3xl:text-sm mt-1">
                       Showcase of student work from our generative typography
                       courses.
                     </p>
@@ -1239,10 +1240,10 @@ function About() {
                   <div className="md:max-w-full">
                     <img src="/img/about-new/community-1.png" />
                     <div className="flex flex-col gap-1 mt-2 pr-1 items-end w-full">
-                      <span className="text-xs 2xl:text-sm">
+                      <span className="text-xs 3xl:text-sm">
                         Generative Typography Workshop
                       </span>
-                      <span className="text-xs 2xl:text-sm">
+                      <span className="text-xs 3xl:text-sm">
                         Letràstica, Guadalajara, Mexico
                       </span>
                     </div>
@@ -1251,10 +1252,10 @@ function About() {
                     <div>
                       <img src="/img/about-new/community-2.png" />
                       <div className="flex flex-col gap-1 mt-2 pr-1 items-end w-full">
-                        <span className="text-xs 2xl:text-sm">
+                        <span className="text-xs 3xl:text-sm">
                           Flourishing Workshop
                         </span>
-                        <span className="text-xs 2xl:text-sm text-right">
+                        <span className="text-xs 3xl:text-sm text-right">
                           Letterform Archive
                           <br className="md:hidden" />
                           <span className="hidden md:inline-block">,</span> San
@@ -1265,10 +1266,10 @@ function About() {
                     <div>
                       <img src="/img/about-new/community-3.png" />
                       <div className="flex flex-col gap-1 mt-2 pr-1 items-end w-full">
-                        <span className="text-xs 2xl:text-sm">
+                        <span className="text-xs 3xl:text-sm">
                           Pixel Type Workshop
                         </span>
-                        <span className="text-xs 2xl:text-sm text-right">
+                        <span className="text-xs 3xl:text-sm text-right">
                           Principles G.I. Coffee Shop
                           <br className="md:hidden" />
                           <span className="hidden md:inline-block">,</span>{" "}
