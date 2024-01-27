@@ -1176,9 +1176,9 @@ function About() {
                     Lynne's work spans an evolving set of multimedia to bring a
                     personal touch to everyday interactions. She is an alumna of
                     the Type@Cooper Extended program, School for Poetic
-                    Computation, and ITP at New York University, and previously
-                    taught for institutions such as Type@Cooper, Parsons School
-                    of Design, and The Letterform Archive.
+                    Computation, and ITP at NYU, and previously taught for
+                    institutions such as Type@Cooper, Parsons School of Design,
+                    and The Letterform Archive.
                   </p>
                 </div>
                 <div className="flex-1 max-w-2xl">
