@@ -623,6 +623,11 @@ function About() {
 
   const PUBLICATION_FAIRS = [
     {
+      host: "Multiple Formats Book Fair",
+      link: "https://multipleformats.cargo.site/",
+      dates: "Mar 2024",
+    },
+    {
       host: "Pioneer Works - Press Play",
       link: "https://pioneerworks.org/programs/press-play-2023",
       dates: "Dec 2023"
