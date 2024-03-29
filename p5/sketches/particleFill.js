@@ -64,6 +64,12 @@ export default function (divId) {
       }
     }
 
+    function getPixel(layer, x, y) {
+      return layer.pixels[
+        layer.pixelDensity() * 4 * (layer.width * Math.floor(y) + Math.floor(x))
+      ];
+    }
+
     p.setup = function () {
       let div = document.getElementById(divId);
       let canvas = p.createCanvas(div.offsetWidth, div.clientHeight);
@@ -77,6 +83,7 @@ export default function (divId) {
       setFont();
       textLayer.textFont(font);
       textLayer.textSize(fontSize);
+      textLayer.pixelDensity(1);
       p.textFont(font);
 
       bounds = font.textBounds(txt, 0, 0, fontSize);
@@ -114,26 +121,25 @@ export default function (divId) {
           x <= textBounds.maxX - pointRadius;
           x += 1
         ) {
-          if (!firstX && textLayer.get(x, y)[0] !== 0) {
+          if (!firstX && getPixel(textLayer, x, y) !== 0) {
             firstX = x;
-          } else if (firstX && textLayer.get(x, y)[0] === 0) {
+          } else if (firstX && getPixel(textLayer, x, y) !== 0) {
             lastX = x;
-            break;
           }
         }
 
-        let numPoints = lastX - firstX / step;
+        let numPoints = (lastX - firstX) / step;
 
         // This should just be numPoints but it's broken
         // so hack it with 3*
-        for (let i = 0; i < 3 * numPoints; i++) {
+        for (let i = 0; i < numPoints; i++) {
           let x = firstX + pointRadius + i * step;
-          let col = textLayer.get(x, y)[0];
-          let lastColor = textLayer.get(x - step, y)[0];
-          let nextcol = textLayer.get(x + step, y)[0];
+          let col = getPixel(textLayer, x, y);
+          let lastColor = getPixel(textLayer, x - step, y);
+          let nextcol = getPixel(textLayer, x + step, y);
 
-          let lastRowCol = textLayer.get(x, y - step)[0];
-          let nextRowCol = textLayer.get(x, y + step)[0];
+          let lastRowCol = getPixel(textLayer, x, y - step);
+          let nextRowCol = getPixel(textLayer, x, y + step);
 
           if (col > 10) {
             let nextX = x;
@@ -237,6 +243,7 @@ export default function (divId) {
         layer.endContour();
       }
       layer.endShape();
+      layer.loadPixels();
     }
 
     function centerPt(pt) {
