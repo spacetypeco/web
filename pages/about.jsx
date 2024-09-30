@@ -30,246 +30,236 @@ function About() {
       link: "https://www.typeelectives.com/courses/techniculture-sp-24",
       title:
         "Techniculture: A Critical Lens on Modular Type and Generative Design",
-      dates: "Feb - Mar 2024"
+      dates: "Feb - Mar 2024",
     },
     {
       host: "Parsons School of Design",
       link: "https://courses.newschool.edu/courses/PSAM3060/",
       title: "Currents: CD Workshop (Machine Learning)",
-      dates: "Oct-Nov 2023"
+      dates: "Oct-Nov 2023",
     },
     {
       host: "Processing Foundation",
-      link:
-        "https://medium.com/@ProcessingOrg/announcing-google-summer-of-code-2023-mentors-4d126e35a23d",
+      link: "https://medium.com/@ProcessingOrg/announcing-google-summer-of-code-2023-mentors-4d126e35a23d",
       title: "GSoC Typography Mentorship",
-      dates: "Jun-Aug 2023"
+      dates: "Jun-Aug 2023",
     },
     {
       host: "Type Electives",
-      link:
-        "https://www.typeelectives.com/events/pixel-type-workshop-tickets-559039039817",
+      link: "https://www.typeelectives.com/events/pixel-type-workshop-tickets-559039039817",
       title: "Pixel Type Workshop",
-      dates: "Mar 2023"
+      dates: "Mar 2023",
     },
     {
       host: "Type Electives",
-      link:
-        "https://www.typeelectives.com/courses/intro-to-generative-typography-with-p5js-sp-23",
+      link: "https://www.typeelectives.com/courses/intro-to-generative-typography-with-p5js-sp-23",
       title: "Intro to Generative Typography with p5.js",
-      dates: "Jan-Apr 2023"
+      dates: "Jan-Apr 2023",
     },
     {
       host: "Letràstrica",
       link: "https://www.letrastica.com/en/festival-4",
       title: "Generative Typography",
-      dates: "Oct 2022"
+      dates: "Oct 2022",
     },
     {
       host: "Letterform Archive",
       link: "https://letterformarchive.org/type-west-online/",
       title: "Type West: Type Design",
-      dates: "Jun-Aug 2022"
+      dates: "Jun-Aug 2022",
     },
     {
       host: "Letterform Archive",
-      link:
-        "https://letterformarchive.org/events/view/in-person-core-prototyping-letterforms/",
+      link: "https://letterformarchive.org/events/view/in-person-core-prototyping-letterforms/",
       title: "In-Person Core: Prototyping Letterforms",
-      dates: "Jun 2022"
+      dates: "Jun 2022",
     },
     {
       host: "Letterform Archive",
-      link:
-        "https://letterformarchive.org/shop/the-basics-of-designing-flourishes/",
+      link: "https://letterformarchive.org/shop/the-basics-of-designing-flourishes/",
       title: "Designing Flourishes",
-      dates: "Jun 2022"
+      dates: "Jun 2022",
     },
     {
       host: "Typographics",
-      link:
-        "http://coopertype.dreamhosters.com/events/code_x_kinetic_type_su2022",
+      link: "http://coopertype.dreamhosters.com/events/code_x_kinetic_type_su2022",
       title: "Code x Kinetic Type",
-      dates: "Jun 2022"
+      dates: "Jun 2022",
     },
     {
       host: "Type@Cooper",
       link: "http://coopertype.dreamhosters.com/events/generative_type_sp2021",
       title: "Generative Typography",
-      dates: "Feb-Apr 2022"
+      dates: "Feb-Apr 2022",
     },
     {
       host: "Parsons School of Design",
       link: "https://courses.newschool.edu/courses/PSAM3010",
       title: "CD Studio: Typeface Design",
-      dates: "Jan-May 2022"
+      dates: "Jan-May 2022",
     },
     {
       host: "Typographics",
       link: "https://github.com/spacetypeco/kinetic-type-SU21",
       title: "Code x Kinetic Type",
-      dates: "Jun 2021"
+      dates: "Jun 2021",
     },
     {
       host: "Typographics",
       link: "http://coopertype.dreamhosters.com/events/code_x_glitch_type",
       title: "Code x Glitch Type",
-      dates: "Jun 2021"
+      dates: "Jun 2021",
     },
     {
       host: "Typographics",
       link: "http://coopertype.dreamhosters.com/events/code_x_variable_fonts",
       title: "Code x Variable Fonts",
-      dates: "Jun 2021"
+      dates: "Jun 2021",
     },
     {
       host: "Society of Scribes",
       link: "https://www.youtube.com/watch?v=JQ9oceOyuDk",
       title: "The History and Anatomy of Flourishing",
-      dates: "Mar 2021"
+      dates: "Mar 2021",
     },
     {
       host: "Letterform Archive",
       link: "https://letterformarchive.org/type-west-online/",
       title: "Type West: Type Design",
-      dates: "Jun-Aug 2021"
+      dates: "Jun-Aug 2021",
     },
     {
       host: "Parsons School of Design",
       link: "https://courses.newschool.edu/courses/PSAM3010",
       title: "Type Design",
-      dates: "Jan-May 2021"
+      dates: "Jan-May 2021",
     },
     {
       host: "Type@Cooper",
       link: "https://github.com/spacetypeco/generative-typography-FA20",
       title: "Generative Typography",
-      dates: "Oct-Dec 2020"
+      dates: "Oct-Dec 2020",
     },
     {
       host: "Type@Cooper",
       link: "https://github.com/spacetypeco/generative-typography-SU20",
       title: "Generative Typography",
-      dates: "Jun-Jul 2020"
+      dates: "Jun-Jul 2020",
     },
     {
       host: "Letterform Archive",
       link: "https://letterformarchive.org/",
       title: "Intro to Lettering",
-      dates: "Jun 2020"
+      dates: "Jun 2020",
     },
     {
       host: "Society of Scribes",
-      link:
-        "https://www.societyofscribes.org/calendar/designing-flourishes-spring2020-1",
+      link: "https://www.societyofscribes.org/calendar/designing-flourishes-spring2020-1",
       title: "Designing Flourishes",
-      dates: "May 2020"
+      dates: "May 2020",
     },
     {
       host: "Type@Cooper",
       link: "https://coopertype.org/workshops/",
       title: "Hand Lettering",
-      dates: "Feb-Apr 2020"
+      dates: "Feb-Apr 2020",
     },
     {
       host: "Parsons School of Design",
       link: "https://courses.newschool.edu/courses/PSAM3010",
       title: "Type Design",
-      dates: "2020"
+      dates: "2020",
     },
     {
       host: "Letterform Archive",
       link: "https://letterformarchive.org/",
       title: "Type West Core Workshop",
-      dates: "2020"
+      dates: "2020",
     },
     {
       host: "Society of Scribes",
-      link:
-        "https://www.societyofscribes.org/prototyping-letterforms-with-unconventional-tools",
+      link: "https://www.societyofscribes.org/prototyping-letterforms-with-unconventional-tools",
       title: "Prototyping Letteforms with Unconventional Tools",
-      dates: "2019"
+      dates: "2019",
     },
     {
       host: "Type@Cooper",
       link: "https://coopertype.org/workshops/",
       title: "Calligraphy: Italic and Bâtarde",
-      dates: "2019"
+      dates: "2019",
     },
     {
       host: "Ladies Wine & Design",
       link: "https://ladieswinedesign.com/brooklyn/",
       title: "Type Design 101",
-      dates: "2019"
+      dates: "2019",
     },
     {
       host: "SVA Residency in Typography",
       link: "",
       title: "Calligraphy for Type Design",
-      dates: "2019"
+      dates: "2019",
     },
     {
       host: "Type@Cooper",
       link: "http://ladieswinedesign.com/",
       title: "Calligraphy: Historical Hands",
-      dates: "2019"
+      dates: "2019",
     },
     {
       host: "Letterform Archive",
       link: "https://letterformarchive.org/",
       title: "Calligraphy as a Tool for Prototyping Letterforms",
-      dates: "2019"
+      dates: "2019",
     },
     {
       host: "Letterform Archive",
       link: "https://letterformarchive.org/",
       title: "Designing Flourishes",
-      dates: "2019"
+      dates: "2019",
     },
     {
       host: "ECV Paris",
-      link:
-        "https://medium.com/ecvny/2019-new-york-typographic-tour-schedule-cdf860e103e8",
+      link: "https://medium.com/ecvny/2019-new-york-typographic-tour-schedule-cdf860e103e8",
       title: "Masterclass",
-      dates: "2019"
+      dates: "2019",
     },
     {
       host: "Type@Cooper",
-      link:
-        "http://coopertype.dreamhosters.com/events/calligraphy_blackletter_fundamentals",
+      link: "http://coopertype.dreamhosters.com/events/calligraphy_blackletter_fundamentals",
       title: "Calligraphy: Blackletter Fundamentals",
-      dates: "2019"
+      dates: "2019",
     },
     {
       host: "HUGE Inc",
       link: "http://www.hugeinc.com/",
       title: "Blackletter Calligraphy",
-      dates: "2018"
+      dates: "2018",
     },
     {
       host: "Society of Scribes",
       link: "http://societyofscribes.org/",
       title: "Basics of Blackletter",
-      dates: "2017"
+      dates: "2017",
     },
     {
       host: "Society of Scribes",
       link: "http://societyofscribes.org/",
       title: "Flourishing Design",
-      dates: "2017"
+      dates: "2017",
     },
     {
       host: "TypeCon",
       link: "https://www.typecon.com/",
       title: "Flourishing Design",
-      dates: "2017"
+      dates: "2017",
     },
     {
       host: "Society of Scribes",
       link: "https://www.societyofscribes.org/",
       title: "Writing with Gradients",
-      dates: "2017"
-    }
+      dates: "2017",
+    },
   ];
 
   const teachingSplitIndex = Math.ceil(TEACHING_AND_WORKSHOPS.length / 2);
@@ -279,167 +269,161 @@ function About() {
       host: "Pioneer Works",
       link: "https://pioneerworks.org/programs/software-for-artists-day-8",
       title: "Software for Artists Day",
-      dates: "Nov 2023"
+      dates: "Nov 2023",
     },
     {
       host: "Adobe MAX",
-      link:
-        "https://www.adobe.com/max/2023/sessions/na-generative-typography-creative-technology-as-mu-vs305.html",
+      link: "https://www.adobe.com/max/2023/sessions/na-generative-typography-creative-technology-as-mu-vs305.html",
       title: "Generative Typography: Creative Technology as Muse",
       dates: "Oct 2023",
       videoLink:
-        "https://www.adobe.com/max/2023/sessions/na-generative-typography-creative-technology-as-mu-vs305.html"
+        "https://www.adobe.com/max/2023/sessions/na-generative-typography-creative-technology-as-mu-vs305.html",
     },
     {
       host: "MIT Media Lab",
-      link:
-        "https://www.media.mit.edu/posts/lunch-lectures-computational-typography/",
+      link: "https://www.media.mit.edu/posts/lunch-lectures-computational-typography/",
       title: "Future Sketches: Computational Typography Lunch Lectures",
       dates: "Sep 2023",
-      videoLink: "https://www.youtube.com/watch?v=nlKJPWGQGkc"
+      videoLink: "https://www.youtube.com/watch?v=nlKJPWGQGkc",
     },
     {
       host: "ATypI Paris",
-      link:
-        "https://atypi.org/presentation/ghost-glitch-or-muse-designing-with-fallible-machines/",
+      link: "https://atypi.org/presentation/ghost-glitch-or-muse-designing-with-fallible-machines/",
       title: "Designing with Fallible Machines",
       dates: "May 2023",
-      videoLink: "https://www.youtube.com/watch?v=0r9OboZuIUg"
+      videoLink: "https://www.youtube.com/watch?v=0r9OboZuIUg",
     },
     {
       host: "MassArt",
       link: "https://massart.edu/academics/programs/communication-design",
       title: "Communication Design Lecture Series",
-      dates: "May 2023"
+      dates: "May 2023",
     },
     {
       host: "Letràstrica",
       link: "https://www.letrastica.com/en/festival-4",
       title: "Perfection Doesn't Exist",
-      dates: "Oct 2022"
+      dates: "Oct 2022",
     },
     {
       host: "Typographics",
       link: "https://2022.typographics.com/",
       title: "Main Conference",
       dates: "Jun 2022",
-      videoLink: "https://www.youtube.com/watch?v=4YcT3C6a3QA"
+      videoLink: "https://www.youtube.com/watch?v=4YcT3C6a3QA",
     },
     {
       host: "Typographics TypeLab",
       link: "https://2022.typographics.com/typelab/",
       title: "Vartype: Generative sketches for variable fonts",
-      dates: "Jun 2022"
+      dates: "Jun 2022",
     },
     {
       host: "GRANSHAN",
       link: "https://signs-of-the-times.net/",
       title: "Sign of the Times",
       dates: "May 2022",
-      videoLink: "https://www.youtube.com/watch?v=jw4avHNFJ8w"
+      videoLink: "https://www.youtube.com/watch?v=jw4avHNFJ8w",
     },
     {
       host: "Type Network",
-      link:
-        "https://typenetwork.com/articles/our-video-series-on-variable-fonts",
+      link: "https://typenetwork.com/articles/our-video-series-on-variable-fonts",
       title: "Designing Tomorrow Today",
       dates: "Apr 2022",
       videoLink:
-        "https://typenetwork.com/articles/designing-with-variable-fonts-designing-tomorrow-today"
+        "https://typenetwork.com/articles/designing-with-variable-fonts-designing-tomorrow-today",
     },
     {
       host: "Society of Scribes",
-      link:
-        "https://www.societyofscribes.org/blog/2021-annual-general-meeting-flourishing-lynne-yun",
+      link: "https://www.societyofscribes.org/blog/2021-annual-general-meeting-flourishing-lynne-yun",
       title: "History and Anotomy of Flourishing",
       dates: "Mar 2021",
-      videoLink: "https://www.youtube.com/watch?v=JQ9oceOyuDk"
+      videoLink: "https://www.youtube.com/watch?v=JQ9oceOyuDk",
     },
     {
       host: "ATypI",
-      link:
-        "https://atypi.org/conferences-events/past-conferences/atypi-all-over-2020/",
+      link: "https://atypi.org/conferences-events/past-conferences/atypi-all-over-2020/",
       title: "Type, Technology, and Beyond",
       dates: "Oct 2020",
-      videoLink: "https://www.youtube.com/watch?v=ODWYhDC_GFQ"
+      videoLink: "https://www.youtube.com/watch?v=ODWYhDC_GFQ",
     },
     {
       host: "Parsons School of Design",
       link: "https://event.newschool.edu/onlineparsonscdlectureseries",
       title: "Communication Design Lecture Series",
       dates: "Sep 2020",
-      videoLink: "https://www.youtube.com/watch?v=NwVhOxKtwbg"
+      videoLink: "https://www.youtube.com/watch?v=NwVhOxKtwbg",
     },
     {
       host: "Parsons School of Design",
       link: "https://newschool.edu",
       title: "'History of the Latin Alphabet' Lecture Series",
       dates: "Sep 2020",
-      videoLink: "https://typedesignschool.com/usage/curriculum/Section_6"
+      videoLink: "https://typedesignschool.com/usage/curriculum/Section_6",
     },
     {
       host: "Typographics TypeLab",
       link: "http://typographics.com/",
       title: "Type, Technology, & Algorithms",
-      dates: "Sep 2020"
+      dates: "Sep 2020",
     },
     {
       host: "Wayzgoose",
       link: "https://woodtype.org/pages/wayzgoose",
       title: "Material Creativity: Finding Inspiration in New Mediums",
       dates: "2019",
-      videoLink: "https://www.youtube.com/watch?v=5loIss8n4bY"
+      videoLink: "https://www.youtube.com/watch?v=5loIss8n4bY",
     },
     {
       host: "TypeCon",
       link: "https://www.typecon.com/",
       title: "History and Anatomy of Flourishing",
-      dates: "2019"
+      dates: "2019",
     },
     {
       host: "Typographics TypeLab",
       link: "https://typographics.com/",
       title: "Behind the History of the Type Studio",
-      dates: "2019"
+      dates: "2019",
     },
     {
       host: "Letterform Archive",
       link: "https://letterformarchive.org/events/view/letters-a-code-system/",
       title: "Letters: A Code System",
       dates: "2019",
-      videoLink: "https://www.youtube.com/watch?v=kjsR8tEj4Rg"
+      videoLink: "https://www.youtube.com/watch?v=kjsR8tEj4Rg",
     },
     {
       host: "TypeCon",
       link: "https://www.typecon.com/",
       title: "Reviving a Calligraphy Hand",
       dates: "2018",
-      videoLink: "https://www.youtube.com/watch?v=mKyulbXhF0E"
+      videoLink: "https://www.youtube.com/watch?v=mKyulbXhF0E",
     },
     {
       host: "Typographics TypeLab",
       link: "https://typographics.com/",
       title: "History of Flourishing",
-      dates: "2017"
+      dates: "2017",
     },
     {
       host: "HUGE Inc",
       link: "https://www.hugeinc.com/",
       title: "Type Journey",
-      dates: "2017"
+      dates: "2017",
     },
     {
       host: "Frog Design",
       link: "https://frogdesign.com/",
       title: "Creative Forum",
-      dates: "2017"
+      dates: "2017",
     },
     {
       host: "Typographics: The Magazine",
       link: "https://typographics.com",
       title: "Failures",
-      dates: "2016"
-    }
+      dates: "2016",
+    },
   ];
 
   const INTERVIEWS_AND_PRESS = [
@@ -447,181 +431,181 @@ function About() {
       host: "Pioneer Works x SFPC",
       title: "Software for Artists: In Poetic Coalition",
       link: "https://store.pioneerworks.org/products/s4ad-poetic-coalition",
-      dates: "2023"
+      dates: "2023",
     },
     {
       host: "NEW INC x Rhizome",
       link: "https://www.newinc.org/members",
       title: "Year 10 - Art & Code Member",
-      dates: "2023"
+      dates: "2023",
     },
 
     {
       host: "OHno Radio",
       link: "https://ohnotype.co/blog/ohno-radio-episode-25-type-electives",
-      dates: "2023"
+      dates: "2023",
     },
     {
       host: "I Love Typography (ILT)",
       link: "https://ilovetypography.com/2021/03/08/women-of-letters/",
-      dates: "2021"
+      dates: "2021",
     },
     {
       host: "Night Snack Club",
       link: "https://www.nightsnackclub.com/blog/lynneyun",
-      dates: "2020"
+      dates: "2020",
     },
     {
       host: "League of Movable Type Podcast",
-      link:
-        "https://www.theleagueofmoveabletype.com/podcast/s2e13---interview-with-type-designer--educator-lynne-yun",
-      dates: "2020"
+      link: "https://www.theleagueofmoveabletype.com/podcast/s2e13---interview-with-type-designer--educator-lynne-yun",
+      dates: "2020",
     },
     {
       host: "Debugger",
-      link:
-        "https://debugger.medium.com/crowd-funding-an-online-course-with-low-budget-and-a-lot-of-elbow-grease-in-2020-809f08f509df",
+      link: "https://debugger.medium.com/crowd-funding-an-online-course-with-low-budget-and-a-lot-of-elbow-grease-in-2020-809f08f509df",
       title: "Crowdfunding an Online Course During Quarantine",
-      dates: "2020"
+      dates: "2020",
     },
     {
       host: "NaN",
       link: "https://nan.xyz/txt/glyphzian-space/",
       title: "Glyphzian Space",
-      dates: "2020"
+      dates: "2020",
     },
     {
       host: "Letter Arts Review Vol. 33:4",
       link: "",
-      dates: "2020"
+      dates: "2020",
     },
     {
       host: "ECV NY Masterclass",
       link: "https://vimeo.com/326059621",
-      dates: "2019"
+      dates: "2019",
     },
     {
       host: "Communication Arts",
-      link:
-        "https://www.commarts.com/favorites/five-typographers-share-their-treasured-finds-3",
-      dates: "2019"
+      link: "https://www.commarts.com/favorites/five-typographers-share-their-treasured-finds-3",
+      dates: "2019",
     },
     {
       host: "Alphabet",
       link: "",
-      dates: "2017"
+      dates: "2017",
     },
     {
       host: "Print Magazine",
-      link:
-        "https://www.dropbox.com/s/eexcqfw2pvlmg58/PRINT%20Mag%20Summer2017%20Excerpt.pdf?dl=0",
-      dates: "2017"
+      link: "https://www.dropbox.com/s/eexcqfw2pvlmg58/PRINT%20Mag%20Summer2017%20Excerpt.pdf?dl=0",
+      dates: "2017",
     },
     {
       host: "Typodarium",
-      link:
-        "https://www.dropbox.com/s/4jicdvwlc09zk9p/Letter_Arts_Review_2017.pdf?dl=0",
-      dates: "2017"
+      link: "https://www.dropbox.com/s/4jicdvwlc09zk9p/Letter_Arts_Review_2017.pdf?dl=0",
+      dates: "2017",
     },
     {
       host: "Letter Arts Review Vol. 31",
       link: "",
-      dates: "2017"
+      dates: "2017",
     },
     {
       host: "TypeThursday",
-      link:
-        "https://medium.com/type-thursday/go-backwards-to-go-forward-an-interview-with-graphic-designer-lynne-yun-cd2361202400#.9h219pi8h",
-      dates: "2016"
+      link: "https://medium.com/type-thursday/go-backwards-to-go-forward-an-interview-with-graphic-designer-lynne-yun-cd2361202400#.9h219pi8h",
+      dates: "2016",
     },
     {
       host: "Art Directors Club",
       link: "http://adcglobal.org/lynne-yun-chance-destiny/",
-      dates: "2016"
+      dates: "2016",
     },
     {
       host: "Working Not Working",
-      link:
-        "http://freerange.workingnotworking.com/blog/2015/5/11/9jzv50x1ilwh4r43vi3gh0dlrcfmlm",
-      dates: "2015"
+      link: "http://freerange.workingnotworking.com/blog/2015/5/11/9jzv50x1ilwh4r43vi3gh0dlrcfmlm",
+      dates: "2015",
     },
     {
       host: "Campaign US",
       link: "",
-      dates: "2015"
+      dates: "2015",
     },
     {
       host: "KERA (NPR & PBS)",
-      link:
-        "http://keranews.org/post/designers-placeholder-lorem-ipsum-sense-poetry",
-      dates: "2015"
+      link: "http://keranews.org/post/designers-placeholder-lorem-ipsum-sense-poetry",
+      dates: "2015",
     },
     {
       host: "CMYK Magazine #7",
       link: "",
-      dates: "2015"
+      dates: "2015",
     },
     {
       host: "CA Korea Magazine #183",
       link: "",
-      dates: "2015"
-    }
+      dates: "2015",
+    },
   ];
 
   const EXHIBITIONS = [
     {
+      host: "Neighbor",
+      title: "Meek Defiance",
+      dates: "2024",
+    },
+    {
       host: "Schick Art Gallery",
-      link:
-        "https://www.skidmore.edu/schick/2022-2023/true-type-exhibition.php",
+      link: "https://www.skidmore.edu/schick/2022-2023/true-type-exhibition.php",
       title: "True to Type",
-      dates: "2022"
+      dates: "2022",
     },
     {
       host: "Letràstrica",
       link: "https://www.letrastica.com/en/festival-4",
       title: "Collective Exhibition",
-      dates: "2022"
+      dates: "2022",
     },
     {
       host: "School for Poetic Computation",
       link: "https://sfpc.io/sevenyears/",
       title: "Poetic Computation: Seven Years of SFPC",
-      dates: "2020"
+      dates: "2020",
     },
     {
       host: "Korean Cultural Center New York",
-      link:
-        "https://www.koreanculture.org/gallery-korea/2018/8/16/found-in-translation",
+      link: "https://www.koreanculture.org/gallery-korea/2018/8/16/found-in-translation",
       title: "Found in Translation",
-      dates: "2018"
+      dates: "2018",
     },
     {
       host: "Type Directors Club",
       link: "",
       title: "Ascenders",
-      dates: "2018"
+      dates: "2018",
     },
     {
       host: "The Grolier Club",
       link: "",
       title: "The Calligraphy Revival",
-      dates: "2017"
+      dates: "2017",
     },
     {
       host: "Type Directors Club",
       link: "",
       title: "TDC 62",
-      dates: "2016"
+      dates: "2016",
     },
     {
       host: "Type Directors Club",
       link: "",
       title: "TDC 60",
-      dates: "2014"
-    }
+      dates: "2014",
+    },
   ];
 
   const PUBLICATION_FAIRS = [
+    {
+      host: "Sunnyday Art Market",
+      link: "https://partiful.com/e/eJznGzQckcTveRB2fIHR",
+      dates: "Sept 2024",
+    },
     {
       host: "Multiple Formats Book Fair",
       link: "https://multipleformats.cargo.site/",
@@ -630,50 +614,49 @@ function About() {
     {
       host: "Pioneer Works - Press Play",
       link: "https://pioneerworks.org/programs/press-play-2023",
-      dates: "Dec 2023"
+      dates: "Dec 2023",
     },
     {
       host: "Lucky Risograph - Lucky & Friends Holiday Market",
       link: "https://www.instagram.com/p/CzrzA9eOHqt/",
-      dates: "Dec 2023"
+      dates: "Dec 2023",
     },
     {
       host: "Pioneer Works x SFPC - S4AD Art Fair",
       link: "https://pioneerworks.org/programs/software-for-artists-day-8",
-      dates: "Nov 2023"
+      dates: "Nov 2023",
     },
     {
       host: "Hester Street Fair",
-      link:
-        "https://www.hesterstreetfair.com/events/zine-fair-with-commercial-type-and-dahsar",
-      dates: "Sep 2023"
+      link: "https://www.hesterstreetfair.com/events/zine-fair-with-commercial-type-and-dahsar",
+      dates: "Sep 2023",
     },
     {
       host: "Flamecon",
       link: "https://www.flamecon.org/",
-      dates: "Aug 2023"
+      dates: "Aug 2023",
     },
     {
       host: "Typographics Book Fair",
       link: "https://2023.typographics.com/book_fair/",
-      dates: "Jun 2023"
+      dates: "Jun 2023",
     },
     {
       host: "Principles Vendor Market",
       link: "https://www.instagram.com/principlesbk",
-      dates: "Jun 2023"
+      dates: "Jun 2023",
     },
     {
       host: "Other Islands Book Fair",
       link: "https://designfuture.space/events/otherislands/",
-      dates: "Apr 2023"
-    }
+      dates: "Apr 2023",
+    },
   ];
 
-  const Table = items => (
+  const Table = (items) => (
     <table className="table-fixed col-span-6 min-w-full">
       <tbody>
-        {items.map(info => (
+        {items.map((info) => (
           <tr>
             <td>
               {info.link ? <a href={info.link}>{info.host}</a> : info.host}
@@ -950,7 +933,7 @@ function About() {
                     className="flex flex-col lg:grid grid-cols-12 mt-8 mb-16 gap-2 md:gap-0"
                     style={{
                       minWidth: "100%",
-                      maxWidth: "100%"
+                      maxWidth: "100%",
                     }}
                   >
                     <div className="col-span-6">
@@ -959,7 +942,7 @@ function About() {
                           datasrc="/works/2023-client-type-electives/type-electives-web-crop"
                           style={{
                             objectFit: "fill",
-                            width: "100%"
+                            width: "100%",
                             // height: "100%",
                           }}
                         />
@@ -969,7 +952,7 @@ function About() {
                       className="col-span-6 items-center"
                       style={{
                         display: "grid",
-                        backgroundColor: "#1E3432"
+                        backgroundColor: "#1E3432",
                       }}
                     >
                       <div className="relative">
@@ -979,7 +962,7 @@ function About() {
                             style={{
                               objectFit: "contain",
                               width: "100%",
-                              height: "100%"
+                              height: "100%",
                             }}
                           />
                         </a>
@@ -990,7 +973,7 @@ function About() {
                             height: "5px",
                             position: "absolute",
                             top: 0,
-                            zIndex: 10
+                            zIndex: 10,
                           }}
                         ></div>
                       </div>
@@ -999,7 +982,7 @@ function About() {
                       className="col-span-6 items-center"
                       style={{
                         display: "grid",
-                        backgroundColor: "#D8E2DC"
+                        backgroundColor: "#D8E2DC",
                       }}
                     >
                       <div className="relative">
@@ -1009,7 +992,7 @@ function About() {
                               datasrc="/works/2022-tool-vartype/fitv2"
                               style={{
                                 objectFit: "fill",
-                                width: "100%"
+                                width: "100%",
                                 // height: "100%",
                               }}
                             />
@@ -1020,7 +1003,7 @@ function About() {
                                 height: "5px",
                                 position: "absolute",
                                 top: 0,
-                                zIndex: 10
+                                zIndex: 10,
                               }}
                             ></div>
                             <div
@@ -1031,7 +1014,7 @@ function About() {
                                 position: "absolute",
                                 top: 0,
                                 left: 0,
-                                zIndex: 30
+                                zIndex: 30,
                               }}
                             ></div>
                             <div
@@ -1042,7 +1025,7 @@ function About() {
                                 position: "absolute",
                                 top: 0,
                                 right: 0,
-                                zIndex: 30
+                                zIndex: 30,
                               }}
                             ></div>
                           </a>
@@ -1057,7 +1040,7 @@ function About() {
                             style={{
                               objectFit: "fill",
                               width: "100%",
-                              height: "100%"
+                              height: "100%",
                             }}
                           />
                         </a>
@@ -1329,7 +1312,7 @@ function About() {
               <section className="content-wide lg-content-uber-uber-wide">
                 <h1 className="text-3xl">Teaching and Workshops</h1>
                 <div className="md:grid grid-cols-12 gap-6 hidden md:block">
-                  {[0, 1].map(tableNum =>
+                  {[0, 1].map((tableNum) =>
                     Table(
                       TEACHING_AND_WORKSHOPS.slice(
                         tableNum * teachingSplitIndex,
