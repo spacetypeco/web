@@ -60,22 +60,24 @@ export default function Navigation({ activeComponentName }) {
               </div> */}
               <div
                 className={
+                  activeComponentName === "About" ? "link active" : "link"
+                }
+              >
+                <Link href="/about">
+                  <a onClick={() => setOpen(false)}>About</a>
+                </Link>
+              </div>
+              <div
+                className={
                   activeComponentName === "Publications"
                     ? "link active"
                     : "link"
                 }
               >
-                <Link href="/publications">
-                  <a onClick={() => setOpen(false)}>Publications</a>
-                </Link>
-              </div>
-              <div
-                className={
-                  activeComponentName === "About" ? "link active" : "link"
-                }
-              >
-                <Link href="/about">
-                  <a onClick={() => setOpen(false)}>About →</a>
+                <Link href="https://shop.spacetypeco.com">
+                  <a href="https://shop.spacetypeco.com" target="_blank">
+                    Online Shop →
+                  </a>
                 </Link>
               </div>
             </div>
