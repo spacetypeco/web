@@ -602,6 +602,20 @@ function About() {
 
   const PUBLICATION_FAIRS = [
     {
+      host: "Jersey Art Book Fair",
+      link: "https://www.jerseyartbookfair.org/",
+      dates: "Feb 2025",
+    },
+    {
+      host: "Welcome to Chinatown - Lunar New Years Fair",
+      dates: "Feb 2025",
+    },
+    {
+      host: "Pioneer Works - Press Play",
+      link: "https://pioneerworks.org/programs/press-play-2024",
+      dates: "Dec 2024",
+    },
+    {
       host: "Sunnyday Art Market",
       link: "https://partiful.com/e/eJznGzQckcTveRB2fIHR",
       dates: "Sept 2024",
