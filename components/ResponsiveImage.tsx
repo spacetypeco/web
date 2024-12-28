@@ -9,6 +9,8 @@ interface ImageProps {
   containerClassNames?: any;
   containerStyles?: any;
   cover?: boolean;
+  sizes?: string;
+  style?: any;
 }
 
 export default function ResponsiveImage(props: ImageProps) {
@@ -35,6 +37,8 @@ export default function ResponsiveImage(props: ImageProps) {
         alt={props.alt}
         src={props.src}
         layout="fill"
+        sizes={props.sizes}
+        // style={props.style}
         // style={{
         //   borderRadius:
         //     props.roundedBorder === undefined ? 10 : props.roundedBorder,

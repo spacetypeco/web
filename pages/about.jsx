@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import ResponsiveImage from "../components/ResponsiveImage";
 import Video from "../components/Video";
 import useImageSizer from "../hooks/useImageSizer";
 import useLogo from "../hooks/useLogo";
@@ -841,8 +842,10 @@ function About() {
               <div className="3xl:pt-6 lg-content-uber-about-size">
                 <div className="pt-4 md:pt-12 grid grid-cols-12 auto-rows-auto">
                   <div className="relative float-right tile rounded rounded--mobile-full-bleed about-intro--image">
-                    {/* TODO: resize image */}
-                    <img src="/img/about-cover-bao.png"></img>
+                    <ResponsiveImage
+                      src="/img/about-cover-bao.png"
+                      sizes="(max-width: 768px) 1vw, (max-width: 1024px) 30vw, (max-width: 1900px) 15vw, 300px"
+                    ></ResponsiveImage>
                   </div>
                   <div
                     className="z-10 grid-cols-12 about-intro--text content-wide-mobile"
@@ -880,7 +883,12 @@ function About() {
               <div className="md:ml-12 md:float-right content-wide-mobile">
                 <img
                   src="/img/about-new/working-hard.png"
-                  className="object-contain h-64 mt-24 mb-6 lg:my-12"
+                  // sizes="200px"
+                  // containerClassNames="h-64 mt-24 mb-6 lg:my-12"
+                  // style={{
+                  //   height: "16rem !important",
+                  // }}
+                  className="h-64 mt-24 mb-6 lg:my-12"
                 />
                 <h1 className="text-3xl md:text-4xl lg:text-5xl max-w-lg lg:max-w-2xl">
                   We’re mentors, builders, and organizers for every idea.
