@@ -29,7 +29,7 @@ function About() {
     {
       host: "University of Connecticut",
       title: "Intro to p5.js",
-      dates: "Jan - Feb 2025",
+      dates: "Jan-Feb 2025",
     },
     {
       host: "Bronx Museum of the Arts",
@@ -41,7 +41,7 @@ function About() {
       link: "https://www.typeelectives.com/courses/techniculture-sp-24",
       title:
         "Techniculture: A Critical Lens on Modular Type and Generative Design",
-      dates: "Feb - Mar 2024",
+      dates: "Feb-Mar 2024",
     },
     {
       host: "Parsons School of Design",
