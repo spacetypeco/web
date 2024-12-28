@@ -33,7 +33,7 @@ function About() {
     },
     {
       host: "Bronx Museum of the Arts",
-      link: "Type Design Workshops",
+      title: "Type Design Workshops",
       dates: "Nov 2024",
     },
     {
