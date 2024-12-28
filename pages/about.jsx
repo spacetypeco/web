@@ -27,6 +27,16 @@ function About() {
 
   const TEACHING_AND_WORKSHOPS = [
     {
+      host: "University of Connecticut",
+      title: "Intro to p5.js",
+      dates: "Jan - Feb 2025",
+    },
+    {
+      host: "Bronx Museum of the Arts",
+      link: "Type Design Workshops",
+      dates: "Nov 2024",
+    },
+    {
       host: "Type Electives",
       link: "https://www.typeelectives.com/courses/techniculture-sp-24",
       title:
@@ -546,6 +556,12 @@ function About() {
   ];
 
   const EXHIBITIONS = [
+    {
+      host: "Plexus Projects",
+      link: "https://www.plexusprojects.org/gui-gooey-2024",
+      title: "GUI/GOOEY",
+      dates: "2024",
+    },
     {
       host: "Neighbor",
       title: "Meek Defiance",
