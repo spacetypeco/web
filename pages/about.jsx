@@ -28,11 +28,13 @@ function About() {
   const TEACHING_AND_WORKSHOPS = [
     {
       host: "University of Connecticut",
+      link: "https://uconn.edu/",
       title: "Intro to p5.js",
       dates: "Jan-Feb 2025",
     },
     {
       host: "Bronx Museum of the Arts",
+      link: "https://bronxmuseum.org/",
       title: "Type Design Workshops",
       dates: "Nov 2024",
     },
