@@ -862,7 +862,7 @@ function About() {
                   <div className="relative float-right tile rounded rounded--mobile-full-bleed about-intro--image">
                     <ResponsiveImage
                       src="/img/about-cover-bao.png"
-                      sizes="(max-width: 768px) 1vw, (max-width: 1024px) 30vw, (max-width: 1900px) 15vw, 600px"
+                      sizes="(max-width: 768px) 50vw, (max-width: 1024px) 30vw, (max-width: 1900px) 15vw, 600px"
                     ></ResponsiveImage>
                   </div>
                   <div
