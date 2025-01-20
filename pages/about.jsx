@@ -627,6 +627,7 @@ function About() {
     },
     {
       host: "Welcome to Chinatown - Lunar New Years Fair",
+      link: "https://welcometochinatown.com/lunarnewyear",
       dates: "Feb 2025",
     },
     {
