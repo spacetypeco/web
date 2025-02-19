@@ -621,8 +621,28 @@ function About() {
 
   const PUBLICATION_FAIRS = [
     {
+      host: "Printed Matter - LA Art Book Fair",
+      link: "https://printedmatterartbookfairs.org/",
+      dates: "May 2025",
+    },
+    {
+      host: "Seattle Art Book Fair",
+      link: "http://seattleartbookfair.org/",
+      dates: "May 2025",
+    },
+    {
+      host: "Multiple Formats Art Book Fair",
+      link: "https://multipleformats.cargo.site/",
+      dates: "March 2025",
+    },
+    {
       host: "Jersey Art Book Fair",
       link: "https://www.jerseyartbookfair.org/",
+      dates: "Feb 2025",
+    },
+    {
+      host: "Pyperbleu - Heart to Heart Market",
+      link: "https://www.instagram.com/p/DGDy1wsxcoz",
       dates: "Feb 2025",
     },
     {
@@ -641,7 +661,7 @@ function About() {
       dates: "Sept 2024",
     },
     {
-      host: "Multiple Formats Book Fair",
+      host: "Multiple Formats Art Book Fair",
       link: "https://multipleformats.cargo.site/",
       dates: "Mar 2024",
     },
