@@ -27,6 +27,12 @@ function About() {
 
   const TEACHING_AND_WORKSHOPS = [
     {
+      host: "Jersey Art Book Fair",
+      link: "https://www.jerseyartbookfair.org/",
+      title: "Pixel Type Workshop",
+      dates: "Feb 2025",
+    },
+    {
       host: "University of Connecticut",
       link: "https://uconn.edu/",
       title: "Intro to p5.js",
