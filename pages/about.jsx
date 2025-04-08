@@ -565,6 +565,18 @@ function About() {
 
   const EXHIBITIONS = [
     {
+      host: "Bronx Museum",
+      link: "https://bronxmuseum.org/exhibition/working-knowledge/",
+      title: "Working Knowledge: Shared Imaginings, New Futures",
+      dates: "2025",
+    },
+    {
+      host: "Museum of the Moving Image",
+      link: "https://movingimage.org/event/thingyou/",
+      title: "THING x YOU (Development Support)",
+      dates: "2025",
+    },
+    {
       host: "Plexus Projects",
       link: "https://www.plexusprojects.org/gui-gooey-2024",
       title: "GUI/GOOEY",
@@ -627,6 +639,11 @@ function About() {
 
   const PUBLICATION_FAIRS = [
     {
+      host: "ACE Popup Market @ Asian Creative Festival",
+      link: "https://www.acepopup.com/",
+      dates: "May 2025",
+    },
+    {
       host: "Printed Matter - LA Art Book Fair",
       link: "https://printedmatterartbookfairs.org/",
       dates: "May 2025",
@@ -634,6 +651,15 @@ function About() {
     {
       host: "Seattle Art Book Fair",
       link: "http://seattleartbookfair.org/",
+      dates: "May 2025",
+    },
+    {
+      host: "RISO Expo Philly",
+      link: "https://www.phillysoapbox.org/riso-expo-philly",
+      dates: "May 2025",
+    },
+    {
+      host: "Welcome to Chinatown x Poster House - Print (Night) Market",
       dates: "May 2025",
     },
     {
