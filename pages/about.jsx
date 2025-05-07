@@ -639,6 +639,16 @@ function About() {
 
   const PUBLICATION_FAIRS = [
     {
+      host: "Seoul Publisher's Table",
+      link: "https://publisherstable.kr/",
+      dates: "Oct 2025",
+    },
+    {
+      host: "Smol Art Mart",
+      link: "https://smolartmart.carrd.co/",
+      dates: "Aug 2025",
+    },
+    {
       host: "ACE Popup Market @ Asian Creative Festival",
       link: "https://www.acepopup.com/",
       dates: "May 2025",
