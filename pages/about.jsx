@@ -660,6 +660,7 @@ function About() {
     },
     {
       host: "Welcome to Chinatown x Poster House - Print (Night) Market",
+      link: "https://posterhouse.org/event/first-friday-night-market-curated-by-welcome-to-chinatown/",
       dates: "May 2025",
     },
     {
