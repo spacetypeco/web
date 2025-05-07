@@ -1,8 +1,8 @@
-# Build and deploy the website to GitHub Pages.
+# Build and deploy the website to Vercel.
 #
 # This workflow is run on every commit to the main branch.
 #
-name: GH Pages deploy
+name: Vercel deploy
 
 on:
   workflow_dispatch:
@@ -10,43 +10,22 @@ on:
     branches:
       - main
 
-env:
-  python-version: 3.9
-  node-version: 17.0
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/setup-python@v1
-        with:
-          python-version: ${{ env.python-version }}
-
-      - name: Install ghp-import
-        run: pip install ghp-import
-
       - uses: actions/checkout@v2
+      - uses: actions/setup-node@v3
         with:
-          fetch-depth: 0
+          node-version: 22.12.0
 
-      - uses: actions/setup-node@v2
-        with:
-          node-version: ${{ env.node-version }}
+      - name: Install Vercel CLI
+        run: npm install --global vercel@latest
 
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build
-        run: npm run build
-
-      - name: Export
-        run: npm run export
-
-      - name: Copy admin files
-        run: cp CNAME LICENSE NOTICE out/
-
-      - name: Prevent jekyll
-        run: touch out/.nojekyll
+      - name: Link project
+        run: vercel link --project spacetype-web --yes --token ${{ secrets.VERCEL_ACCOUNT_TOKEN }}
 
       - name: Deploy
-        run: ghp-import -p -f -m "Update website to ${{ github.sha }}" out
+        run: |
+          vercel --token ${{ secrets.VERCEL_ACCOUNT_TOKEN }} deploy --prod
