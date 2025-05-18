@@ -644,6 +644,11 @@ function About() {
       dates: "Oct 2025",
     },
     {
+      host: "Riso Art & Zine (RAZ) Fest @ Gallery Nucleus",
+      link: "https://gallerynucleus.com/events/1090",
+      dates: "Sept 2025",
+    },
+    {
       host: "Smol Art Mart",
       link: "https://smolartmart.carrd.co/",
       dates: "Aug 2025",
