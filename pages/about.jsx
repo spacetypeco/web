@@ -649,6 +649,11 @@ function About() {
       dates: "Sept 2025",
     },
     {
+      host: "Anime NYC",
+      link: "https://animenyc.com/",
+      dates: "Aug 2025",
+    },
+    {
       host: "Smol Art Mart",
       link: "https://smolartmart.carrd.co/",
       dates: "Aug 2025",
