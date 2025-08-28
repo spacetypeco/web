@@ -639,13 +639,18 @@ function About() {
 
   const PUBLICATION_FAIRS = [
     {
-      host: "Seoul Publisher's Table",
-      link: "https://publisherstable.kr/",
-      dates: "Oct 2025",
+      host: "Unlimited Edition",
+      link: "https://unlimited-edition.org/",
+      dates: "Nov 2025",
     },
     {
       host: "Riso Art & Zine (RAZ) Fest @ Gallery Nucleus",
       link: "https://gallerynucleus.com/events/1090",
+      dates: "Sept 2025",
+    },
+    {
+      host: "Friendship Market",
+      link: "https://www.instagram.com/friendshipmarket",
       dates: "Sept 2025",
     },
     {
