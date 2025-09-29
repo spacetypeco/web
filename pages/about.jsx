@@ -1234,17 +1234,17 @@ function About() {
                     <div className="flex flex-col items-start gap-1 md:gap-1">
                       <div className="flex flex-row items-start gap-1 md:gap-1">
                         <div className="col-span-6">
-                          <img src="/img/about-new/production-scarves.png" />
+                          <img src="/img/about-new/production-bw-scarf.png" />
                         </div>
                         <div className="col-span-6">
-                          <img src="/img/about-new/production-kittypop.png" />
+                          <img src="/img/about-new/production-zines.png" />
                         </div>
                       </div>
                       <div className="col-span-12">
                         <img src="/img/about-new/production-YANA.png" />
                       </div>
                       <div className="col-span-12">
-                        <img src="/img/about-new/production-wtc.png" />
+                        <img src="/img/about-new/production-wtc.jpg" />
                       </div>
                     </div>
                   </div>
